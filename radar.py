@@ -377,6 +377,8 @@ def run(feed_override=None, send_push=True):
             keep.append(wid)
         if keep:
             d["watch"] = keep
+            if d.get("tarif") and not any(wmap[w].get("type") == "tarif" for w in keep):
+                d.pop("tarif")
         else:
             known.pop(d["id"], None)
 
