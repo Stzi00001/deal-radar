@@ -1,0 +1,140 @@
+{
+  "watchlist": [
+    {
+      "id": "xbox-series-x",
+      "name": "Xbox Series X",
+      "type": "product",
+      "keywords": [
+        "xbox series x"
+      ],
+      "exclude": [
+        "controller",
+        "headset",
+        "game pass",
+        "spiel",
+        "huelle",
+        "skin",
+        "staender",
+        "ladestation"
+      ],
+      "max_price": null,
+      "push": true
+    },
+    {
+      "id": "airpods-pro-3",
+      "name": "AirPods Pro 3",
+      "type": "product",
+      "keywords": [
+        "airpods pro 3",
+        "airpods pro (3"
+      ],
+      "exclude": [
+        "huelle",
+        "case only",
+        "schutzhuelle",
+        "ohrstoepsel",
+        "ersatz"
+      ],
+      "max_price": null,
+      "push": true
+    },
+    {
+      "id": "tarif-mit-handy",
+      "name": "Handytarif + Handy (Gewinn beim Verkauf)",
+      "type": "tarif",
+      "keywords": [
+        "iphone",
+        "galaxy",
+        "pixel",
+        "xiaomi",
+        "smartphone",
+        "handy"
+      ],
+      "exclude": [
+        "huelle",
+        "panzerglas",
+        "ladegeraet",
+        "magsafe",
+        "kabel",
+        "prepaid"
+      ],
+      "min_profit": 0,
+      "push": true
+    },
+    {
+      "id": "rabatte",
+      "name": "Rabatte & Gutscheine",
+      "type": "rubrik",
+      "push": false,
+      "keywords": [
+        "gutschein",
+        "gutscheincode",
+        "rabattcode",
+        "rabatt",
+        "cashback",
+        "coupon",
+        "prozent auf",
+        "sale"
+      ],
+      "exclude": [],
+      "exclude_categories": [
+        "lebensmittel"
+      ]
+    },
+    {
+      "id": "gewinnspiele",
+      "name": "Gewinnspiele",
+      "type": "rubrik",
+      "push": false,
+      "keywords": [
+        "gewinnspiel",
+        "verlosung",
+        "gewinnen",
+        "giveaway"
+      ],
+      "exclude": [],
+      "exclude_categories": []
+    }
+  ],
+  "resale": {
+    "iphone 17 pro max": 0,
+    "iphone 17 pro": 0,
+    "iphone 17": 0,
+    "galaxy s26 ultra": 0,
+    "galaxy s26": 0,
+    "pixel 10 pro": 0
+  },
+  "settings": {
+    "push_min_score": 0,
+    "contract_months": 24,
+    "default_connection_fee": 39.99
+  },
+  "feeds": [
+    {
+      "name": "mydealz neu",
+      "url": "https://www.mydealz.de/rss/alles"
+    },
+    {
+      "name": "mydealz heiß",
+      "url": "https://www.mydealz.de/rss/hot"
+    },
+    {
+      "name": "DealDoktor",
+      "url": "https://www.dealdoktor.de/feed/"
+    },
+    {
+      "name": "Schnäppchenfuchs",
+      "url": "https://www.schnaeppchenfuchs.com/feed"
+    },
+    {
+      "name": "mydealz Gutscheine",
+      "url": "https://www.mydealz.de/rss/gutscheine",
+      "rubrik": "rabatte"
+    },
+    {
+      "name": "mydealz Gewinnspiele",
+      "url": "https://www.mydealz.de/rss/gruppe/gewinnspiele",
+      "rubrik": "gewinnspiele"
+    }
+  ]
+}

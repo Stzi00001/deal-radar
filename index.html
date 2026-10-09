@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Deal-Radar</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Deal-Radar">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+:root{--bg:#f5f4f0;--card:#fff;--ink:#16181d;--muted:#6b6f78;--line:#e3e1db;--acc:#e8590c;--acc2:#fff1e8;--ok:#2b8a3e;--bad:#c92a2a;--chip:#efede7}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#eceae4;--muted:#949aa5;--line:#2a2e36;--acc:#ff7a2f;--acc2:#2a1d14;--ok:#51cf66;--bad:#ff6b6b;--chip:#232730}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:20px;letter-spacing:-.3px}h1 span{color:var(--acc)}
+.sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+main{max-width:720px;margin:0 auto;padding:12px 16px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);z-index:6}
+nav button{flex:1;border:0;background:none;color:var(--muted);padding:9px 0 10px;font-size:11.5px;cursor:pointer}
+nav button b{display:block;font-size:19px;line-height:1.2}
+nav button.on{color:var(--acc)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:99px;padding:5px 11px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.deal{display:grid;grid-template-columns:64px 1fr;gap:12px}
+.deal img{width:64px;height:64px;object-fit:cover;border-radius:10px;background:var(--chip)}
+.deal a{color:var(--ink);text-decoration:none;font-weight:600}
+.meta{color:var(--muted);font-size:12.5px;margin-top:3px}
+.price{color:var(--acc);font-weight:700}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}
+.vote{border:1px solid var(--line);background:none;border-radius:10px;padding:5px 12px;font-size:16px;cursor:pointer}
+.vote.up.on{background:#d3f9d8;border-color:var(--ok)}.vote.down.on{background:#ffe3e3;border-color:var(--bad)}
+@media (prefers-color-scheme:dark){.vote.up.on{background:#1b3a22}.vote.down.on{background:#3e1c1c}}
+.badge{font-size:12px;border-radius:99px;padding:2px 8px;background:var(--acc2);color:var(--acc)}
+.badge.g{background:#d3f9d8;color:#1e6b2e}.badge.r{background:#ffe3e3;color:#a61e1e}
+@media (prefers-color-scheme:dark){.badge.g{background:#1b3a22;color:#8ce99a}.badge.r{background:#3e1c1c;color:#ffa8a8}}
+.tarif{margin-top:8px;font-size:13px;background:var(--chip);border-radius:10px;padding:8px 10px}
+label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 10px}
+.btn{border:0;background:var(--acc);color:#fff;font-weight:600;border-radius:10px;padding:10px 14px;cursor:pointer;font-size:15px}
+.btn.ghost{background:var(--chip);color:var(--ink)}
+.btn.small{padding:6px 10px;font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+h2{font-size:16px;margin:4px 0 8px}
+.res{font-size:22px;font-weight:700;margin-top:10px}
+.hint{font-size:12.5px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:9}
+.toast.show{opacity:1}
+.hide{display:none!important}
+.cmp{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.cmp a{font-size:12px;font-weight:500;border:1px solid var(--line);border-radius:8px;padding:3px 8px;color:var(--muted)}
+.check{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px}.check input{width:auto}
+</style>
+</head>
+<body>
+<header>
+  <h1>Deal<span>·</span>Radar</h1>
+  <div class="sub" id="status">Lädt …</div>
+</header>
+<main>
+  <!-- Deals -->
+  <section id="v-deals">
+    <div class="chips" id="filters"></div>
+    <div class="chips" id="sorts">
+      <button class="chip on" data-sort="new">Neueste</button>
+      <button class="chip" data-sort="score">Passt am besten</button>
+      <button class="chip" data-sort="price">Günstigste</button>
+      <button class="chip" data-sort="profit">Tarif-Gewinn</button>
+    </div>
+    <div id="list"></div>
+  </section>
+
+  <!-- Watchlist -->
+  <section id="v-watch" class="hide">
+    <div class="card">
+      <h2 id="wf-title">Neues Produkt beobachten</h2>
+      <input type="hidden" id="wf-id">
+      <label>Name</label><input id="wf-name" placeholder="z. B. Akkuschrauber Makita">
+      <label>Typ</label>
+      <select id="wf-type"><option value="product">Produkt / Abo</option><option value="tarif">Handytarif mit Handy (Gewinnrechnung)</option><option value="rubrik">Rubrik (alle Angebote einer Art, z. B. Rabatte)</option></select>
+      <label>Suchbegriffe (Komma = oder)</label><input id="wf-kw" placeholder="z. B. makita dhr, makita bohrhammer">
+      <label>Ausschließen, wenn im Titel</label><input id="wf-ex" placeholder="z. B. akku, ladegerät">
+      <div class="grid2">
+        <div id="wf-maxbox"><label>Höchstpreis € (optional)</label><input id="wf-max" inputmode="decimal"></div>
+        <div id="wf-profbox" class="hide"><label>Mindestgewinn € für Push</label><input id="wf-prof" inputmode="decimal" value="0"></div>
+      </div>
+      <label class="check"><input type="checkbox" id="wf-push" checked> Push-Benachrichtigung bei neuen Treffern</label>
+      <div class="row"><button class="btn" id="wf-save">Speichern</button><button class="btn ghost" id="wf-reset">Leeren</button></div>
+    </div>
+    <div id="watchlist"></div>
+  </section>
+
+  <!-- Rechner -->
+  <section id="v-calc" class="hide">
+    <div class="card">
+      <h2>Tarif + Handy: lohnt sich der Verkauf?</h2>
+      <div class="grid2">
+        <div><label>Zuzahlung Handy €</label><input id="c-up" inputmode="decimal" value="0"></div>
+        <div><label>Grundgebühr €/Monat</label><input id="c-mon" inputmode="decimal" value="0"></div>
+        <div><label>Laufzeit (Monate)</label><input id="c-months" inputmode="numeric" value="24"></div>
+        <div><label>Anschlusspreis €</label><input id="c-fee" inputmode="decimal" value="39.99"></div>
+        <div><label>Boni / Auszahlungen €</label><input id="c-bonus" inputmode="decimal" value="0"></div>
+        <div><label>Verkaufswert Handy €</label><input id="c-resale" inputmode="decimal" value="0"></div>
+      </div>
+      <div class="res" id="c-out"></div>
+      <div class="hint" id="c-detail"></div>
+    </div>
+    <div class="card">
+      <h2>Wiederverkaufswerte</h2>
+      <p class="hint">Was du für das neue, originalverpackte Gerät beim Verkauf bekommst (z. B. Ankauf-Portal oder Kleinanzeigen). Damit rechnet der Radar den Gewinn automatisch aus.</p>
+      <div id="resale"></div>
+      <div class="grid2"><div><label>Modell</label><input id="r-name" placeholder="iphone 17 pro"></div><div><label>Wert €</label><input id="r-val" inputmode="decimal"></div></div>
+      <div class="row"><button class="btn small" id="r-add">Hinzufügen / ändern</button><button class="btn small ghost" id="r-save">Werte speichern</button></div>
+    </div>
+  </section>
+
+  <!-- Einstellungen -->
+  <section id="v-set" class="hide">
+    <div class="card">
+      <h2>Verbindung zu GitHub</h2>
+      <label>Repository (benutzer/repo)</label><input id="s-repo" placeholder="stephan/deal-radar" autocapitalize="off">
+      <label>Zugangs-Token</label><input id="s-token" type="password" placeholder="github_pat_…" autocapitalize="off">
+      <p class="hint">Der Token bleibt nur in diesem Browser gespeichert. Er braucht nur „Contents: Read and write“ für dieses eine Repository.</p>
+      <div class="row"><button class="btn" id="s-save">Verbinden</button></div>
+    </div>
+    <div class="card">
+      <h2>Push &amp; Lernen</h2>
+      <label>Push nur ab „Passt zu dir“ von … % (0 = alles)</label><input id="s-min" inputmode="numeric">
+      <div class="row"><button class="btn small" id="s-save2">Speichern</button></div>
+      <p class="hint" id="s-learn"></p>
+    </div>
+    <div class="card">
+      <h2>Quellen</h2>
+      <div id="feeds" class="hint"></div>
+    </div>
+  </section>
+</main>
+
+<nav>
+  <button class="on" data-view="deals"><b>🔥</b>Deals</button>
+  <button data-view="watch"><b>🎯</b>Watchlist</button>
+  <button data-view="calc"><b>🧮</b>Rechner</button>
+  <button data-view="set"><b>⚙️</b>Einstellungen</button>
+</nav>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+const state = { cfg: null, cfgSha: null, fb: { votes: {} }, fbSha: null, deals: [], meta: {}, filter: "all", sort: "new" };
+
+function guessRepo() {
+  const h = location.hostname, p = location.pathname.split("/").filter(Boolean);
+  if (h.endsWith(".github.io") && p.length) return h.split(".")[0] + "/" + p[0];
+  return "";
+}
+let repo = LS.get("repo", guessRepo()), token = LS.get("token", "");
+
+function toast(t) { const el = $("#toast"); el.textContent = t; el.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), 2200); }
+const euro = v => v == null ? "–" : v.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const num = v => { const n = parseFloat(String(v).replace(",", ".")); return isNaN(n) ? 0 : n; };
+const normKw = s => s.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").trim();
+
+// ---------- GitHub API
+async function gh(path, opts = {}) {
+  const r = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+    ...opts,
+    headers: { Authorization: `Bearer ${token}`, Accept: opts.raw ? "application/vnd.github.raw+json" : "application/vnd.github+json", ...(opts.headers || {}) },
+    cache: "no-store"
+  });
+  if (!r.ok) throw new Error(`GitHub ${r.status}`);
+  return opts.raw ? r.text() : r.json();
+}
+const b64dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), c => c.charCodeAt(0)));
+const b64enc = s => { const b = new TextEncoder().encode(s); let bin = ""; b.forEach(x => bin += String.fromCharCode(x)); return btoa(bin); };
+async function readJson(path) { const j = await gh(path); return { data: JSON.parse(b64dec(j.content)), sha: j.sha }; }
+async function writeJson(path, data, sha, msg) {
+  const j = await gh(path, { method: "PUT", body: JSON.stringify({ message: msg, content: b64enc(JSON.stringify(data, null, 1) + "\n"), sha }) });
+  return j.content.sha;
+}
+
+// ---------- Lernmodell (gleiche Rechnung wie radar.py)
+function trainModel(votes) {
+  const m = { pos: {}, neg: {}, npos: 0, nneg: 0, V: 1 }, vocab = new Set();
+  Object.values(votes).forEach(v => {
+    const t = v.label === 1 ? m.pos : m.neg; v.label === 1 ? m.npos++ : m.nneg++;
+    (v.features || []).forEach(f => { t[f] = (t[f] || 0) + 1; vocab.add(f); });
+  });
+  m.V = Math.max(vocab.size, 1); return m;
+}
+function scoreDeal(m, feats) {
+  if (m.npos < 2 || m.nneg < 2) return null;
+  let lo = Math.log(m.npos / m.nneg);
+  const tp = Object.values(m.pos).reduce((a, b) => a + b, 0), tn = Object.values(m.neg).reduce((a, b) => a + b, 0);
+  (feats || []).forEach(f => { lo += Math.log(((m.pos[f] || 0) + 1) / (tp + m.V)) - Math.log(((m.neg[f] || 0) + 1) / (tn + m.V)); });
+  lo = Math.max(Math.min(lo, 30), -30); return Math.round(100 / (1 + Math.exp(-lo)));
+}
+function rescore() { const m = trainModel(state.fb.votes); state.deals.forEach(d => d.score = scoreDeal(m, d.features)); }
+
+// ---------- Laden
+async function load() {
+  if (!repo || !token) { $("#status").textContent = "Noch nicht verbunden – unter Einstellungen einrichten."; show("set"); return; }
+  $("#status").textContent = "Lädt …";
+  try {
+    const [c, f, d] = await Promise.all([readJson("config.json"), readJson("data/feedback.json").catch(() => ({ data: { votes: {} }, sha: null })), gh("data/deals.json", { raw: true })]);
+    state.cfg = c.data; state.cfgSha = c.sha; state.fb = f.data.votes ? f.data : { votes: {} }; state.fbSha = f.sha;
+    const dj = JSON.parse(d); state.deals = dj.deals || []; state.meta = dj;
+    rescore(); renderAll();
+    const upd = dj.updated ? new Date(dj.updated).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }) : "noch nie";
+    $("#status").textContent = `${state.deals.length} Treffer · zuletzt geprüft ${upd}`;
+  } catch (e) { $("#status").textContent = "Fehler beim Laden: " + e.message + " – Token/Repo prüfen."; }
+}
+
+// ---------- Darstellung
+const icon = w => w.type === "rubrik" ? (/gewinn/.test(w.id) ? "🎁" : "🏷️") : w.type === "tarif" ? "📱" : "🎯";
+function cmpQuery(d) {
+  const w = (state.cfg.watchlist || []).find(x => (d.watch || []).includes(x.id) && x.type === "product");
+  if (w) return w.name;
+  return d.title.replace(/\[[^\]]*\]|\([^)]*\)/g, " ").replace(/\b(f[üu]r|ab|nur|statt|inkl\.?)\b.*$/i, " ").replace(/\d+[.,]?\d*\s?(€|eur)/gi, " ").replace(/\s+/g, " ").trim().split(" ").slice(0, 8).join(" ");
+}
+function cmpLinks(d) {
+  const q = encodeURIComponent(cmpQuery(d));
+  const L = [["idealo", "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q="], ["Geizhals", "https://geizhals.de/?fs="], ["Google Shopping", "https://www.google.com/search?tbm=shop&q="], ["billiger.de", "https://www.billiger.de/search?searchstring="], ["Amazon", "https://www.amazon.de/s?k="], ["eBay", "https://www.ebay.de/sch/i.html?_nkw="]];
+  return `<div class="cmp"><span class="hint">Vergleichen:</span>${L.map(([n, u]) => `<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>`;
+}
+function renderAll() { renderFilters(); renderDeals(); renderWatch(); renderResale(); renderSettings(); calc(); }
+function renderFilters() {
+  const w = state.cfg.watchlist || [];
+  $("#filters").innerHTML = [`<button class="chip ${state.filter === "all" ? "on" : ""}" data-f="all">Alle</button>`]
+    .concat(w.map(x => `<button class="chip ${state.filter === x.id ? "on" : ""}" data-f="${esc(x.id)}">${icon(x)} ${esc(x.name)}</button>`)).join("");
+}
+function renderDeals() {
+  let ds = state.deals.filter(d => state.filter === "all" || (d.watch || []).includes(state.filter));
+  const s = state.sort;
+  if (s === "score") ds = ds.slice().sort((a, b) => (b.score ?? 50) - (a.score ?? 50));
+  if (s === "price") ds = ds.slice().sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+  if (s === "profit") ds = ds.filter(d => d.tarif).sort((a, b) => (b.tarif.profit ?? -1e9) - (a.tarif.profit ?? -1e9));
+  if (!ds.length) { $("#list").innerHTML = `<div class="empty">Noch keine passenden Deals.<br>Der Radar prüft alle 10 Minuten – neue Treffer kommen per Push.</div>`; return; }
+  const names = Object.fromEntries((state.cfg.watchlist || []).map(w => [w.id, w.name]));
+  $("#list").innerHTML = ds.map(d => {
+    const v = state.fb.votes[d.id]?.label;
+    const when = new Date(d.pub).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
+    const sc = d.score == null ? "" : `<span class="badge ${d.score >= 60 ? "g" : d.score < 35 ? "r" : ""}">passt ${d.score} %</span>`;
+    const types = (d.watch || []).map(w => (state.cfg.watchlist || []).find(x => x.id === w)?.type || "product");
+    const cmpBadge = d.compare ? `<span class="badge g">−${d.compare.pct} % ggü. ${euro(d.compare.ref)}</span>` : "";
+    const cmp = types.some(t => t !== "rubrik") || d.price ? cmpLinks(d) : "";
+    let t = "";
+    if (d.tarif) {
+      const x = d.tarif, p = x.profit;
+      t = `<div class="tarif">${x.device ? esc(x.device) : "Gerät unbekannt"} · ${euro(x.upfront)} + ${x.monthly == null ? "? €" : euro(x.monthly)}/Monat × ${x.months}${x.bonus ? " · Bonus " + euro(x.bonus) : ""}<br>
+      Kosten ${euro(x.cost)} · Verkaufswert ${euro(x.resale)} → <b style="color:${p == null ? "inherit" : p >= 0 ? "var(--ok)" : "var(--bad)"}">${p == null ? "Wert fehlt" : "Gewinn " + euro(p)}</b>
+      <button class="btn small ghost" style="margin-left:6px" data-calc="${esc(d.id)}">im Rechner</button></div>`;
+    }
+    return `<div class="card deal">${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy">` : `<img alt="">`}
+      <div><a href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.title)}</a>
+      <div class="meta"><span class="price">${d.price != null ? euro(d.price) : ""}</span> ${esc(d.merchant)} · ${when} · ${esc(d.source)}</div>
+      <div class="row">${(d.watch || []).map(w => `<span class="badge">${esc(names[w] || w)}</span>`).join("")} ${cmpBadge} ${sc}
+        <span style="flex:1"></span>
+        <button class="vote up ${v === 1 ? "on" : ""}" data-v="1" data-id="${esc(d.id)}">👍</button>
+        <button class="vote down ${v === 0 ? "on" : ""}" data-v="0" data-id="${esc(d.id)}">👎</button></div>${t}${cmp}</div></div>`;
+  }).join("");
+}
+function renderWatch() {
+  const best = state.meta.best || {};
+  $("#watchlist").innerHTML = (state.cfg.watchlist || []).map(w => `<div class="card"><b>${icon(w)} ${esc(w.name)}</b> <span class="hint">${w.push === false ? "🔕 kein Push" : "🔔 Push an"}</span>
+    ${best[w.id] ? `<div class="meta">Bestpreis bisher: <a class="price" href="${esc(best[w.id].link)}" target="_blank" rel="noopener">${euro(best[w.id].price)}</a> am ${esc(best[w.id].date)}</div>` : ""}
+    <div class="meta">${w.type === "tarif" ? "Tarif-Gewinnrechnung · " : w.type === "rubrik" ? "Rubrik · " : ""}Begriffe: ${esc((w.keywords || []).join(", "))}${(w.exclude || []).length ? " · ohne: " + esc(w.exclude.join(", ")) : ""}${w.max_price ? " · max. " + euro(w.max_price) : ""}</div>
+    <div class="row"><button class="btn small ghost" data-edit="${esc(w.id)}">Bearbeiten</button><button class="btn small ghost" data-del="${esc(w.id)}">Löschen</button></div></div>`).join("")
+    || `<div class="empty">Noch nichts auf der Watchlist.</div>`;
+}
+function renderResale() {
+  const r = state.cfg.resale || {};
+  $("#resale").innerHTML = Object.keys(r).sort().map(k => `<div class="row" style="margin:4px 0"><span style="flex:1">${esc(k)}</span><b>${r[k] ? euro(r[k]) : "<span class='hint'>fehlt</span>"}</b><button class="btn small ghost" data-rdel="${esc(k)}">✕</button></div>`).join("");
+}
+function renderSettings() {
+  $("#s-repo").value = repo; $("#s-token").value = token ? "••••••••" : "";
+  $("#s-min").value = state.cfg.settings?.push_min_score ?? 0;
+  const n = Object.keys(state.fb.votes).length, up = Object.values(state.fb.votes).filter(v => v.label === 1).length;
+  $("#s-learn").textContent = `${n} Bewertungen (${up} 👍 / ${n - up} 👎). Die Passt-Bewertung startet ab je 2 Daumen hoch und runter und wird mit jeder Bewertung genauer.`;
+  $("#feeds").innerHTML = (state.meta.feeds || []).map(f => `${f.ok ? "✅" : "⚠️"} ${esc(f.name)} ${f.ok ? `(${f.count} Einträge)` : "– " + esc(f.error || "nicht erreichbar")}`).join("<br>") || "Noch kein Durchlauf.";
+}
+function show(v) {
+  ["deals", "watch", "calc", "set"].forEach(x => $("#v-" + x).classList.toggle("hide", x !== v));
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.view === v));
+  scrollTo(0, 0);
+}
+
+// ---------- Speichern
+let fbTimer;
+function vote(id, label) {
+  const d = state.deals.find(x => x.id === id); if (!d) return;
+  const cur = state.fb.votes[id]?.label;
+  if (cur === label) delete state.fb.votes[id];
+  else state.fb.votes[id] = { label, features: d.features || [], title: d.title, ts: new Date().toISOString() };
+  rescore(); renderDeals(); renderSettings();
+  clearTimeout(fbTimer); fbTimer = setTimeout(saveFeedback, 1500);
+}
+async function saveFeedback() {
+  try { state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); toast("Bewertung gespeichert – der Radar lernt mit"); }
+  catch (e) {
+    try { const f = await readJson("data/feedback.json"); state.fbSha = f.sha; state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); toast("Bewertung gespeichert"); }
+    catch (e2) { toast("Speichern fehlgeschlagen: " + e2.message); }
+  }
+}
+async function saveConfig(msg) {
+  try { state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast("Gespeichert – Radar läuft gleich neu"); renderAll(); }
+  catch (e) {
+    try { const c = await readJson("config.json"); state.cfgSha = c.sha; state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast("Gespeichert"); renderAll(); }
+    catch (e2) { toast("Speichern fehlgeschlagen: " + e2.message); }
+  }
+}
+
+// ---------- Watchlist-Formular
+function resetForm() { ["#wf-id", "#wf-name", "#wf-kw", "#wf-ex", "#wf-max"].forEach(s => $(s).value = ""); $("#wf-prof").value = "0"; $("#wf-type").value = "product"; $("#wf-push").checked = true; $("#wf-title").textContent = "Neues Produkt beobachten"; typeToggle(); }
+function typeToggle() { const ty = $("#wf-type").value, t = ty === "tarif"; $("#wf-maxbox").classList.toggle("hide", ty !== "product"); $("#wf-profbox").classList.toggle("hide", !t); }
+$("#wf-type").onchange = typeToggle;
+$("#wf-reset").onclick = resetForm;
+$("#wf-save").onclick = () => {
+  const name = $("#wf-name").value.trim(), kw = $("#wf-kw").value.split(",").map(normKw).filter(Boolean);
+  if (!name || !kw.length) return toast("Name und mindestens ein Suchbegriff nötig");
+  const id = $("#wf-id").value || normKw(name).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + "-" + Date.now().toString(36).slice(-4);
+  const item = { id, name, type: $("#wf-type").value, keywords: kw, exclude: $("#wf-ex").value.split(",").map(normKw).filter(Boolean), push: $("#wf-push").checked };
+  const old = (state.cfg.watchlist || []).find(x => x.id === id); if (old && old.exclude_categories) item.exclude_categories = old.exclude_categories;
+  if (item.type === "tarif") item.min_profit = num($("#wf-prof").value); else item.max_price = $("#wf-max").value ? num($("#wf-max").value) : null;
+  const w = state.cfg.watchlist = state.cfg.watchlist || [];
+  const i = w.findIndex(x => x.id === id); i >= 0 ? w[i] = item : w.push(item);
+  resetForm(); saveConfig(`Watchlist: ${name}`);
+};
+
+// ---------- Rechner
+function calc() {
+  const up = num($("#c-up").value), mon = num($("#c-mon").value), m = num($("#c-months").value), fee = num($("#c-fee").value), bonus = num($("#c-bonus").value), res = num($("#c-resale").value);
+  const cost = up + mon * m + fee - bonus, profit = res - cost;
+  $("#c-out").innerHTML = `<span style="color:${profit >= 0 ? "var(--ok)" : "var(--bad)"}">${profit >= 0 ? "Gewinn" : "Verlust"} ${euro(Math.abs(profit))}</span>`;
+  $("#c-detail").textContent = `Gesamtkosten ${euro(cost)} über ${m} Monate · effektiv ${euro((cost - res) / (m || 1))}/Monat für den Tarif nach Verkauf.`;
+}
+document.querySelectorAll("#v-calc .card:first-child input").forEach(i => i.oninput = calc);
+$("#r-add").onclick = () => { const k = normKw($("#r-name").value); if (!k) return; state.cfg.resale = state.cfg.resale || {}; state.cfg.resale[k] = num($("#r-val").value); $("#r-name").value = $("#r-val").value = ""; renderResale(); toast("Zum Speichern „Werte speichern“ tippen"); };
+$("#r-save").onclick = () => saveConfig("Wiederverkaufswerte aktualisiert");
+
+// ---------- Einstellungen
+$("#s-save").onclick = () => {
+  repo = $("#s-repo").value.trim().replace(/^https?:\/\/github.com\//, "").replace(/\/$/, "");
+  const t = $("#s-token").value.trim(); if (t && !t.startsWith("••")) token = t;
+  LS.set("repo", repo); LS.set("token", token); toast("Verbinde …"); load().then(() => state.cfg && show("deals"));
+};
+$("#s-save2").onclick = () => { if (!state.cfg) return toast("Erst verbinden"); state.cfg.settings = state.cfg.settings || {}; state.cfg.settings.push_min_score = Math.max(0, Math.min(100, num($("#s-min").value))); saveConfig("Push-Schwelle geändert"); };
+
+// ---------- Klicks
+document.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.view) show(b.dataset.view);
+  if (b.dataset.f) { state.filter = b.dataset.f; renderFilters(); renderDeals(); }
+  if (b.dataset.sort) { state.sort = b.dataset.sort; document.querySelectorAll("#sorts .chip").forEach(c => c.classList.toggle("on", c === b)); renderDeals(); }
+  if (b.dataset.v) vote(b.dataset.id, +b.dataset.v);
+  if (b.dataset.edit) {
+    const w = state.cfg.watchlist.find(x => x.id === b.dataset.edit);
+    $("#wf-id").value = w.id; $("#wf-name").value = w.name; $("#wf-type").value = w.type || "product";
+    $("#wf-kw").value = (w.keywords || []).join(", "); $("#wf-ex").value = (w.exclude || []).join(", ");
+    $("#wf-max").value = w.max_price ?? ""; $("#wf-push").checked = w.push !== false; $("#wf-prof").value = w.min_profit ?? 0; $("#wf-title").textContent = "Bearbeiten: " + w.name; typeToggle(); scrollTo(0, 0);
+  }
+  if (b.dataset.del && confirm("Von der Watchlist löschen?")) { state.cfg.watchlist = state.cfg.watchlist.filter(x => x.id !== b.dataset.del); saveConfig("Watchlist-Eintrag gelöscht"); }
+  if (b.dataset.rdel) { delete state.cfg.resale[b.dataset.rdel]; renderResale(); toast("Zum Speichern „Werte speichern“ tippen"); }
+  if (b.dataset.calc) {
+    const x = state.deals.find(d => d.id === b.dataset.calc).tarif;
+    $("#c-up").value = x.upfront ?? 0; $("#c-mon").value = x.monthly ?? 0; $("#c-months").value = x.months; $("#c-fee").value = x.fee; $("#c-bonus").value = x.bonus || 0; $("#c-resale").value = x.resale ?? 0;
+    calc(); show("calc");
+  }
+});
+document.addEventListener("visibilitychange", () => { if (!document.hidden && token) load(); });
+
+load();
+</script>
+</body>
+</html>
