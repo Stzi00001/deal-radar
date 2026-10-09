@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T20:05:43+00:00",
+ "updated": "2026-10-09T20:06:54+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -701,17 +701,6 @@
    "watch": [
     "rabatte"
    ],
-   "tarif": {
-    "monthly": null,
-    "upfront": 0.0,
-    "fee": 39.99,
-    "bonus": 0.0,
-    "months": 24,
-    "device": null,
-    "resale": null,
-    "cost": null,
-    "profit": null
-   },
    "compare": null,
    "features": [
     "besten",
