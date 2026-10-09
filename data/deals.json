@@ -1,1 +1,1347 @@
-{"deals": []}
+{
+ "updated": "2026-10-09T18:17:29+00:00",
+ "feeds": [
+  {
+   "name": "mydealz neu",
+   "ok": true,
+   "count": 30
+  },
+  {
+   "name": "mydealz heiß",
+   "ok": true,
+   "count": 30
+  },
+  {
+   "name": "DealDoktor",
+   "ok": true,
+   "count": 10
+  },
+  {
+   "name": "Schnäppchenfuchs",
+   "ok": false,
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "mydealz Gutscheine",
+   "ok": true,
+   "count": 30
+  },
+  {
+   "name": "mydealz Gewinnspiele",
+   "ok": true,
+   "count": 30
+  }
+ ],
+ "votes": 0,
+ "best": {},
+ "deals": [
+  {
+   "id": "https-www-dealdoktor-de-p-869239",
+   "title": "💥 Die Top Deals des Tages – z.B. Großer Reebok Winterjacken-Sale",
+   "link": "https://www.dealdoktor.de/top-deal-des-tages/",
+   "merchant": "",
+   "price": null,
+   "category": "Sonstiges",
+   "image": "",
+   "pub": "2026-10-09T18:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:sonstiges",
+    "deals",
+    "grosser",
+    "reebok",
+    "sale",
+    "tages",
+    "top",
+    "w:rabatte",
+    "winterjacken"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-advanzia-mastercard-cashback-2851870",
+   "title": "Advanzia Mastercard Cashback",
+   "link": "https://www.mydealz.de/deals/advanzia-mastercard-cashback-2851870",
+   "merchant": "Advanzia",
+   "price": null,
+   "category": "Versicherung & Finanzen",
+   "image": "https://static.mydealz.de/threads/raw/QqCHk/2851870_1/re/150x150/qt/55/2851870_1.jpg",
+   "pub": "2026-10-09T17:55:55+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "advanzia",
+    "c:versicherung finanzen",
+    "cashback",
+    "m:advanzia",
+    "mastercard",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-2150887",
+   "title": "Großer Herbst-Sale bei Rebike! 😀🍂 Refurbished Bikes und E-Bikes zu Sale-Preisen – mit Top-Marken wie Cannondale, Conway, Bulls & mehr! 🚵",
+   "link": "https://www.dealdoktor.de/rebike-herbst-sale/",
+   "merchant": "",
+   "price": null,
+   "category": "Fahrrad",
+   "image": "",
+   "pub": "2026-10-09T17:30:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "bikes",
+    "bulls",
+    "c:fahrrad",
+    "cannondale",
+    "conway",
+    "grosser",
+    "herbst",
+    "marken",
+    "mehr",
+    "preisen",
+    "rebike",
+    "refurbished",
+    "sale",
+    "top",
+    "w:rabatte",
+    "wie"
+   ],
+   "score": null
+  },
+  {
+   "id": "-outdoor-highlights-patagonia-the-north-face-vaude-mammut-columbia-lowa-viele-mehr-2847542",
+   "title": "20 % Extra auf Outdoor-Highlights: Patagonia, The North Face, VAUDE, Mammut, Columbia, LOWA & viele mehr",
+   "link": "https://www.mydealz.de/gutscheine/20-extra-auf-outdoor-highlights-patagonia-the-north-face-vaude-mammut-columbia-lowa-viele-mehr-2847542",
+   "merchant": "Hardloop",
+   "price": null,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/12157_1/re/352x352/qt/60/12157_1.jpg",
+   "pub": "2026-10-09T17:27:07+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:sport outdoor",
+    "columbia",
+    "extra",
+    "face",
+    "highlights",
+    "lowa",
+    "m:hardloop",
+    "mammut",
+    "mehr",
+    "north",
+    "outdoor",
+    "patagonia",
+    "vaude",
+    "viele",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "fresh-extreme-72h-anti-transpirant-deospray-mit-ultra-cooling-effekt-prime-sparabo-2851852",
+   "title": "6 x 150ml L'Oréal Paris Men Expert Fresh Extreme 72H Anti-Transpirant Deospray mit 10% Coupon (personalisiert) sonst 6,07€ [Prime & Sparabo]",
+   "link": "https://www.mydealz.de/deals/6-x-150ml-loreal-paris-men-expert-fresh-extreme-72h-anti-transpirant-deospray-mit-ultra-cooling-effekt-prime-sparabo-2851852",
+   "merchant": "Amazon",
+   "price": 5.43,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/nqExD/2851852_1/re/150x150/qt/55/2851852_1.jpg",
+   "pub": "2026-10-09T16:57:40+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": {
+    "ref": 6.07,
+    "pct": 11
+   },
+   "features": [
+    "07€",
+    "150ml",
+    "72h",
+    "anti",
+    "c:beauty gesundheit",
+    "coupon",
+    "deospray",
+    "expert",
+    "extreme",
+    "fresh",
+    "m:amazon",
+    "men",
+    "p:<20",
+    "paris",
+    "personalisiert",
+    "sonst",
+    "sparabo",
+    "transpirant",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "r-6999eur-statt-170eur-oder-aio9560-23-in-1-fur-8999eur-statt-190eur-100eur-rabatt-2851850",
+   "title": "Braun Series 9 All-in-One AIO9540 (20-in-1) für 69,99€ (statt 170€) oder AIO9560 (23-in-1) für 89,99€ (statt 190€) – 100€ Rabatt",
+   "link": "https://www.mydealz.de/deals/braun-series-9-all-in-one-aio9540-20-in-1-fur-6999eur-statt-170eur-oder-aio9560-23-in-1-fur-8999eur-statt-190eur-100eur-rabatt-2851850",
+   "merchant": "Braun",
+   "price": 69.99,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/rcTSW/2851850_1/re/150x150/qt/55/2851850_1.jpg",
+   "pub": "2026-10-09T16:44:41+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": {
+    "ref": 170.0,
+    "pct": 59
+   },
+   "features": [
+    "100€",
+    "170€",
+    "190€",
+    "99€",
+    "aio9540",
+    "aio9560",
+    "all",
+    "braun",
+    "c:beauty gesundheit",
+    "m:braun",
+    "one",
+    "p:<100",
+    "rabatt",
+    "series",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-96177",
+   "title": "💥 Die 30 besten Handytarife 📱➡️ Apple iPhone, Samsung Galaxy, Google Pixel uvm. + SIM-Only-Tarife",
+   "link": "https://www.dealdoktor.de/die-besten-handytarife/",
+   "merchant": "",
+   "price": null,
+   "category": "Handytarife & Smartphones",
+   "image": "",
+   "pub": "2026-10-09T16:39:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": null,
+    "upfront": 0.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": null,
+    "resale": null,
+    "cost": null,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "apple",
+    "besten",
+    "c:handytarife smartphones",
+    "galaxy",
+    "google",
+    "handytarife",
+    "iphone",
+    "only",
+    "pixel",
+    "samsung",
+    "sim",
+    "tarife",
+    "uvm",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
+  {
+   "id": "toys-bis-zu-50-rabatt-auf-lego-play-doh-star-wars-super-mario-70-cm-weitere-marken-2851757",
+   "title": "158° - Smyths Toys: Bis zu 50 % Rabatt auf LEGO, Play-Doh, Star Wars, Super Mario (70 cm) & weitere Marken",
+   "link": "https://www.mydealz.de/deals/smyths-toys-bis-zu-50-rabatt-auf-lego-play-doh-star-wars-super-mario-70-cm-weitere-marken-2851757",
+   "merchant": "Smyths Toys",
+   "price": 34.99,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/JPwSv/2851757_1/re/150x150/qt/55/2851757_1.jpg",
+   "pub": "2026-10-09T16:31:21+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:family kids",
+    "doh",
+    "lego",
+    "m:smyths toys",
+    "mario",
+    "marken",
+    "p:<100",
+    "play",
+    "rabatt",
+    "smyths",
+    "star",
+    "super",
+    "toys",
+    "w:rabatte",
+    "wars",
+    "weitere"
+   ],
+   "score": null
+  },
+  {
+   "id": "-iphone-18-pro-max-256gb-allnetsms-flat-50gb-5498eurmonat-299eur-zuzahlung-freenet-2851790",
+   "title": "163° - Telekom Netz: Apple iPhone 18 Pro Max 256GB | Allnet/SMS Flat: 50GB + 5GB, 54,98€/Monat & 299€ Zuzahlung (Freenet)",
+   "link": "https://www.mydealz.de/deals/telekom-netz-apple-iphone-18-pro-max-256gb-allnetsms-flat-50gb-5498eurmonat-299eur-zuzahlung-freenet-2851790",
+   "merchant": "Media Markt Tarifwelt",
+   "price": 1614.46,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/d1rzN/2851790_1/re/150x150/qt/55/2851790_1.jpg",
+   "pub": "2026-10-09T15:16:25+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 54.98,
+    "upfront": 1614.46,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": null,
+    "resale": null,
+    "cost": 2973.97,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "256gb",
+    "299€",
+    "50gb",
+    "5gb",
+    "98€",
+    "allnet",
+    "apple",
+    "c:telefon internet vertraege",
+    "flat",
+    "freenet",
+    "iphone",
+    "m:media markt tarifwelt",
+    "max",
+    "monat",
+    "netz",
+    "p:800+",
+    "pro",
+    "sms",
+    "telekom",
+    "w:tarif-mit-handy",
+    "zuzahlung"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-2135121",
+   "title": "eff. GRATIS 🔥 Google Pixel 11 (256GB) für 79,95€ + 50GB Vodafone Allnet für 29,99€ + 120€ Startguthaben (Vodafone Smart Entry Spezial)",
+   "link": "https://www.dealdoktor.de/google-pixel-11-vodafone-smart-entry-spezial/",
+   "merchant": "",
+   "price": 79.95,
+   "category": "Effektiv Gratis",
+   "image": "",
+   "pub": "2026-10-09T15:15:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": null,
+    "upfront": 79.95,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": null,
+    "resale": null,
+    "cost": null,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "120€",
+    "256gb",
+    "50gb",
+    "95€",
+    "99€",
+    "allnet",
+    "c:effektiv gratis",
+    "eff",
+    "entry",
+    "google",
+    "p:<100",
+    "pixel",
+    "smart",
+    "spezial",
+    "startguthaben",
+    "vodafone",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
+  {
+   "id": "u-12-cashback-bis-zu-50-rabatt-beim-ebook-thriller-deal-nervenkitzel-zum-sparpreis-2851527",
+   "title": "122° - [Shoop | Thalia] Bis zu 12% Cashback + Bis zu 50% Rabatt beim eBook-Thriller-Deal: Nervenkitzel zum Sparpreis",
+   "link": "https://www.mydealz.de/deals/shoop-thalia-bis-zu-12-cashback-bis-zu-50-rabatt-beim-ebook-thriller-deal-nervenkitzel-zum-sparpreis-2851527",
+   "merchant": "Shoop",
+   "price": null,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/0bvRO/2851527_1/re/150x150/qt/55/2851527_1.jpg",
+   "pub": "2026-10-09T15:04:54+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "beim",
+    "c:kultur freizeit",
+    "cashback",
+    "deal",
+    "ebook",
+    "m:shoop",
+    "nervenkitzel",
+    "rabatt",
+    "shoop",
+    "sparpreis",
+    "thalia",
+    "thriller",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "e-gutscheine-bis-zu-150eur-rabatt-auf-refurbished-fahrrader-und-e-bikes-ab-1200eur-2851375",
+   "title": "Bis zu 150€ Rabatt auf refurbished E-Bikes und Fahrräder ab 1200€",
+   "link": "https://www.mydealz.de/gutscheine/bis-zu-150eur-rabatt-auf-refurbished-fahrrader-und-e-bikes-ab-1200eur-2851375",
+   "merchant": "JobRad Loop",
+   "price": 150.0,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/17061_1/re/352x352/qt/60/17061_1.jpg",
+   "pub": "2026-10-08T17:31:15+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "1200€",
+    "150€",
+    "bikes",
+    "c:sport outdoor",
+    "fahrraeder",
+    "m:jobrad loop",
+    "p:<300",
+    "rabatt",
+    "refurbished",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "s-reduziert-20-auf-ausgewahlte-trikots-bayern-juventus-real-barcelona-koln-psg-uvm-2851187",
+   "title": "Fußball Trikots reduziert: -20% auf ausgewählte Trikots (Bayern, Juventus, Real, Barcelona, Köln, PSG uvm)",
+   "link": "https://www.mydealz.de/gutscheine/fussball-trikots-reduziert-20-auf-ausgewahlte-trikots-bayern-juventus-real-barcelona-koln-psg-uvm-2851187",
+   "merchant": "11teamsports",
+   "price": null,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/966_2/re/352x352/qt/60/966_2.jpg",
+   "pub": "2026-10-08T12:27:34+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "ausgewaehlte",
+    "barcelona",
+    "bayern",
+    "c:sport outdoor",
+    "fussball",
+    "juventus",
+    "koeln",
+    "m:11teamsports",
+    "psg",
+    "real",
+    "reduziert",
+    "trikots",
+    "uvm",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "rebuy-20-ab-55eur-mbw-bzw-15-ab-35eur-mbw-und-gratis-versand-auf-gebrauchte-bucher-2851160",
+   "title": "[Rebuy] 20% (ab 55€ MBW) bzw. 15% (ab 35€ MBW) Rabatt und Gratis-Versand auf gebrauchte Bücher",
+   "link": "https://www.mydealz.de/gutscheine/rebuy-20-ab-55eur-mbw-bzw-15-ab-35eur-mbw-und-gratis-versand-auf-gebrauchte-bucher-2851160",
+   "merchant": "reBuy",
+   "price": 55.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/225_1/re/352x352/qt/60/225_1.jpg",
+   "pub": "2026-10-08T11:25:30+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "35€",
+    "55€",
+    "buecher",
+    "bzw",
+    "c:kultur freizeit",
+    "gebrauchte",
+    "m:rebuy",
+    "mbw",
+    "p:<100",
+    "rabatt",
+    "rebuy",
+    "versand",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "besten-saug-und-wischroboter-deals-im-prime-day-dreame-roborock-ecovacs-xiaomi-uvm-2850227",
+   "title": "Die besten Saug- und Wischroboter-Deals im Prime Day | Dreame, roborock, ECOVACS, Xiaomi u.v.m.",
+   "link": "https://www.mydealz.de/gutscheine/die-besten-saug-und-wischroboter-deals-im-prime-day-dreame-roborock-ecovacs-xiaomi-uvm-2850227",
+   "merchant": "Amazon",
+   "price": null,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/3_2/re/352x352/qt/60/3_2.jpg",
+   "pub": "2026-10-06T20:07:01+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "tarif-mit-handy",
+    "rabatte"
+   ],
+   "tarif": {
+    "monthly": null,
+    "upfront": 0.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": null,
+    "resale": null,
+    "cost": null,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "besten",
+    "c:home living",
+    "day",
+    "deals",
+    "dreame",
+    "ecovacs",
+    "m:amazon",
+    "roborock",
+    "saug",
+    "w:rabatte",
+    "w:tarif-mit-handy",
+    "wischroboter",
+    "xiaomi"
+   ],
+   "score": null
+  },
+  {
+   "id": "chtung-smarte-steckdosen-schalter-smart-locks-heizung-sensoren-uberwachungskameras-2850104",
+   "title": "Die besten Smart Home Deals im Prime Day | Beleuchtung, Smarte Steckdosen & Schalter, Smart Locks, Heizung & Sensoren, Überwachungskameras",
+   "link": "https://www.mydealz.de/gutscheine/die-besten-smart-home-deals-im-prime-day-beleuchtung-smarte-steckdosen-schalter-smart-locks-heizung-sensoren-uberwachungskameras-2850104",
+   "merchant": "Amazon",
+   "price": null,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/3_2/re/352x352/qt/60/3_2.jpg",
+   "pub": "2026-10-06T17:19:16+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "beleuchtung",
+    "besten",
+    "c:elektronik",
+    "day",
+    "deals",
+    "heizung",
+    "home",
+    "locks",
+    "m:amazon",
+    "schalter",
+    "sensoren",
+    "smart",
+    "smarte",
+    "steckdosen",
+    "ueberwachungskameras",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "ie-besten-pc-hardware-prime-day-deals-cpus-netzteile-gehause-lufter-mainboards-uvm-2850035",
+   "title": "Die besten PC-Hardware Prime Day Deals | CPUs, Netzteile, Gehäuse & Lüfter, Mainboards u.v.m.",
+   "link": "https://www.mydealz.de/gutscheine/die-besten-pc-hardware-prime-day-deals-cpus-netzteile-gehause-lufter-mainboards-uvm-2850035",
+   "merchant": "Amazon",
+   "price": null,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/3_2/re/352x352/qt/60/3_2.jpg",
+   "pub": "2026-10-06T15:22:01+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "besten",
+    "c:elektronik",
+    "cpus",
+    "day",
+    "deals",
+    "gehaeuse",
+    "hardware",
+    "luefter",
+    "m:amazon",
+    "mainboards",
+    "netzteile",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "vredestein-reifen-ab-16-zoll-kaufen-bis-zu-60-eur-pramie-amazon-oder-aral-erhalten-2848842",
+   "title": "Vredestein \"Winteraktion 2026\": 2 oder 4 qualifizierte Vredestein-Reifen ab 16 Zoll kaufen & bis zu 60 € Prämie (Amazon oder ARAL) erhalten",
+   "link": "https://www.mydealz.de/gutscheine/vredestein-winteraktion-2026-2-oder-4-qualifizierte-vredestein-reifen-ab-16-zoll-kaufen-bis-zu-60-eur-pramie-amazon-oder-aral-erhalten-2848842",
+   "merchant": "",
+   "price": 60.0,
+   "category": "Auto & Motorrad",
+   "image": "https://www.mydealz.de/assets/img/default-voucher_ee5e5.svg",
+   "pub": "2026-10-05T16:15:21+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "aral",
+    "c:auto motorrad",
+    "erhalten",
+    "kaufen",
+    "p:<100",
+    "praemie",
+    "qualifizierte",
+    "reifen",
+    "vredestein",
+    "w:rabatte",
+    "winteraktion",
+    "zoll"
+   ],
+   "score": null
+  },
+  {
+   "id": "z-de-gutscheine-kik-15-prozent-auf-dem-offline-und-online-einkauf-via-kaufland-app-2848805",
+   "title": "KiK 15 Prozent auf den Offline und Online Einkauf via Kaufland App",
+   "link": "https://www.mydealz.de/gutscheine/kik-15-prozent-auf-dem-offline-und-online-einkauf-via-kaufland-app-2848805",
+   "merchant": "KiK",
+   "price": null,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/6586_3/re/352x352/qt/60/6586_3.jpg",
+   "pub": "2026-10-05T15:01:00+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "app",
+    "c:fashion accessoires",
+    "einkauf",
+    "kaufland",
+    "kik",
+    "m:kik",
+    "offline",
+    "online",
+    "prozent",
+    "via",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "gutscheine-decathlon-20-ab-50eur-auf-das-komplette-kinder-sortiment-nur-in-der-app-2848479",
+   "title": "(Decathlon) 20% ab 50€ Einkauf von Kinderartikel nur in der App",
+   "link": "https://www.mydealz.de/gutscheine/decathlon-20-ab-50eur-auf-das-komplette-kinder-sortiment-nur-in-der-app-2848479",
+   "merchant": "DECATHLON",
+   "price": 50.0,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/541_2/re/352x352/qt/60/541_2.jpg",
+   "pub": "2026-10-05T03:01:20+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "50€",
+    "app",
+    "c:fashion accessoires",
+    "decathlon",
+    "einkauf",
+    "kinderartikel",
+    "m:decathlon",
+    "p:<100",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-bike-components-deal-days-nur-am-04-und-0510-2848347",
+   "title": "Bike components - Deal Days - nur am 04. und 05.10.",
+   "link": "https://www.mydealz.de/gutscheine/bike-components-deal-days-nur-am-04-und-0510-2848347",
+   "merchant": "bike-components",
+   "price": null,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/3208_1/re/352x352/qt/60/3208_1.jpg",
+   "pub": "2026-10-04T17:11:07+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "bike",
+    "c:sport outdoor",
+    "components",
+    "days",
+    "deal",
+    "m:bike components",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-rossmann-tagl-20-auf-dekorative-kosmetik-2848236",
+   "title": "ROSSMANN tägl. 20 % auf dekorative Kosmetik",
+   "link": "https://www.mydealz.de/gutscheine/rossmann-tagl-20-auf-dekorative-kosmetik-2848236",
+   "merchant": "ROSSMANN",
+   "price": null,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/120_3/re/352x352/qt/60/120_3.jpg",
+   "pub": "2026-10-04T11:15:19+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:beauty gesundheit",
+    "dekorative",
+    "kosmetik",
+    "m:rossmann",
+    "rossmann",
+    "taegl",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-payback-dm-10fach-p-auf-fast-alles-ab-2-eur-2848192",
+   "title": "PAYBACK + DM 10FACH °P auf fast alles ab 2.-€*",
+   "link": "https://www.mydealz.de/gutscheine/payback-dm-10fach-p-auf-fast-alles-ab-2-eur-2848192",
+   "merchant": "PAYBACK",
+   "price": null,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/56_3/re/352x352/qt/60/56_3.jpg",
+   "pub": "2026-10-04T09:45:57+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10fach",
+    "alles",
+    "c:beauty gesundheit",
+    "fast",
+    "m:payback",
+    "payback",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-amazon-4-cashback-bis-3110-2848167",
+   "title": "AMAZON - 4 % Cashback über dealwise - bis 31.10",
+   "link": "https://www.mydealz.de/gutscheine/amazon-4-cashback-bis-3110-2848167",
+   "merchant": "ING",
+   "price": null,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/605_2/re/352x352/qt/60/605_2.jpg",
+   "pub": "2026-10-04T09:08:04+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:elektronik",
+    "cashback",
+    "dealwise",
+    "m:ing",
+    "ueber",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "rabatt-auch-auf-reduzierte-sets-zb-schule-der-magischen-tiere-rabat-klemmbausteine-2847996",
+   "title": "OpenBricks mit 10 % Rabatt | HOBBY26 | Rabatt auch auf reduzierte Sets | z.b. Schule der magischen Tiere Rabat | Klemmbausteine",
+   "link": "https://www.mydealz.de/gutscheine/open-bricks-mit-10-rabatt-hobby26-rabatt-auch-auf-reduzierte-sets-zb-schule-der-magischen-tiere-rabat-klemmbausteine-2847996",
+   "merchant": "",
+   "price": null,
+   "category": "Family & Kids",
+   "image": "https://www.mydealz.de/assets/img/default-voucher_ee5e5.svg",
+   "pub": "2026-10-03T20:24:22+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "auch",
+    "c:family kids",
+    "hobby26",
+    "klemmbausteine",
+    "magischen",
+    "openbricks",
+    "rabat",
+    "rabatt",
+    "reduzierte",
+    "schule",
+    "sets",
+    "tiere",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "www-mydealz-de-gutscheine-aral-payback-8fach-p-auf-kraftstoffe-erdgas-bis-25102026-2847920",
+   "title": "[Aral / Payback] 8fach °P auf Kraftstoffe & Erdgas (bis 25.10.2026)",
+   "link": "https://www.mydealz.de/gutscheine/aral-payback-8fach-p-auf-kraftstoffe-erdgas-bis-25102026-2847920",
+   "merchant": "PAYBACK",
+   "price": null,
+   "category": "Auto & Motorrad",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/56_3/re/352x352/qt/60/56_3.jpg",
+   "pub": "2026-10-03T17:09:39+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "8fach",
+    "aral",
+    "c:auto motorrad",
+    "erdgas",
+    "kraftstoffe",
+    "m:payback",
+    "payback",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "-de-gutscheine-payback-galeria-15-bzw-10fach-p-ab-2-eur-oder-200-extra-p-ab-40-eur-2847869",
+   "title": "PAYBACK + GALERIA 15 bzw. 10FACH °P ab 2.-€* oder 200 EXTRA °P ab 40.-€*",
+   "link": "https://www.mydealz.de/gutscheine/payback-galeria-15-bzw-10fach-p-ab-2-eur-oder-200-extra-p-ab-40-eur-2847869",
+   "merchant": "PAYBACK",
+   "price": null,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/56_3/re/352x352/qt/60/56_3.jpg",
+   "pub": "2026-10-03T14:09:03+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10fach",
+    "bzw",
+    "c:fashion accessoires",
+    "extra",
+    "galeria",
+    "m:payback",
+    "payback",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-bdhw-jubilaums-sale-vinyl-cds-merch-2847789",
+   "title": "BDHW Jubiläums Sale (Vinyl, CDs, Merch)",
+   "link": "https://www.mydealz.de/gutscheine/bdhw-jubilaums-sale-vinyl-cds-merch-2847789",
+   "merchant": "",
+   "price": null,
+   "category": "Kultur & Freizeit",
+   "image": "https://www.mydealz.de/assets/img/default-voucher_ee5e5.svg",
+   "pub": "2026-10-03T10:43:11+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "bdhw",
+    "c:kultur freizeit",
+    "cds",
+    "jubilaeums",
+    "merch",
+    "sale",
+    "vinyl",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "le-bestellungen-am-03-und-0410-ausgenommen-druckerzeugnisse-und-geschenkgutscheine-2847700",
+   "title": "[Louis Online] 15% Rabatt auf alle Bestellungen am 03. und 04.10., ausgenommen Druckerzeugnisse und Geschenkgutscheine",
+   "link": "https://www.mydealz.de/gutscheine/louis-online-15-rabatt-auf-alle-bestellungen-am-03-und-0410-ausgenommen-druckerzeugnisse-und-geschenkgutscheine-2847700",
+   "merchant": "Louis",
+   "price": null,
+   "category": "Auto & Motorrad",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/232_2/re/352x352/qt/60/232_2.jpg",
+   "pub": "2026-10-03T07:16:55+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "ausgenommen",
+    "bestellungen",
+    "c:auto motorrad",
+    "druckerzeugnisse",
+    "geschenkgutscheine",
+    "louis",
+    "m:louis",
+    "online",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "ydealz-de-gutscheine-space-marine-2-the-anniversary-ii-update-200-accolades-gratis-2847596",
+   "title": "Space Marine 2 - The Anniversary II Update - 200 Accolades Gratis! (Playstation / PC / Xbox)",
+   "link": "https://www.mydealz.de/gutscheine/space-marine-2-the-anniversary-ii-update-200-accolades-gratis-2847596",
+   "merchant": "",
+   "price": null,
+   "category": "Gaming",
+   "image": "https://www.mydealz.de/assets/img/default-voucher_ee5e5.svg",
+   "pub": "2026-10-02T20:50:30+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "accolades",
+    "anniversary",
+    "c:gaming",
+    "marine",
+    "playstation",
+    "space",
+    "update",
+    "w:rabatte",
+    "xbox"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-afbshopde-25-rabatt-auf-produkte-mit-zustand-fair-2847214",
+   "title": "afbshop.de 25% Rabatt auf Produkte mit Zustand \"Fair\"",
+   "link": "https://www.mydealz.de/gutscheine/afbshopde-25-rabatt-auf-produkte-mit-zustand-fair-2847214",
+   "merchant": "AfB",
+   "price": null,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/9541_1/re/352x352/qt/60/9541_1.jpg",
+   "pub": "2026-10-02T08:06:58+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "afbshop",
+    "c:elektronik",
+    "fair",
+    "m:afb",
+    "produkte",
+    "rabatt",
+    "w:rabatte",
+    "zustand"
+   ],
+   "score": null
+  },
+  {
+   "id": "ttps-www-mydealz-de-gutscheine-30-rabatt-auf-alle-fotobucher-bei-rossmann-fotowelt-2847011",
+   "title": "30 % Rabatt auf alle Fotobücher bei Rossmann-Fotowelt",
+   "link": "https://www.mydealz.de/gutscheine/30-rabatt-auf-alle-fotobucher-bei-rossmann-fotowelt-2847011",
+   "merchant": "ROSSMANN",
+   "price": null,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/120_3/re/352x352/qt/60/120_3.jpg",
+   "pub": "2026-10-01T19:26:27+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:home living",
+    "fotobuecher",
+    "fotowelt",
+    "m:rossmann",
+    "rabatt",
+    "rossmann",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-gutscheine-10-euro-rabatt-bei-wenko-ohne-mbw-2846961",
+   "title": "10 Euro Rabatt bei Wenko, ohne MBW",
+   "link": "https://www.mydealz.de/gutscheine/10-euro-rabatt-bei-wenko-ohne-mbw-2846961",
+   "merchant": "WENKO",
+   "price": 10.0,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/9177_2/re/352x352/qt/60/9177_2.jpg",
+   "pub": "2026-10-01T17:59:47+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:home living",
+    "m:wenko",
+    "mbw",
+    "ohne",
+    "p:<20",
+    "rabatt",
+    "w:rabatte",
+    "wenko"
+   ],
+   "score": null
+  },
+  {
+   "id": "tra-mit-code-mid26-auf-michael-kors-hugo-diesel-lacoste-mammut-the-north-face-mehr-2846953",
+   "title": "BestSecret Mid Season Deals: bis zu -65% + 20% extra mit Code MID26 auf Michael Kors, Hugo, Diesel, Lacoste, Mammut, The North Face, & mehr",
+   "link": "https://www.mydealz.de/gutscheine/bestsecret-mid-season-deals-bis-zu-65-20-extra-mit-code-mid26-auf-michael-kors-hugo-diesel-lacoste-mammut-the-north-face-mehr-2846953",
+   "merchant": "Best Secret",
+   "price": null,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/3247_3/re/352x352/qt/60/3247_3.jpg",
+   "pub": "2026-10-01T17:52:21+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "bestsecret",
+    "c:sport outdoor",
+    "code",
+    "deals",
+    "diesel",
+    "extra",
+    "face",
+    "hugo",
+    "kors",
+    "lacoste",
+    "m:best secret",
+    "mammut",
+    "mehr",
+    "michael",
+    "mid",
+    "mid26",
+    "north",
+    "season",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-diskussion-lvm-gaming-season-08-gewinnspiel-2846816",
+   "title": "LVM Gaming Season 08 Gewinnspiel",
+   "link": "https://www.mydealz.de/diskussion/lvm-gaming-season-08-gewinnspiel-2846816",
+   "merchant": "",
+   "price": null,
+   "category": "Gaming",
+   "image": "",
+   "pub": "2026-10-01T14:17:21+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "c:gaming",
+    "gaming",
+    "gewinnspiel",
+    "lvm",
+    "season",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "dealz-de-gutscheine-medimops-app-gutschein-sale15-15-rabatt-ab-einem-mbw-von-25eur-2846745",
+   "title": "Medimops App Gutschein SALE15 15% Rabatt ab einem MBW von 25€ SALE12 12% 20€ MBW",
+   "link": "https://www.mydealz.de/gutscheine/medimops-app-gutschein-sale15-15-rabatt-ab-einem-mbw-von-25eur-2846745",
+   "merchant": "medimops",
+   "price": 25.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/400_3/re/352x352/qt/60/400_3.jpg",
+   "pub": "2026-10-01T12:15:27+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "20€",
+    "25€",
+    "app",
+    "c:kultur freizeit",
+    "einem",
+    "gutschein",
+    "m:medimops",
+    "mbw",
+    "medimops",
+    "p:<100",
+    "rabatt",
+    "sale12",
+    "sale15",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "-diskussion-mydealz-inktober-2026-31-tage-31-begriffe-eure-kreativitat-ist-gefragt-2843262",
+   "title": "mydealz Inktober 2026: 31 Tage, 31 Begriffe - eure Kreativität ist gefragt!",
+   "link": "https://www.mydealz.de/diskussion/mydealz-inktober-2026-31-tage-31-begriffe-eure-kreativitat-ist-gefragt-2843262",
+   "merchant": "",
+   "price": null,
+   "category": "Elektronik",
+   "image": "",
+   "pub": "2026-10-01T07:16:00+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "begriffe",
+    "c:elektronik",
+    "eure",
+    "gefragt",
+    "inktober",
+    "ist",
+    "kreativitaet",
+    "mydealz",
+    "tage",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "ttps-www-mydealz-de-gutscheine-10eur-rabatt-bei-der-anmeldung-beim-milano-marathon-2844414",
+   "title": "10€ Rabatt bei der Anmeldung beim Milano Marathon",
+   "link": "https://www.mydealz.de/gutscheine/10eur-rabatt-bei-der-anmeldung-beim-milano-marathon-2844414",
+   "merchant": "",
+   "price": 10.0,
+   "category": "Sport & Outdoor",
+   "image": "https://www.mydealz.de/assets/img/default-voucher_ee5e5.svg",
+   "pub": "2026-09-26T14:27:05+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10€",
+    "anmeldung",
+    "beim",
+    "c:sport outdoor",
+    "marathon",
+    "milano",
+    "p:<20",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "e-10-rabatt-auf-fast-alles-bis-ende-2026-ab-100-eur-mbw-bei-autodocde-bis-31012027-2844202",
+   "title": "10 % Rabatt auf (fast) alles bis Ende 2026 ab 100 EUR MBW bei Autodoc.de bis 31.01.2027",
+   "link": "https://www.mydealz.de/gutscheine/10-rabatt-auf-fast-alles-bis-ende-2026-ab-100-eur-mbw-bei-autodocde-bis-31012027-2844202",
+   "merchant": "Autodoc",
+   "price": 100.0,
+   "category": "Auto & Motorrad",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/12322_1/re/352x352/qt/60/12322_1.jpg",
+   "pub": "2026-09-25T21:00:06+00:00",
+   "source": "mydealz Gutscheine",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "alles",
+    "autodoc",
+    "c:auto motorrad",
+    "ende",
+    "fast",
+    "m:autodoc",
+    "mbw",
+    "p:<300",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "polnischer-freundschaftspass-60000-gratis-bahnpasse-18-27-jahre-bewerbung-bis-2209-2841937",
+   "title": "Deutsch-Polnischer Freundschaftspass - 30.000 Gratis-Bahnpässe für Deutschland - 18-27 Jahre - Bewerbung bis 22.09.",
+   "link": "https://www.mydealz.de/diskussion/deutsch-polnischer-freundschaftspass-60000-gratis-bahnpasse-18-27-jahre-bewerbung-bis-2209-2841937",
+   "merchant": "",
+   "price": null,
+   "category": "Urlaub & Reisen",
+   "image": "",
+   "pub": "2026-09-20T20:58:42+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "bahnpaesse",
+    "bewerbung",
+    "c:urlaub reisen",
+    "deutsch",
+    "deutschland",
+    "freundschaftspass",
+    "jahre",
+    "polnischer",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "-monat-bild-plus-endet-automatisch-bild-umsonst-selbstendend-verlosung-gewinnspiel-2841025",
+   "title": "Gratis 1 Monat Bild Plus - endet automatisch | Bild+ umsonst - selbstendend | Verlosung - Gewinnspiel",
+   "link": "https://www.mydealz.de/diskussion/gratis-1-monat-bild-plus-endet-automatisch-bild-umsonst-selbstendend-verlosung-gewinnspiel-2841025",
+   "merchant": "",
+   "price": null,
+   "category": "Kultur & Freizeit",
+   "image": "",
+   "pub": "2026-09-18T11:55:23+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "automatisch",
+    "bild",
+    "c:kultur freizeit",
+    "endet",
+    "gewinnspiel",
+    "monat",
+    "plus",
+    "selbstendend",
+    "umsonst",
+    "verlosung",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "ww-mydealz-de-diskussion-media-markt-app-puzzle-teile-sammeln-und-surface-gewinnen-2840214",
+   "title": "Media Markt App Puzzle Teile Sammeln und Surface gewinnen",
+   "link": "https://www.mydealz.de/diskussion/media-markt-app-puzzle-teile-sammeln-und-surface-gewinnen-2840214",
+   "merchant": "",
+   "price": null,
+   "category": "Family & Kids",
+   "image": "",
+   "pub": "2026-09-16T17:52:46+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "app",
+    "c:family kids",
+    "gewinnen",
+    "markt",
+    "media",
+    "puzzle",
+    "sammeln",
+    "surface",
+    "teile",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "s-www-mydealz-de-diskussion-laroche-posay-routine-produktprobe-gewinnspiel-freebie-2838711",
+   "title": "LaRoche Posay Routine Produktprobe (Gewinnspiel, Freebie)",
+   "link": "https://www.mydealz.de/diskussion/laroche-posay-routine-produktprobe-gewinnspiel-freebie-2838711",
+   "merchant": "",
+   "price": null,
+   "category": "Beauty & Gesundheit",
+   "image": "",
+   "pub": "2026-09-13T13:15:58+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "c:beauty gesundheit",
+    "freebie",
+    "gewinnspiel",
+    "laroche",
+    "posay",
+    "produktprobe",
+    "routine",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  }
+ ]
+}
