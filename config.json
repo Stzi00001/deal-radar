@@ -48,7 +48,7 @@
     },
     {
       "id": "tarif-mit-handy",
-      "name": "Handytarif + Handy (Gewinn beim Verkauf)",
+      "name": "Handy + Tarif",
       "type": "tarif",
       "keywords": [
         "iphone",

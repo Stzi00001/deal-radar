@@ -180,6 +180,7 @@ def analyse_tarif(deal, resale, settings):
     low = text.lower()
     monthly = upfront = fee = None
     bonus = 0.0
+    seen_bonus = set()
     for m in re.finditer(AMOUNT, low):
         val = to_float(m.group(1))
         before = low[max(0, m.start() - 28):m.start()]
@@ -191,7 +192,9 @@ def analyse_tarif(deal, resale, settings):
             if fee is None:
                 fee = val
         elif re.search(r"(bonus|wechselbonus|cashback|auszahlung|praemie|prämie)\s*(von\s*)?$", before) or re.match(r"\s*(wechsel)?bonus|\s*cashback|\s*auszahlung|\s*(start)?guthaben|\s*gutschrift", after):
-            bonus += val
+            if val not in seen_bonus:  # gleicher Bonus in Titel und Text nur einmal zählen
+                seen_bonus.add(val)
+                bonus += val
         elif re.search(r"(zuzahlung|einmalig|ger[äa]tepreis|f[üu]r)\s*(nur\s*)?$", before) or re.match(r"\s*(zuzahlung|einmalig)", after):
             if upfront is None:
                 upfront = val

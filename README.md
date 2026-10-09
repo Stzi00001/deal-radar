@@ -25,19 +25,36 @@ Komplett kostenlos: GitHub (Abruf + Web-App) und ntfy (Push).
 8. **App öffnen**: `https://DEINNAME.github.io/deal-radar` → Einstellungen → Token einfügen → Verbinden.
    Auf dem iPhone: in Safari Teilen → „Zum Home-Bildschirm“ – dann startet es mit eigenem Icon im Vollbild wie eine App.
 
+## Zuverlässige Prüfung alle 10 Minuten (cron-job.org)
+
+GitHubs eingebauter Zeitplan startet Läufe oft verspätet oder gar nicht. Deshalb stößt
+cron-job.org (kostenlos) den Radar alle 10 Minuten an:
+
+1. Neuen Token erstellen: github.com/settings/personal-access-tokens/new →
+   Name `cron-job` → Only select repositories → `deal-radar` →
+   Permissions: **Actions: Read and write** (sonst nichts) → Generate token.
+2. Auf cron-job.org kostenlos registrieren → „Create cronjob“:
+   - URL: `https://api.github.com/repos/Stzi00001/deal-radar/actions/workflows/radar.yml/dispatches`
+   - Zeitplan: alle 10 Minuten
+   - Reiter „Advanced“: Request method **POST**, Request body `{"ref":"main"}`, Headers:
+     `Authorization` = `Bearer DEIN_CRON_TOKEN`, `Accept` = `application/vnd.github+json`
+3. Speichern und „Test run“ – Antwort 204 heißt: läuft.
+
+Für den Radar-Knopf in der App braucht auch der App-Token zusätzlich **Actions: Read and write**
+(Token bearbeiten unter github.com/settings/personal-access-tokens).
+
 ## Bedienung
 
-- **Watchlist**: Produkte/Abos mit Suchbegriffen anlegen. Mehrere Begriffe mit Komma = „oder“.
-  „Ausschließen“ filtert Zubehör raus (z. B. `controller, hülle`).
-- **Rubriken**: „Rabatte & Gutscheine“ (🏷️) und „Gewinnspiele“ (🎁) sammeln alles dieser Art,
-  ganz ohne Suchbegriff. Push ist dort standardmäßig aus, sonst kommt zu viel – in der Watchlist einschaltbar.
-- **Preisvergleich**: jeder Deal hat Direktlinks zu idealo, Geizhals, Google Shopping, billiger.de,
-  Amazon und eBay. Steht im Deal ein Vergleichspreis, zeigt der Radar die Ersparnis in %.
-  Pro Produkt merkt er sich den Bestpreis seit Start.
-- **Deals**: alle Treffer; 👍/👎 trainiert die „Passt zu dir“-Bewertung (ab je 2 Bewertungen).
-- **Rechner**: Tarif-Gewinnrechnung. Unter „Wiederverkaufswerte“ trägst du ein, was du für
-  ein neues Gerät beim Verkauf bekommst – dann rechnet der Radar jeden Tarif-Deal automatisch.
-- **Einstellungen**: Push erst ab einer bestimmten „Passt“-Prozentzahl, Status der Quellen.
+- **Radar-Knopf oben rechts**: startet sofort eine Suche. Beim Öffnen sucht die App automatisch,
+  wenn die letzte Prüfung über 15 Minuten her ist.
+- **Watchlist**: Produkte, Abos, Handytarife oder ganze Rubriken beobachten. Mehrere Suchbegriffe
+  mit Komma. „Treffer ignorieren“ filtert Zubehör raus (z. B. `controller, hülle`).
+- **Rubriken**: „Rabatte & Gutscheine“ und „Gewinnspiele“ sammeln alles dieser Art, Push ist dort aus.
+- **Preise vergleichen**: unter jedem Deal Direktlinks zu idealo, Geizhals, Google Shopping,
+  billiger.de, Amazon und eBay. Steht ein Vergleichspreis im Deal, wird er rot durchgestrichen gezeigt.
+- **👍/👎**: trainiert die „passt zu dir“-Einschätzung (ab je 2 Bewertungen).
+- **Einstellungen → Verkaufswerte**: was ein neues Handy beim Ankauf bringt – damit zeigt jeder
+  Tarif-Deal Gewinn oder Verlust.
 
 ## Gut zu wissen
 

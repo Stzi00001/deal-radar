@@ -3,153 +3,256 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f1115">
+<meta name="theme-color" content="#e9edf2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1626" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Deal-Radar">
 <title>Deal-Radar</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
-<meta name="apple-mobile-web-app-title" content="Deal-Radar">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f4f0;--card:#fff;--ink:#16181d;--muted:#6b6f78;--line:#e3e1db;--acc:#e8590c;--acc2:#fff1e8;--ok:#2b8a3e;--bad:#c92a2a;--chip:#efede7}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#eceae4;--muted:#949aa5;--line:#2a2e36;--acc:#ff7a2f;--acc2:#2a1d14;--ok:#51cf66;--bad:#ff6b6b;--chip:#232730}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 16px 10px;border-bottom:1px solid var(--line)}
-h1{margin:0;font-size:20px;letter-spacing:-.3px}h1 span{color:var(--acc)}
-.sub{color:var(--muted);font-size:12.5px;margin-top:2px}
-main{max-width:720px;margin:0 auto;padding:12px 16px}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);z-index:6}
-nav button{flex:1;border:0;background:none;color:var(--muted);padding:9px 0 10px;font-size:11.5px;cursor:pointer}
-nav button b{display:block;font-size:19px;line-height:1.2}
-nav button.on{color:var(--acc)}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}
-.chip{flex:none;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:99px;padding:5px 11px;font-size:13px;cursor:pointer}
-.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
-.deal{display:grid;grid-template-columns:64px 1fr;gap:12px}
-.deal img{width:64px;height:64px;object-fit:cover;border-radius:10px;background:var(--chip)}
-.deal a{color:var(--ink);text-decoration:none;font-weight:600}
-.meta{color:var(--muted);font-size:12.5px;margin-top:3px}
-.price{color:var(--acc);font-weight:700}
-.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}
-.vote{border:1px solid var(--line);background:none;border-radius:10px;padding:5px 12px;font-size:16px;cursor:pointer}
-.vote.up.on{background:#d3f9d8;border-color:var(--ok)}.vote.down.on{background:#ffe3e3;border-color:var(--bad)}
-@media (prefers-color-scheme:dark){.vote.up.on{background:#1b3a22}.vote.down.on{background:#3e1c1c}}
-.badge{font-size:12px;border-radius:99px;padding:2px 8px;background:var(--acc2);color:var(--acc)}
-.badge.g{background:#d3f9d8;color:#1e6b2e}.badge.r{background:#ffe3e3;color:#a61e1e}
-@media (prefers-color-scheme:dark){.badge.g{background:#1b3a22;color:#8ce99a}.badge.r{background:#3e1c1c;color:#ffa8a8}}
-.tarif{margin-top:8px;font-size:13px;background:var(--chip);border-radius:10px;padding:8px 10px}
-label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
-input::placeholder{color:var(--muted);opacity:.6}
-input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 10px}
-.btn{border:0;background:var(--acc);color:#fff;font-weight:600;border-radius:10px;padding:10px 14px;cursor:pointer;font-size:15px}
-.btn.ghost{background:var(--chip);color:var(--ink)}
-.btn.small{padding:6px 10px;font-size:13px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
-.empty{text-align:center;color:var(--muted);padding:40px 10px}
-h2{font-size:16px;margin:4px 0 8px}
-.res{font-size:22px;font-weight:700;margin-top:10px}
-.hint{font-size:12.5px;color:var(--muted)}
-.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:9}
-.toast.show{opacity:1}
-.hide{display:none!important}
-.cmp{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.cmp a{font-size:12px;font-weight:500;border:1px solid var(--line);border-radius:8px;padding:3px 8px;color:var(--muted)}
-.check{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px}.check input{width:auto}
+:root{
+  --paper:#e9edf2; --sheet:#ffffff; --ink:#14213d; --ink2:#55607a; --rule:#d5dbe4;
+  --sun:#ffd23f; --sun-ink:#14213d; --red:#d7263d; --green:#1f8a4c; --soft:#f3f5f8;
+  --r:14px; --pad:16px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0d1626; --sheet:#152238; --ink:#e8edf6; --ink2:#93a1ba; --rule:#24344f;
+        --sun:#ffd23f; --sun-ink:#14213d; --red:#ff5c6c; --green:#4ccf86; --soft:#1b2a44}
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,sans-serif;font-size:15.5px;line-height:1.42;
+  padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--sun);outline-offset:2px;border-radius:6px}
+
+/* ---------- Kopf */
+.top{padding:calc(14px + env(safe-area-inset-top)) var(--pad) 10px;max-width:720px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.brand{flex:1;min-width:0}
+.brand h1{margin:0;font-weight:900;font-stretch:72%;font-size:34px;letter-spacing:-.5px;line-height:1}
+.brand p{margin:4px 0 0;color:var(--ink2);font-size:13.5px}
+.scan{position:relative;width:52px;height:52px;border-radius:50%;border:0;background:var(--ink);color:var(--paper);display:grid;place-items:center;flex:none;overflow:hidden}
+.scan svg{width:26px;height:26px}
+.scan .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 290deg,var(--sun) 360deg);opacity:0}
+.scan.busy .sweep{opacity:.9;animation:sweep 1.4s linear infinite}
+@keyframes sweep{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.scan.busy .sweep{animation:none}}
+
+main{max-width:720px;margin:0 auto;padding:0 var(--pad)}
+
+/* ---------- Filter */
+.filters{display:flex;gap:8px;overflow-x:auto;padding:6px 0 12px;margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.pill{flex:none;border:1.5px solid var(--rule);background:transparent;border-radius:999px;padding:7px 13px;font-size:14px;font-weight:600;white-space:nowrap}
+.pill[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.pill .n{font-weight:500;opacity:.6;margin-left:5px}
+.sortbar{display:flex;align-items:center;justify-content:space-between;margin:0 0 8px;color:var(--ink2);font-size:13.5px}
+.sortbar select{width:auto;appearance:none;border:0;background:transparent;color:var(--ink);font:inherit;font-weight:700;padding:4px 18px 4px 4px;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:right 6px top 55%,right 2px top 55%;background-size:4px 4px;background-repeat:no-repeat}
+
+/* ---------- Deal-Liste */
+.list{background:var(--sheet);border-radius:var(--r);overflow:hidden}
+.deal{display:grid;grid-template-columns:60px 1fr;gap:12px;padding:14px;border-bottom:1px solid var(--rule)}
+.deal:last-child{border-bottom:0}
+.deal img,.deal .noimg{width:60px;height:60px;border-radius:10px;object-fit:cover;background:var(--soft)}
+.deal h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.deal h3 a{text-decoration:none}
+.line{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.where{color:var(--ink2);font-size:13px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Das Preisschild */
+.tag{position:relative;display:inline-flex;align-items:baseline;gap:6px;background:var(--sun);color:var(--sun-ink);
+  font-weight:850;font-stretch:118%;font-size:17px;line-height:1;padding:6px 11px 6px 19px;border-radius:0 7px 7px 0;
+  clip-path:polygon(9px 0,100% 0,100% 100%,9px 100%,0 50%)}
+.tag::before{content:"";position:absolute;left:8px;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;background:var(--sheet)}
+.tag.none{background:var(--soft);color:var(--ink2);font-size:13px;font-weight:700;font-stretch:100%}
+.was{color:var(--red);text-decoration:line-through;font-size:13px;font-weight:600}
+
+.marks{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.mark{font-size:12.5px;font-weight:600;padding:3px 8px;border-radius:6px;background:var(--soft);color:var(--ink2)}
+.mark.fit{color:var(--green)}
+.mark.off{color:var(--red)}
+.mark.save{background:transparent;border:1.5px solid var(--green);color:var(--green)}
+
+.tarif{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--soft);font-size:13.5px}
+.tarif b{font-stretch:110%}
+.plus{color:var(--green)}.minus{color:var(--red)}
+
+.acts{display:flex;align-items:center;gap:6px;margin-top:8px}
+.vote{border:1.5px solid var(--rule);background:transparent;border-radius:999px;height:34px;min-width:44px;padding:0 10px;font-size:16px}
+.vote[aria-pressed=true].up{border-color:var(--green);background:color-mix(in srgb,var(--green) 16%,transparent)}
+.vote[aria-pressed=true].down{border-color:var(--red);background:color-mix(in srgb,var(--red) 14%,transparent)}
+details.cmp{margin-left:auto}
+details.cmp summary{list-style:none;font-size:13.5px;font-weight:700;padding:7px 2px;cursor:pointer}
+details.cmp summary::-webkit-details-marker{display:none}
+details.cmp[open] summary{color:var(--ink2)}
+.shops{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;grid-column:1 / -1}
+.shops a{text-decoration:none;font-size:13px;font-weight:600;border:1.5px solid var(--rule);border-radius:8px;padding:5px 10px}
+
+.empty{padding:40px 20px;text-align:center;color:var(--ink2)}
+.empty strong{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+
+/* ---------- Formulare & Abschnitte */
+h2{font-weight:850;font-stretch:80%;font-size:24px;margin:18px 0 10px;letter-spacing:-.2px}
+.sheet{background:var(--sheet);border-radius:var(--r);padding:16px;margin-bottom:14px}
+.sheet h3{margin:0 0 4px;font-size:16px}
+.muted{color:var(--ink2);font-size:13.5px;margin:0}
+label{display:block;font-size:13.5px;font-weight:600;margin:14px 0 6px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--soft);border:1.5px solid transparent;border-radius:10px;padding:11px 12px}
+input:focus,select:focus{outline:none;border-color:var(--ink)}
+input::placeholder{color:var(--ink2);opacity:.7}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.switch{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;font-size:14.5px;font-weight:600}
+.switch input{appearance:none;width:46px;height:28px;border-radius:999px;background:var(--rule);position:relative;padding:0;flex:none;transition:background .2s}
+.switch input::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:transform .2s}
+.switch input:checked{background:var(--green)}
+.switch input:checked::after{transform:translateX(18px)}
+.btn{border:0;border-radius:10px;padding:12px 16px;font-weight:700;background:var(--ink);color:var(--paper)}
+.btn.quiet{background:var(--soft);color:var(--ink)}
+.btn.small{padding:8px 12px;font-size:14px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center}
+
+.witem{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.witem:last-child{border-bottom:0}
+.witem h3{margin:0;font-size:16px}
+.witem .muted{grid-column:1}
+.witem .tag{grid-row:1 / span 2;grid-column:2;align-self:center}
+.witem .row{grid-column:1 / -1;margin-top:6px}
+
+.resale{display:grid;grid-template-columns:1fr 110px 36px;gap:8px;align-items:center;margin-top:8px}
+.resale span{font-weight:600}
+.resale input{padding:9px 10px;text-align:right}
+.resale button{border:0;background:transparent;color:var(--ink2);font-size:18px}
+.feed{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.feed:last-child{border-bottom:0}
+.ok{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}
+
+/* ---------- Tab-Leiste */
+nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:color-mix(in srgb,var(--sheet) 88%,transparent);
+  backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);border-top:1px solid var(--rule);
+  display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;max-width:200px;border:0;background:none;padding:9px 0 8px;font-size:12px;font-weight:600;color:var(--ink2);display:flex;flex-direction:column;align-items:center;gap:3px}
+nav svg{width:24px;height:24px}
+nav button[aria-current=page]{color:var(--ink)}
+nav button[aria-current=page] svg{stroke-width:2.4}
+
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom));transform:translate(-50%,12px);background:var(--ink);color:var(--paper);
+  padding:10px 16px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:9;max-width:calc(100% - 32px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
-<header>
-  <h1>Deal<span>·</span>Radar</h1>
-  <div class="sub" id="status">Lädt …</div>
+
+<header class="top">
+  <div class="brand">
+    <h1>Deal-Radar</h1>
+    <p id="status">Lädt …</p>
+  </div>
+  <button class="scan" id="scan" aria-label="Jetzt nach neuen Deals suchen">
+    <span class="sweep"></span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="position:relative"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12 18 6"/></svg>
+  </button>
 </header>
+
 <main>
   <!-- Deals -->
   <section id="v-deals">
-    <div class="chips" id="filters"></div>
-    <div class="chips" id="sorts">
-      <button class="chip on" data-sort="new">Neueste</button>
-      <button class="chip" data-sort="score">Passt am besten</button>
-      <button class="chip" data-sort="price">Günstigste</button>
-      <button class="chip" data-sort="profit">Tarif-Gewinn</button>
+    <div class="filters" id="filters" role="toolbar" aria-label="Filter"></div>
+    <div class="sortbar">
+      <span id="count"></span>
+      <label style="margin:0;display:flex;align-items:center;gap:4px;font-weight:500">Sortieren:
+        <select id="sort" aria-label="Sortierung">
+          <option value="new">Neueste</option>
+          <option value="score">Passt am besten</option>
+          <option value="price">Günstigste</option>
+          <option value="save">Größte Ersparnis</option>
+          <option value="profit">Tarif-Gewinn</option>
+        </select>
+      </label>
     </div>
-    <div id="list"></div>
+    <div class="list" id="list"></div>
   </section>
 
   <!-- Watchlist -->
-  <section id="v-watch" class="hide">
-    <div class="card">
-      <h2 id="wf-title">Neues Produkt beobachten</h2>
+  <section id="v-watch" hidden>
+    <h2 id="wf-title">Etwas Neues beobachten</h2>
+    <div class="sheet">
       <input type="hidden" id="wf-id">
-      <label>Name</label><input id="wf-name" placeholder="z. B. Akkuschrauber Makita">
-      <label>Typ</label>
-      <select id="wf-type"><option value="product">Produkt / Abo</option><option value="tarif">Handytarif mit Handy (Gewinnrechnung)</option><option value="rubrik">Rubrik (alle Angebote einer Art, z. B. Rabatte)</option></select>
-      <label>Suchbegriffe (Komma = oder)</label><input id="wf-kw" placeholder="z. B. makita dhr, makita bohrhammer">
-      <label>Ausschließen, wenn im Titel</label><input id="wf-ex" placeholder="z. B. akku, ladegerät">
-      <div class="grid2">
-        <div id="wf-maxbox"><label>Höchstpreis € (optional)</label><input id="wf-max" inputmode="decimal"></div>
-        <div id="wf-profbox" class="hide"><label>Mindestgewinn € für Push</label><input id="wf-prof" inputmode="decimal" value="0"></div>
-      </div>
-      <label class="check"><input type="checkbox" id="wf-push" checked> Push-Benachrichtigung bei neuen Treffern</label>
-      <div class="row"><button class="btn" id="wf-save">Speichern</button><button class="btn ghost" id="wf-reset">Leeren</button></div>
+      <label for="wf-name" style="margin-top:0">Name</label>
+      <input id="wf-name" placeholder="z. B. Makita Akkuschrauber">
+      <label for="wf-type">Was soll gesucht werden?</label>
+      <select id="wf-type">
+        <option value="product">Ein Produkt oder Abo</option>
+        <option value="tarif">Handytarif mit Handy, inkl. Gewinnrechnung</option>
+        <option value="rubrik">Eine ganze Rubrik, z. B. alle Rabatte</option>
+      </select>
+      <label for="wf-kw">Suchbegriffe, mit Komma getrennt</label>
+      <input id="wf-kw" placeholder="makita dhr, makita bohrhammer">
+      <label for="wf-ex">Treffer ignorieren, wenn im Titel steht</label>
+      <input id="wf-ex" placeholder="akku, ladegerät">
+      <div id="wf-maxbox"><label for="wf-max">Höchstpreis in € (optional)</label><input id="wf-max" inputmode="decimal"></div>
+      <div id="wf-profbox" hidden><label for="wf-prof">Push erst ab Gewinn von … €</label><input id="wf-prof" inputmode="decimal" value="0"></div>
+      <div class="switch"><span>Push bei neuen Treffern</span><input type="checkbox" id="wf-push" checked aria-label="Push bei neuen Treffern"></div>
+      <div class="row"><button class="btn" id="wf-save">Beobachten</button><button class="btn quiet" id="wf-reset" hidden>Abbrechen</button></div>
     </div>
-    <div id="watchlist"></div>
-  </section>
-
-  <!-- Rechner -->
-  <section id="v-calc" class="hide">
-    <div class="card">
-      <h2>Tarif + Handy: lohnt sich der Verkauf?</h2>
-      <div class="grid2">
-        <div><label>Zuzahlung Handy €</label><input id="c-up" inputmode="decimal" value="0"></div>
-        <div><label>Grundgebühr €/Monat</label><input id="c-mon" inputmode="decimal" value="0"></div>
-        <div><label>Laufzeit (Monate)</label><input id="c-months" inputmode="numeric" value="24"></div>
-        <div><label>Anschlusspreis €</label><input id="c-fee" inputmode="decimal" value="39.99"></div>
-        <div><label>Boni / Auszahlungen €</label><input id="c-bonus" inputmode="decimal" value="0"></div>
-        <div><label>Verkaufswert Handy €</label><input id="c-resale" inputmode="decimal" value="0"></div>
-      </div>
-      <div class="res" id="c-out"></div>
-      <div class="hint" id="c-detail"></div>
-    </div>
-    <div class="card">
-      <h2>Wiederverkaufswerte</h2>
-      <p class="hint">Was du für das neue, originalverpackte Gerät beim Verkauf bekommst (z. B. Ankauf-Portal oder Kleinanzeigen). Damit rechnet der Radar den Gewinn automatisch aus.</p>
-      <div id="resale"></div>
-      <div class="grid2"><div><label>Modell</label><input id="r-name" placeholder="iphone 17 pro"></div><div><label>Wert €</label><input id="r-val" inputmode="decimal"></div></div>
-      <div class="row"><button class="btn small" id="r-add">Hinzufügen / ändern</button><button class="btn small ghost" id="r-save">Werte speichern</button></div>
-    </div>
+    <h2>Wird beobachtet</h2>
+    <div class="sheet" id="watchlist" style="padding-top:2px;padding-bottom:2px"></div>
   </section>
 
   <!-- Einstellungen -->
-  <section id="v-set" class="hide">
-    <div class="card">
-      <h2>Verbindung zu GitHub</h2>
-      <label>Repository (benutzer/repo)</label><input id="s-repo" placeholder="benutzername/deal-radar" autocapitalize="off">
-      <label>Zugangs-Token</label><input id="s-token" type="password" placeholder="github_pat_…" autocapitalize="off">
-      <p class="hint">Der Token bleibt nur in diesem Browser gespeichert. Er braucht nur „Contents: Read and write“ für dieses eine Repository.</p>
+  <section id="v-set" hidden>
+    <h2>Verbindung</h2>
+    <div class="sheet">
+      <label for="s-repo" style="margin-top:0">GitHub-Repository</label>
+      <input id="s-repo" placeholder="benutzername/deal-radar" autocapitalize="off" autocorrect="off" spellcheck="false">
+      <label for="s-token">Zugangs-Token</label>
+      <input id="s-token" type="password" placeholder="github_pat_…" autocapitalize="off" autocorrect="off" spellcheck="false">
+      <p class="muted" style="margin-top:8px">Bleibt nur auf diesem Gerät. Benötigt für dieses Repository: Contents und Actions, jeweils Lesen und Schreiben.</p>
       <div class="row"><button class="btn" id="s-save">Verbinden</button></div>
     </div>
-    <div class="card">
-      <h2>Push &amp; Lernen</h2>
-      <label>Push nur ab „Passt zu dir“ von … % (0 = alles)</label><input id="s-min" inputmode="numeric">
-      <div class="row"><button class="btn small" id="s-save2">Speichern</button></div>
-      <p class="hint" id="s-learn"></p>
+
+    <h2>Verkaufswerte</h2>
+    <div class="sheet">
+      <p class="muted">Was ein neues Gerät beim Ankauf bringt. Damit rechnet der Radar bei jedem Tarif-Deal den Gewinn aus.</p>
+      <div id="resale"></div>
+      <div class="resale" style="margin-top:14px">
+        <input id="r-name" placeholder="Modell, z. B. iphone 18" style="text-align:left">
+        <input id="r-val" inputmode="decimal" placeholder="€">
+        <button id="r-add" aria-label="Modell hinzufügen" style="color:var(--ink);font-weight:800">+</button>
+      </div>
+      <div class="row"><button class="btn" id="r-save">Verkaufswerte speichern</button></div>
     </div>
-    <div class="card">
-      <h2>Quellen</h2>
-      <div id="feeds" class="hint"></div>
+
+    <h2>Push &amp; Lernen</h2>
+    <div class="sheet">
+      <label for="s-min" style="margin-top:0">Push nur, wenn ein Deal zu mindestens … % zu dir passt</label>
+      <input id="s-min" inputmode="numeric" placeholder="0 = jeder Treffer">
+      <p class="muted" id="s-learn" style="margin-top:8px"></p>
+      <div class="row"><button class="btn" id="s-save2">Speichern</button></div>
     </div>
+
+    <h2>Quellen</h2>
+    <div class="sheet" id="feeds" style="padding-top:6px;padding-bottom:6px"></div>
   </section>
 </main>
 
-<nav>
-  <button class="on" data-view="deals"><b>🔥</b>Deals</button>
-  <button data-view="watch"><b>🎯</b>Watchlist</button>
-  <button data-view="calc"><b>🧮</b>Rechner</button>
-  <button data-view="set"><b>⚙️</b>Einstellungen</button>
+<nav aria-label="Bereiche">
+  <button data-view="deals" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>Deals</button>
+  <button data-view="watch">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Watchlist</button>
+  <button data-view="set">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>Einstellungen</button>
 </nav>
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 const $ = s => document.querySelector(s);
@@ -157,36 +260,42 @@ const LS = {
   get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 };
-const state = { cfg: null, cfgSha: null, fb: { votes: {} }, fbSha: null, deals: [], meta: {}, filter: "all", sort: "new" };
+const state = { cfg: null, cfgSha: null, fb: { votes: {} }, fbSha: null, deals: [], meta: {}, filter: "all", sort: "new", scanning: false };
 
 function guessRepo() {
   const h = location.hostname, p = location.pathname.split("/").filter(Boolean);
-  if (h.endsWith(".github.io") && p.length) return h.split(".")[0] + "/" + p[0];
-  return "";
+  return h.endsWith(".github.io") && p.length ? h.split(".")[0] + "/" + p[0] : "";
 }
 let repo = LS.get("repo", "") || guessRepo(), token = LS.get("token", "");
 
-function toast(t) { const el = $("#toast"); el.textContent = t; el.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), 2200); }
-const euro = v => v == null ? "–" : v.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+function toast(t, ms = 2600) { const el = $("#toast"); el.textContent = t; el.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), ms); }
+const euro = v => v == null ? "–" : v.toLocaleString("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: v % 1 ? 2 : 0 });
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const num = v => { const n = parseFloat(String(v).replace(",", ".")); return isNaN(n) ? 0 : n; };
 const normKw = s => s.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").trim();
-
-// ---------- GitHub API
-async function gh(path, opts = {}) {
-  const r = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
-    ...opts,
-    headers: { Authorization: `Bearer ${token}`, Accept: opts.raw ? "application/vnd.github.raw+json" : "application/vnd.github+json", ...(opts.headers || {}) },
-    cache: "no-store"
-  });
-  if (!r.ok) throw new Error(`GitHub ${r.status}`);
-  return opts.raw ? r.text() : r.json();
+function ago(iso) {
+  if (!iso) return "noch nie";
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 1) return "gerade eben"; if (m < 60) return `vor ${m} Min.`;
+  const h = Math.round(m / 60); if (h < 24) return `vor ${h} Std.`;
+  return new Date(iso).toLocaleDateString("de-DE", { day: "numeric", month: "short" });
 }
+
+// ---------- GitHub
+async function api(path, opts = {}) {
+  const r = await fetch(`https://api.github.com/repos/${repo}/${path}`, {
+    ...opts, cache: "no-store",
+    headers: { Authorization: `Bearer ${token}`, Accept: opts.raw ? "application/vnd.github.raw+json" : "application/vnd.github+json", ...(opts.headers || {}) }
+  });
+  if (!r.ok) { const e = new Error(`GitHub ${r.status}`); e.status = r.status; throw e; }
+  return opts.raw ? r.text() : (r.status === 204 ? null : r.json());
+}
+const gh = (p, o) => api("contents/" + p, o);
 const b64dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, "")), c => c.charCodeAt(0)));
 const b64enc = s => { const b = new TextEncoder().encode(s); let bin = ""; b.forEach(x => bin += String.fromCharCode(x)); return btoa(bin); };
-async function readJson(path) { const j = await gh(path); return { data: JSON.parse(b64dec(j.content)), sha: j.sha }; }
-async function writeJson(path, data, sha, msg) {
-  const j = await gh(path, { method: "PUT", body: JSON.stringify({ message: msg, content: b64enc(JSON.stringify(data, null, 1) + "\n"), sha }) });
+async function readJson(p) { const j = await gh(p); return { data: JSON.parse(b64dec(j.content)), sha: j.sha }; }
+async function writeJson(p, data, sha, msg) {
+  const j = await gh(p, { method: "PUT", body: JSON.stringify({ message: msg, content: b64enc(JSON.stringify(data, null, 1) + "\n"), sha }) });
   return j.content.sha;
 }
 
@@ -206,93 +315,152 @@ function scoreDeal(m, feats) {
   (feats || []).forEach(f => { lo += Math.log(((m.pos[f] || 0) + 1) / (tp + m.V)) - Math.log(((m.neg[f] || 0) + 1) / (tn + m.V)); });
   lo = Math.max(Math.min(lo, 30), -30); return Math.round(100 / (1 + Math.exp(-lo)));
 }
-function rescore() { const m = trainModel(state.fb.votes); state.deals.forEach(d => d.score = scoreDeal(m, d.features)); }
+const rescore = () => { const m = trainModel(state.fb.votes); state.deals.forEach(d => d.score = scoreDeal(m, d.features)); };
 
 // ---------- Laden
+function setStatus() {
+  if (!state.cfg) return;
+  $("#status").textContent = state.scanning ? "Sucht nach neuen Deals …" : `Zuletzt geprüft ${ago(state.meta.updated)}`;
+}
+async function loadDeals() {
+  const d = JSON.parse(await gh("data/deals.json", { raw: true }));
+  state.deals = d.deals || []; state.meta = d; rescore();
+}
 async function load() {
-  if (!repo || !token) { $("#status").textContent = "Noch nicht verbunden – unter Einstellungen einrichten."; show("set"); return; }
-  $("#status").textContent = "Lädt …";
+  if (!repo || !token) { $("#status").textContent = "Noch nicht verbunden"; show("set"); fillSettings(); return; }
   try {
-    const [c, f, d] = await Promise.all([readJson("config.json"), readJson("data/feedback.json").catch(() => ({ data: { votes: {} }, sha: null })), gh("data/deals.json", { raw: true })]);
+    const [c, f] = await Promise.all([readJson("config.json"), readJson("data/feedback.json").catch(() => ({ data: { votes: {} }, sha: null }))]);
     state.cfg = c.data; state.cfgSha = c.sha; state.fb = f.data.votes ? f.data : { votes: {} }; state.fbSha = f.sha;
-    const dj = JSON.parse(d); state.deals = dj.deals || []; state.meta = dj;
-    rescore(); renderAll();
-    const upd = dj.updated ? new Date(dj.updated).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }) : "noch nie";
-    $("#status").textContent = `${state.deals.length} Treffer · zuletzt geprüft ${upd}`;
-  } catch (e) { $("#status").textContent = "Fehler beim Laden: " + e.message + " – Token/Repo prüfen."; }
+    await loadDeals(); renderAll(); setStatus();
+    const age = (Date.now() - new Date(state.meta.updated || 0)) / 60000;
+    if (age > 15) scan(true);
+  } catch (e) {
+    $("#status").textContent = e.status === 401 || e.status === 403 ? "Token ungültig – unter Einstellungen neu eintragen" : e.status === 404 ? "Repository nicht gefunden – Namen prüfen" : "Keine Verbindung – später erneut öffnen";
+    if (e.status) { show("set"); fillSettings(); }
+  }
+}
+
+// Radar sofort laufen lassen (GitHub Actions, workflow_dispatch)
+async function scan(silent) {
+  if (state.scanning || !state.cfg) return;
+  const before = state.meta.updated;
+  try {
+    await api("actions/workflows/radar.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main" }) });
+  } catch (e) {
+    if (!silent) toast(e.status === 403 ? "Dem Token fehlt die Berechtigung „Actions: Read and write“." : "Suche konnte nicht gestartet werden.", 4200);
+    return;
+  }
+  state.scanning = true; $("#scan").classList.add("busy"); setStatus();
+  for (let i = 0; i < 12; i++) {
+    await new Promise(r => setTimeout(r, 15000));
+    try { await loadDeals(); } catch (e) {}
+    if (state.meta.updated !== before) break;
+  }
+  state.scanning = false; $("#scan").classList.remove("busy");
+  renderDeals(); renderFilters(); setStatus();
+  if (!silent) toast(state.meta.updated !== before ? "Deals aktualisiert" : "Suche läuft noch – gleich nochmal öffnen");
 }
 
 // ---------- Darstellung
-const icon = w => w.type === "rubrik" ? (/gewinn/.test(w.id) ? "🎁" : "🏷️") : w.type === "tarif" ? "📱" : "🎯";
+const typeOf = id => (state.cfg.watchlist || []).find(x => x.id === id)?.type || "product";
+function renderAll() { renderFilters(); renderDeals(); renderWatch(); fillSettings(); }
+function renderFilters() {
+  const w = state.cfg.watchlist || [];
+  const n = id => state.deals.filter(d => id === "all" || (d.watch || []).includes(id)).length;
+  const order = [...w.filter(x => x.type !== "rubrik"), ...w.filter(x => x.type === "rubrik")];
+  $("#filters").innerHTML = [{ id: "all", name: "Alle" }].concat(order).map(x =>
+    `<button class="pill" data-f="${esc(x.id)}" aria-pressed="${state.filter === x.id}">${esc(x.name)}<span class="n">${n(x.id)}</span></button>`).join("");
+}
 function cmpQuery(d) {
   const w = (state.cfg.watchlist || []).find(x => (d.watch || []).includes(x.id) && x.type === "product");
   if (w) return w.name;
   return d.title.replace(/\[[^\]]*\]|\([^)]*\)/g, " ").replace(/\b(f[üu]r|ab|nur|statt|inkl\.?)\b.*$/i, " ").replace(/\d+[.,]?\d*\s?(€|eur)/gi, " ").replace(/\s+/g, " ").trim().split(" ").slice(0, 8).join(" ");
 }
-function cmpLinks(d) {
+const SHOPS = [["idealo", "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q="], ["Geizhals", "https://geizhals.de/?fs="], ["Google Shopping", "https://www.google.com/search?tbm=shop&q="], ["billiger.de", "https://www.billiger.de/search?searchstring="], ["Amazon", "https://www.amazon.de/s?k="], ["eBay", "https://www.ebay.de/sch/i.html?_nkw="]];
+
+function dealHTML(d, names) {
+  const v = state.fb.votes[d.id]?.label;
+  const price = d.tarif && d.tarif.monthly != null ? `<span class="tag">${euro(d.tarif.monthly)}<small style="font-size:12px;font-weight:700">/Monat</small></span>`
+    : d.price != null ? `<span class="tag">${euro(d.price)}</span>` : `<span class="tag none">${d.tarif ? "Tarif" : (d.watch || []).some(w => /gewinn/.test(w)) ? "Gewinnspiel" : "Aktion"}</span>`;
+  const was = d.compare ? `<span class="was">${euro(d.compare.ref)}</span>` : "";
+  const marks = (d.watch || []).map(w => `<span class="mark">${esc(names[w] || w)}</span>`);
+  if (d.compare) marks.push(`<span class="mark save">${d.compare.pct} % gespart</span>`);
+  if (d.score != null) marks.push(`<span class="mark ${d.score >= 60 ? "fit" : d.score < 35 ? "off" : ""}">passt ${d.score} %</span>`);
+  let tarif = "";
+  if (d.tarif) {
+    const x = d.tarif, p = x.profit;
+    const parts = [`${euro(x.upfront)} Zuzahlung`, x.monthly == null ? "Grundgebühr unklar" : `${euro(x.monthly)} × ${x.months} Monate`];
+    if (x.bonus) parts.push(`${euro(x.bonus)} Bonus`);
+    const res = p == null
+      ? (x.resale == null ? `Verkaufswert für ${esc(x.device || "dieses Gerät")} fehlt – unter Einstellungen eintragen.` : "Grundgebühr nicht erkannt – im Deal nachsehen.")
+      : `Kosten ${euro(x.cost)}, Verkauf ${euro(x.resale)}: <b class="${p >= 0 ? "plus" : "minus"}">${p >= 0 ? "+" : "−"}${euro(Math.abs(p))}</b>`;
+    tarif = `<div class="tarif">${parts.join(", ")}<br>${res}</div>`;
+  }
+  const showCmp = (d.watch || []).some(w => typeOf(w) !== "rubrik");
   const q = encodeURIComponent(cmpQuery(d));
-  const L = [["idealo", "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q="], ["Geizhals", "https://geizhals.de/?fs="], ["Google Shopping", "https://www.google.com/search?tbm=shop&q="], ["billiger.de", "https://www.billiger.de/search?searchstring="], ["Amazon", "https://www.amazon.de/s?k="], ["eBay", "https://www.ebay.de/sch/i.html?_nkw="]];
-  return `<div class="cmp"><span class="hint">Vergleichen:</span>${L.map(([n, u]) => `<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>`;
-}
-function renderAll() { renderFilters(); renderDeals(); renderWatch(); renderResale(); renderSettings(); calc(); }
-function renderFilters() {
-  const w = state.cfg.watchlist || [];
-  $("#filters").innerHTML = [`<button class="chip ${state.filter === "all" ? "on" : ""}" data-f="all">Alle</button>`]
-    .concat(w.map(x => `<button class="chip ${state.filter === x.id ? "on" : ""}" data-f="${esc(x.id)}">${icon(x)} ${esc(x.name)}</button>`)).join("");
+  const cmp = showCmp ? `<details class="cmp"><summary>Preise vergleichen</summary></details>` : "";
+  return `<article class="deal" data-id="${esc(d.id)}">
+    ${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=noimg></div>'">` : `<div class="noimg"></div>`}
+    <div>
+      <h3><a href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.title)}</a></h3>
+      <div class="line"><span class="where">${esc(d.merchant || d.source)}, ${ago(d.pub)}</span>${was}${price}</div>
+      <div class="marks">${marks.join("")}</div>
+      ${tarif}
+      <div class="acts">
+        <button class="vote up" data-v="1" data-id="${esc(d.id)}" aria-pressed="${v === 1}" aria-label="Gefällt mir">👍</button>
+        <button class="vote down" data-v="0" data-id="${esc(d.id)}" aria-pressed="${v === 0}" aria-label="Gefällt mir nicht">👎</button>
+        ${cmp}
+      </div>
+      ${showCmp ? `<div class="shops" hidden>${SHOPS.map(([n, u]) => `<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>` : ""}
+    </div>
+  </article>`;
 }
 function renderDeals() {
   let ds = state.deals.filter(d => state.filter === "all" || (d.watch || []).includes(state.filter));
   const s = state.sort;
   if (s === "score") ds = ds.slice().sort((a, b) => (b.score ?? 50) - (a.score ?? 50));
-  if (s === "price") ds = ds.slice().sort((a, b) => (a.price ?? 1e9) - (b.price ?? 1e9));
+  if (s === "price") ds = ds.filter(d => d.price != null).sort((a, b) => a.price - b.price);
+  if (s === "save") ds = ds.filter(d => d.compare).sort((a, b) => b.compare.pct - a.compare.pct);
   if (s === "profit") ds = ds.filter(d => d.tarif).sort((a, b) => (b.tarif.profit ?? -1e9) - (a.tarif.profit ?? -1e9));
-  if (!ds.length) { $("#list").innerHTML = `<div class="empty">Noch keine passenden Deals.<br>Der Radar prüft alle 10 Minuten – neue Treffer kommen per Push.</div>`; return; }
+  $("#count").textContent = ds.length === 1 ? "1 Deal" : `${ds.length} Deals`;
+  if (!ds.length) {
+    $("#list").innerHTML = `<div class="empty"><strong>Noch nichts gefunden</strong>Der Radar sucht laufend weiter und meldet sich per Push, sobald etwas passt.</div>`;
+    return;
+  }
   const names = Object.fromEntries((state.cfg.watchlist || []).map(w => [w.id, w.name]));
-  $("#list").innerHTML = ds.map(d => {
-    const v = state.fb.votes[d.id]?.label;
-    const when = new Date(d.pub).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
-    const sc = d.score == null ? "" : `<span class="badge ${d.score >= 60 ? "g" : d.score < 35 ? "r" : ""}">passt ${d.score} %</span>`;
-    const types = (d.watch || []).map(w => (state.cfg.watchlist || []).find(x => x.id === w)?.type || "product");
-    const cmpBadge = d.compare ? `<span class="badge g">−${d.compare.pct} % ggü. ${euro(d.compare.ref)}</span>` : "";
-    const cmp = types.some(t => t !== "rubrik") || d.price ? cmpLinks(d) : "";
-    let t = "";
-    if (d.tarif) {
-      const x = d.tarif, p = x.profit;
-      t = `<div class="tarif">${x.device ? esc(x.device) : "Gerät unbekannt"} · ${euro(x.upfront)} + ${x.monthly == null ? "? €" : euro(x.monthly)}/Monat × ${x.months}${x.bonus ? " · Bonus " + euro(x.bonus) : ""}<br>
-      Kosten ${euro(x.cost)} · Verkaufswert ${euro(x.resale)} → <b style="color:${p == null ? "inherit" : p >= 0 ? "var(--ok)" : "var(--bad)"}">${p == null ? "Wert fehlt" : "Gewinn " + euro(p)}</b>
-      <button class="btn small ghost" style="margin-left:6px" data-calc="${esc(d.id)}">im Rechner</button></div>`;
-    }
-    return `<div class="card deal">${d.image ? `<img src="${esc(d.image)}" alt="" loading="lazy">` : `<img alt="">`}
-      <div><a href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.title)}</a>
-      <div class="meta"><span class="price">${d.price != null ? euro(d.price) : ""}</span> ${esc(d.merchant)} · ${when} · ${esc(d.source)}</div>
-      <div class="row">${(d.watch || []).map(w => `<span class="badge">${esc(names[w] || w)}</span>`).join("")} ${cmpBadge} ${sc}
-        <span style="flex:1"></span>
-        <button class="vote up ${v === 1 ? "on" : ""}" data-v="1" data-id="${esc(d.id)}">👍</button>
-        <button class="vote down ${v === 0 ? "on" : ""}" data-v="0" data-id="${esc(d.id)}">👎</button></div>${t}${cmp}</div></div>`;
-  }).join("");
+  $("#list").innerHTML = ds.map(d => dealHTML(d, names)).join("");
 }
 function renderWatch() {
-  const best = state.meta.best || {};
-  $("#watchlist").innerHTML = (state.cfg.watchlist || []).map(w => `<div class="card"><b>${icon(w)} ${esc(w.name)}</b> <span class="hint">${w.push === false ? "🔕 kein Push" : "🔔 Push an"}</span>
-    ${best[w.id] ? `<div class="meta">Bestpreis bisher: <a class="price" href="${esc(best[w.id].link)}" target="_blank" rel="noopener">${euro(best[w.id].price)}</a> am ${esc(best[w.id].date)}</div>` : ""}
-    <div class="meta">${w.type === "tarif" ? "Tarif-Gewinnrechnung · " : w.type === "rubrik" ? "Rubrik · " : ""}Begriffe: ${esc((w.keywords || []).join(", "))}${(w.exclude || []).length ? " · ohne: " + esc(w.exclude.join(", ")) : ""}${w.max_price ? " · max. " + euro(w.max_price) : ""}</div>
-    <div class="row"><button class="btn small ghost" data-edit="${esc(w.id)}">Bearbeiten</button><button class="btn small ghost" data-del="${esc(w.id)}">Löschen</button></div></div>`).join("")
-    || `<div class="empty">Noch nichts auf der Watchlist.</div>`;
+  const best = state.meta.best || {}, w = state.cfg.watchlist || [];
+  const kind = x => x.type === "tarif" ? "Handytarif mit Gewinnrechnung" : x.type === "rubrik" ? "Rubrik" : "Produkt";
+  $("#watchlist").innerHTML = w.map(x => `<div class="witem">
+      <h3>${esc(x.name)}</h3>
+      ${best[x.id] ? `<a class="tag" href="${esc(best[x.id].link)}" target="_blank" rel="noopener" title="Bester Preis bisher" style="text-decoration:none">${euro(best[x.id].price)}</a>` : ""}
+      <p class="muted">${kind(x)}, ${x.push === false ? "ohne Push" : "mit Push"}${best[x.id] ? `, Bestpreis vom ${new Date(best[x.id].date).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}` : ""}</p>
+      <div class="row"><button class="btn quiet small" data-edit="${esc(x.id)}">Bearbeiten</button><button class="btn quiet small" data-del="${esc(x.id)}">Entfernen</button></div>
+    </div>`).join("") || `<div class="empty"><strong>Noch nichts auf der Watchlist</strong>Trag oben ein Produkt ein.</div>`;
 }
+const pretty = k => k.split(" ").map(w => w === "iphone" ? "iPhone" : /^\d/.test(w) || w.length < 3 && w !== "s" ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)).join(" ");
 function renderResale() {
-  const r = state.cfg.resale || {};
-  $("#resale").innerHTML = Object.keys(r).sort().map(k => `<div class="row" style="margin:4px 0"><span style="flex:1">${esc(k)}</span><b>${r[k] ? euro(r[k]) : "<span class='hint'>fehlt</span>"}</b><button class="btn small ghost" data-rdel="${esc(k)}">✕</button></div>`).join("");
+  const r = state.cfg?.resale || {};
+  $("#resale").innerHTML = Object.keys(r).sort().map(k => `<div class="resale"><span>${esc(pretty(k))}</span>
+    <input inputmode="decimal" data-rk="${esc(k)}" value="${r[k] || ""}" placeholder="€" aria-label="Verkaufswert ${esc(k)}">
+    <button data-rdel="${esc(k)}" aria-label="${esc(k)} entfernen">×</button></div>`).join("");
 }
-function renderSettings() {
+function fillSettings() {
   $("#s-repo").value = repo; $("#s-token").value = token ? "••••••••" : "";
-  $("#s-min").value = state.cfg.settings?.push_min_score ?? 0;
-  const n = Object.keys(state.fb.votes).length, up = Object.values(state.fb.votes).filter(v => v.label === 1).length;
-  $("#s-learn").textContent = `${n} Bewertungen (${up} 👍 / ${n - up} 👎). Die Passt-Bewertung startet ab je 2 Daumen hoch und runter und wird mit jeder Bewertung genauer.`;
-  $("#feeds").innerHTML = (state.meta.feeds || []).map(f => `${f.ok ? "✅" : "⚠️"} ${esc(f.name)} ${f.ok ? `(${f.count} Einträge)` : "– " + esc(f.error || "nicht erreichbar")}`).join("<br>") || "Noch kein Durchlauf.";
+  if (!state.cfg) return;
+  renderResale();
+  $("#s-min").value = state.cfg.settings?.push_min_score || "";
+  const v = Object.values(state.fb.votes), up = v.filter(x => x.label === 1).length;
+  $("#s-learn").textContent = v.length < 4
+    ? `${v.length} Bewertungen bisher. Ab je 2 Daumen hoch und runter lernt der Radar, was dir gefällt.`
+    : `${v.length} Bewertungen (${up} hoch, ${v.length - up} runter). Jede weitere macht die Einschätzung genauer.`;
+  $("#feeds").innerHTML = (state.meta.feeds || []).map(f => `<div class="feed"><span>${esc(f.name)}</span>${f.ok ? `<span class="ok">${f.count} Einträge</span>` : `<span class="bad">nicht erreichbar</span>`}</div>`).join("") || `<p class="muted" style="padding:10px 0">Noch kein Durchlauf.</p>`;
 }
 function show(v) {
-  ["deals", "watch", "calc", "set"].forEach(x => $("#v-" + x).classList.toggle("hide", x !== v));
-  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.view === v));
+  ["deals", "watch", "set"].forEach(x => $("#v-" + x).hidden = x !== v);
+  document.querySelectorAll("nav button").forEach(b => b.dataset.view === v ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
   scrollTo(0, 0);
 }
 
@@ -300,87 +468,100 @@ function show(v) {
 let fbTimer;
 function vote(id, label) {
   const d = state.deals.find(x => x.id === id); if (!d) return;
-  const cur = state.fb.votes[id]?.label;
-  if (cur === label) delete state.fb.votes[id];
+  if (state.fb.votes[id]?.label === label) delete state.fb.votes[id];
   else state.fb.votes[id] = { label, features: d.features || [], title: d.title, ts: new Date().toISOString() };
-  rescore(); renderDeals(); renderSettings();
+  rescore();
+  const el = document.querySelector(`.deal[data-id="${CSS.escape(id)}"]`);
+  if (el) { const names = Object.fromEntries((state.cfg.watchlist || []).map(w => [w.id, w.name])); el.outerHTML = dealHTML(d, names); }
   clearTimeout(fbTimer); fbTimer = setTimeout(saveFeedback, 1500);
 }
 async function saveFeedback() {
-  try { state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); toast("Bewertung gespeichert – der Radar lernt mit"); }
-  catch (e) {
-    try { const f = await readJson("data/feedback.json"); state.fbSha = f.sha; state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); toast("Bewertung gespeichert"); }
-    catch (e2) { toast("Speichern fehlgeschlagen: " + e2.message); }
+  for (let i = 0; i < 2; i++) {
+    try { state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); toast("Bewertung gespeichert"); return; }
+    catch (e) { try { state.fbSha = (await readJson("data/feedback.json")).sha; } catch (e2) {} }
   }
+  toast("Bewertung konnte nicht gespeichert werden");
 }
-async function saveConfig(msg) {
-  try { state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast("Gespeichert – Radar läuft gleich neu"); renderAll(); }
-  catch (e) {
-    try { const c = await readJson("config.json"); state.cfgSha = c.sha; state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast("Gespeichert"); renderAll(); }
-    catch (e2) { toast("Speichern fehlgeschlagen: " + e2.message); }
+async function saveConfig(msg, done) {
+  for (let i = 0; i < 2; i++) {
+    try { state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast(done); renderAll(); return true; }
+    catch (e) { try { state.cfgSha = (await readJson("config.json")).sha; } catch (e2) {} }
   }
+  toast("Speichern fehlgeschlagen – Verbindung prüfen"); return false;
 }
 
 // ---------- Watchlist-Formular
-function resetForm() { ["#wf-id", "#wf-name", "#wf-kw", "#wf-ex", "#wf-max"].forEach(s => $(s).value = ""); $("#wf-prof").value = "0"; $("#wf-type").value = "product"; $("#wf-push").checked = true; $("#wf-title").textContent = "Neues Produkt beobachten"; typeToggle(); }
-function typeToggle() { const ty = $("#wf-type").value, t = ty === "tarif"; $("#wf-maxbox").classList.toggle("hide", ty !== "product"); $("#wf-profbox").classList.toggle("hide", !t); }
+function resetForm() {
+  ["#wf-id", "#wf-name", "#wf-kw", "#wf-ex", "#wf-max"].forEach(s => $(s).value = "");
+  $("#wf-prof").value = "0"; $("#wf-type").value = "product"; $("#wf-push").checked = true;
+  $("#wf-title").textContent = "Etwas Neues beobachten"; $("#wf-save").textContent = "Beobachten"; $("#wf-reset").hidden = true; typeToggle();
+}
+function typeToggle() { const t = $("#wf-type").value; $("#wf-maxbox").hidden = t !== "product"; $("#wf-profbox").hidden = t !== "tarif"; }
 $("#wf-type").onchange = typeToggle;
 $("#wf-reset").onclick = resetForm;
-$("#wf-save").onclick = () => {
+$("#wf-save").onclick = async () => {
   const name = $("#wf-name").value.trim(), kw = $("#wf-kw").value.split(",").map(normKw).filter(Boolean);
-  if (!name || !kw.length) return toast("Name und mindestens ein Suchbegriff nötig");
+  if (!name || !kw.length) return toast("Bitte Name und mindestens einen Suchbegriff eintragen");
   const id = $("#wf-id").value || normKw(name).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + "-" + Date.now().toString(36).slice(-4);
-  const item = { id, name, type: $("#wf-type").value, keywords: kw, exclude: $("#wf-ex").value.split(",").map(normKw).filter(Boolean), push: $("#wf-push").checked };
-  const old = (state.cfg.watchlist || []).find(x => x.id === id); if (old && old.exclude_categories) item.exclude_categories = old.exclude_categories;
-  if (item.type === "tarif") item.min_profit = num($("#wf-prof").value); else item.max_price = $("#wf-max").value ? num($("#wf-max").value) : null;
+  const old = (state.cfg.watchlist || []).find(x => x.id === id);
+  const item = { ...(old || {}), id, name, type: $("#wf-type").value, keywords: kw, exclude: $("#wf-ex").value.split(",").map(normKw).filter(Boolean), push: $("#wf-push").checked };
+  if (item.type === "tarif") item.min_profit = num($("#wf-prof").value);
+  if (item.type === "product") item.max_price = $("#wf-max").value ? num($("#wf-max").value) : null;
   const w = state.cfg.watchlist = state.cfg.watchlist || [];
   const i = w.findIndex(x => x.id === id); i >= 0 ? w[i] = item : w.push(item);
-  resetForm(); saveConfig(`Watchlist: ${name}`);
+  if (await saveConfig(`Watchlist: ${name}`, old ? `${name} geändert` : `${name} wird jetzt beobachtet`)) resetForm();
 };
 
-// ---------- Rechner
-function calc() {
-  const up = num($("#c-up").value), mon = num($("#c-mon").value), m = num($("#c-months").value), fee = num($("#c-fee").value), bonus = num($("#c-bonus").value), res = num($("#c-resale").value);
-  const cost = up + mon * m + fee - bonus, profit = res - cost;
-  $("#c-out").innerHTML = `<span style="color:${profit >= 0 ? "var(--ok)" : "var(--bad)"}">${profit >= 0 ? "Gewinn" : "Verlust"} ${euro(Math.abs(profit))}</span>`;
-  $("#c-detail").textContent = `Gesamtkosten ${euro(cost)} über ${m} Monate · effektiv ${euro((cost - res) / (m || 1))}/Monat für den Tarif nach Verkauf.`;
+// ---------- Verkaufswerte
+function collectResale() {
+  document.querySelectorAll("[data-rk]").forEach(i => state.cfg.resale[i.dataset.rk] = num(i.value));
 }
-document.querySelectorAll("#v-calc .card:first-child input").forEach(i => i.oninput = calc);
-$("#r-add").onclick = () => { const k = normKw($("#r-name").value); if (!k) return; state.cfg.resale = state.cfg.resale || {}; state.cfg.resale[k] = num($("#r-val").value); $("#r-name").value = $("#r-val").value = ""; renderResale(); toast("Zum Speichern „Werte speichern“ tippen"); };
-$("#r-save").onclick = () => saveConfig("Wiederverkaufswerte aktualisiert");
+$("#r-add").onclick = () => {
+  const k = normKw($("#r-name").value); if (!k) return toast("Bitte ein Modell eintragen");
+  state.cfg.resale = state.cfg.resale || {}; collectResale(); state.cfg.resale[k] = num($("#r-val").value);
+  $("#r-name").value = $("#r-val").value = ""; renderResale();
+};
+$("#r-save").onclick = () => { collectResale(); saveConfig("Verkaufswerte aktualisiert", "Verkaufswerte gespeichert – Tarife werden neu berechnet"); };
 
 // ---------- Einstellungen
 $("#s-save").onclick = () => {
   repo = $("#s-repo").value.trim().replace(/^https?:\/\/github.com\//, "").replace(/\/$/, "") || guessRepo();
   const t = $("#s-token").value.trim(); if (t && !t.startsWith("••")) token = t;
-  LS.set("repo", repo); LS.set("token", token); toast("Verbinde …"); load().then(() => state.cfg && show("deals"));
+  LS.set("repo", repo); LS.set("token", token); toast("Verbinde …");
+  load().then(() => { if (state.cfg) { toast("Verbunden"); show("deals"); } });
 };
-$("#s-save2").onclick = () => { if (!state.cfg) return toast("Erst verbinden"); state.cfg.settings = state.cfg.settings || {}; state.cfg.settings.push_min_score = Math.max(0, Math.min(100, num($("#s-min").value))); saveConfig("Push-Schwelle geändert"); };
+$("#s-save2").onclick = () => {
+  if (!state.cfg) return toast("Bitte zuerst verbinden");
+  state.cfg.settings = state.cfg.settings || {}; state.cfg.settings.push_min_score = Math.max(0, Math.min(100, num($("#s-min").value)));
+  saveConfig("Push-Schwelle geändert", "Gespeichert");
+};
+$("#scan").onclick = () => state.cfg ? scan(false) : show("set");
+$("#sort").onchange = e => { state.sort = e.target.value; renderDeals(); };
 
 // ---------- Klicks
 document.addEventListener("click", e => {
+  const sum = e.target.closest("details.cmp summary");
+  if (sum) { e.preventDefault(); const sh = sum.closest(".deal").querySelector(".shops"); sh.hidden = !sh.hidden; sum.textContent = sh.hidden ? "Preise vergleichen" : "Ausblenden"; return; }
   const b = e.target.closest("button"); if (!b) return;
-  if (b.dataset.view) show(b.dataset.view);
+  if (b.dataset.view) { show(b.dataset.view); if (b.dataset.view !== "deals" && state.cfg) renderAll(); }
   if (b.dataset.f) { state.filter = b.dataset.f; renderFilters(); renderDeals(); }
-  if (b.dataset.sort) { state.sort = b.dataset.sort; document.querySelectorAll("#sorts .chip").forEach(c => c.classList.toggle("on", c === b)); renderDeals(); }
   if (b.dataset.v) vote(b.dataset.id, +b.dataset.v);
   if (b.dataset.edit) {
     const w = state.cfg.watchlist.find(x => x.id === b.dataset.edit);
     $("#wf-id").value = w.id; $("#wf-name").value = w.name; $("#wf-type").value = w.type || "product";
     $("#wf-kw").value = (w.keywords || []).join(", "); $("#wf-ex").value = (w.exclude || []).join(", ");
-    $("#wf-max").value = w.max_price ?? ""; $("#wf-push").checked = w.push !== false; $("#wf-prof").value = w.min_profit ?? 0; $("#wf-title").textContent = "Bearbeiten: " + w.name; typeToggle(); scrollTo(0, 0);
+    $("#wf-max").value = w.max_price ?? ""; $("#wf-prof").value = w.min_profit ?? 0; $("#wf-push").checked = w.push !== false;
+    $("#wf-title").textContent = w.name + " bearbeiten"; $("#wf-save").textContent = "Änderungen speichern"; $("#wf-reset").hidden = false; typeToggle(); scrollTo(0, 0);
   }
-  if (b.dataset.del && confirm("Von der Watchlist löschen?")) { state.cfg.watchlist = state.cfg.watchlist.filter(x => x.id !== b.dataset.del); saveConfig("Watchlist-Eintrag gelöscht"); }
-  if (b.dataset.rdel) { delete state.cfg.resale[b.dataset.rdel]; renderResale(); toast("Zum Speichern „Werte speichern“ tippen"); }
-  if (b.dataset.calc) {
-    const x = state.deals.find(d => d.id === b.dataset.calc).tarif;
-    $("#c-up").value = x.upfront ?? 0; $("#c-mon").value = x.monthly ?? 0; $("#c-months").value = x.months; $("#c-fee").value = x.fee; $("#c-bonus").value = x.bonus || 0; $("#c-resale").value = x.resale ?? 0;
-    calc(); show("calc");
+  if (b.dataset.del && confirm(`„${state.cfg.watchlist.find(x => x.id === b.dataset.del)?.name}“ nicht mehr beobachten?`)) {
+    state.cfg.watchlist = state.cfg.watchlist.filter(x => x.id !== b.dataset.del); saveConfig("Watchlist-Eintrag entfernt", "Entfernt");
   }
+  if (b.dataset.rdel) { collectResale(); delete state.cfg.resale[b.dataset.rdel]; renderResale(); }
 });
-document.addEventListener("visibilitychange", () => { if (!document.hidden && token) load(); });
+document.addEventListener("visibilitychange", () => { if (!document.hidden && token && state.cfg) load(); });
+setInterval(setStatus, 30000);
 
-$("#s-repo").value = repo; if (token) $("#s-token").value = "••••••••";
+fillSettings();
 load();
 </script>
 </body>
