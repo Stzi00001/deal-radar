@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T18:17:29+00:00",
+ "updated": "2026-10-09T18:28:19+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -17,11 +17,6 @@
    "count": 10
   },
   {
-   "name": "Schnäppchenfuchs",
-   "ok": false,
-   "error": "HTTP Error 404: Not Found"
-  },
-  {
    "name": "mydealz Gutscheine",
    "ok": true,
    "count": 30
@@ -33,8 +28,48 @@
   }
  ],
  "votes": 0,
- "best": {},
+ "best": {
+  "xbox-series-x": {
+   "price": 27.36,
+   "title": "Clive Barker's Hellraiser: Revival ►27,36€ IS | Horror | PC & Xbox Series X|S | Xbox Play Anywhere | XBox Store",
+   "link": "https://www.mydealz.de/deals/clive-barkers-hellraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
+   "date": "2026-10-09"
+  }
+ },
  "deals": [
+  {
+   "id": "llraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
+   "title": "Clive Barker's Hellraiser: Revival ►27,36€ IS | Horror | PC & Xbox Series X|S | Xbox Play Anywhere | XBox Store",
+   "link": "https://www.mydealz.de/deals/clive-barkers-hellraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
+   "merchant": "Xbox",
+   "price": 27.36,
+   "category": "Gaming",
+   "image": "https://static.mydealz.de/threads/raw/liTfj/2851879_1/re/150x150/qt/55/2851879_1.jpg",
+   "pub": "2026-10-09T18:19:02+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "xbox-series-x"
+   ],
+   "compare": null,
+   "features": [
+    "36€",
+    "anywhere",
+    "barker",
+    "c:gaming",
+    "clive",
+    "hellraiser",
+    "horror",
+    "m:xbox",
+    "p:<100",
+    "play",
+    "revival",
+    "series",
+    "store",
+    "w:xbox-series-x",
+    "xbox"
+   ],
+   "score": null
+  },
   {
    "id": "https-www-dealdoktor-de-p-869239",
    "title": "💥 Die Top Deals des Tages – z.B. Großer Reebok Winterjacken-Sale",
@@ -321,13 +356,13 @@
    ],
    "tarif": {
     "monthly": 54.98,
-    "upfront": 1614.46,
+    "upfront": 299.0,
     "fee": 39.99,
     "bonus": 0.0,
     "months": 24,
-    "device": null,
+    "device": "iphone 18 pro max",
     "resale": null,
-    "cost": 2973.97,
+    "cost": 1658.51,
     "profit": null
    },
    "compare": null,
@@ -370,14 +405,14 @@
     "tarif-mit-handy"
    ],
    "tarif": {
-    "monthly": null,
+    "monthly": 29.99,
     "upfront": 79.95,
     "fee": 39.99,
-    "bonus": 0.0,
+    "bonus": 240.0,
     "months": 24,
-    "device": null,
+    "device": "pixel 11",
     "resale": null,
-    "cost": null,
+    "cost": 599.7,
     "profit": null
    },
    "compare": null,
@@ -535,7 +570,6 @@
    "pub": "2026-10-06T20:07:01+00:00",
    "source": "mydealz Gutscheine",
    "watch": [
-    "tarif-mit-handy",
     "rabatte"
    ],
    "tarif": {
@@ -561,7 +595,6 @@
     "roborock",
     "saug",
     "w:rabatte",
-    "w:tarif-mit-handy",
     "wischroboter",
     "xiaomi"
    ],
