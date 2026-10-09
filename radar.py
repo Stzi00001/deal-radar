@@ -360,6 +360,23 @@ def run(feed_override=None, send_push=True):
             except Exception as e:
                 print(f"[Push fehlgeschlagen] {e}", file=sys.stderr)
 
+    # Gespeicherte Deals gegen die aktuelle Watchlist prüfen (gelöschte Einträge, neue Ausschlüsse)
+    wmap = {w["id"]: w for w in watch}
+    for d in list(known.values()):
+        d["title"] = re.sub(r"^\s*-?\d+°\s*-\s*", "", d["title"])
+        tn, cn = norm(d["title"]), norm(d.get("category"))
+        keep = []
+        for wid in d.get("watch", []):
+            w = wmap.get(wid)
+            if not w or any(phrase_in(x, tn) for x in w.get("exclude", [])) \
+                    or any(phrase_in(x, cn) for x in w.get("exclude_categories", [])):
+                continue
+            keep.append(wid)
+        if keep:
+            d["watch"] = keep
+        else:
+            known.pop(d["id"], None)
+
     # Rescore alles mit dem aktuellen Modell, alte Deals aufräumen
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     deals = []

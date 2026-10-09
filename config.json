@@ -15,7 +15,15 @@
         "huelle",
         "skin",
         "staender",
-        "ladestation"
+        "ladestation",
+        "x s",
+        "pc",
+        "ps5",
+        "ps4",
+        "steam",
+        "key",
+        "dlc",
+        "game"
       ],
       "max_price": null,
       "push": true
@@ -57,9 +65,10 @@
         "magsafe",
         "kabel",
         "prepaid",
-        "die besten",
         "top deals",
-        "saugroboter"
+        "saugroboter",
+        "besten",
+        "uebersicht"
       ],
       "min_profit": 0,
       "push": true
