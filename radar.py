@@ -83,7 +83,7 @@ def parse_feed(raw, source, rubrik=None):
     root = ET.fromstring(raw)
     out = []
     for it in root.iter("item"):
-        title = strip_html(it.findtext("title"))
+        title = re.sub(r"^\s*-?\d+°\s*-\s*", "", strip_html(it.findtext("title")))
         link = (it.findtext("link") or "").strip()
         if not title or not link:
             continue
@@ -125,7 +125,7 @@ def parse_feed(raw, source, rubrik=None):
 
 
 # ---------------------------------------------------------------- Matching
-TARIF_HINTS = (" monat", " mtl ", "monatlich", "grundgebuehr", " vertrag", " tarif", "allnet", "laufzeit")
+TARIF_HINTS = (" monat", " mtl ", "monatlich", "grundgebuehr", " vertrag", " tarif", "allnet", "laufzeit", " gb ")
 
 
 def phrase_in(phrase, normtext):
@@ -148,7 +148,7 @@ def match_watch(deal, w):
     if w.get("type") == "tarif":
         if not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
             return False
-        return any(h in full_n for h in TARIF_HINTS)
+        return any(h in title_n for h in TARIF_HINTS)
     if not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
         return False
     mp = w.get("max_price")
@@ -190,12 +190,14 @@ def analyse_tarif(deal, resale, settings):
         elif re.search(r"anschlu\w*\s*(geb\w*|preis)?\s*(von\s*)?$", before):
             if fee is None:
                 fee = val
-        elif re.search(r"(bonus|wechselbonus|cashback|auszahlung|praemie|prämie)\s*(von\s*)?$", before) or re.match(r"\s*(wechsel)?bonus|\s*cashback|\s*auszahlung", after):
+        elif re.search(r"(bonus|wechselbonus|cashback|auszahlung|praemie|prämie)\s*(von\s*)?$", before) or re.match(r"\s*(wechsel)?bonus|\s*cashback|\s*auszahlung|\s*(start)?guthaben|\s*gutschrift", after):
             bonus += val
-        elif re.search(r"(zuzahlung|einmalig|ger[äa]tepreis|f[üu]r)\s*(nur\s*)?$", before):
+        elif re.search(r"(zuzahlung|einmalig|ger[äa]tepreis|f[üu]r)\s*(nur\s*)?$", before) or re.match(r"\s*(zuzahlung|einmalig)", after):
             if upfront is None:
                 upfront = val
-    if upfront is None and deal.get("price") is not None and deal["price"] != monthly:
+            elif monthly is None and val < 150 and re.search(r"(gb|allnet|flat|tarif)", before):
+                monthly = val  # "Handy für 79€ + 50GB Allnet für 29,99€"
+    if upfront is None and deal.get("price") is not None and deal["price"] != monthly and deal["price"] <= 600:
         upfront = deal["price"]
     mm = re.search(r"(\d{1,2})\s*monate", low)
     months = int(mm.group(1)) if mm and 1 <= int(mm.group(1)) <= 36 else int(settings.get("contract_months", 24))
@@ -307,7 +309,11 @@ def run(feed_override=None, send_push=True):
             print(f"[Quelle übersprungen] {f['name']}: {e}", file=sys.stderr)
 
     merged = {}
+    by_link = {}
     for d in items:
+        if d["link"] in by_link and by_link[d["link"]] != d["id"]:
+            d["id"] = by_link[d["link"]]
+        by_link.setdefault(d["link"], d["id"])
         if d["id"] in merged:
             merged[d["id"]]["_rubriken"] += d["_rubriken"]
         else:

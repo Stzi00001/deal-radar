@@ -56,7 +56,10 @@
         "ladegeraet",
         "magsafe",
         "kabel",
-        "prepaid"
+        "prepaid",
+        "die besten",
+        "top deals",
+        "saugroboter"
       ],
       "min_profit": 0,
       "push": true
@@ -97,12 +100,17 @@
     }
   ],
   "resale": {
+    "iphone 18 pro max": 0,
+    "iphone 18 pro": 0,
+    "iphone 18": 0,
+    "iphone air": 0,
     "iphone 17 pro max": 0,
     "iphone 17 pro": 0,
     "iphone 17": 0,
     "galaxy s26 ultra": 0,
     "galaxy s26": 0,
-    "pixel 10 pro": 0
+    "pixel 11 pro": 0,
+    "pixel 11": 0
   },
   "settings": {
     "push_min_score": 0,
@@ -121,10 +129,6 @@
     {
       "name": "DealDoktor",
       "url": "https://www.dealdoktor.de/feed/"
-    },
-    {
-      "name": "Schnäppchenfuchs",
-      "url": "https://www.schnaeppchenfuchs.com/feed"
     },
     {
       "name": "mydealz Gutscheine",
