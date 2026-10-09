@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T18:28:19+00:00",
+ "updated": "2026-10-09T18:37:20+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,39 +37,6 @@
   }
  },
  "deals": [
-  {
-   "id": "llraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
-   "title": "Clive Barker's Hellraiser: Revival ►27,36€ IS | Horror | PC & Xbox Series X|S | Xbox Play Anywhere | XBox Store",
-   "link": "https://www.mydealz.de/deals/clive-barkers-hellraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
-   "merchant": "Xbox",
-   "price": 27.36,
-   "category": "Gaming",
-   "image": "https://static.mydealz.de/threads/raw/liTfj/2851879_1/re/150x150/qt/55/2851879_1.jpg",
-   "pub": "2026-10-09T18:19:02+00:00",
-   "source": "mydealz neu",
-   "watch": [
-    "xbox-series-x"
-   ],
-   "compare": null,
-   "features": [
-    "36€",
-    "anywhere",
-    "barker",
-    "c:gaming",
-    "clive",
-    "hellraiser",
-    "horror",
-    "m:xbox",
-    "p:<100",
-    "play",
-    "revival",
-    "series",
-    "store",
-    "w:xbox-series-x",
-    "xbox"
-   ],
-   "score": null
-  },
   {
    "id": "https-www-dealdoktor-de-p-869239",
    "title": "💥 Die Top Deals des Tages – z.B. Großer Reebok Winterjacken-Sale",
@@ -265,51 +232,8 @@
    "score": null
   },
   {
-   "id": "https-www-dealdoktor-de-p-96177",
-   "title": "💥 Die 30 besten Handytarife 📱➡️ Apple iPhone, Samsung Galaxy, Google Pixel uvm. + SIM-Only-Tarife",
-   "link": "https://www.dealdoktor.de/die-besten-handytarife/",
-   "merchant": "",
-   "price": null,
-   "category": "Handytarife & Smartphones",
-   "image": "",
-   "pub": "2026-10-09T16:39:00+00:00",
-   "source": "DealDoktor",
-   "watch": [
-    "tarif-mit-handy"
-   ],
-   "tarif": {
-    "monthly": null,
-    "upfront": 0.0,
-    "fee": 39.99,
-    "bonus": 0.0,
-    "months": 24,
-    "device": null,
-    "resale": null,
-    "cost": null,
-    "profit": null
-   },
-   "compare": null,
-   "features": [
-    "apple",
-    "besten",
-    "c:handytarife smartphones",
-    "galaxy",
-    "google",
-    "handytarife",
-    "iphone",
-    "only",
-    "pixel",
-    "samsung",
-    "sim",
-    "tarife",
-    "uvm",
-    "w:tarif-mit-handy"
-   ],
-   "score": null
-  },
-  {
    "id": "toys-bis-zu-50-rabatt-auf-lego-play-doh-star-wars-super-mario-70-cm-weitere-marken-2851757",
-   "title": "158° - Smyths Toys: Bis zu 50 % Rabatt auf LEGO, Play-Doh, Star Wars, Super Mario (70 cm) & weitere Marken",
+   "title": "Smyths Toys: Bis zu 50 % Rabatt auf LEGO, Play-Doh, Star Wars, Super Mario (70 cm) & weitere Marken",
    "link": "https://www.mydealz.de/deals/smyths-toys-bis-zu-50-rabatt-auf-lego-play-doh-star-wars-super-mario-70-cm-weitere-marken-2851757",
    "merchant": "Smyths Toys",
    "price": 34.99,
@@ -343,7 +267,7 @@
   },
   {
    "id": "-iphone-18-pro-max-256gb-allnetsms-flat-50gb-5498eurmonat-299eur-zuzahlung-freenet-2851790",
-   "title": "163° - Telekom Netz: Apple iPhone 18 Pro Max 256GB | Allnet/SMS Flat: 50GB + 5GB, 54,98€/Monat & 299€ Zuzahlung (Freenet)",
+   "title": "Telekom Netz: Apple iPhone 18 Pro Max 256GB | Allnet/SMS Flat: 50GB + 5GB, 54,98€/Monat & 299€ Zuzahlung (Freenet)",
    "link": "https://www.mydealz.de/deals/telekom-netz-apple-iphone-18-pro-max-256gb-allnetsms-flat-50gb-5498eurmonat-299eur-zuzahlung-freenet-2851790",
    "merchant": "Media Markt Tarifwelt",
    "price": 1614.46,
@@ -439,7 +363,7 @@
   },
   {
    "id": "u-12-cashback-bis-zu-50-rabatt-beim-ebook-thriller-deal-nervenkitzel-zum-sparpreis-2851527",
-   "title": "122° - [Shoop | Thalia] Bis zu 12% Cashback + Bis zu 50% Rabatt beim eBook-Thriller-Deal: Nervenkitzel zum Sparpreis",
+   "title": "[Shoop | Thalia] Bis zu 12% Cashback + Bis zu 50% Rabatt beim eBook-Thriller-Deal: Nervenkitzel zum Sparpreis",
    "link": "https://www.mydealz.de/deals/shoop-thalia-bis-zu-12-cashback-bis-zu-50-rabatt-beim-ebook-thriller-deal-nervenkitzel-zum-sparpreis-2851527",
    "merchant": "Shoop",
    "price": null,
