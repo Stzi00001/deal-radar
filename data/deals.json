@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T18:53:28+00:00",
+ "updated": "2026-10-10T22:22:55+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,220 @@
   }
  },
  "deals": [
+  {
+   "id": "dealz-de-deals-flaconi-gutschein-code-13-zb-guerlain-vetiver-eau-de-toilette-100ml-2852293",
+   "title": "Flaconi Gutschein Code 13%, z.B. Guerlain Vetiver eau de toilette 100ml",
+   "link": "https://www.mydealz.de/deals/flaconi-gutschein-code-13-zb-guerlain-vetiver-eau-de-toilette-100ml-2852293",
+   "merchant": "flaconi",
+   "price": 55.32,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/kFyaI/2852293_1/re/150x150/qt/55/2852293_1.jpg",
+   "pub": "2026-10-10T22:14:36+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "100ml",
+    "c:beauty gesundheit",
+    "code",
+    "eau",
+    "flaconi",
+    "guerlain",
+    "gutschein",
+    "m:flaconi",
+    "p:<100",
+    "toilette",
+    "vetiver",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "eals-cb-deal-15-extra-rabatt-zb-nike-air-force-1-07-triple-white-all-black-385-525-2852291",
+   "title": "[CB Deal] 15% Extra-Rabatt - z.B. Nike Air Force 1 '07 • Triple White - All Black • 38.5 - 52.5",
+   "link": "https://www.mydealz.de/deals/cb-deal-15-extra-rabatt-zb-nike-air-force-1-07-triple-white-all-black-385-525-2852291",
+   "merchant": "Zalando",
+   "price": 71.96,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/CXuY3/2852291_1/re/150x150/qt/55/2852291_1.jpg",
+   "pub": "2026-10-10T22:10:20+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "air",
+    "all",
+    "black",
+    "c:fashion accessoires",
+    "deal",
+    "extra",
+    "force",
+    "m:zalando",
+    "nike",
+    "p:<100",
+    "rabatt",
+    "triple",
+    "w:rabatte",
+    "white"
+   ],
+   "score": null
+  },
+  {
+   "id": "eals-bis-zu-50-rabatt-15-extra-auf-ausgewahlte-artikel-mit-code-start15-mbw-35-eur-2852289",
+   "title": "Bis zu 50 % Rabatt + 15 % EXTRA auf ausgewählte Artikel mit Code START15 (MBW 35 €)",
+   "link": "https://www.mydealz.de/deals/bis-zu-50-rabatt-15-extra-auf-ausgewahlte-artikel-mit-code-start15-mbw-35-eur-2852289",
+   "merchant": "Zalando",
+   "price": 35.0,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/JlBsI/2852289_1/re/150x150/qt/55/2852289_1.jpg",
+   "pub": "2026-10-10T22:05:08+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "artikel",
+    "ausgewaehlte",
+    "c:fashion accessoires",
+    "code",
+    "extra",
+    "m:zalando",
+    "mbw",
+    "p:<100",
+    "rabatt",
+    "start15",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "-shoop-mydaysde-7-cashback-15eur-shoop-gutschein-ab-149eur-mbw-10-mydays-gutschein-2852287",
+   "title": "[Shoop | Mydays.de] 7% Cashback + 15€ Shoop- Gutschein ab 150€ MBW +10% mydays Gutschein",
+   "link": "https://www.mydealz.de/deals/shoop-mydaysde-7-cashback-15eur-shoop-gutschein-ab-149eur-mbw-10-mydays-gutschein-2852287",
+   "merchant": "Shoop",
+   "price": 15.0,
+   "category": "Urlaub & Reisen",
+   "image": "https://static.mydealz.de/threads/raw/zOM8p/2852287_1/re/150x150/qt/55/2852287_1.jpg",
+   "pub": "2026-10-10T22:02:14+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "150€",
+    "15€",
+    "c:urlaub reisen",
+    "cashback",
+    "gutschein",
+    "m:shoop",
+    "mbw",
+    "mydays",
+    "p:<20",
+    "shoop",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "17-pro-im-magentamobil-l-young-allnetsms-flat-unlimited-5g-fur-4495eurmonat-149eur-2852194",
+   "title": "Lokal, Telekom Netz: Apple iPhone 17 Pro im MagentaMobil L Young Allnet/SMS Flat Unlimited 5G für 44,95€/Monat & 149€",
+   "link": "https://www.mydealz.de/deals/lokal-telekom-netz-apple-iphone-17-pro-im-magentamobil-l-young-allnetsms-flat-unlimited-5g-fur-4495eurmonat-149eur-2852194",
+   "merchant": "expert",
+   "price": 1267.75,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/5BpAD/2852194_1/re/150x150/qt/55/2852194_1.jpg",
+   "pub": "2026-10-10T20:44:16+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 44.95,
+    "upfront": 0.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": "iphone 17 pro",
+    "resale": null,
+    "cost": 1118.79,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "149€",
+    "95€",
+    "allnet",
+    "apple",
+    "c:telefon internet vertraege",
+    "flat",
+    "iphone",
+    "lokal",
+    "m:expert",
+    "magentamobil",
+    "monat",
+    "netz",
+    "p:800+",
+    "pro",
+    "sms",
+    "telekom",
+    "unlimited",
+    "w:tarif-mit-handy",
+    "young"
+   ],
+   "score": null
+  },
+  {
+   "id": "z-apple-iphone-18-pro-im-freenet-allnetsms-flat-140gb-5g-fur-4999eurmonat-22995eur-2852265",
+   "title": "Telekom Netz: Apple iPhone 18 Pro im Freenet Allnet/SMS Flat 140GB 5G für 49,99€/Monat & 229,95€",
+   "link": "https://www.mydealz.de/deals/telekom-netz-apple-iphone-18-pro-im-freenet-allnetsms-flat-140gb-5g-fur-4999eurmonat-22995eur-2852265",
+   "merchant": "DEINHANDY",
+   "price": 1436.7,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/yrJao/2852265_1/re/150x150/qt/55/2852265_1.jpg",
+   "pub": "2026-10-10T20:10:50+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 49.99,
+    "upfront": 229.95,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": "iphone 18 pro",
+    "resale": null,
+    "cost": 1469.7,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "140gb",
+    "95€",
+    "99€",
+    "allnet",
+    "apple",
+    "c:telefon internet vertraege",
+    "flat",
+    "freenet",
+    "iphone",
+    "m:deinhandy",
+    "monat",
+    "netz",
+    "p:800+",
+    "pro",
+    "sms",
+    "telekom",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
   {
    "id": "-25-rabatt-bei-glow25-ab-39eur-mbw-zb-kollagen-plus-450g-fur-2999eur-statt-3495eur-2852231",
    "title": "[Corporate Benefits] 25% Rabatt bei Glow25 ab 39€ MBW – z.B. Kollagen Plus 450g für 29,99€ statt 34,95€",
