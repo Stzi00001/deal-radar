@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T22:46:05+00:00",
+ "updated": "2026-10-10T01:56:41+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,71 @@
   }
  },
  "deals": [
+  {
+   "id": "4-macbook-pro-m5-pro-15c16c-24gb-ram-2tb-ssd-schwarz-6-cashback-256292eur-effektiv-2851962",
+   "title": "Apple 14\" MacBook Pro (M5 Pro 15C/16C, 24GB Ram, 2TB SSD, Schwarz) + 6% Cashback = 2.562,92€ effektiv",
+   "link": "https://www.mydealz.de/deals/apple-14-macbook-pro-m5-pro-15c16c-24gb-ram-2tb-ssd-schwarz-6-cashback-256292eur-effektiv-2851962",
+   "merchant": "Galaxus",
+   "price": 2699.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/jZBJx/2851962_1/re/150x150/qt/55/2851962_1.jpg",
+   "pub": "2026-10-10T00:24:53+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "15c",
+    "16c",
+    "24gb",
+    "2tb",
+    "92€",
+    "apple",
+    "c:elektronik",
+    "cashback",
+    "effektiv",
+    "m:galaxus",
+    "macbook",
+    "p:800+",
+    "pro",
+    "ram",
+    "schwarz",
+    "ssd",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "z-de-deals-samsung-galaxy-watch-8-44mm-bt-smartwatch-15-cashback-17674eur-effektiv-2851961",
+   "title": "Samsung Galaxy Watch 8 44mm BT (Smartwatch) + 1,5% Cashback = 176,74€ effektiv",
+   "link": "https://www.mydealz.de/deals/samsung-galaxy-watch-8-44mm-bt-smartwatch-15-cashback-17674eur-effektiv-2851961",
+   "merchant": "eBay",
+   "price": 179.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/h2DdP/2851961_1/re/150x150/qt/55/2851961_1.jpg",
+   "pub": "2026-10-10T00:03:19+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "44mm",
+    "74€",
+    "c:elektronik",
+    "cashback",
+    "effektiv",
+    "galaxy",
+    "m:ebay",
+    "p:<300",
+    "samsung",
+    "smartwatch",
+    "w:rabatte",
+    "watch"
+   ],
+   "score": null
+  },
   {
    "id": "ms-flat-unlimited-5g-bis-300mbits-fur-eff-17eurmonat-durch-300eur-cashback-freenet-2851946",
    "title": "Vodafone Netz, Sim Only: Allnet/SMS Flat Unlimited 5G bis 300Mbit/s für eff. 17€/Monat durch 300€ Cashback (Freenet)",
