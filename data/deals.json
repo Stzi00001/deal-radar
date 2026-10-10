@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T01:56:41+00:00",
+ "updated": "2026-10-10T08:23:14+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,191 @@
   }
  },
  "deals": [
+  {
+   "id": "eine-payback-44fach-punkte-auf-deo-und-parfum-bei-netto-md-gultig-bis-zum-15112026-2851881",
+   "title": "[Payback] 44fach Punkte auf Deo und Parfüm bei Netto MD | gültig bis zum 15.11.2026",
+   "link": "https://www.mydealz.de/gutscheine/payback-44fach-punkte-auf-deo-und-parfum-bei-netto-md-gultig-bis-zum-15112026-2851881",
+   "merchant": "PAYBACK",
+   "price": null,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/56_3/re/352x352/qt/60/56_3.jpg",
+   "pub": "2026-10-10T08:19:20+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "44fach",
+    "c:beauty gesundheit",
+    "deo",
+    "gueltig",
+    "m:payback",
+    "netto",
+    "parfuem",
+    "payback",
+    "punkte",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "gratis-parken-fur-e-autos-in-318-orten-100-rabatt-auf-parkgebuhren-0eur-parkgebuhr-2852044",
+   "title": "Gratis Parken für E-Autos in 318 Orten, 100% Rabatt auf Parkgebühren, 0€ Parkgebühr",
+   "link": "https://www.mydealz.de/deals/gratis-parken-fur-e-autos-in-318-orten-100-rabatt-auf-parkgebuhren-0eur-parkgebuhr-2852044",
+   "merchant": "",
+   "price": 0.0,
+   "category": "Auto & Motorrad",
+   "image": "https://static.mydealz.de/threads/raw/pSziN/2852044_1/re/150x150/qt/55/2852044_1.jpg",
+   "pub": "2026-10-10T08:06:03+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "autos",
+    "c:auto motorrad",
+    "orten",
+    "p:<20",
+    "parken",
+    "parkgebuehr",
+    "parkgebuehren",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-2076968",
+   "title": "60€ Cashback + 6 Monate GRATIS 🏆 MagentaTV MegaStream: Netflix, Disney+, Apple TV+ & RTL+",
+   "link": "https://www.dealdoktor.de/magentatv-megastream-logitel/",
+   "merchant": "",
+   "price": 60.0,
+   "category": "Streaming",
+   "image": "",
+   "pub": "2026-10-10T08:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "60€",
+    "apple",
+    "c:streaming",
+    "cashback",
+    "disney",
+    "magentatv",
+    "megastream",
+    "monate",
+    "netflix",
+    "p:<100",
+    "rtl",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "-mit-code-ten10-ab-40eur-mbw-entspricht-25-rabatt-nur-heute-bis-22-uhr-am-10102026-2852042",
+   "title": "Amazon Haul 10€ Rabatt mit Code TEN10 ab 40€ MBW entspricht 25% Rabatt - nur heute bis 22 Uhr am 10.10.2026",
+   "link": "https://www.mydealz.de/deals/amazon-haul-10eur-rabatt-mit-code-ten10-ab-40eur-mbw-entspricht-25-rabatt-nur-heute-bis-22-uhr-am-10102026-2852042",
+   "merchant": "Amazon.com",
+   "price": 10.0,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/KfNna/2852042_1/re/150x150/qt/55/2852042_1.jpg",
+   "pub": "2026-10-10T07:56:44+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10€",
+    "40€",
+    "c:home living",
+    "code",
+    "entspricht",
+    "haul",
+    "heute",
+    "m:amazon com",
+    "mbw",
+    "p:<20",
+    "rabatt",
+    "ten10",
+    "uhr",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "chriften-youngtimer-motor-klassik-motorsport-aktuell-pramie-30eur-amazon-gutschein-2852041",
+   "title": "Autozeitschriften Youngtimer Motor Klassik Motorsport aktuell Prämie 30€ Amazon-Gutschein",
+   "link": "https://www.mydealz.de/deals/autozeitschriften-youngtimer-motor-klassik-motorsport-aktuell-pramie-30eur-amazon-gutschein-2852041",
+   "merchant": "Motorpresse",
+   "price": 46.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/1EulU/2852041_1/re/150x150/qt/55/2852041_1.jpg",
+   "pub": "2026-10-10T07:40:49+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "30€",
+    "aktuell",
+    "autozeitschriften",
+    "c:kultur freizeit",
+    "gutschein",
+    "klassik",
+    "m:motorpresse",
+    "motor",
+    "motorsport",
+    "p:<100",
+    "praemie",
+    "w:rabatte",
+    "youngtimer"
+   ],
+   "score": null
+  },
+  {
+   "id": "batt-beispiel-shirt-grun-s-fur-750eur-zzgl-versand-shoop-6-cashback-zalando-lounge-2851002",
+   "title": "Levi's Aktion Herren & Damen bis zu 80% Rabatt / Beispiel: -Shirt - grün S für 7,50€ zzgl. Versand Shoop 6% Cashback (Zalando Lounge)",
+   "link": "https://www.mydealz.de/deals/levis-aktion-herren-damen-bis-zu-80-rabatt-beispiel-shirt-grun-s-fur-750eur-zzgl-versand-shoop-6-cashback-zalando-lounge-2851002",
+   "merchant": "Lounge by Zalando",
+   "price": 13.25,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/VhEar/2851002_1/re/150x150/qt/55/2851002_1.jpg",
+   "pub": "2026-10-10T07:37:09+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "50€",
+    "aktion",
+    "beispiel",
+    "c:fashion accessoires",
+    "cashback",
+    "damen",
+    "gruen",
+    "herren",
+    "levi",
+    "lounge",
+    "m:lounge by zalando",
+    "p:<20",
+    "rabatt",
+    "shirt",
+    "shoop",
+    "versand",
+    "w:rabatte",
+    "zalando",
+    "zzgl"
+   ],
+   "score": null
+  },
   {
    "id": "4-macbook-pro-m5-pro-15c16c-24gb-ram-2tb-ssd-schwarz-6-cashback-256292eur-effektiv-2851962",
    "title": "Apple 14\" MacBook Pro (M5 Pro 15C/16C, 24GB Ram, 2TB SSD, Schwarz) + 6% Cashback = 2.562,92€ effektiv",
@@ -263,13 +448,13 @@
    ],
    "tarif": {
     "monthly": 54.98,
-    "upfront": 149.0,
+    "upfront": 0.0,
     "fee": 39.99,
-    "bonus": 50.0,
+    "bonus": 0.0,
     "months": 24,
     "device": "iphone 18 pro",
     "resale": null,
-    "cost": 1458.51,
+    "cost": 1359.51,
     "profit": null
    },
    "compare": null,
