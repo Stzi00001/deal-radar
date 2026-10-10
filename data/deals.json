@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T14:38:40+00:00",
+ "updated": "2026-10-10T18:53:28+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,135 @@
   }
  },
  "deals": [
+  {
+   "id": "-25-rabatt-bei-glow25-ab-39eur-mbw-zb-kollagen-plus-450g-fur-2999eur-statt-3495eur-2852231",
+   "title": "[Corporate Benefits] 25% Rabatt bei Glow25 ab 39€ MBW – z.B. Kollagen Plus 450g für 29,99€ statt 34,95€",
+   "link": "https://www.mydealz.de/deals/corporate-benefits-25-rabatt-bei-glow25-ab-39eur-mbw-zb-kollagen-plus-450g-fur-2999eur-statt-3495eur-2852231",
+   "merchant": "",
+   "price": 30.0,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/Yy8yJ/2852231_1/re/150x150/qt/55/2852231_1.jpg",
+   "pub": "2026-10-10T18:35:40+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": {
+    "ref": 34.95,
+    "pct": 14
+   },
+   "features": [
+    "39€",
+    "450g",
+    "95€",
+    "99€",
+    "benefits",
+    "c:beauty gesundheit",
+    "corporate",
+    "glow25",
+    "kollagen",
+    "mbw",
+    "p:<100",
+    "plus",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-bis-zu-15-cashback-15eur-shoop-gutschein-2849006",
+   "title": "[ Shoop Accor Hotels ] All Accor - Bis zu 15% Cashback + 15€ Shoop-Gutschein*",
+   "link": "https://www.mydealz.de/deals/bis-zu-15-cashback-15eur-shoop-gutschein-2849006",
+   "merchant": "ACCOR",
+   "price": 15.0,
+   "category": "Urlaub & Reisen",
+   "image": "https://static.mydealz.de/threads/raw/C5o8K/2849006_1/re/150x150/qt/55/2849006_1.jpg",
+   "pub": "2026-10-10T16:55:15+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "15€",
+    "accor",
+    "all",
+    "c:urlaub reisen",
+    "cashback",
+    "gutschein",
+    "hotels",
+    "m:accor",
+    "p:<20",
+    "shoop",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "deals-13-zusatzlicher-rabatt-auf-games-im-sale-eneba-pc-spiele-steam-gametoberfest-2852097",
+   "title": "13% zusätzlicher Rabatt auf Games im SALE | Eneba - PC + XBOX Spiele / Steam GOG | Gametoberfest - bspw. Horizon Forbidden West CE 22,53 €",
+   "link": "https://www.mydealz.de/deals/13-zusatzlicher-rabatt-auf-games-im-sale-eneba-pc-spiele-steam-gametoberfest-2852097",
+   "merchant": "ENEBA",
+   "price": 22.53,
+   "category": "Gaming",
+   "image": "https://static.mydealz.de/threads/raw/1LpNi/2852097_1/re/150x150/qt/55/2852097_1.jpg",
+   "pub": "2026-10-10T16:52:41+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "bspw",
+    "c:gaming",
+    "eneba",
+    "forbidden",
+    "games",
+    "gametoberfest",
+    "gog",
+    "horizon",
+    "m:eneba",
+    "p:<100",
+    "rabatt",
+    "sale",
+    "spiele",
+    "steam",
+    "w:rabatte",
+    "west",
+    "xbox",
+    "zusaetzlicher"
+   ],
+   "score": null
+  },
+  {
+   "id": "-ikea-online-und-clickcollect-20-rabatt-auf-200-artikel-letzte-chance-bis-30112026-2852210",
+   "title": "IKEA online und Click&Collect: 20% Rabatt auf >200 Artikel (Letzte Chance) bis 30.11.2026",
+   "link": "https://www.mydealz.de/gutscheine/ikea-online-und-clickcollect-20-rabatt-auf-200-artikel-letzte-chance-bis-30112026-2852210",
+   "merchant": "IKEA",
+   "price": null,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/50_3/re/352x352/qt/60/50_3.jpg",
+   "pub": "2026-10-10T16:40:55+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "artikel",
+    "c:home living",
+    "chance",
+    "click",
+    "collect",
+    "ikea",
+    "letzte",
+    "m:ikea",
+    "online",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
   {
    "id": "endubel-10-rabatt-auf-tonie-figuren-tonieplay-games-tonie-zubehor-mit-code-tonie10-2852176",
    "title": "[Hugendubel] 10 % Rabatt auf Tonie-Figuren, Tonieplay Games & Tonie-Zubehör mit Code TONIE10",
