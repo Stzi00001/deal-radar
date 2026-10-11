@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T07:19:45+00:00",
+ "updated": "2026-10-11T14:15:52+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,135 @@
   }
  },
  "deals": [
+  {
+   "id": "-www-mydealz-de-deals-mcdonalds-klassiker-zb-bigmac-fur-399-euro-coupon-in-der-app-2852498",
+   "title": "McDonald's Klassiker z.B. Big Mac für 3,99 Euro (Coupon in der App) - personalisiert",
+   "link": "https://www.mydealz.de/deals/mcdonalds-klassiker-zb-bigmac-fur-399-euro-coupon-in-der-app-2852498",
+   "merchant": "McDonald's",
+   "price": 3.99,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/X43zj/2852498_1/re/150x150/qt/55/2852498_1.jpg",
+   "pub": "2026-10-11T12:33:03+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "app",
+    "big",
+    "c:dienstleistungen vertraege",
+    "coupon",
+    "klassiker",
+    "m:mcdonald s",
+    "mac",
+    "mcdonald",
+    "p:<20",
+    "personalisiert",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "s-under-armour-sale-rival-fleece-jogginghose-schwarzdunkelblau-fleecejacke-schwarz-2852482",
+   "title": "Under Armour Sale | Rival Fleece Jogginghose schwarz/dunkelblau, Fleecejacke schwarz",
+   "link": "https://www.mydealz.de/deals/under-armour-sale-rival-fleece-jogginghose-schwarzdunkelblau-fleecejacke-schwarz-2852482",
+   "merchant": "Lounge by Zalando",
+   "price": 35.65,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/jXSRs/2852482_1/re/150x150/qt/55/2852482_1.jpg",
+   "pub": "2026-10-11T12:16:17+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "armour",
+    "c:fashion accessoires",
+    "dunkelblau",
+    "fleece",
+    "fleecejacke",
+    "jogginghose",
+    "m:lounge by zalando",
+    "p:<100",
+    "rival",
+    "sale",
+    "schwarz",
+    "under",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "ww-mydealz-de-deals-apple-iphone-17-256-gb-zustand-premium-12-monate-garantie-esim-2852473",
+   "title": "Apple iPhone 17 256 GB [Zustand: Premium, 12 Monate Garantie, eSim]",
+   "link": "https://www.mydealz.de/deals/apple-iphone-17-256-gb-zustand-premium-12-monate-garantie-esim-2852473",
+   "merchant": "Back Market",
+   "price": 753.49,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/Rhbda/2852473_1/re/150x150/qt/55/2852473_1.jpg",
+   "pub": "2026-10-11T12:15:51+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": null,
+    "upfront": 0.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 12,
+    "device": "iphone 17",
+    "resale": null,
+    "cost": null,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "apple",
+    "c:elektronik",
+    "esim",
+    "garantie",
+    "iphone",
+    "m:back market",
+    "monate",
+    "p:<800",
+    "premium",
+    "w:tarif-mit-handy",
+    "zustand"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-362983",
+   "title": "🚘 Auto Motor & Sport Halbjahresabo für 5,95€ (+ 5€ BestChoice-Gutschein bei Bankeinzug)",
+   "link": "https://www.dealdoktor.de/auto-motor-sport-halbjahresabo/",
+   "merchant": "",
+   "price": 5.95,
+   "category": "Zeitschriften",
+   "image": "",
+   "pub": "2026-10-11T08:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "95€",
+    "auto",
+    "bankeinzug",
+    "bestchoice",
+    "c:zeitschriften",
+    "gutschein",
+    "halbjahresabo",
+    "motor",
+    "p:<20",
+    "sport",
+    "w:rabatte"
+   ],
+   "score": null
+  },
   {
    "id": "niche-beauty-25-cashback-auf-alles-kombinierbar-mit-rabattcodes-online-beauty-shop-2852360",
    "title": "Niche Beauty 25% Cashback auf alles | kombinierbar mit Rabattcodes | Online-Beauty-Shop (Topcashback)",
