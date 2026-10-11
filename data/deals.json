@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T22:22:55+00:00",
+ "updated": "2026-10-11T01:11:17+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,72 @@
   }
  },
  "deals": [
+  {
+   "id": "a-monchengladbach-fc-bayern-munchen-union-berlin-adidas-retro-deutschland-19901994-2852304",
+   "title": "[CB] Trikots Sale 2026/27 - Puma BVB 09 • Borussia Mönchengladbach • FC Bayern München • Union Berlin & Adidas Retro Deutschland 1990/1994",
+   "link": "https://www.mydealz.de/deals/cb-trikots-sale-202627-puma-bvb-09-borussia-monchengladbach-fc-bayern-munchen-union-berlin-adidas-retro-deutschland-19901994-2852304",
+   "merchant": "Zalando",
+   "price": 66.0,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/threads/raw/DvpDi/2852304_1/re/150x150/qt/55/2852304_1.jpg",
+   "pub": "2026-10-10T23:06:10+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "adidas",
+    "bayern",
+    "berlin",
+    "borussia",
+    "bvb",
+    "c:sport outdoor",
+    "deutschland",
+    "m:zalando",
+    "moenchengladbach",
+    "muenchen",
+    "p:<100",
+    "puma",
+    "retro",
+    "sale",
+    "trikots",
+    "union",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "ack-auf-ikea-geschenkkarten-zum-ende-der-kooperation-angebot-gultig-bis-16-oktober-2852302",
+   "title": "[Shoop X IKEA] 7% Sofort-Cashback auf IKEA Geschenkkarten zum Ende der Kooperation | Angebot gültig bis 16. Oktober",
+   "link": "https://www.mydealz.de/deals/shoop-x-ikea-7-sofort-cashback-auf-ikea-geschenkkarten-zum-ende-der-kooperation-angebot-gultig-bis-16-oktober-2852302",
+   "merchant": "Shoop",
+   "price": null,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/EOIks/2852302_1/re/150x150/qt/55/2852302_1.jpg",
+   "pub": "2026-10-10T22:57:56+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "angebot",
+    "c:home living",
+    "cashback",
+    "ende",
+    "geschenkkarten",
+    "gueltig",
+    "ikea",
+    "kooperation",
+    "m:shoop",
+    "oktober",
+    "shoop",
+    "sofort",
+    "w:rabatte"
+   ],
+   "score": null
+  },
   {
    "id": "dealz-de-deals-flaconi-gutschein-code-13-zb-guerlain-vetiver-eau-de-toilette-100ml-2852293",
    "title": "Flaconi Gutschein Code 13%, z.B. Guerlain Vetiver eau de toilette 100ml",
@@ -220,13 +286,13 @@
    ],
    "tarif": {
     "monthly": 49.99,
-    "upfront": 229.95,
+    "upfront": 0.0,
     "fee": 39.99,
     "bonus": 0.0,
     "months": 24,
     "device": "iphone 18 pro",
     "resale": null,
-    "cost": 1469.7,
+    "cost": 1239.75,
     "profit": null
    },
    "compare": null,
