@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T19:00:26+00:00",
+ "updated": "2026-10-11T22:52:03+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,295 @@
   }
  },
  "deals": [
+  {
+   "id": "ealz-de-gutscheine-medimops-gutschein-lesen15-15-rabatt-ab-25eur-mbw-gebrauchtware-2852685",
+   "title": "Medimops Gutschein LESEN15 15% Rabatt ab 25€ MBW (Gebrauchtware)",
+   "link": "https://www.mydealz.de/gutscheine/medimops-gutschein-lesen15-15-rabatt-ab-25eur-mbw-gebrauchtware-2852685",
+   "merchant": "medimops",
+   "price": 25.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/400_3/re/352x352/qt/60/400_3.jpg",
+   "pub": "2026-10-11T22:45:29+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "25€",
+    "c:kultur freizeit",
+    "gebrauchtware",
+    "gutschein",
+    "lesen15",
+    "m:medimops",
+    "mbw",
+    "medimops",
+    "p:<100",
+    "rabatt",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "at-durch-cashback-dsl-100-eff-2370eurmonat-dsl-250-2853eurmonat-ggf-personalisiert-2852680",
+   "title": "Telekom DSL: DSL 50 eff. 21,62€/Monat durch Cashback | DSL 100 eff. 23,70€/Monat | DSL 250 28,53€/Monat (ggf. personalisiert)",
+   "link": "https://www.mydealz.de/deals/telekom-dsl-dsl-50-eff-2162eurmonat-durch-cashback-dsl-100-eff-2370eurmonat-dsl-250-2853eurmonat-ggf-personalisiert-2852680",
+   "merchant": "Telekom",
+   "price": 21.62,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/BFAx3/2852680_1/re/150x150/qt/55/2852680_1.jpg",
+   "pub": "2026-10-11T22:25:37+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "53€",
+    "62€",
+    "70€",
+    "c:telefon internet vertraege",
+    "cashback",
+    "dsl",
+    "durch",
+    "eff",
+    "ggf",
+    "m:telekom",
+    "monat",
+    "p:<100",
+    "personalisiert",
+    "telekom",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "0eur-cashback-auf-valide-vertragsabschlusse-fur-strom-und-gas-ab-3-monate-laufzeit-2852674",
+   "title": "Preisvergleich.de & Shoop - 40€ Cashback auf valide Vertragsabschlüsse für Strom und Gas ab 3 Monate Laufzeit",
+   "link": "https://www.mydealz.de/deals/preisvergleichde-shoop-40eur-cashback-auf-valide-vertragsabschlusse-fur-strom-und-gas-ab-3-monate-laufzeit-2852674",
+   "merchant": "Shoop",
+   "price": 40.0,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/0yc9x/2852674_1/re/150x150/qt/55/2852674_1.jpg",
+   "pub": "2026-10-11T22:05:58+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "40€",
+    "c:dienstleistungen vertraege",
+    "cashback",
+    "gas",
+    "laufzeit",
+    "m:shoop",
+    "monate",
+    "p:<100",
+    "preisvergleich",
+    "shoop",
+    "strom",
+    "valide",
+    "vertragsabschluesse",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "tt-auf-zalando-geschenkgutscheine-bei-galaxus-i-100eur-150eur-oder-200eur-guthaben-2852672",
+   "title": "15 % Rabatt auf Zalando-Geschenkgutscheine bei Galaxus: 100 €, 150 € oder 200 € Guthaben",
+   "link": "https://www.mydealz.de/deals/15-rabatt-auf-zalando-geschenkgutscheine-bei-galaxus-i-100eur-150eur-oder-200eur-guthaben-2852672",
+   "merchant": "Galaxus",
+   "price": 85.0,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/NlwuP/2852672_1/re/150x150/qt/55/2852672_1.jpg",
+   "pub": "2026-10-11T22:04:20+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:fashion accessoires",
+    "galaxus",
+    "geschenkgutscheine",
+    "guthaben",
+    "m:galaxus",
+    "p:<100",
+    "rabatt",
+    "w:rabatte",
+    "zalando"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-c24-shoop-50eur-cashback-auf-valide-kontoeroffnungen-2852671",
+   "title": "[C24 + Shoop] 50€ Cashback auf valide Kontoeröffnungen",
+   "link": "https://www.mydealz.de/deals/c24-shoop-50eur-cashback-auf-valide-kontoeroffnungen-2852671",
+   "merchant": "Shoop",
+   "price": 50.0,
+   "category": "Versicherung & Finanzen",
+   "image": "https://static.mydealz.de/threads/raw/T4qtA/2852671_1/re/150x150/qt/55/2852671_1.jpg",
+   "pub": "2026-10-11T22:03:44+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "50€",
+    "c24",
+    "c:versicherung finanzen",
+    "cashback",
+    "kontoeroeffnungen",
+    "m:shoop",
+    "p:<100",
+    "shoop",
+    "valide",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "ortboni-auf-strom-und-gas-500eur-sofortbonus-bei-kombi-abschluss-private-neukunden-2836657",
+   "title": "[enercity x Shoop] Bis zu 205€ Cashback + 250€ Sofortboni auf Strom und Gas (500€ Sofortbonus bei Kombi-Abschluss) | private Neukunden",
+   "link": "https://www.mydealz.de/deals/enercity-x-shoop-bis-zu-200eur-cashback-250eur-sofortboni-auf-strom-und-gas-500eur-sofortbonus-bei-kombi-abschluss-private-neukunden-2836657",
+   "merchant": "Enercity",
+   "price": 205.0,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/VJSR2/2836657_1/re/150x150/qt/55/2836657_1.jpg",
+   "pub": "2026-10-11T22:01:25+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "205€",
+    "250€",
+    "500€",
+    "abschluss",
+    "c:dienstleistungen vertraege",
+    "cashback",
+    "enercity",
+    "gas",
+    "kombi",
+    "m:enercity",
+    "neukunden",
+    "p:<300",
+    "private",
+    "shoop",
+    "sofortboni",
+    "sofortbonus",
+    "strom",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "e-iphone-17-pro-max-im-freenet-allnetsms-flat-50gb-5g-2-sim-fur-5498eurmonat-79eur-2852664",
+   "title": "Telekom Netz: Apple iPhone 17 Pro Max im Freenet Allnet/SMS Flat 50GB 5G & 2. Sim für 54,98€/Monat & 79€",
+   "link": "https://www.mydealz.de/deals/telekom-netz-apple-iphone-17-pro-max-im-freenet-allnetsms-flat-50gb-5g-2-sim-fur-5498eurmonat-79eur-2852664",
+   "merchant": "Media Markt Tarifwelt",
+   "price": 1314.46,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/7AVTG/2852664_1/re/150x150/qt/55/2852664_1.jpg",
+   "pub": "2026-10-11T21:34:21+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 54.98,
+    "upfront": 79.0,
+    "fee": 39.99,
+    "bonus": 130.0,
+    "months": 24,
+    "device": "iphone 18 pro max",
+    "resale": null,
+    "cost": 1308.51,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "50gb",
+    "79€",
+    "98€",
+    "allnet",
+    "apple",
+    "c:telefon internet vertraege",
+    "flat",
+    "freenet",
+    "iphone",
+    "m:media markt tarifwelt",
+    "max",
+    "monat",
+    "netz",
+    "p:800+",
+    "pro",
+    "sim",
+    "sms",
+    "telekom",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-tegut-50-rabatt-auf-alle-artikel-von-nur-die-z-b-socken-2852581",
+   "title": "[tegut] 50% Rabatt auf alle Artikel von \"nur die\", z. B. Socken",
+   "link": "https://www.mydealz.de/deals/tegut-50-rabatt-auf-alle-artikel-von-nur-die-z-b-socken-2852581",
+   "merchant": "",
+   "price": null,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/swME0/2852581_1/re/150x150/qt/55/2852581_1.jpg",
+   "pub": "2026-10-11T21:34:09+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "artikel",
+    "c:fashion accessoires",
+    "rabatt",
+    "socken",
+    "tegut",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "de-deals-lego-editions-fussball-lego-set-43019-bei-bezahlung-mit-wero-10eur-rabatt-2852643",
+   "title": "LEGO Editions Fußball Lego-Set 43019 bei Bezahlung mit Wero 10€ Rabatt [ bisheriger Bestpreis ]",
+   "link": "https://www.mydealz.de/deals/lego-editions-fussball-lego-set-43019-bei-bezahlung-mit-wero-10eur-rabatt-2852643",
+   "merchant": "expert",
+   "price": 67.0,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/z8Qha/2852643_1/re/150x150/qt/55/2852643_1.jpg",
+   "pub": "2026-10-11T21:09:34+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10€",
+    "bestpreis",
+    "bezahlung",
+    "bisheriger",
+    "c:family kids",
+    "editions",
+    "fussball",
+    "lego",
+    "m:expert",
+    "p:<100",
+    "rabatt",
+    "set",
+    "w:rabatte",
+    "wero"
+   ],
+   "score": null
+  },
   {
    "id": "-inkl-fruhstuck-kostenloser-parkplatz-10eur-payback-weitere-hilton-hotels-ab-69eur-2852597",
    "title": "Hotel Gutschein Hilton Düsseldorf 2P, 1 Nacht, inkl. Frühstück + kostenloser Parkplatz + 10€ Payback (weitere Hilton Hotels ab 69€)",
