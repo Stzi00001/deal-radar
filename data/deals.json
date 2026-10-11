@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T14:15:52+00:00",
+ "updated": "2026-10-11T19:00:26+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,134 @@
   }
  },
  "deals": [
+  {
+   "id": "-inkl-fruhstuck-kostenloser-parkplatz-10eur-payback-weitere-hilton-hotels-ab-69eur-2852597",
+   "title": "Hotel Gutschein Hilton Düsseldorf 2P, 1 Nacht, inkl. Frühstück + kostenloser Parkplatz + 10€ Payback (weitere Hilton Hotels ab 69€)",
+   "link": "https://www.mydealz.de/deals/hotel-gutschein-hilton-dusseldorf-2p-inkl-fruhstuck-kostenloser-parkplatz-10eur-payback-weitere-hilton-hotels-ab-69eur-2852597",
+   "merchant": "Netto Reisen",
+   "price": 99.0,
+   "category": "Urlaub & Reisen",
+   "image": "https://static.mydealz.de/threads/raw/jpZrC/2852597_1/re/150x150/qt/55/2852597_1.jpg",
+   "pub": "2026-10-11T18:51:32+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "10€",
+    "69€",
+    "c:urlaub reisen",
+    "duesseldorf",
+    "fruehstueck",
+    "gutschein",
+    "hilton",
+    "hotel",
+    "hotels",
+    "kostenloser",
+    "m:netto reisen",
+    "nacht",
+    "p:<100",
+    "parkplatz",
+    "payback",
+    "w:rabatte",
+    "weitere"
+   ],
+   "score": null
+  },
+  {
+   "id": "ng-galaxy-buds4-pro-true-wireless-in-ear-active-noise-cancelling-kopfhorer-schwarz-2834880",
+   "title": "Samsung Galaxy Buds4 Pro True Wireless In-Ear Active Noise Cancelling Kopfhörer Schwarz(Joyplus Rabatt)",
+   "link": "https://www.mydealz.de/deals/samsung-galaxy-buds4-pro-true-wireless-in-ear-active-noise-cancelling-kopfhorer-schwarz-2834880",
+   "merchant": "Joybuy",
+   "price": 143.91,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/iJRVI/2834880_1/re/150x150/qt/55/2834880_1.jpg",
+   "pub": "2026-10-11T18:45:33+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "active",
+    "buds4",
+    "c:elektronik",
+    "cancelling",
+    "ear",
+    "galaxy",
+    "joyplus",
+    "kopfhoerer",
+    "m:joybuy",
+    "noise",
+    "p:<300",
+    "pro",
+    "rabatt",
+    "samsung",
+    "schwarz",
+    "true",
+    "w:rabatte",
+    "wireless"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-655691",
+   "title": "🚗 Verivox: Kfz Versicherung wechseln + 60€ BestChoice-/Amazon.de-Gutschein",
+   "link": "https://www.dealdoktor.de/verivox-kfz-bonus-deal/",
+   "merchant": "",
+   "price": 60.0,
+   "category": "Auto & Motorrad",
+   "image": "",
+   "pub": "2026-10-11T18:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "60€",
+    "bestchoice",
+    "c:auto motorrad",
+    "gutschein",
+    "kfz",
+    "p:<100",
+    "verivox",
+    "versicherung",
+    "w:rabatte",
+    "wechseln"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-2152855",
+   "title": "Yves Rocher Shopping Week: Mid Season Sale + 20% Extra-Rabatt!",
+   "link": "https://www.dealdoktor.de/yves-rocher-shopping-week/",
+   "merchant": "",
+   "price": null,
+   "category": "Drogerie",
+   "image": "",
+   "pub": "2026-10-11T15:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:drogerie",
+    "extra",
+    "mid",
+    "rabatt",
+    "rocher",
+    "sale",
+    "season",
+    "shopping",
+    "w:rabatte",
+    "week",
+    "yves"
+   ],
+   "score": null
+  },
   {
    "id": "-www-mydealz-de-deals-mcdonalds-klassiker-zb-bigmac-fur-399-euro-coupon-in-der-app-2852498",
    "title": "McDonald's Klassiker z.B. Big Mac für 3,99 Euro (Coupon in der App) - personalisiert",
