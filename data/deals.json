@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T09:25:22+00:00",
+ "updated": "2026-10-12T13:21:22+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -38,6 +38,144 @@
  },
  "deals": [
   {
+   "id": "https-www-dealdoktor-de-p-2155357",
+   "title": "Google Pixel 11 (256GB) für 59,95€ + Unlimited 5G/LTE für 29,99€/Monat (o2 unlimited)",
+   "link": "https://www.dealdoktor.de/google-pixel-11-o2-unlimited/",
+   "merchant": "",
+   "price": 59.95,
+   "category": "Google",
+   "image": "",
+   "temp": null,
+   "discount": null,
+   "desc": "Wer auf der Suche nach unbegrenztem Datenvolumen ist, bekommt hier einen richtig starken Deal: Das Google Pixel 11 (256GB) gibt es aktuell zusammen mit einer 5G-Flatrate im o2-Netz für nur 29,99€ mtl.! Google Pixel 11 (256GB) für 59,95€ + Unlimited 5G/LTE für 29,99€/Monat 256GB Speicherplatz Echtes unbegrenztes …",
+   "pub": "2026-10-12T12:45:47+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 29.99,
+    "upfront": 59.95,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": "pixel 11",
+    "resale": null,
+    "cost": 819.7,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "256gb",
+    "95€",
+    "99€",
+    "c:google",
+    "google",
+    "lte",
+    "monat",
+    "p:<100",
+    "pixel",
+    "unlimited",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-acer-notebooks-cashback-aktion-bis-zu-200-euro-2852950",
+   "title": "Acer Notebooks Cashback Aktion (bis zu 200 Euro)",
+   "link": "https://www.mydealz.de/deals/acer-notebooks-cashback-aktion-bis-zu-200-euro-2852950",
+   "merchant": "Acer",
+   "price": 200.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/Zishm/2852950_1/re/150x150/qt/55/2852950_1.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Kaufe zwischen dem 09.10.2026 und dem 06.11.2026 ein teilnehmendes Notebook bei einem teilnehmenden Händler. Melde dich innerhalb von 14 Tagen nach Kaufdatum auf an. Nach erfolgreicher Antragsprüfung überweisen wir deinen Cashback innerhalb von 30 Tagen auf dein Bankkonto.",
+   "pub": "2026-10-12T12:40:57+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "acer",
+    "aktion",
+    "c:elektronik",
+    "cashback",
+    "m:acer",
+    "notebooks",
+    "p:<300",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-diskussion-penny-app-gewinnspiel-5-millionen-gewinne-2852945",
+   "title": "Penny App Gewinnspiel - 5 Millionen Gewinne",
+   "link": "https://www.mydealz.de/diskussion/penny-app-gewinnspiel-5-millionen-gewinne-2852945",
+   "merchant": "",
+   "price": null,
+   "category": "Gewinnspiele",
+   "image": "",
+   "temp": null,
+   "discount": null,
+   "desc": "In der Penny App kann man aktuell Täglich bis zum 31. Oktober wieder losrubbeln und Sofortgewinne erhalten.",
+   "pub": "2026-10-12T12:35:36+00:00",
+   "source": "mydealz Gewinnspiele",
+   "watch": [
+    "gewinnspiele"
+   ],
+   "compare": null,
+   "features": [
+    "app",
+    "c:gewinnspiele",
+    "gewinne",
+    "gewinnspiel",
+    "millionen",
+    "penny",
+    "w:gewinnspiele"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-2102181",
+   "title": "15€ Amazon.de-Gutschein on top 🔥 Monatlich kündbare 35GB 5G Vodafone Allnet Flat für dauerhafte 6,99€ + 0€ AG (allmobil Basic 35 Flex)",
+   "link": "https://www.dealdoktor.de/allmobil-basic-35-flex/",
+   "merchant": "",
+   "price": 15.0,
+   "category": "Handytarife & Smartphones",
+   "image": "",
+   "temp": null,
+   "discount": null,
+   "desc": "Ihr sucht maximale Freiheit im sehr guten Vodafone-Netz, wollt euch aber nicht für 24 Monate binden? Dann hat LogiTel gerade einen echten Knaller für euch! Warum woanders viel Geld für starre Verträge bezahlen, wenn ihr hier fette 35GB 5G für dauerhaft 6,99€/Monat bekommt? Und dazu noch einen 15€ Amazon.de-Gutschein! …",
+   "pub": "2026-10-12T12:30:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "15€",
+    "35gb",
+    "99€",
+    "allmobil",
+    "allnet",
+    "basic",
+    "c:handytarife smartphones",
+    "dauerhafte",
+    "flat",
+    "flex",
+    "gutschein",
+    "kuendbare",
+    "monatlich",
+    "p:<20",
+    "top",
+    "vodafone",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
    "id": "z-de-gutscheine-13-rabatt-auf-spielzeug-filme-musik-vinyl-cds-schreibwaren-technik-2852832",
    "title": "[bücher.de, buecher.de] 13% Rabatt auf Spielzeug, Filme, Musik (Vinyl, CDs), Schreibwaren, Technik",
    "link": "https://www.mydealz.de/gutscheine/13-rabatt-auf-spielzeug-filme-musik-vinyl-cds-schreibwaren-technik-2852832",
@@ -65,7 +203,9 @@
     "vinyl",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Bei bücher.de bekommt ihr momentan 13% Rabatt auf die o.g. Medien. Vinyl ist grundsätzlich versandkostenfrei. Die Bestellungen können auch an eine Thalia-Filiale kostenfrei zur Abholung geliefert werden.",
+   "discount": 13
   },
   {
    "id": "lz-de-deals-shoop-green-planet-energy-bis-zu-120eur-cashback-45eur-shoop-gutschein-2852826",
@@ -359,7 +499,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Mit dem Gutscheincode LESEN15 kann man sowohl über die Medimops App als auch über den Browser ab einem MBW in Höhe von 25€ 15% Rabatt erhalten. Die Laufzeit ist derzeit nicht bekannt, da die Aktionsseite noch nicht online ist. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Artikel im Zustand \"Wie Neu\" …",
+   "discount": 15
   },
   {
    "id": "at-durch-cashback-dsl-100-eff-2370eurmonat-dsl-250-2853eurmonat-ggf-personalisiert-2852680",
@@ -536,7 +678,7 @@
     "fee": 39.99,
     "bonus": 130.0,
     "months": 24,
-    "device": "iphone 18 pro max",
+    "device": "iphone 17 pro max",
     "resale": null,
     "cost": 1308.51,
     "profit": null
@@ -810,46 +952,6 @@
    "score": null
   },
   {
-   "id": "ww-mydealz-de-deals-apple-iphone-17-256-gb-zustand-premium-12-monate-garantie-esim-2852473",
-   "title": "Apple iPhone 17 256 GB [Zustand: Premium, 12 Monate Garantie, eSim]",
-   "link": "https://www.mydealz.de/deals/apple-iphone-17-256-gb-zustand-premium-12-monate-garantie-esim-2852473",
-   "merchant": "Back Market",
-   "price": 753.49,
-   "category": "Elektronik",
-   "image": "https://static.mydealz.de/threads/raw/Rhbda/2852473_1/re/150x150/qt/55/2852473_1.jpg",
-   "pub": "2026-10-11T12:15:51+00:00",
-   "source": "mydealz heiß",
-   "watch": [
-    "tarif-mit-handy"
-   ],
-   "tarif": {
-    "monthly": null,
-    "upfront": 0.0,
-    "fee": 39.99,
-    "bonus": 0.0,
-    "months": 12,
-    "device": "iphone 17",
-    "resale": null,
-    "cost": null,
-    "profit": null
-   },
-   "compare": null,
-   "features": [
-    "apple",
-    "c:elektronik",
-    "esim",
-    "garantie",
-    "iphone",
-    "m:back market",
-    "monate",
-    "p:<800",
-    "premium",
-    "w:tarif-mit-handy",
-    "zustand"
-   ],
-   "score": null
-  },
-  {
    "id": "https-www-dealdoktor-de-p-362983",
    "title": "🚘 Auto Motor & Sport Halbjahresabo für 5,95€ (+ 5€ BestChoice-Gutschein bei Bankeinzug)",
    "link": "https://www.dealdoktor.de/auto-motor-sport-halbjahresabo/",
@@ -964,7 +1066,9 @@
     "kissen",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Auf der Suche nach neuen Couchkissen bin ich auf Amilian gestoßen. Gefunden hatte ich die Produkte zu denselben Preisen auch auf Amazon und Otto. Allerdings muss man da extra Versandkosten bezahlen. Direkt auf amilian.de Versandkostenfrei ab 35€. Und nun gibt es auch noch einen Gutschein mit 17% auf alles. Er lautet …",
+   "discount": 17
   },
   {
    "id": "ttps-www-mydealz-de-deals-1eur-sensodyne-clinical-white-coupon-gultig-bis-31122026-2850234",
@@ -1425,7 +1529,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "ikea.com/de/de/cat/last-chance/ 20% Rabatt auf viele \"Letzte Chance\" Artikel \"Erhalte 20% Rabatt auf ausgewählte Artikel vom 10.10. bis zum 30.11.2026. Das Angebot gilt nur für Bestellungen im IKEA Online-Shop, in der IKEA App und dem Service Click&Collect. Diese Aktion ist im IKEA Einrichtungshaus sowie bei Shop&Go …",
+   "discount": 20
   },
   {
    "id": "endubel-10-rabatt-auf-tonie-figuren-tonieplay-games-tonie-zubehor-mit-code-tonie10-2852176",
@@ -1656,7 +1762,9 @@
     "punkte",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Nabeeend.✌️ Ich hätte hier einen 44fach Netto-Coupon auf Deo und Parfüm. Haltbar bis 15.11.2026 Viel Erfolg und Vergnügen. 44-fach Punkte auf Deo+Parfüm Gültig bis: 15.11.2026 Von den Joker Losen EAN: 9971321674656 Einlösbar bei: Netto MD",
+   "discount": null
   },
   {
    "id": "gratis-parken-fur-e-autos-in-318-orten-100-rabatt-auf-parkgebuhren-0eur-parkgebuhr-2852044",
@@ -2024,7 +2132,9 @@
     "ueber",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Bei AFEW läuft bis zum 12.10.2026 ein ziemlich spannende Aktion: Mit dem Code SP-28 bekommt ihr 28 % extra Rabatt auf über 3.000 Artikel . Wer ohnehin mal wieder bei AFEW stöbern wollte, findet hier also nicht nur ein paar Einzelstücke, sondern eine richtig breite Auswahl aus Sneakern, Streetwear und Fashion . Mit …",
+   "discount": 28
   },
   {
    "id": "pple-iphone-18-pro-im-freenet-allnetsms-flat-50gb-5g-2-sim-fur-5498eurmonat-149eur-2851941",
@@ -2493,7 +2603,9 @@
     "viele",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Beschreibung Bei Hardloop gibt es aktuell 20 % Extra-Rabatt auf nicht reduzierte Produkte – mit dem entsprechenden Gutscheincode. Wer auf Outdoor- und Sportausrüstung steht, findet hier eine große Auswahl an bekannten Marken, darunter: Patagonia The North Face Columbia LOWA VAUDE Mammut und viele weitere …",
+   "discount": 20
   },
   {
    "id": "fresh-extreme-72h-anti-transpirant-deospray-mit-ultra-cooling-effekt-prime-sparabo-2851852",
@@ -2758,7 +2870,9 @@
     "refurbished",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Herbst-Sale bei JobRad Loop (ehem. Bravobike/Revelo). Der Anbieter verkauft aufbereitete Leasingrückläufer des Schwesterunternehmens, darunter Fahrräder, Lastenräder und Pedelecs bis 25 km/h Unterstützung. Für die Lieferung per Spedition fallen 69€ an. Die Räder können 14 Tage lang probegefahren und kostenfrei …",
+   "discount": null
   },
   {
    "id": "s-reduziert-20-auf-ausgewahlte-trikots-bayern-juventus-real-barcelona-koln-psg-uvm-2851187",
@@ -2790,7 +2904,9 @@
     "uvm",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Bei 11teamsports gibt es aktuell 20 Prozent Rabatt auf ausgewählte Jerseys mit dem Code Jersey20. Hier sind einige Beispiele für Trikots, auf die der Rabatt angewendet werden kann. FC Bayern München Trikot Away 26/27 Kids Weiß Juventus Turin Trikot Away 26/27 Bayern München Trikot Home 26/27 Rot FC Bayern München …",
+   "discount": 20
   },
   {
    "id": "rebuy-20-ab-55eur-mbw-bzw-15-ab-35eur-mbw-und-gratis-versand-auf-gebrauchte-bucher-2851160",
@@ -2821,7 +2937,9 @@
     "versand",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Rebuy bietet mal wieder Rabatt und Gratis-Versand auf gebrauchte Bücher. Ab 55€ Einkaufswert gibt es 20% Rabatt, ab 35€ immerhin noch 15% . Die Aktion geht bis zum 12.10.2026 . Der Gutschein kam per Mail, auf der Webseite wird er nirgendwo angezeigt (funktioniert aber). Gutscheinkonditionen: *Gilt bis zum 12.10.2026, …",
+   "discount": 20
   },
   {
    "id": "https-www-mydealz-de-gutscheine-rebuy-15-gutschein-lsjdtoxufexs-ab-35eur-mbw-2850944",
@@ -2848,7 +2966,9 @@
     "rebuy",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Mit dem Gutscheincode LSJDTOXUFEXS kann man bei Rebuy ab einem MBW in Höhe von 35€ 15% Rabatt erhalten. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Es gibt auch den Gutschein MRSDTOXRUNTS für eine versandkostenfreie Lieferung ab 35€. Die Gutscheine lassen sich jedoch nicht kombinieren. Die …",
+   "discount": 15
   },
   {
    "id": "tps-www-mydealz-de-gutscheine-medimops-gutschein-okayciao15-15-rabatt-ab-30eur-mbw-2850461",
@@ -2877,7 +2997,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Mit dem Gutscheincode OKAYCIAO15 kann man sowohl über die Medimops App als auch über den Browser ab einem MBW in Höhe von 30€ 15% Rabatt erhalten. Die Laufzeit ist derzeit nicht bekannt, da die Aktionsseite noch nicht online ist. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Artikel im Zustand \"Wie …",
+   "discount": 15
   },
   {
    "id": "besten-saug-und-wischroboter-deals-im-prime-day-dreame-roborock-ecovacs-xiaomi-uvm-2850227",
@@ -2907,7 +3029,9 @@
     "wischroboter",
     "xiaomi"
    ],
-   "score": null
+   "score": null,
+   "desc": "Der erste Tag der Prime Days ist fast zu Ende und in den vergangenen 22 Stunden sind ein riesiger Haufen Deals reingekommen. Und auch zu Saug- und Wischrobotern kam heutehat sich inzwischen einiges an Prime Day Deals angesammelt. Damit ihr auch hier einen Ort habt, an dem sich zentral alles sammelt, hab ich die …",
+   "discount": null
   },
   {
    "id": "chtung-smarte-steckdosen-schalter-smart-locks-heizung-sensoren-uberwachungskameras-2850104",
@@ -2941,7 +3065,9 @@
     "ueberwachungskameras",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Der erste Tag der Prime Days nähert sich dem Endspurt, da komm ich dann doch nochmal mit so einem Deal um die Ecke. Auch zum Thema Smart Home hat sich inzwischen einiges an Prime Day Deals angesammelt. Damit ihr auch hier einen Ort habt, an dem sich zentral alles sammelt, hab ich die interessantesten Deals hier …",
+   "discount": null
   },
   {
    "id": "ie-besten-pc-hardware-prime-day-deals-cpus-netzteile-gehause-lufter-mainboards-uvm-2850035",
@@ -2971,7 +3097,9 @@
     "netzteile",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Zugegeben : Amazon ist nicht unbedingt die erste Anlaufstelle, an die man beim PC-Selbstbau denkt. Doch : Im laufenden Prime Day sind aktuell allein für CPUs schon 7 Deals aktiv. Da ich doch einiges an Prime Day Deals zu PC-Hardware gefunden hab, dachte ich mir: Komm, steuerste selbst noch was bei und sammelst das …",
+   "discount": null
   },
   {
    "id": "vredestein-reifen-ab-16-zoll-kaufen-bis-zu-60-eur-pramie-amazon-oder-aral-erhalten-2848842",
@@ -3001,7 +3129,9 @@
     "winteraktion",
     "zoll"
    ],
-   "score": null
+   "score": null,
+   "desc": "Zwei oder vier qualifizierte Vredestein-Reifen ab 16 Zoll im Aktionszeitraum 01.10.-30.11.2026 kaufen und Prämie (Amazon oder ARAL) bis zu 60 € Prämie erhalten (abhängig von Reifengröße und -menge). So geht's: Zwei oder vier Reifen kaufen Rechnung online registrieren Prämie sichern Das Aktionsangebot gilt für Kunden, …",
+   "discount": null
   },
   {
    "id": "z-de-gutscheine-kik-15-prozent-auf-dem-offline-und-online-einkauf-via-kaufland-app-2848805",
@@ -3030,7 +3160,9 @@
     "via",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Hallo liebe MyDealzer, über die Kaufland App bekommt ihr gerade einen Gutschein für offline und online Einkäufe bei KiK. Vllt ist ja für den einen oder anderen was dabei... Aktionsbedingungen Mechanik 1. Suche dir in deiner KiK-Filiale deine Lieblingsartikel aus 2. Zeige den KiK- Rabatt-Code aus der Kaufland- App an …",
+   "discount": 15
   },
   {
    "id": "gutscheine-decathlon-20-ab-50eur-auf-das-komplette-kinder-sortiment-nur-in-der-app-2848479",
@@ -3057,7 +3189,9 @@
     "p:<100",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Momentan bekommt man 20% auf das Kindersortiment bei Decathlon ab 50€, es sind über 300 Artikel verfügbar und nur in der App anwendbar.",
+   "discount": 20
   },
   {
    "id": "https-www-mydealz-de-gutscheine-bike-components-deal-days-nur-am-04-und-0510-2848347",
@@ -3082,7 +3216,9 @@
     "m:bike components",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Mit dem Aktionscode DEALS10 erhältst Du 10 % Rabatt auf Deinen Einkauf. Ausgenommen sind Antrieb, Bremsen, Komplettgruppen & Upgradekits, Powermeter, Reifen, Schaltung, Schläuche, Beleuchtung, Training, Tachos & Navigation sowie der Kauf von Gutscheinen. *Mit dem Aktionscode DEALS10 erhältst Du 10 % Rabatt auf Deinen …",
+   "discount": 10
   },
   {
    "id": "https-www-mydealz-de-gutscheine-rossmann-tagl-20-auf-dekorative-kosmetik-2848236",
@@ -3107,7 +3243,9 @@
     "taegl",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Nur mit der Rossmann App einlösbar. Täglich vom 05.-09.10.26 20% Rabatt auf dekorative Kosmetik. Ausgenommen sind Adventskalender.",
+   "discount": 20
   },
   {
    "id": "https-www-mydealz-de-gutscheine-payback-dm-10fach-p-auf-fast-alles-ab-2-eur-2848192",
@@ -3156,7 +3294,9 @@
     "ueber",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "4% Cashback Für alle Kategorien Von Technik bis hin zu Wohnaccessoires und Mode – zwischen dem 1. und 31. October erhältst du 4 % Cashback auf deine amazon.de ‑Einkäufe durch DealWise. Auf fast alles ( außer Bücher und Geschenkgutscheine ). Ein perfekter Grund, deinen Warenkorb zu füllen! — Sonstiges : Besondere …",
+   "discount": 4
   },
   {
    "id": "rabatt-auch-auf-reduzierte-sets-zb-schule-der-magischen-tiere-rabat-klemmbausteine-2847996",
@@ -3265,7 +3405,9 @@
     "vinyl",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "BDHW 20 Jahre Jubiläum, darum gibt's 50% auf alle Artikel solange der Vorrat reicht! Interessant für Beatdown/Hardcore/Punk Liebhaber!",
+   "discount": 50
   },
   {
    "id": "le-bestellungen-am-03-und-0410-ausgenommen-druckerzeugnisse-und-geschenkgutscheine-2847700",
@@ -3458,7 +3600,9 @@
     "season",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "Es gibt von LVM Gaming eine neue Season, mit einem Gewinnspiel. Die Season ist heute (01.10.2026) gestartet und geht bis Ende des Jahres. Codes findet man in Streams, bei Insta, YT und Code. Gewinnen kann man einen Gaming PC, Gaming Stuhl, Xbox Controller und Steam Gutscheine. Immer zum Monatsende werden die Gewinner …",
+   "discount": null
   },
   {
    "id": "dealz-de-gutscheine-medimops-app-gutschein-sale15-15-rabatt-ab-einem-mbw-von-25eur-2846745",
@@ -3518,7 +3662,9 @@
     "tage",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "Der mydealz Inktober ist zurück! (party) <3 :p Der Oktober steht wieder vor der Tür. Die Tage werden kürzer, die Paketzusteller haben vor Black Friday noch einmal kurz Gelegenheit durchzuatmen und irgendwo beginnt bereits jemand, den Keller für den nächsten Jahresvorrat Nutella freizuräumen. (nutella) Höchste Zeit …",
+   "discount": null
   },
   {
    "id": "ttps-www-mydealz-de-gutscheine-10eur-rabatt-bei-der-anmeldung-beim-milano-marathon-2844414",
@@ -3545,7 +3691,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "10€ Rabatt auf die Anmeldung beim Milano Marathon. Datum der Veranstaltung: Sonntag, 4. April 2027",
+   "discount": null
   },
   {
    "id": "e-10-rabatt-auf-fast-alles-bis-ende-2026-ab-100-eur-mbw-bei-autodocde-bis-31012027-2844202",
@@ -3573,7 +3721,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Der Deal im Überblick Wer gerade den anstehenden Service plant oder eine Reparatur vor der Brust hat, kann bei AutoDOC gerade ordentlich sparen. Es gibt 10 % Rabatt auf fast das gesamte Sortiment, sofern ihr den Mindestbestellwert von 100 € erreicht. Was bietet AutoDOC? AutoDOC ist einer der europaweit größten …",
+   "discount": 10
   },
   {
    "id": "polnischer-freundschaftspass-60000-gratis-bahnpasse-18-27-jahre-bewerbung-bis-2209-2841937",
@@ -3600,7 +3750,9 @@
     "polnischer",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "Zum 35. Jubiläum der deutsch-polnischen Freundschaft werden insgesamt 60.000 kostenlose Freundschaftspässe vergeben – davon 30.000 für Teilnehmer aus Deutschland. Mit dem Pass könnt ihr an 7 frei wählbaren Tagen innerhalb eines Monats unbegrenzt mit der Bahn durch Polen reisen. Die Bahnreise von Deutschland bis zur …",
+   "discount": null
   },
   {
    "id": "-monat-bild-plus-endet-automatisch-bild-umsonst-selbstendend-verlosung-gewinnspiel-2841025",
@@ -3629,7 +3781,9 @@
     "verlosung",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "WIE GEHT‘S? -> 1. Deal-Link anklicken -> 2. Ganz runter scrollen -> 3. Unten rechts auf das Becher Spiel klicken. -> 4. Man gewinnt nahezu jedes Mal. Wenn es beim ersten Mal nicht klappt, einfach im Incognito Modus erneut anklicken. Ich habe beim ersten Mal gewonnen und dann nochmals 4x Versuche später. => CODE DANN …",
+   "discount": null
   },
   {
    "id": "ww-mydealz-de-diskussion-media-markt-app-puzzle-teile-sammeln-und-surface-gewinnen-2840214",
@@ -3657,7 +3811,9 @@
     "teile",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "Hi, grade in der App gesehen aber keine Ahnung wie man es lösen soll. Mir fehlen 3 Teile.",
+   "discount": null
   },
   {
    "id": "s-www-mydealz-de-diskussion-laroche-posay-routine-produktprobe-gewinnspiel-freebie-2838711",
@@ -3683,7 +3839,9 @@
     "routine",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "desc": "Hi, Da ich hier schon viele Parfüms dank der Community testen konnte, wollte ich euch Mal zeigen, was mir bei Instagram empfohlen wurde. Für eine Newsletteranmeldung könnt ihr eine Produktprobe gewinnen, wie es bei solchen Aktionen oft der Fall ist. Ich habe bereits bei solchen Aktionen gewonnen. Die genaue Zahl der …",
+   "discount": null
   }
  ]
 }
