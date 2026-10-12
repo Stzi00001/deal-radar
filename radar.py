@@ -592,7 +592,8 @@ def run(feed_override=None, send_push=True):
     deals = []
     for d in known.values():
         try:
-            if datetime.fromisoformat(d["pub"]) < cutoff:
+            limit = cutoff - timedelta(days=30) if "gewinnspiele" in d.get("watch", []) and not d.get("until") else cutoff
+            if datetime.fromisoformat(d["pub"]) < limit:
                 continue
         except (KeyError, ValueError):
             pass
