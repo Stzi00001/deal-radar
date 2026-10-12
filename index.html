@@ -192,6 +192,29 @@ main{max-width:760px;margin:0 auto;padding:4px var(--pad) 0}
 .shops{display:flex;flex-wrap:wrap;gap:7px}
 .shops a{text-decoration:none;font-size:13.5px;font-weight:600;border:1.5px solid var(--line);border-radius:10px;padding:7px 11px}
 
+/* ---------- Produkt-Preisverlauf */
+.chart{display:block;width:100%;height:auto;margin-top:6px;overflow:visible}
+.chart text{font:600 11px Archivo,system-ui,sans-serif;fill:var(--ink2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.stats div{background:var(--soft);border-radius:12px;padding:9px 10px}
+.stats b{display:block;font-weight:850;font-stretch:95%;font-size:18px}
+.stats span{font-size:12px;color:var(--ink2)}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--ink2);margin-top:6px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--hot);margin-right:5px;vertical-align:0}
+.legend i.ref{border-radius:2px;background:var(--ink2)}
+.pts{margin-top:10px}
+.pts a{display:grid;grid-template-columns:70px 1fr auto;gap:8px;padding:9px 0;border-top:1px solid var(--line);text-decoration:none;font-size:14px}
+.pts a b{font-weight:800}
+.pts a span{color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kwrow{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.kwrow b{font-weight:600;font-size:14.5px}
+.kwrow .r{text-align:right;font-weight:800;font-stretch:105%}
+.kwrow .r small{display:block;font-weight:600;font-size:12px;color:var(--ink2)}
+.kwrow .s{grid-column:1 / -1}
+.kwsearch{width:100%;font:inherit;color:var(--ink);background:var(--soft);border:1.5px solid transparent;border-radius:11px;padding:10px 12px;margin:10px 0 4px}
+.prodsheet h2{margin:6px 0 2px;font-size:21px;line-height:1.25}
+.witem h3[data-prod]{cursor:pointer}
+
 /* ---------- Watchlist & Einstellungen */
 h2.big{font-weight:850;font-stretch:78%;font-size:24px;margin:18px 0 10px;letter-spacing:-.2px}
 .panel{background:var(--card);border-radius:var(--r);padding:16px;margin-bottom:14px}
@@ -297,7 +320,7 @@ nav .badge{position:absolute;top:5px;left:calc(50% + 6px);min-width:17px;height:
       <input id="wf-kw" placeholder="makita dhr, makita bohrhammer">
       <label for="wf-ex">Treffer ignorieren, wenn im Titel steht</label>
       <input id="wf-ex" placeholder="akku, ladegerät">
-      <div id="wf-maxbox"><label for="wf-max">Höchstpreis in € (optional)</label><input id="wf-max" inputmode="decimal"></div>
+      <div id="wf-maxbox" class="two"><div><label for="wf-min">Mindestpreis €</label><input id="wf-min" inputmode="decimal" placeholder="z. B. gegen Zubehör"></div><div><label for="wf-max">Höchstpreis €</label><input id="wf-max" inputmode="decimal" placeholder="optional"></div></div>
       <div id="wf-profbox" hidden><label for="wf-prof">Push erst ab Gewinn von … €</label><input id="wf-prof" inputmode="decimal" value="0"></div>
       <div class="switch"><span>Push bei neuen Treffern</span><input type="checkbox" id="wf-push" checked aria-label="Push bei neuen Treffern"></div>
       <div class="row"><button class="btn" id="wf-save">Beobachten</button><button class="btn quiet" id="wf-reset" hidden>Abbrechen</button></div>
@@ -526,6 +549,79 @@ function spark(pts, w = 320, h = 64) {
     <div class="spark-l"><span>${dshort(pts[0].d)}</span><span>Tiefstpreis <b class="ok">${euro(lo)}</b> am ${dshort(pts[iMin].d)}</span></div>`;
 }
 
+function bigChart(pts) {
+  if (!pts || !pts.length) return "";
+  const Wd = 340, Ht = 170, L = 48, R = 12, T = 12, B = 24, now = Date.now();
+  const ds = pts.map(p => ({ ...p, t: +new Date(p.d + "T12:00:00") })).sort((a, b) => a.t - b.t);
+  const deals = ds.filter(p => p.s !== "ref"), refs = ds.filter(p => p.s === "ref");
+  const t0 = Math.min(...ds.map(p => p.t)), span = Math.max(now - t0, 14 * 864e5), start = now - span;
+  const ps = ds.map(p => p.p); let lo = Math.min(...ps), hi = Math.max(...ps);
+  if (hi - lo < 24) { const m = (hi + lo) / 2; lo = m - 12; hi = m + 12; } const pad = (hi - lo) * 0.15; lo = Math.max(0, lo - pad); hi += pad;
+  const x = t => L + (t - start) / span * (Wd - L - R), y = p => T + (hi - p) / (hi - lo) * (Ht - T - B);
+  let g = "";
+  for (let i = 0; i <= 3; i++) { const v = lo + (hi - lo) * i / 3, yy = y(v);
+    g += `<line x1="${L}" x2="${Wd - R}" y1="${yy}" y2="${yy}" stroke="var(--line)"/><text x="${L - 6}" y="${yy + 4}" text-anchor="end">${Math.round(v)} €</text>`; }
+  [start, start + span / 2, now].forEach((t, i) => g += `<text x="${x(t)}" y="${Ht - 6}" text-anchor="${["start", "middle", "end"][i]}">${i === 2 ? "heute" : dshort(new Date(t).toISOString())}</text>`);
+  const ref = refs[refs.length - 1];
+  if (ref) g += `<line x1="${x(ref.t)}" x2="${Wd - R}" y1="${y(ref.p)}" y2="${y(ref.p)}" stroke="var(--ink2)" stroke-dasharray="4 4" stroke-width="1.5"/>
+    <text x="${Wd - R}" y="${y(ref.p) - 6}" text-anchor="end">${esc(ref.m || "Referenz")} ${euro(ref.p)}</text>
+    <rect x="${x(ref.t) - 4}" y="${y(ref.p) - 4}" width="8" height="8" rx="2" fill="var(--ink2)"/>`;
+  if (deals.length) {
+    let d = `M${x(deals[0].t)},${y(deals[0].p)}`;
+    deals.slice(1).forEach(p => d += ` H${x(p.t)} V${y(p.p)}`);
+    d += ` H${x(now)}`;
+    g += `<path d="${d}" fill="none" stroke="var(--hot)" stroke-width="2.4" stroke-linejoin="round"/>`;
+    const lowest = Math.min(...deals.map(p => p.p));
+    deals.forEach(p => g += `<circle cx="${x(p.t)}" cy="${y(p.p)}" r="${p.p === lowest ? 5 : 3.5}" fill="${p.p === lowest ? "var(--green)" : "var(--hot)"}" stroke="var(--card)" stroke-width="1.5"/>`);
+  }
+  return `<svg class="chart" viewBox="0 0 ${Wd} ${Ht}" role="img" aria-label="Preisverlauf">${g}</svg>
+    <div class="legend">${deals.length ? `<span><i></i>Deals</span>` : ""}${ref ? `<span><i class="ref"></i>${esc(ref.m || "Referenz")}-Preis am ${dshort(ref.d)}</span>` : ""}</div>`;
+}
+const histKey = (wid, kw) => kw ? `${wid}::${kw}` : wid;
+const prodName = (w, kw) => kw ? (w.labels?.[kw] || pretty(kw)) : w.name;
+function prodDeals(wid, kw) { return state.deals.filter(d => (d.watch || []).includes(wid) && (!kw || d.target?.kw === kw) && !expired(d)); }
+function productHTML(wid, kw) {
+  const w = W(wid); if (!w) return "";
+  const pts = (state.meta.history || {})[histKey(wid, kw)] || [];
+  const name = prodName(w, kw), dealPts = pts.filter(p => p.s !== "ref");
+  const ref = kw ? w.targets?.[kw] : null, low = dealPts.length ? Math.min(...dealPts.map(p => p.p)) : null;
+  const url = kw && w.urls?.[kw] ? `https://www.idealo.de/preisvergleich/OffersOfProduct/${w.urls[kw]}.html` : `https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=${encodeURIComponent(name.replace(/\(.*?\)/g, ""))}`;
+  const ds = prodDeals(wid, kw);
+  const stat = (v, l) => `<div><b>${v}</b><span>${l}</span></div>`;
+  return `<div class="grab"><i></i><button class="close" data-close aria-label="Schließen">×</button></div>
+    <div class="sh-body prodsheet">
+      ${kw ? `<button class="tg" data-kwlist="${esc(wid)}" style="cursor:pointer">← ${esc(w.name)}</button>` : ""}
+      <h2>${esc(name)}</h2>
+      <div class="stats">${stat(low != null ? euro(low) : "–", "Tiefster Deal")}${ref ? stat(euro(ref), `${esc(w.target_src || "Referenz")} am ${dshort(w.target_date)}`) : stat(dealPts.length ? euro(Math.round(dealPts.reduce((s, p) => s + p.p, 0) / dealPts.length)) : "–", "Ø Deal-Preis")}${stat(dealPts.length, dealPts.length === 1 ? "Deal gefunden" : "Deals gefunden")}</div>
+      <div class="box"><h4>Preisverlauf</h4>${pts.length ? bigChart(pts) : `<p class="muted">Noch keine Preise. Sobald ein passender Deal auftaucht, beginnt hier die Kurve.</p>`}
+        ${dealPts.length < 2 ? `<p class="muted" style="margin-top:8px">Die Kurve wächst mit jedem gefundenen Deal. Den vollständigen Verlauf aller Shops zeigt idealo.</p>` : ""}</div>
+      <a class="go" href="${esc(url)}" target="_blank" rel="noopener">Preisverlauf bei idealo öffnen</a>
+      <div class="shops" style="margin-top:10px"><a href="https://geizhals.de/?fs=${encodeURIComponent(name.replace(/\(.*?\)/g, ""))}" target="_blank" rel="noopener">Geizhals</a><a href="https://www.google.com/search?tbm=shop&q=${encodeURIComponent(name.replace(/\(.*?\)/g, ""))}" target="_blank" rel="noopener">Google Shopping</a></div>
+      ${pts.length ? `<div class="shops-h">Alle Preise</div><div class="pts">${pts.slice().reverse().map(p => `<a href="${esc(p.l || "#")}" target="_blank" rel="noopener"><span>${dshort(p.d)}</span><span>${esc(p.s === "ref" ? (p.m || "Referenz") + "-Bestpreis" : (p.m || p.t || ""))}</span><b class="${p.s === "ref" ? "" : p.p === low ? "ok" : ""}">${euro(p.p)}</b></a>`).join("")}</div>` : ""}
+      ${ds.length ? `<div class="shops-h">Aktuelle Deals</div><div class="feed">${ds.map(cardHTML).join("")}</div>` : ""}
+    </div>`;
+}
+function kwListHTML(wid, q = "") {
+  const w = W(wid); if (!w) return "";
+  const canon = w.canon || {}, hist = state.meta.history || {}, nq = normKw(q);
+  const rows = (w.keywords || []).filter(k => !canon[k]).map(k => {
+    const pts = hist[histKey(wid, k)] || [], dp = pts.filter(p => p.s !== "ref");
+    return { k, name: prodName(w, k), ref: w.targets?.[k], low: dp.length ? Math.min(...dp.map(p => p.p)) : null, n: dp.length };
+  }).filter(r => !nq || normKw(r.name + " " + r.k).includes(nq))
+    .sort((a, b) => ((b.ref && b.low != null && b.low < b.ref) - (a.ref && a.low != null && a.low < a.ref)) || b.n - a.n || a.name.localeCompare(b.name, "de"));
+  return rows.map(r => `<div class="kwrow" data-prod="${esc(wid)}" data-kw="${esc(r.k)}" role="button" tabindex="0">
+      <b>${esc(r.name)}</b>
+      <div class="r">${r.low != null ? `<span class="${r.ref && r.low < r.ref ? "ok" : ""}">${euro(r.low)}</span><small>${r.ref && r.low < r.ref ? `−${Math.round(100 * (r.ref - r.low) / r.ref)} % ggü. ${esc(w.target_src || "")}` : `${r.n} Deal${r.n === 1 ? "" : "s"}`}</small>` : `${r.ref ? euro(r.ref) : "–"}<small>${esc(w.target_src || "")}${r.ref ? "" : " keine Angebote"}</small>`}</div>
+    </div>`).join("") || `<p class="muted" style="padding:14px 0">Kein Duft gefunden.</p>`;
+}
+function kwSheetHTML(wid) {
+  const w = W(wid), n = (w.keywords || []).filter(k => !(w.canon || {})[k]).length;
+  return `<div class="grab"><i></i><button class="close" data-close aria-label="Schließen">×</button></div>
+    <div class="sh-body prodsheet"><h2>${esc(w.name)}</h2><p class="muted">${n} Produkte. Antippen zeigt den Preisverlauf. Produkte mit gefundenen Deals stehen oben.</p>
+    <input class="kwsearch" id="kwq" data-wid="${esc(wid)}" type="search" placeholder="Duft suchen" autocomplete="off">
+    <div id="kwlist">${kwListHTML(wid)}</div></div>`;
+}
+
 // ---------- Deals: Sortieren & Filtern
 function visible() {
   const q = normKw(state.q);
@@ -680,8 +776,9 @@ function sheetHTML(d) {
       <div class="sum"><span>${t.profit == null ? "Ergebnis" : t.profit >= 0 ? "Gewinn" : "Verlust"}</span><span class="${t.profit == null ? "" : t.profit >= 0 ? "ok" : "bad"}">${t.profit == null ? "–" : euro(Math.abs(t.profit))}</span></div></div>`;
   }
   const tgt = d.target?.p ? `<div class="box"><h4>Vergleich mit ${esc(d.target.src)}</h4>Beim Import lag „${esc(d.target.kw)}“ bei ${esc(d.target.src)} bei <b>${euro(d.target.p)}</b>. ${d.price != null ? (d.price < d.target.p ? `Dieser Deal ist <b class="ok">${euro(d.target.p - d.price)} günstiger</b>.` : `Dieser Deal ist nicht günstiger – Größe prüfen.`) : ""}</div>` : "";
-  const pw = (d.watch || []).find(w => typeOf(w) === "product"), hist = pw ? (state.meta.history || {})[pw] : null;
-  const histBox = hist && hist.length >= 2 ? `<div class="box"><h4>Preisverlauf ${esc(W(pw).name)}</h4>${spark(hist)}</div>` : "";
+  const pw = (d.watch || []).find(w => typeOf(w) === "product"), pkw = pw && W(pw).match === "all_words" ? d.target?.kw : null;
+  const hist = pw ? (state.meta.history || {})[histKey(pw, pkw)] : null;
+  const histBox = hist && hist.length ? `<div class="box"><h4>Preisverlauf ${esc(prodName(W(pw), pkw))}</h4>${bigChart(hist)}<button class="btn quiet small" style="margin-top:10px" data-prod="${esc(pw)}" data-kw="${esc(pkw || "")}">Ganzen Verlauf ansehen</button></div>` : "";
   const code = d.code ? `<div class="codebox"><span>${esc(d.code)}</span><button class="btn small" data-copy="${esc(d.code)}">Code kopieren</button></div>` : "";
   const l = left(d.until);
   const gwBox = gw ? `<div class="box"><div class="gwinfo" style="margin:0">${d.gw?.value ? `<span class="prize">Wert ${euro(d.gw.value)}</span>` : ""}<span class="tg">${esc(d.gw?.kind || "Online")}</span><span class="tg ${l?.soon ? "soon" : ""}">${l ? l.t : "Ende unbekannt"}</span></div></div>` : "";
@@ -706,15 +803,17 @@ function sheetHTML(d) {
       ${showCmp ? `<div class="shops-h">Preise woanders vergleichen</div><div class="shops">${SHOPS.map(([n, u]) => `<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>` : ""}
     </div>`;
 }
-function openSheet(id) {
-  const d = findDeal(id); if (!d) return;
-  openId = id; const sh = $("#sheet"), sc = $("#scrim");
-  sh.innerHTML = sheetHTML(d); sh.hidden = sc.hidden = false; sh.scrollTop = 0;
+function showSheet(html, key) {
+  const sh = $("#sheet"), sc = $("#scrim"), wasOpen = !!openId;
+  openId = key; sh.innerHTML = html; sh.hidden = sc.hidden = false; sh.scrollTop = 0;
   document.body.classList.add("lock");
   requestAnimationFrame(() => { sh.classList.add("on"); sc.classList.add("on"); });
-  history.pushState({ sheet: 1 }, "");
+  if (!wasOpen) history.pushState({ sheet: 1 }, "");
 }
-function refreshSheet() { if (!openId) return; const d = findDeal(openId); if (!d) return; const sh = $("#sheet"), st = sh.scrollTop; sh.innerHTML = sheetHTML(d); sh.scrollTop = st; }
+function openSheet(id) { const d = findDeal(id); if (d) showSheet(sheetHTML(d), id); }
+function openProduct(wid, kw) { showSheet(productHTML(wid, kw), "p:" + wid + "::" + (kw || "")); }
+function openKwList(wid) { showSheet(kwSheetHTML(wid), "l:" + wid); setTimeout(() => $("#kwq")?.addEventListener("input", e => $("#kwlist").innerHTML = kwListHTML(wid, e.target.value)), 0); }
+function refreshSheet() { if (!openId || /^[pl]:/.test(openId)) return; const d = findDeal(openId); if (!d) return; const sh = $("#sheet"), st = sh.scrollTop; sh.innerHTML = sheetHTML(d); sh.scrollTop = st; }
 function closeSheet(fromPop) {
   if (!openId) return; openId = null;
   const sh = $("#sheet"), sc = $("#scrim");
@@ -773,11 +872,11 @@ function renderWatch() {
   const kind = x => x.type === "tarif" ? "Handytarif mit Gewinnrechnung" : x.type === "rubrik" ? "Rubrik" : "Produkt";
   const hits = id => state.deals.filter(d => (d.watch || []).includes(id) && !expired(d)).length;
   $("#watchlist").innerHTML = w.map(x => `<div class="witem">
-      <h3>${esc(x.name)}</h3>
+      <h3 ${x.type === "product" ? `data-${x.match === "all_words" ? "kwlist" : "prod"}="${esc(x.id)}"` : ""}>${esc(x.name)}</h3>
       ${best[x.id] ? `<a class="bp" href="${esc(best[x.id].link)}" target="_blank" rel="noopener"><b>${euro(best[x.id].price)}</b><span>Bestpreis</span></a>` : ""}
       <p class="muted">${kind(x)}, ${(x.keywords || []).length > 10 ? `${x.keywords.length} Suchbegriffe, ` : ""}${hits(x.id)} Treffer, ${x.push === false ? "ohne Push" : x.targets ? "Push nur wenn günstiger als " + esc(x.target_src || "Referenz") : "mit Push"}</p>
       ${hist[x.id] && hist[x.id].length >= 2 ? `<div class="sp">${spark(hist[x.id])}</div>` : ""}
-      <div class="row"><button class="btn quiet small" data-edit="${esc(x.id)}">Bearbeiten</button><button class="btn quiet small" data-del="${esc(x.id)}">Entfernen</button></div>
+      <div class="row">${x.type === "product" ? (x.match === "all_words" ? `<button class="btn small" data-kwlist="${esc(x.id)}">Alle ${(x.keywords || []).filter(k => !(x.canon || {})[k]).length} Produkte & Preisverläufe</button>` : `<button class="btn small" data-prod="${esc(x.id)}">Preisverlauf</button>`) : ""}<button class="btn quiet small" data-edit="${esc(x.id)}">Bearbeiten</button><button class="btn quiet small" data-del="${esc(x.id)}">Entfernen</button></div>
     </div>`).join("") || `<div class="empty"><strong>Noch nichts auf der Watchlist</strong>Trag oben ein Produkt ein.</div>`;
 }
 function renderResale() {
@@ -915,7 +1014,7 @@ async function share(id) {
 
 // ---------- Watchlist-Formular
 function resetForm() {
-  ["#wf-id", "#wf-name", "#wf-kw", "#wf-ex", "#wf-max"].forEach(s => $(s).value = "");
+  ["#wf-id", "#wf-name", "#wf-kw", "#wf-ex", "#wf-max", "#wf-min"].forEach(s => $(s).value = "");
   $("#wf-prof").value = "0"; $("#wf-type").value = "product"; $("#wf-push").checked = true;
   $("#wf-title").textContent = "Etwas Neues beobachten"; $("#wf-save").textContent = "Beobachten"; $("#wf-reset").hidden = true; typeToggle();
 }
@@ -929,7 +1028,7 @@ $("#wf-save").onclick = async () => {
   const old = W(id);
   const item = { ...(old || {}), id, name, type: $("#wf-type").value, keywords: kw, exclude: $("#wf-ex").value.split(",").map(normKw).filter(Boolean), push: $("#wf-push").checked };
   if (item.type === "tarif") item.min_profit = num($("#wf-prof").value);
-  if (item.type === "product") item.max_price = $("#wf-max").value ? num($("#wf-max").value) : null;
+  if (item.type === "product") { item.max_price = $("#wf-max").value ? num($("#wf-max").value) : null; item.min_price = $("#wf-min").value ? num($("#wf-min").value) : null; }
   const w = state.cfg.watchlist = state.cfg.watchlist || [];
   const i = w.findIndex(x => x.id === id); i >= 0 ? w[i] = item : w.push(item);
   if (await saveConfig(`Watchlist: ${name}`, old ? `${name} geändert` : `${name} wird jetzt beobachtet`)) resetForm();
@@ -972,6 +1071,8 @@ document.addEventListener("click", e => {
   if (b?.dataset.done) return toggleDone(b.dataset.done);
   if (b?.dataset.share) return share(b.dataset.share);
   if (b?.dataset.tipclose != null && b.hasAttribute("data-tipclose")) { LS.set("swiped", true); $("#tipbox").innerHTML = ""; return; }
+  const pr = e.target.closest("[data-prod]"); if (pr) return openProduct(pr.dataset.prod, pr.dataset.kw || null);
+  const kl = e.target.closest("[data-kwlist]"); if (kl) return openKwList(kl.dataset.kwlist);
   const o = e.target.closest("[data-open]"); if (o && !b) return openSheet(o.dataset.open);
   if (e.target.closest("[data-close]")) return closeSheet();
   if (!b) return;
@@ -988,7 +1089,7 @@ document.addEventListener("click", e => {
     const w = W(b.dataset.edit);
     $("#wf-id").value = w.id; $("#wf-name").value = w.name; $("#wf-type").value = w.type || "product";
     $("#wf-kw").value = (w.keywords || []).join(", "); $("#wf-ex").value = (w.exclude || []).join(", ");
-    $("#wf-max").value = w.max_price ?? ""; $("#wf-prof").value = w.min_profit ?? 0; $("#wf-push").checked = w.push !== false;
+    $("#wf-max").value = w.max_price ?? ""; $("#wf-min").value = w.min_price ?? ""; $("#wf-prof").value = w.min_profit ?? 0; $("#wf-push").checked = w.push !== false;
     $("#wf-title").textContent = w.name + " bearbeiten"; $("#wf-save").textContent = "Änderungen speichern"; $("#wf-reset").hidden = false; typeToggle(); scrollTo(0, 0);
   }
   if (b.dataset.del && confirm(`„${W(b.dataset.del)?.name}“ nicht mehr beobachten?`)) {

@@ -53,7 +53,9 @@ Für den Radar-Knopf in der App braucht auch der App-Token zusätzlich **Actions
   „Zum Deal“, Teilen und Preisvergleich (idealo, Geizhals, Google Shopping, billiger.de, Amazon, eBay).
 - **Gewinnspiele**: eigener Reiter mit Gewinn-Wert, Teilnahmeart und Teilnahmeschluss. „Teilgenommen“
   abhaken; Tabs Offen / Endet bald / Neu / Teilgenommen. Abgelaufene verschwinden automatisch.
-- **Watchlist**: Produkte, Abos, Handytarife oder Rubriken beobachten – mit Bestpreis und Preiskurve.
+- **Watchlist**: Produkte, Abos, Handytarife oder Rubriken beobachten. „Preisverlauf“ zeigt pro Produkt eine Kurve aus allen gefundenen Deals,
+  bei der Parfüm-Wunschliste für jeden Duft einzeln (Startpunkt: idealo-Preis beim Import) plus Direktlink zur idealo-Produktseite.
+  Mindest- und Höchstpreis filtern Zubehör bzw. zu teure Angebote.
 - **Einstellungen**: Nachtruhe (Pushes nachts gesammelt am Morgen), Push-Schwelle, Test-Push,
   Verkaufswerte für die Tarif-Gewinnrechnung, Status der Quellen.
 - **Push**: mit Produktbild und Knöpfen „Zum Deal“ und „Kein Interesse“; Antippen öffnet den Deal in der App.

@@ -280,12 +280,15 @@ def match_watch(deal, w):
         kw = best_keyword(w, title_n)
         if not kw:
             return False
-        deal.setdefault("_kw", {})[w["id"]] = kw
+        deal.setdefault("_kw", {})[w["id"]] = (w.get("canon") or {}).get(kw, kw)
     elif not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
         return False
     mp = w.get("max_price")
     if mp and deal.get("price") and deal["price"] > float(mp):
         return False
+    mn = w.get("min_price")
+    if mn and deal.get("price") and deal["price"] < float(mn):
+        return False  # z. B. Spiele/Zubehör statt Konsole
     return True
 
 
@@ -580,6 +583,9 @@ def run(feed_override=None, send_push=True):
         keep = []
         for wid in d.get("watch", []):
             w = wmap.get(wid)
+            pr = d.get("price")
+            if w and pr and ((w.get("min_price") and pr < float(w["min_price"])) or (w.get("max_price") and pr > float(w["max_price"]))):
+                continue
             if not w or any(phrase_in(x, tn) for x in w.get("exclude", [])) \
                     or any(phrase_in(x, cn) for x in w.get("exclude_categories", [])):
                 continue
@@ -633,24 +639,52 @@ def run(feed_override=None, send_push=True):
     deals = [d for d in deals if not d.get("until") or datetime.fromisoformat(d["until"]) >= now_utc]
     deals.sort(key=lambda d: d.get("pub", ""), reverse=True)
 
-    # Preisverlauf: günstigster Preis pro Tag und Watchlist-Produkt
-    history = load_json(DEALS, {}).get("history", {})
+    # Preisverlauf: günstigster Preis pro Tag – je Watchlist-Produkt und bei Wortlisten je Suchbegriff
+    old_hist = load_json(DEALS, {}).get("history", {})
+    cut = (now_utc - timedelta(days=MAX_AGE_DAYS)).date().isoformat()
+    history = {}
+
+    def merge(key, seeds, hits):
+        live = {d["link"] for d in hits}
+        # behalten: Referenzpreise, Punkte von noch passenden Deals und alles, was älter als das Deal-Fenster ist
+        pts = {p["d"] + p.get("s", ""): p for p in old_hist.get(key, [])
+               if p.get("s") == "ref" or p.get("l") in live or p["d"] < cut}
+        for p in seeds:
+            pts.setdefault(p["d"] + "ref", p)
+        for d in hits:
+            if not d.get("price"):
+                continue
+            day = d.get("pub", "")[:10]
+            cur = pts.get(day)
+            if cur is None or d["price"] < cur["p"]:
+                pts[day] = {"d": day, "p": d["price"], "t": d["title"][:90], "l": d["link"], "m": d.get("merchant") or d.get("source", "")}
+        if pts:
+            history[key] = sorted(pts.values(), key=lambda p: (p["d"], p.get("s", "")))[-365:]
+
     for w in watch:
         if w.get("type", "product") != "product":
             continue
-        live = {d["link"] for d in deals if w["id"] in d.get("watch", [])}
-        pts = {p["d"]: p for p in history.get(w["id"], []) if p.get("l") in live or p["d"] < (now_utc - timedelta(days=MAX_AGE_DAYS)).date().isoformat()}
-        for d in deals:
-            if w["id"] in d.get("watch", []) and d.get("price"):
-                day = d.get("pub", "")[:10]
-                if day not in pts or d["price"] < pts[day]["p"]:
-                    pts[day] = {"d": day, "p": d["price"], "t": d["title"][:90], "l": d["link"]}
-        history[w["id"]] = sorted(pts.values(), key=lambda p: p["d"])[-120:]
-    history = {k: v for k, v in history.items() if any(w["id"] == k for w in watch)}
-    # Bestpreis aus dem (bereinigten) Verlauf – alte Fehltreffer fallen so wieder raus
+        hits = [d for d in deals if w["id"] in d.get("watch", [])]
+        if w.get("match") == "all_words":
+            tdate, src, urls = w.get("target_date", ""), w.get("target_src", "Referenz"), w.get("urls", {})
+            canon = w.get("canon") or {}
+            for kw in w.get("keywords", []):
+                if kw in canon:
+                    continue
+                ref = (w.get("targets") or {}).get(kw)
+                seeds = [{"d": tdate, "p": ref, "s": "ref", "m": src, "t": src + "-Bestpreis",
+                          "l": f"https://www.idealo.de/preisvergleich/OffersOfProduct/{urls[kw]}.html" if kw in urls else ""}] if ref and tdate else []
+                merge(f"{w['id']}::{kw}", seeds, [d for d in hits if (d.get("target") or {}).get("kw") == kw])
+        else:
+            merge(w["id"], [], hits)
+    keep_ids = {w["id"] for w in watch}
+    history = {k: v for k, v in history.items() if k.split("::")[0] in keep_ids}
+    # Bestpreis je Watchlist-Produkt aus echten Deals (ohne Referenzpreise)
     best = {}
     for k, pts in history.items():
-        valid = [p for p in pts if any(d["link"] == p.get("l") for d in deals)] or pts
+        if "::" in k:
+            continue
+        valid = [p for p in pts if p.get("s") != "ref" and any(d["link"] == p.get("l") for d in deals)] or [p for p in pts if p.get("s") != "ref"]
         if valid:
             p = min(valid, key=lambda p: p["p"])
             best[k] = {"price": p["p"], "title": p.get("t", ""), "link": p.get("l", ""), "date": p["d"]}
