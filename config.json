@@ -78,6 +78,17 @@
       "push": true
     },
     {
+      "id": "heiss",
+      "name": "Heiße Deals",
+      "type": "rubrik",
+      "push": false,
+      "keywords": [],
+      "exclude": [],
+      "exclude_categories": [
+        "lebensmittel"
+      ]
+    },
+    {
       "id": "rabatte",
       "name": "Rabatte & Gutscheine",
       "type": "rubrik",
@@ -137,7 +148,8 @@
     },
     {
       "name": "mydealz heiß",
-      "url": "https://www.mydealz.de/rss/hot"
+      "url": "https://www.mydealz.de/rss/hot",
+      "rubrik": "heiss"
     },
     {
       "name": "DealDoktor",
