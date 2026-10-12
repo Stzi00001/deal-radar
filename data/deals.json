@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T22:52:03+00:00",
+ "updated": "2026-10-12T02:13:00+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,79 @@
   }
  },
  "deals": [
+  {
+   "id": "buhr-bei-mobilfunk-internet-auch-flex-vertrage-monatlich-kundbar-aktuell-20-bei-cb-2852690",
+   "title": "Congstar: aktuell 25% über CB für Grundgebühren Iphone 18 pro 1387€ exklusiv Vertrag",
+   "link": "https://www.mydealz.de/deals/wieder-verfugbar-congstar-keine-anschlussgebuhr-bei-mobilfunk-internet-auch-flex-vertrage-monatlich-kundbar-aktuell-20-bei-cb-2852690",
+   "merchant": "congstar",
+   "price": 1.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/LfVn5/2852690_1/re/150x150/qt/55/2852690_1.jpg",
+   "pub": "2026-10-11T23:25:46+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 11.25,
+    "upfront": 1.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 36,
+    "device": "iphone 18 pro",
+    "resale": null,
+    "cost": 445.99,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "1387€",
+    "aktuell",
+    "c:elektronik",
+    "congstar",
+    "exklusiv",
+    "grundgebuehren",
+    "iphone",
+    "m:congstar",
+    "p:<20",
+    "pro",
+    "ueber",
+    "vertrag",
+    "w:tarif-mit-handy"
+   ],
+   "score": null
+  },
+  {
+   "id": "ls-payback-pramien-20-fach-punkte-auf-eventim-rituals-baur-ca-entspricht-10-rabatt-2852686",
+   "title": "[Payback Prämien] 20-fach Punkte auf Eventim, Rituals, Baur und C&A Gutscheine (entspricht 10% Rabatt)",
+   "link": "https://www.mydealz.de/deals/payback-pramien-20-fach-punkte-auf-eventim-rituals-baur-ca-entspricht-10-rabatt-2852686",
+   "merchant": "PAYBACK",
+   "price": null,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/lE9eR/2852686_1/re/150x150/qt/55/2852686_1.jpg",
+   "pub": "2026-10-11T22:54:33+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "baur",
+    "c:dienstleistungen vertraege",
+    "entspricht",
+    "eventim",
+    "fach",
+    "gutscheine",
+    "m:payback",
+    "payback",
+    "praemien",
+    "punkte",
+    "rabatt",
+    "rituals",
+    "w:rabatte"
+   ],
+   "score": null
+  },
   {
    "id": "ealz-de-gutscheine-medimops-gutschein-lesen15-15-rabatt-ab-25eur-mbw-gebrauchtware-2852685",
    "title": "Medimops Gutschein LESEN15 15% Rabatt ab 25€ MBW (Gebrauchtware)",
