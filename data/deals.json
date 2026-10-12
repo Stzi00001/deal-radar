@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T02:13:00+00:00",
+ "updated": "2026-10-12T09:25:22+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -37,6 +37,228 @@
   }
  },
  "deals": [
+  {
+   "id": "z-de-gutscheine-13-rabatt-auf-spielzeug-filme-musik-vinyl-cds-schreibwaren-technik-2852832",
+   "title": "[bücher.de, buecher.de] 13% Rabatt auf Spielzeug, Filme, Musik (Vinyl, CDs), Schreibwaren, Technik",
+   "link": "https://www.mydealz.de/gutscheine/13-rabatt-auf-spielzeug-filme-musik-vinyl-cds-schreibwaren-technik-2852832",
+   "merchant": "bücher.de",
+   "price": null,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/merchants/raw/avatar/98_2/re/352x352/qt/60/98_2.jpg",
+   "pub": "2026-10-12T09:11:50+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "buecher",
+    "c:kultur freizeit",
+    "cds",
+    "filme",
+    "m:buecher de",
+    "musik",
+    "rabatt",
+    "schreibwaren",
+    "spielzeug",
+    "technik",
+    "vinyl",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "lz-de-deals-shoop-green-planet-energy-bis-zu-120eur-cashback-45eur-shoop-gutschein-2852826",
+   "title": "[Shoop] Green Planet Energy: Bis zu 120€ Cashback + 45€ Shoop Gutschein",
+   "link": "https://www.mydealz.de/deals/shoop-green-planet-energy-bis-zu-120eur-cashback-45eur-shoop-gutschein-2852826",
+   "merchant": "Shoop",
+   "price": 120.0,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/CPgje/2852826_1/re/150x150/qt/55/2852826_1.jpg",
+   "pub": "2026-10-12T09:01:24+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "120€",
+    "45€",
+    "c:dienstleistungen vertraege",
+    "cashback",
+    "energy",
+    "green",
+    "gutschein",
+    "m:shoop",
+    "p:<300",
+    "planet",
+    "shoop",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-mydealz-de-deals-prime-izeeker-25k-dashcam-2399eur-mit-coupon-2852821",
+   "title": "PRIME iZEEKER 2,5K Dashcam 23,99€ mit Coupon",
+   "link": "https://www.mydealz.de/deals/prime-izeeker-25k-dashcam-2399eur-mit-coupon-2852821",
+   "merchant": "Amazon",
+   "price": 23.99,
+   "category": "Auto & Motorrad",
+   "image": "https://static.mydealz.de/threads/raw/hPBt5/2852821_1/re/150x150/qt/55/2852821_1.jpg",
+   "pub": "2026-10-12T08:49:55+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "99€",
+    "c:auto motorrad",
+    "coupon",
+    "dashcam",
+    "izeeker",
+    "m:amazon",
+    "p:<100",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "lte-styles-aktuell-exklusiv-in-der-app-herbstmode-zb-wollsakko-oberstoff-100-wolle-2852815",
+   "title": "C&A Mid Season Sale | Rabatte auf ausgewählte Styles aktuell exklusiv in der App | Herbstmode z.B. Wollsakko, Oberstoff 100% Wolle",
+   "link": "https://www.mydealz.de/deals/ca-mid-season-sale-rabatte-auf-ausgewahlte-styles-aktuell-exklusiv-in-der-app-herbstmode-zb-wollsakko-oberstoff-100-wolle-2852815",
+   "merchant": "C&amp;A",
+   "price": 69.99,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/7EISS/2852815_1/re/150x150/qt/55/2852815_1.jpg",
+   "pub": "2026-10-12T08:40:27+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": {
+    "ref": 99.99,
+    "pct": 30
+   },
+   "features": [
+    "aktuell",
+    "app",
+    "ausgewaehlte",
+    "c:fashion accessoires",
+    "exklusiv",
+    "herbstmode",
+    "m:c amp a",
+    "mid",
+    "oberstoff",
+    "p:<100",
+    "rabatte",
+    "sale",
+    "season",
+    "styles",
+    "w:rabatte",
+    "wolle",
+    "wollsakko"
+   ],
+   "score": null
+  },
+  {
+   "id": "ur-shoopgutschein-fur-instabank-visa-kreditkarte-5-transaktionen-gesamtwert-300eur-2852804",
+   "title": "[Shoop] 95€ Cashback + 5€ ShoopGutschein für Instabank VISA Kreditkarte (5 Transaktionen, Gesamtwert 300€)",
+   "link": "https://www.mydealz.de/deals/shoop-95eur-cashback-5eur-shoopgutschein-fur-instabank-visa-kreditkarte-5-transaktionen-gesamtwert-300eur-2852804",
+   "merchant": "Shoop",
+   "price": 95.0,
+   "category": "Versicherung & Finanzen",
+   "image": "https://static.mydealz.de/threads/raw/pNNGp/2852804_1/re/150x150/qt/55/2852804_1.jpg",
+   "pub": "2026-10-12T08:24:38+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "300€",
+    "95€",
+    "c:versicherung finanzen",
+    "cashback",
+    "gesamtwert",
+    "instabank",
+    "kreditkarte",
+    "m:shoop",
+    "p:<100",
+    "shoop",
+    "shoopgutschein",
+    "transaktionen",
+    "visa",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "rass-design-von-george-carwardine-aus-1935-fur-15678-eur-und-mehr-bis-zu-54-rabatt-2852775",
+   "title": "[Veepee] Anglepoise Sammeldeal: Original 1227 Brass, Design von George Carwardine aus 1935 für 156,78 € und mehr | bis zu 54 % Rabatt",
+   "link": "https://www.mydealz.de/deals/veepee-anglepoise-sammeldeal-original-1227-brass-design-von-george-carwardine-aus-1935-fur-15678-eur-und-mehr-bis-zu-54-rabatt-2852775",
+   "merchant": "Veepee",
+   "price": 156.78,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/6TsyK/2852775_1/re/150x150/qt/55/2852775_1.jpg",
+   "pub": "2026-10-12T08:20:14+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "anglepoise",
+    "brass",
+    "c:home living",
+    "carwardine",
+    "design",
+    "george",
+    "m:veepee",
+    "mehr",
+    "original",
+    "p:<300",
+    "rabatt",
+    "sammeldeal",
+    "veepee",
+    "w:rabatte"
+   ],
+   "score": null
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-1754651",
+   "title": "Endet! Super Strom- und Gas-Deal!⚡️bis 500€ Bonus (!) + 100€ BestChoice Gutschein + supergünstige kWh-Preise",
+   "link": "https://www.dealdoktor.de/new-energie-bonusdeal/",
+   "merchant": "",
+   "price": 500.0,
+   "category": "Auto & Motorrad",
+   "image": "",
+   "pub": "2026-10-12T08:00:00+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "100€",
+    "500€",
+    "bestchoice",
+    "bonus",
+    "c:auto motorrad",
+    "deal",
+    "endet",
+    "gas",
+    "gutschein",
+    "kwh",
+    "p:<800",
+    "preise",
+    "strom",
+    "super",
+    "superguenstige",
+    "w:rabatte"
+   ],
+   "score": null
+  },
   {
    "id": "buhr-bei-mobilfunk-internet-auch-flex-vertrage-monatlich-kundbar-aktuell-20-bei-cb-2852690",
    "title": "Congstar: aktuell 25% über CB für Grundgebühren Iphone 18 pro 1387€ exklusiv Vertrag",
