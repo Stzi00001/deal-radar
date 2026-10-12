@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T14:52:18+00:00",
+ "updated": "2026-10-12T16:22:47+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -38,28 +38,3085 @@
   }
  ],
  "votes": 0,
- "best": {
-  "xbox-series-x": {
-   "price": 23.64,
-   "title": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
-   "link": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028",
-   "date": "2026-10-12"
-  }
- },
+ "best": {},
  "history": {
-  "xbox-series-x": [
+  "parfum-wunschliste::arabiyat ramad oriental": [
    {
     "d": "2026-10-12",
-    "p": 23.64,
-    "t": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
-    "l": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028"
+    "p": 25.88,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/209519833.html"
    }
   ],
-  "airpods-pro-3": [],
-  "parfum-wunschliste": []
+  "parfum-wunschliste::ambra black forest elixir": [
+   {
+    "d": "2026-10-12",
+    "p": 85.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": ""
+   }
+  ],
+  "parfum-wunschliste::lattafa dynasty": [
+   {
+    "d": "2026-10-12",
+    "p": 20.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/207322435.html"
+   }
+  ],
+  "parfum-wunschliste::mancera french riviera": [
+   {
+    "d": "2026-10-12",
+    "p": 81.88,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202151273.html"
+   }
+  ],
+  "parfum-wunschliste::sospiro vibrato": [
+   {
+    "d": "2026-10-12",
+    "p": 159.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203387631.html"
+   }
+  ],
+  "parfum-wunschliste::essential parfums bois imperial": [
+   {
+    "d": "2026-10-12",
+    "p": 75.2,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201140718.html"
+   }
+  ],
+  "parfum-wunschliste::eaux primordiales cedre superfluide": [
+   {
+    "d": "2026-10-12",
+    "p": 234.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202166594.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa angham": [
+   {
+    "d": "2026-10-12",
+    "p": 18.39,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/205622199.html"
+   }
+  ],
+  "parfum-wunschliste::afnan dahaab saafi": [
+   {
+    "d": "2026-10-12",
+    "p": 20.55,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201640544.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa art of universe": [
+   {
+    "d": "2026-10-12",
+    "p": 27.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/206117829.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi soryani": [
+   {
+    "d": "2026-10-12",
+    "p": 21.79,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201868254.html"
+   }
+  ],
+  "parfum-wunschliste::somens atlantis": [
+   {
+    "d": "2026-10-12",
+    "p": 150.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203731344.html"
+   }
+  ],
+  "parfum-wunschliste::spirit dubai rimal": [
+   {
+    "d": "2026-10-12",
+    "p": 255.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203147188.html"
+   }
+  ],
+  "parfum-wunschliste::tesori oriente white musk": [
+   {
+    "d": "2026-10-12",
+    "p": 4.45,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5643770.html"
+   }
+  ],
+  "parfum-wunschliste::acqua parma fico di amalfi la riserva": [
+   {
+    "d": "2026-10-12",
+    "p": 109.17,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/206614258.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa al nashama": [
+   {
+    "d": "2026-10-12",
+    "p": 20.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203731323.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa affection": [
+   {
+    "d": "2026-10-12",
+    "p": 16.68,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203835402.html"
+   }
+  ],
+  "parfum-wunschliste::riiffs momento": [
+   {
+    "d": "2026-10-12",
+    "p": 20.51,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/206906795.html"
+   }
+  ],
+  "parfum-wunschliste::gaultier le male elixir": [
+   {
+    "d": "2026-10-12",
+    "p": 54.97,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202782433.html"
+   }
+  ],
+  "parfum-wunschliste::goldfield banks pacific rock moss": [
+   {
+    "d": "2026-10-12",
+    "p": 91.23,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201246985.html"
+   }
+  ],
+  "parfum-wunschliste::nuit nomade chemin d amande": [
+   {
+    "d": "2026-10-12",
+    "p": 165.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/207079741.html"
+   }
+  ],
+  "parfum-wunschliste::carthusia a mmare": [
+   {
+    "d": "2026-10-12",
+    "p": 90.89,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201490334.html"
+   }
+  ],
+  "parfum-wunschliste::swiss arabian oud 07": [
+   {
+    "d": "2026-10-12",
+    "p": 44.65,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202047048.html"
+   }
+  ],
+  "parfum-wunschliste::orientica luxury collection royal blue": [
+   {
+    "d": "2026-10-12",
+    "p": 78.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204429633.html"
+   }
+  ],
+  "parfum-wunschliste::dolce gabbana the one intense": [
+   {
+    "d": "2026-10-12",
+    "p": 39.89,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/7061491.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi entebaa": [
+   {
+    "d": "2026-10-12",
+    "p": 17.08,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5371801.html"
+   }
+  ],
+  "parfum-wunschliste::clive christian men no 1": [
+   {
+    "d": "2026-10-12",
+    "p": 575.49,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/2547143.html"
+   }
+  ],
+  "parfum-wunschliste::liquides imaginaires desert suave": [
+   {
+    "d": "2026-10-12",
+    "p": 93.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6642360.html"
+   }
+  ],
+  "parfum-wunschliste::eaux primordiales iris palladium": [
+   {
+    "d": "2026-10-12",
+    "p": 128.92,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204611770.html"
+   }
+  ],
+  "parfum-wunschliste::humbert lucas 777 mortal skin": [
+   {
+    "d": "2026-10-12",
+    "p": 215.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6789944.html"
+   }
+  ],
+  "parfum-wunschliste::liquides imaginaires blanche bete": [
+   {
+    "d": "2026-10-12",
+    "p": 121.04,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204025266.html"
+   }
+  ],
+  "parfum-wunschliste::afnan supremacy not only intense": [
+   {
+    "d": "2026-10-12",
+    "p": 40.79,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201247600.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa his confession": [
+   {
+    "d": "2026-10-12",
+    "p": 25.64,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/205451113.html"
+   }
+  ],
+  "parfum-wunschliste::ugolini 17 rosso": [
+   {
+    "d": "2026-10-12",
+    "p": 265.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/205421232.html"
+   }
+  ],
+  "parfum-wunschliste::andreoli ocean of a midnight moon": [
+   {
+    "d": "2026-10-12",
+    "p": 148.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202071842.html"
+   }
+  ],
+  "parfum-wunschliste::initio mystic experience": [
+   {
+    "d": "2026-10-12",
+    "p": 196.79,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5753547.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff join the club 40 knots": [
+   {
+    "d": "2026-10-12",
+    "p": 157.77,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5537166.html"
+   }
+  ],
+  "parfum-wunschliste::swiss arabian shaghaf oud tonka": [
+   {
+    "d": "2026-10-12",
+    "p": 33.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203796628.html"
+   }
+  ],
+  "parfum-wunschliste::swiss arabian shaghaf oud royale": [
+   {
+    "d": "2026-10-12",
+    "p": 33.1,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203975088.html"
+   }
+  ],
+  "parfum-wunschliste::nabeel ocean": [
+   {
+    "d": "2026-10-12",
+    "p": 36.69,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203980985.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi qasamat rasana": [
+   {
+    "d": "2026-10-12",
+    "p": 29.83,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200430268.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa art of arabia i": [
+   {
+    "d": "2026-10-12",
+    "p": 34.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204868342.html"
+   }
+  ],
+  "parfum-wunschliste::mind games french defense": [
+   {
+    "d": "2026-10-12",
+    "p": 270.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/205560682.html"
+   }
+  ],
+  "parfum-wunschliste::mancera classics eternal wood": [
+   {
+    "d": "2026-10-12",
+    "p": 81.59,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204505902.html"
+   }
+  ],
+  "parfum-wunschliste::pana dora moonlight": [
+   {
+    "d": "2026-10-12",
+    "p": 191.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203033621.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa ishq al shuyukh gold": [
+   {
+    "d": "2026-10-12",
+    "p": 22.83,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202097177.html"
+   }
+  ],
+  "parfum-wunschliste::montale oud tobacco": [
+   {
+    "d": "2026-10-12",
+    "p": 99.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200886725.html"
+   }
+  ],
+  "parfum-wunschliste::eaux primordiales ambre supermassive": [
+   {
+    "d": "2026-10-12",
+    "p": 213.21,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204770781.html"
+   }
+  ],
+  "parfum-wunschliste::gisada titanium": [
+   {
+    "d": "2026-10-12",
+    "p": 57.49,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204249332.html"
+   }
+  ],
+  "parfum-wunschliste::liquides imaginaires liquide gold": [
+   {
+    "d": "2026-10-12",
+    "p": 165.29,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203731298.html"
+   }
+  ],
+  "parfum-wunschliste::eaux primordiales superfluide ambre": [
+   {
+    "d": "2026-10-12",
+    "p": 230.88,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202120651.html"
+   }
+  ],
+  "parfum-wunschliste::montale ristretto intense cafe": [
+   {
+    "d": "2026-10-12",
+    "p": 82.96,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6842460.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa liam": [
+   {
+    "d": "2026-10-12",
+    "p": 51.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203386428.html"
+   }
+  ],
+  "parfum-wunschliste::barrois tilia": [
+   {
+    "d": "2026-10-12",
+    "p": 120.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204089470.html"
+   }
+  ],
+  "parfum-wunschliste::barrois encelade": [
+   {
+    "d": "2026-10-12",
+    "p": 110.89,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202019782.html"
+   }
+  ],
+  "parfum-wunschliste::barrois b683": [
+   {
+    "d": "2026-10-12",
+    "p": 227.85,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201871522.html"
+   }
+  ],
+  "parfum-wunschliste::thameen blue heart": [
+   {
+    "d": "2026-10-12",
+    "p": 107.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202168717.html"
+   }
+  ],
+  "parfum-wunschliste::valjues 19 nineteen": [
+   {
+    "d": "2026-10-12",
+    "p": 30.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202264247.html"
+   }
+  ],
+  "parfum-wunschliste::mancera wave musk": [
+   {
+    "d": "2026-10-12",
+    "p": 74.96,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6040871.html"
+   }
+  ],
+  "parfum-wunschliste::mancera aoud lemon mint": [
+   {
+    "d": "2026-10-12",
+    "p": 77.42,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6844865.html"
+   }
+  ],
+  "parfum-wunschliste::electimuss black caviar": [
+   {
+    "d": "2026-10-12",
+    "p": 124.22,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202714049.html"
+   }
+  ],
+  "parfum-wunschliste::dior hypnotic poison": [
+   {
+    "d": "2026-10-12",
+    "p": 84.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4265826.html"
+   }
+  ],
+  "parfum-wunschliste::mancera wild cherry": [
+   {
+    "d": "2026-10-12",
+    "p": 107.49,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6039202.html"
+   }
+  ],
+  "parfum-wunschliste::zarkoperfume the muse": [
+   {
+    "d": "2026-10-12",
+    "p": 71.12,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200142172.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff via cavour i": [
+   {
+    "d": "2026-10-12",
+    "p": 148.91,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203616601.html"
+   }
+  ],
+  "parfum-wunschliste::eaux primordiales superfluide oud": [
+   {
+    "d": "2026-10-12",
+    "p": 121.06,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203246583.html"
+   }
+  ],
+  "parfum-wunschliste::pernoire mansa": [
+   {
+    "d": "2026-10-12",
+    "p": 194.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203198365.html"
+   }
+  ],
+  "parfum-wunschliste::clive christian xxi art deco noble collection blonde amber": [
+   {
+    "d": "2026-10-12",
+    "p": 565.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203348953.html"
+   }
+  ],
+  "parfum-wunschliste::andreoli vicebomb": [
+   {
+    "d": "2026-10-12",
+    "p": 146.43,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202881610.html"
+   }
+  ],
+  "parfum-wunschliste::moresque scirocco": [
+   {
+    "d": "2026-10-12",
+    "p": 85.94,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/204263010.html"
+   }
+  ],
+  "parfum-wunschliste::electimuss vanilla edesia": [
+   {
+    "d": "2026-10-12",
+    "p": 146.68,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203461173.html"
+   }
+  ],
+  "parfum-wunschliste::clive christian jump up and kiss me hedonistic": [
+   {
+    "d": "2026-10-12",
+    "p": 480.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203285435.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff tony iommi monkey special": [
+   {
+    "d": "2026-10-12",
+    "p": 139.4,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201815382.html"
+   }
+  ],
+  "parfum-wunschliste::nabeel antar": [
+   {
+    "d": "2026-10-12",
+    "p": 34.14,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202784330.html"
+   }
+  ],
+  "parfum-wunschliste::nuit nomade sugar leather": [
+   {
+    "d": "2026-10-12",
+    "p": 105.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202889422.html"
+   }
+  ],
+  "parfum-wunschliste::bdk gris": [
+   {
+    "d": "2026-10-12",
+    "p": 198.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201945343.html"
+   }
+  ],
+  "parfum-wunschliste::marly althair": [
+   {
+    "d": "2026-10-12",
+    "p": 179.35,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203284308.html"
+   }
+  ],
+  "parfum-wunschliste::nabeel irth": [
+   {
+    "d": "2026-10-12",
+    "p": 50.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203313106.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi quasamat morhaf": [
+   {
+    "d": "2026-10-12",
+    "p": 17.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6157235.html"
+   }
+  ],
+  "parfum-wunschliste::giardino benessere woodstock patchouli": [
+   {
+    "d": "2026-10-12",
+    "p": 64.57,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202235777.html"
+   }
+  ],
+  "parfum-wunschliste::halloween mystery": [
+   {
+    "d": "2026-10-12",
+    "p": 36.28,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203070623.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff golden moka": [
+   {
+    "d": "2026-10-12",
+    "p": 136.96,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202018486.html"
+   }
+  ],
+  "parfum-wunschliste::montale infinity": [
+   {
+    "d": "2026-10-12",
+    "p": 116.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203005301.html"
+   }
+  ],
+  "parfum-wunschliste::mancera tonka cola": [
+   {
+    "d": "2026-10-12",
+    "p": 102.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202285787.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff uden": [
+   {
+    "d": "2026-10-12",
+    "p": 139.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5752378.html"
+   }
+  ],
+  "parfum-wunschliste::jovoy psychedelique": [
+   {
+    "d": "2026-10-12",
+    "p": 150.11,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5413353.html"
+   }
+  ],
+  "parfum-wunschliste::thameen carved oud": [
+   {
+    "d": "2026-10-12",
+    "p": 133.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202080463.html"
+   }
+  ],
+  "parfum-wunschliste::nikos sculpture": [
+   {
+    "d": "2026-10-12",
+    "p": 35.15,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/605795.html"
+   }
+  ],
+  "parfum-wunschliste::afnan turathi homme blue": [
+   {
+    "d": "2026-10-12",
+    "p": 31.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201562065.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa badee al oud amethyst": [
+   {
+    "d": "2026-10-12",
+    "p": 18.98,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201500846.html"
+   }
+  ],
+  "parfum-wunschliste::terenzi borelli": [
+   {
+    "d": "2026-10-12",
+    "p": 184.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203808813.html"
+   }
+  ],
+  "parfum-wunschliste::anfas fosol jannah": [
+   {
+    "d": "2026-10-12",
+    "p": 199.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202888923.html"
+   }
+  ],
+  "parfum-wunschliste::haramain amber oud ruby edition": [
+   {
+    "d": "2026-10-12",
+    "p": 74.63,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202477731.html"
+   }
+  ],
+  "parfum-wunschliste::rosendo mateu no 5 floral": [
+   {
+    "d": "2026-10-12",
+    "p": 86.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200792627.html"
+   }
+  ],
+  "parfum-wunschliste::jesus pozo nightology wild temptation": [
+   {
+    "d": "2026-10-12",
+    "p": 75.5,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203399284.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff casamorati 1888 bouquet ideale": [
+   {
+    "d": "2026-10-12",
+    "p": 63.39,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5751877.html"
+   }
+  ],
+  "parfum-wunschliste::micallef desirtoxic": [
+   {
+    "d": "2026-10-12",
+    "p": 123.45,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6854792.html"
+   }
+  ],
+  "parfum-wunschliste::bdk tabac rose": [
+   {
+    "d": "2026-10-12",
+    "p": 168.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200903169.html"
+   }
+  ],
+  "parfum-wunschliste::andreoli malibu party in the bay": [
+   {
+    "d": "2026-10-12",
+    "p": 120.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6642315.html"
+   }
+  ],
+  "parfum-wunschliste::roja enigma": [
+   {
+    "d": "2026-10-12",
+    "p": 176.27,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/7016762.html"
+   }
+  ],
+  "parfum-wunschliste::nishane nefs": [
+   {
+    "d": "2026-10-12",
+    "p": 232.01,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201201600.html"
+   }
+  ],
+  "parfum-wunschliste::anfas salam": [
+   {
+    "d": "2026-10-12",
+    "p": 187.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201247169.html"
+   }
+  ],
+  "parfum-wunschliste::gritti duchessa": [
+   {
+    "d": "2026-10-12",
+    "p": 143.42,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201444107.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff xy 1861 naxos": [
+   {
+    "d": "2026-10-12",
+    "p": 142.61,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5907260.html"
+   }
+  ],
+  "parfum-wunschliste::marly pegasus": [
+   {
+    "d": "2026-10-12",
+    "p": 176.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5229905.html"
+   }
+  ],
+  "parfum-wunschliste::somens capriccio": [
+   {
+    "d": "2026-10-12",
+    "p": 130.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202621933.html"
+   }
+  ],
+  "parfum-wunschliste::armani acqua di gio": [
+   {
+    "d": "2026-10-12",
+    "p": 53.02,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203975676.html"
+   }
+  ],
+  "parfum-wunschliste::marly herod": [
+   {
+    "d": "2026-10-12",
+    "p": 211.21,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4460452.html"
+   }
+  ],
+  "parfum-wunschliste::barrois ganymede": [
+   {
+    "d": "2026-10-12",
+    "p": 114.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201787264.html"
+   }
+  ],
+  "parfum-wunschliste::nikos sculpture homme": [
+   {
+    "d": "2026-10-12",
+    "p": 19.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/634735.html"
+   }
+  ],
+  "parfum-wunschliste::widian london": [
+   {
+    "d": "2026-10-12",
+    "p": 209.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201704956.html"
+   }
+  ],
+  "parfum-wunschliste::arte olfatto calar del sole": [
+   {
+    "d": "2026-10-12",
+    "p": 151.5,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201887450.html"
+   }
+  ],
+  "parfum-wunschliste::pana dora kropp sjael": [
+   {
+    "d": "2026-10-12",
+    "p": 175.19,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202167487.html"
+   }
+  ],
+  "parfum-wunschliste::saint laurent la nuit de l homme bleu electrique": [
+   {
+    "d": "2026-10-12",
+    "p": 289.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201361051.html"
+   }
+  ],
+  "parfum-wunschliste::nishane hacivat": [
+   {
+    "d": "2026-10-12",
+    "p": 157.59,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200736480.html"
+   }
+  ],
+  "parfum-wunschliste::chrystal bomb": [
+   {
+    "d": "2026-10-12",
+    "p": 169.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201017938.html"
+   }
+  ],
+  "parfum-wunschliste::roja elysium": [
+   {
+    "d": "2026-10-12",
+    "p": 362.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6575869.html"
+   }
+  ],
+  "parfum-wunschliste::armani code homme": [
+   {
+    "d": "2026-10-12",
+    "p": 129.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201048686.html"
+   }
+  ],
+  "parfum-wunschliste::kurkdjian baccarat rouge 540": [
+   {
+    "d": "2026-10-12",
+    "p": 259.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5711874.html"
+   }
+  ],
+  "parfum-wunschliste::penhaligon the tragedy of lord george portraits": [
+   {
+    "d": "2026-10-12",
+    "p": 191.19,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5410518.html"
+   }
+  ],
+  "parfum-wunschliste::philly phill easy for ecstasy": [
+   {
+    "d": "2026-10-12",
+    "p": 152.15,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4691825.html"
+   }
+  ],
+  "parfum-wunschliste::givenchy gentleman": [
+   {
+    "d": "2026-10-12",
+    "p": 40.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201792980.html"
+   }
+  ],
+  "parfum-wunschliste::versace eros flame": [
+   {
+    "d": "2026-10-12",
+    "p": 44.56,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6311126.html"
+   }
+  ],
+  "parfum-wunschliste::dolce gabbana light blue forever": [
+   {
+    "d": "2026-10-12",
+    "p": 189.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202002526.html"
+   }
+  ],
+  "parfum-wunschliste::annunziata anniversary": [
+   {
+    "d": "2026-10-12",
+    "p": 148.76,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202219196.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa ana abiyedh": [
+   {
+    "d": "2026-10-12",
+    "p": 9.72,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200137729.html"
+   }
+  ],
+  "parfum-wunschliste::valentino uomo intense": [
+   {
+    "d": "2026-10-12",
+    "p": 149.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5038201.html"
+   }
+  ],
+  "parfum-wunschliste::afnan supremacy incense": [
+   {
+    "d": "2026-10-12",
+    "p": 31.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201472171.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit urban man elixir": [
+   {
+    "d": "2026-10-12",
+    "p": 25.49,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202214727.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit iconic": [
+   {
+    "d": "2026-10-12",
+    "p": 30.51,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202314177.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit untold": [
+   {
+    "d": "2026-10-12",
+    "p": 32.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203099375.html"
+   }
+  ],
+  "parfum-wunschliste::dunhill icon racing": [
+   {
+    "d": "2026-10-12",
+    "p": 29.85,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5818906.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit intense": [
+   {
+    "d": "2026-10-12",
+    "p": 22.33,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5670579.html"
+   }
+  ],
+  "parfum-wunschliste::anfas red ishq": [
+   {
+    "d": "2026-10-12",
+    "p": 259.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202712909.html"
+   }
+  ],
+  "parfum-wunschliste::tauer au coeur du desert": [
+   {
+    "d": "2026-10-12",
+    "p": 179.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6586555.html"
+   }
+  ],
+  "parfum-wunschliste::acqua parma blu mediterraneo fico di amalfi": [
+   {
+    "d": "2026-10-12",
+    "p": 71.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/3233631.html"
+   }
+  ],
+  "parfum-wunschliste::nasomatto pardon": [
+   {
+    "d": "2026-10-12",
+    "p": 99.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5834589.html"
+   }
+  ],
+  "parfum-wunschliste::eight bob original": [
+   {
+    "d": "2026-10-12",
+    "p": 265.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5002935.html"
+   }
+  ],
+  "parfum-wunschliste::guerlain shalimar": [
+   {
+    "d": "2026-10-12",
+    "p": 86.67,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/2459918.html"
+   }
+  ],
+  "parfum-wunschliste::nose behind miami south beach": [
+   {
+    "d": "2026-10-12",
+    "p": 175.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202972012.html"
+   }
+  ],
+  "parfum-wunschliste::nasomatto black afgano": [
+   {
+    "d": "2026-10-12",
+    "p": 91.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4585644.html"
+   }
+  ],
+  "parfum-wunschliste::haramain detour noir": [
+   {
+    "d": "2026-10-12",
+    "p": 21.9,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6460263.html"
+   }
+  ],
+  "parfum-wunschliste::versace dylan blue": [
+   {
+    "d": "2026-10-12",
+    "p": 36.69,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5104599.html"
+   }
+  ],
+  "parfum-wunschliste::van cleef neroli amara": [
+   {
+    "d": "2026-10-12",
+    "p": 160.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6173968.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi rumz al rasasi zebra": [
+   {
+    "d": "2026-10-12",
+    "p": 19.59,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5834302.html"
+   }
+  ],
+  "parfum-wunschliste::kurkdjian grand soir": [
+   {
+    "d": "2026-10-12",
+    "p": 164.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5139658.html"
+   }
+  ],
+  "parfum-wunschliste::dior homme intense": [
+   {
+    "d": "2026-10-12",
+    "p": 59.51,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/1032133.html"
+   }
+  ],
+  "parfum-wunschliste::azzaro wanted by night": [
+   {
+    "d": "2026-10-12",
+    "p": 96.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6215363.html"
+   }
+  ],
+  "parfum-wunschliste::malle promise": [
+   {
+    "d": "2026-10-12",
+    "p": 177.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203921401.html"
+   }
+  ],
+  "parfum-wunschliste::rasasi shuhrah": [
+   {
+    "d": "2026-10-12",
+    "p": 16.6,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5371999.html"
+   }
+  ],
+  "parfum-wunschliste::lalique encre noire": [
+   {
+    "d": "2026-10-12",
+    "p": 17.29,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/954368.html"
+   }
+  ],
+  "parfum-wunschliste::jil sander sun men": [
+   {
+    "d": "2026-10-12",
+    "p": 13.04,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/602093.html"
+   }
+  ],
+  "parfum-wunschliste::guerlain l homme ideal": [
+   {
+    "d": "2026-10-12",
+    "p": 51.93,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5038251.html"
+   }
+  ],
+  "parfum-wunschliste::chanel allure homme sport eau extreme": [
+   {
+    "d": "2026-10-12",
+    "p": 167.84,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6512138.html"
+   }
+  ],
+  "parfum-wunschliste::narciso rodriguez for him bleu noir": [
+   {
+    "d": "2026-10-12",
+    "p": 36.04,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5981468.html"
+   }
+  ],
+  "parfum-wunschliste::viktor rolf spicebomb extreme": [
+   {
+    "d": "2026-10-12",
+    "p": 42.2,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5883102.html"
+   }
+  ],
+  "parfum-wunschliste::gaultier le male": [
+   {
+    "d": "2026-10-12",
+    "p": 51.31,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200512392.html"
+   }
+  ],
+  "parfum-wunschliste::swiss arabian shaghaf oud": [
+   {
+    "d": "2026-10-12",
+    "p": 23.22,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5801857.html"
+   }
+  ],
+  "parfum-wunschliste::dunhill century blue": [
+   {
+    "d": "2026-10-12",
+    "p": 28.4,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/7061671.html"
+   }
+  ],
+  "parfum-wunschliste::lattafa bade e al oud oud for glory": [
+   {
+    "d": "2026-10-12",
+    "p": 16.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201140785.html"
+   }
+  ],
+  "parfum-wunschliste::kurkdjian oud satin mood": [
+   {
+    "d": "2026-10-12",
+    "p": 189.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4810446.html"
+   }
+  ],
+  "parfum-wunschliste::mancera cedrat boise": [
+   {
+    "d": "2026-10-12",
+    "p": 79.35,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5084607.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit sillage": [
+   {
+    "d": "2026-10-12",
+    "p": 26.03,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200802783.html"
+   }
+  ],
+  "parfum-wunschliste::armaf club de nuit intense man": [
+   {
+    "d": "2026-10-12",
+    "p": 25.09,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202637725.html"
+   }
+  ],
+  "parfum-wunschliste::anfas rahaba": [
+   {
+    "d": "2026-10-12",
+    "p": 191.25,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/200348832.html"
+   }
+  ],
+  "parfum-wunschliste::prada luna rossa black": [
+   {
+    "d": "2026-10-12",
+    "p": 55.62,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6055654.html"
+   }
+  ],
+  "parfum-wunschliste::prada l homme": [
+   {
+    "d": "2026-10-12",
+    "p": 53.39,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/5091084.html"
+   }
+  ],
+  "parfum-wunschliste::versace blue jeans man": [
+   {
+    "d": "2026-10-12",
+    "p": 11.62,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/598850.html"
+   }
+  ],
+  "parfum-wunschliste::musicology the rose": [
+   {
+    "d": "2026-10-12",
+    "p": 93.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201619721.html"
+   }
+  ],
+  "parfum-wunschliste::amouage reflection man": [
+   {
+    "d": "2026-10-12",
+    "p": 292.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/1776937.html"
+   }
+  ],
+  "parfum-wunschliste::amouage interlude man": [
+   {
+    "d": "2026-10-12",
+    "p": 209.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/3394993.html"
+   }
+  ],
+  "parfum-wunschliste::nautica voyage": [
+   {
+    "d": "2026-10-12",
+    "p": 14.45,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/1075046.html"
+   }
+  ],
+  "parfum-wunschliste::montale vanille absolu": [
+   {
+    "d": "2026-10-12",
+    "p": 77.42,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/3664738.html"
+   }
+  ],
+  "parfum-wunschliste::montale sensual instinct": [
+   {
+    "d": "2026-10-12",
+    "p": 81.98,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6652148.html"
+   }
+  ],
+  "parfum-wunschliste::montale arabians tonka": [
+   {
+    "d": "2026-10-12",
+    "p": 94.35,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/7037536.html"
+   }
+  ],
+  "parfum-wunschliste::xerjoff erba pura": [
+   {
+    "d": "2026-10-12",
+    "p": 104.69,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/203703343.html"
+   }
+  ],
+  "parfum-wunschliste::armani acqua di gio profumo": [
+   {
+    "d": "2026-10-12",
+    "p": 199.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4714324.html"
+   }
+  ],
+  "parfum-wunschliste::saint laurent la nuit de l homme": [
+   {
+    "d": "2026-10-12",
+    "p": 91.33,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6584211.html"
+   }
+  ],
+  "parfum-wunschliste::gisada ambassador intense": [
+   {
+    "d": "2026-10-12",
+    "p": 54.69,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202055652.html"
+   }
+  ],
+  "parfum-wunschliste::tom ford lost cherry": [
+   {
+    "d": "2026-10-12",
+    "p": 139.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6394716.html"
+   }
+  ],
+  "parfum-wunschliste::tom ford fucking fabulous": [
+   {
+    "d": "2026-10-12",
+    "p": 204.95,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6141753.html"
+   }
+  ],
+  "parfum-wunschliste::tom ford oud wood": [
+   {
+    "d": "2026-10-12",
+    "p": 119.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4461031.html"
+   }
+  ],
+  "parfum-wunschliste::dior sauvage elixir": [
+   {
+    "d": "2026-10-12",
+    "p": 80.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/201542971.html"
+   }
+  ],
+  "parfum-wunschliste::dior sauvage": [
+   {
+    "d": "2026-10-12",
+    "p": 57.99,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6029544.html"
+   }
+  ],
+  "parfum-wunschliste::armani stronger with you intensly": [
+   {
+    "d": "2026-10-12",
+    "p": 45.5,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/6434376.html"
+   }
+  ],
+  "parfum-wunschliste::kayali lovefest burning cherry 48": [
+   {
+    "d": "2026-10-12",
+    "p": 115.49,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/202062865.html"
+   }
+  ],
+  "parfum-wunschliste::chanel bleu de chanel": [
+   {
+    "d": "2026-10-12",
+    "p": 117.0,
+    "s": "ref",
+    "m": "idealo",
+    "t": "idealo-Bestpreis",
+    "l": "https://www.idealo.de/preisvergleich/OffersOfProduct/4449618.html"
+   }
+  ]
  },
  "night": [],
  "deals": [
+  {
+   "id": "https-www-mydealz-de-deals-arylic-b50-class-d-verstarker-mit-phono-preamp-2852767",
+   "title": "Arylic B50 - Class D Verstärker mit Phono PreAmp",
+   "link": "https://www.mydealz.de/deals/arylic-b50-class-d-verstarker-mit-phono-preamp-2852767",
+   "merchant": "",
+   "price": 116.43,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/Rhe3g/2852767_1/re/150x150/qt/55/2852767_1.jpg",
+   "temp": 101,
+   "discount": null,
+   "desc": "Perfektes Gerät für Leute wie mich, die eigentlich nur old school Platten hören oder Musik über BT vom Handy. Mit integriertem PreAmp hat man eine wirk...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:20:05+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "arylic",
+    "b50",
+    "c:elektronik",
+    "class",
+    "p:<300",
+    "phono",
+    "preamp",
+    "verstaerker",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "ps-www-mydealz-de-deals-axe-3in1-duschgel-shampoo-epic-fresh-250-ml-prime-spar-abo-2853003",
+   "title": "Axe 3in1 Duschgel & Shampoo, Epic Fresh, 250 ml (Prime Spar-Abo)",
+   "link": "https://www.mydealz.de/deals/axe-3in1-duschgel-shampoo-epic-fresh-250-ml-prime-spar-abo-2853003",
+   "merchant": "Amazon",
+   "price": 1.82,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/ZimoY/2853003_1/re/150x150/qt/55/2853003_1.jpg",
+   "temp": 106,
+   "discount": null,
+   "desc": "Beschreibung AXE 3-in-1 Duschgel & Shampoo Epic Fresh für Körper, Gesicht und Haar All Day Fresh für ein ganztägiges D...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:19:15+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "3in1",
+    "abo",
+    "axe",
+    "c:beauty gesundheit",
+    "duschgel",
+    "epic",
+    "fresh",
+    "m:amazon",
+    "p:<20",
+    "shampoo",
+    "spar",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "z-de-deals-makita-e-10883-werkzeugkoffer-221-teilig-fur-8271-eur-durch-bauhaus-tpg-2852881",
+   "title": "Makita E-10883 Werkzeugkoffer 221-teilig für 82,71 € durch [Bauhaus TPG]",
+   "link": "https://www.mydealz.de/deals/makita-e-10883-werkzeugkoffer-221-teilig-fur-8271-eur-durch-bauhaus-tpg-2852881",
+   "merchant": "BAUHAUS",
+   "price": 82.71,
+   "category": "Garten & Baumarkt",
+   "image": "https://static.mydealz.de/threads/raw/JuXUT/2852881_1/re/150x150/qt/55/2852881_1.jpg",
+   "temp": 112,
+   "discount": null,
+   "desc": "Bei BAUHAUS bekommt ihr den Makita E-10883 Werkzeugkoffer mit 221 Teilen durch die 12 % Tiefpreisgarantie rechnerisch für 82,71 € st...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:14:41+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bauhaus",
+    "c:garten baumarkt",
+    "durch",
+    "m:bauhaus",
+    "makita",
+    "p:<100",
+    "teilig",
+    "tpg",
+    "w:heiss",
+    "werkzeugkoffer"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-barbarian-uhd-blu-ray-disc-lim-steelbook-amazon-prime-2852931",
+   "title": "Barbarian UHD + Blu-ray Disc (Lim. Steelbook) Amazon Prime",
+   "link": "https://www.mydealz.de/deals/barbarian-uhd-blu-ray-disc-lim-steelbook-amazon-prime-2852931",
+   "merchant": "Amazon",
+   "price": 30.13,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/paggh/2852931_1/re/150x150/qt/55/2852931_1.jpg",
+   "temp": 102,
+   "discount": null,
+   "desc": "Barbarian Eine junge Frau reist zu einem Vorstellungsgespräch nach Detroit und mietet sich ein Ferienhaus. Als sie jedoch spät in der ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:06:25+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "barbarian",
+    "blu",
+    "c:kultur freizeit",
+    "disc",
+    "lim",
+    "m:amazon",
+    "p:<100",
+    "ray",
+    "steelbook",
+    "uhd",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-www-mydealz-de-deals-boyz-n-the-hood-4k-blu-ray-blu-ray-fur-1894eur-amazonfr-fnac-2853005",
+   "title": "Boyz N the Hood - 4K Blu-ray + Blu-ray für 18,94€ (Amazon.fr, Fnac)",
+   "link": "https://www.mydealz.de/deals/boyz-n-the-hood-4k-blu-ray-blu-ray-fur-1894eur-amazonfr-fnac-2853005",
+   "merchant": "Amazon.fr",
+   "price": 18.94,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/NMwel/2853005_1/re/150x150/qt/55/2853005_1.jpg",
+   "temp": 107,
+   "discount": null,
+   "desc": "Moinsen, bei Amazon.fr und Fnac erhaltet ihr den Film Boyz N the Hood - 4K Blu-ray + Blu-ray für 18,94€ inkl. ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:05:55+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "blu",
+    "boyz",
+    "c:kultur freizeit",
+    "fnac",
+    "hood",
+    "m:amazon fr",
+    "p:<20",
+    "ray",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1276792",
+   "title": "-95€ vs. Idealo 😳 Samsung Galaxy S26 256GB für 79€ mit 20GB + 5GB Vodafone 5G für 24,98€ mtl. + 130€ BONUS",
+   "link": "https://www.mytopdeals.net/sonstiges/handyvertraege/samsung-galaxy-s26-256gb-fuer-79e-mit-20gb-5gb-vodafone-5g/",
+   "merchant": "",
+   "price": 95.0,
+   "category": "Handyverträge, Galaxy, handytarif, s26, samsung, Vodafone",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/10/Bildschirmfoto_2026-10-09_um_16.11.33-1024x579.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Das Da es sich hier im die Doppelkarten-Aktion handelt, bekommt ihr also zwei Tarife. Die zweite Karte ist hier eine 5GB Datenkarte. Eher was für die Schublade aber am Ende der Laufzeit das kündigen BEIDER Karten nicht vergessen! Was bekomme ich konkret? Beide Tarife effektiv GRATIS! 1x Samsung Galaxy S26 256GB für …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T16:00:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 24.98,
+    "upfront": 79.0,
+    "fee": 39.99,
+    "bonus": 260.0,
+    "months": 24,
+    "device": "galaxy s26",
+    "resale": null,
+    "cost": 458.51,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "20gb",
+    "256gb",
+    "5gb",
+    "bonus",
+    "c:handyvertraege galaxy handytarif s26 samsung vodafone",
+    "galaxy",
+    "idealo",
+    "mtl",
+    "p:<100",
+    "s26",
+    "samsung",
+    "vodafone",
+    "w:tarif-mit-handy"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "star-ii-zx8000-nike-air-force-1-07-premium-low-asics-gel-kayano-20-birkenstock-uvm-2853026",
+   "title": "15% Extra-Rabatt - z.b. Adidas Samba OG • Superstar II • ZX8000 • Nike Air Force 1 '07 Premium & Low • Asics Gel-Kayano 20 • Birkenstock uvm",
+   "link": "https://www.mydealz.de/deals/15-extra-rabatt-zb-adidas-samba-og-superstar-ii-zx8000-nike-air-force-1-07-premium-low-asics-gel-kayano-20-birkenstock-uvm-2853026",
+   "merchant": "END. Clothing",
+   "price": 61.09,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/2VdoO/2853026_1/re/150x150/qt/55/2853026_1.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Servus, auch bei End. Clothing läuft der Mid Season Sale auf Hochtouren. Aktuell gibt es sogar 15% Extra-Rabatt. Der Rabatt wird automatisch im Warenkorb abgezogen. Es fallen Versandkosten von 4,99€ an. Sonst nichts! \" We cover Import Duties - no hidden fees at checkout.\" Und Shoop nicht vergessen. :) Adidas Originals …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:46:37+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "adidas",
+    "air",
+    "asics",
+    "birkenstock",
+    "c:fashion accessoires",
+    "extra",
+    "force",
+    "gel",
+    "kayano",
+    "low",
+    "m:end clothing",
+    "nike",
+    "p:<100",
+    "premium",
+    "rabatt",
+    "samba",
+    "superstar",
+    "uvm",
+    "w:rabatte",
+    "zx8000"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-manchester-united-edition-langlebiger-bartschneider-wasserdicht-ahnlich-one-blade-2852972",
+   "title": "[Koka Shop voelkner Marktplatz] REMINGTON MB055 Manchester United Edition Langlebiger Bartschneider wasserdicht ähnlich OneBlade",
+   "link": "https://www.mydealz.de/deals/koka-shop-voelkner-marktplatz-remington-mb055-manchester-united-edition-langlebiger-bartschneider-wasserdicht-ahnlich-one-blade-2852972",
+   "merchant": "voelkner",
+   "price": 15.0,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/tC0hX/2852972_1/re/150x150/qt/55/2852972_1.jpg",
+   "temp": 127,
+   "discount": null,
+   "desc": "Nächster Preis Ebay auch Koka Shop 29,30 € bei voelkner aber 15,00 versandkostenfrei (was ein fairer Preis wohl ist) Achtung : Manchest...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:46:24+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "aehnlich",
+    "bartschneider",
+    "c:beauty gesundheit",
+    "edition",
+    "koka",
+    "langlebiger",
+    "m:voelkner",
+    "manchester",
+    "marktplatz",
+    "mb055",
+    "oneblade",
+    "p:<20",
+    "remington",
+    "shop",
+    "united",
+    "voelkner",
+    "w:heiss",
+    "wasserdicht"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-hisense-85u8q-mini-led-uhd-85-zoll-2852898",
+   "title": "Hisense 85U8Q Mini LED UHD TV 85 Zoll",
+   "link": "https://www.mydealz.de/deals/hisense-85u8q-mini-led-uhd-85-zoll-2852898",
+   "merchant": "Galaxus",
+   "price": 1559.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/svOA4/2852898_1/re/150x150/qt/55/2852898_1.jpg",
+   "temp": 130,
+   "discount": null,
+   "desc": "Der Hisense 85U8Q ist ein hochwertiger Mini LED ULED 4K Fernseher. *Produktspezifikationen:* - Mini LED ULED PRO Technologie - Bis zu 5000 ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:45:50+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "85u8q",
+    "c:elektronik",
+    "hisense",
+    "led",
+    "m:galaxus",
+    "mini",
+    "p:800+",
+    "uhd",
+    "w:heiss",
+    "zoll"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-joop-le-bain-shower-gel-for-her-150-ml-tube-prime-2852921",
+   "title": "JOOP! Le Bain Shower Gel for her (150 ml Tube) (Prime)",
+   "link": "https://www.mydealz.de/deals/joop-le-bain-shower-gel-for-her-150-ml-tube-prime-2852921",
+   "merchant": "Amazon",
+   "price": 5.27,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/xbff0/2852921_1/re/150x150/qt/55/2852921_1.jpg",
+   "temp": 112,
+   "discount": null,
+   "desc": "Parfümierter Duftklassiker zum Bestpreis: JOOP! Le Bain Duschgel (150 ml) für nur 5,27 Euro frei Haus dank Coupon ! Für Fans des be...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:44:20+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bain",
+    "c:beauty gesundheit",
+    "gel",
+    "her",
+    "joop",
+    "m:amazon",
+    "p:<20",
+    "shower",
+    "tube",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "r04-akku-leuchte-design-von-aldo-rossi-aus-1991-fur-16999-eur-ku-bibo-firenze-sg68-2852993",
+   "title": "[Veepee] Alessi Sammeldeal: AR04 Akku-Leuchte, Design von Aldo Rossi aus 1991 für 169,99 € | KU, Bibo, Firenze, SG68",
+   "link": "https://www.mydealz.de/deals/veepee-alessi-sammeldeal-ar04-akku-leuchte-design-von-aldo-rossi-aus-1991-fur-16999-eur-ku-bibo-firenze-sg68-2852993",
+   "merchant": "Veepee",
+   "price": 169.99,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/gXLMU/2852993_1/re/150x150/qt/55/2852993_1.jpg",
+   "temp": 124,
+   "discount": null,
+   "desc": "Die Veepee-Design-Days entwickeln sich gerade zum zeitdieb für mich - für Euch zur Schnäppchenwoche. Jetzt ist gerade Alessi im Sale. Ich mag an der Marke, d...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:43:23+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "akku",
+    "aldo",
+    "alessi",
+    "ar04",
+    "bibo",
+    "c:home living",
+    "design",
+    "firenze",
+    "leuchte",
+    "m:veepee",
+    "p:<300",
+    "rossi",
+    "sammeldeal",
+    "sg68",
+    "veepee",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "nzen-tag-fur-1-eur-bus-fahren-in-9-landkreisen-kreisfreien-stadten-z-b-suhl-region-2852982",
+   "title": "[Thüringen] Ein-Euro-Tag am 15.10.26: Den ganzen Tag für 1 € Bus fahren in 9 Landkreisen & kreisfreien Städten (z. B. Suhl & Region)",
+   "link": "https://www.mydealz.de/deals/thuringen-ein-euro-tag-am-151026-den-ganzen-tag-fur-1-eur-bus-fahren-in-9-landkreisen-kreisfreien-stadten-z-b-suhl-region-2852982",
+   "merchant": "",
+   "price": 1.0,
+   "category": "Urlaub & Reisen",
+   "image": "https://static.mydealz.de/threads/raw/YZkBE/2852982_1/re/150x150/qt/55/2852982_1.jpg",
+   "temp": 126,
+   "discount": null,
+   "desc": "BUSFAHREN UND GUTES TUN Linienbusse bilden das Rückgrat des öffentlichen Nahverkehrs in Thüringen. Am Ein-Euro-Tag ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:40:26+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bus",
+    "c:urlaub reisen",
+    "fahren",
+    "ganzen",
+    "kreisfreien",
+    "landkreisen",
+    "p:<20",
+    "region",
+    "staedten",
+    "suhl",
+    "tag",
+    "thueringen",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-fruhstuck-harry-potter-studiotour-wizard-walk-308eur-pp-ohne-flug-369eur-mit-flug-2852996",
+   "title": "London (Großbritannien): 2 Nächte im 4*-Hotel | inkl. Frühstück, Harry-Potter-Studiotour & Wizard Walk | 308€ p.P. ohne Flug / 369€ mit Flug",
+   "link": "https://www.mydealz.de/deals/london-grossbritannien-2-nachte-im-4-hotel-inkl-fruhstuck-harry-potter-studiotour-wizard-walk-308eur-pp-ohne-flug-369eur-mit-flug-2852996",
+   "merchant": "Voyage Privé",
+   "price": 616.0,
+   "category": "Urlaub & Reisen",
+   "image": "https://static.mydealz.de/threads/raw/7Dlu4/2852996_1/re/150x150/qt/55/2852996_1.jpg",
+   "temp": 134,
+   "discount": null,
+   "desc": "Städtetrip mit Harry Potter in London: 2 Nächte im 4*-Crowne Plaza London Kings Cross inklusive Frühstück, Eintrittskarte für die Harry Potter Warner Bros. S...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:32:57+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "c:urlaub reisen",
+    "flug",
+    "fruehstueck",
+    "grossbritannien",
+    "harry",
+    "hotel",
+    "london",
+    "m:voyage prive",
+    "naechte",
+    "ohne",
+    "p:<800",
+    "potter",
+    "studiotour",
+    "w:heiss",
+    "walk",
+    "wizard"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "deals-simba-super-mario-bowser-jr-plusch-kuscheltier-22-cm-fur-999eur-amazon-prime-2852997",
+   "title": "Simba Super Mario Bowser Jr. Plüsch – Kuscheltier (22 cm) für 9,99€ (Amazon Prime)",
+   "link": "https://www.mydealz.de/deals/simba-super-mario-bowser-jr-plusch-kuscheltier-22-cm-fur-999eur-amazon-prime-2852997",
+   "merchant": "Amazon",
+   "price": 9.99,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/EeT8z/2852997_1/re/150x150/qt/55/2852997_1.jpg",
+   "temp": 154,
+   "discount": null,
+   "desc": "Moinsen, bei Amazon erhaltet ihr das Simba Super Mario Bowser Jr. Plüsch – Kuscheltier (22 cm) für 9,99€ inkl. Versand mit Prime. Amazon Kunden vergeben im ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:25:48+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bowser",
+    "c:family kids",
+    "kuscheltier",
+    "m:amazon",
+    "mario",
+    "p:<20",
+    "pluesch",
+    "simba",
+    "super",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-abo-26-ausgaben-fur-125-eur-mit-115-eur-bestchoice-oder-125-eur-zalando-gutschein-2849598",
+   "title": "Auto Zeitung Abo (26 Ausgaben) für 125 € mit 115 € BestChoice- oder 125 € Zalando-Gutschein",
+   "link": "https://www.mydealz.de/deals/auto-zeitung-abo-26-ausgaben-fur-125-eur-mit-115-eur-bestchoice-oder-125-eur-zalando-gutschein-2849598",
+   "merchant": "Hobby + Freizeit",
+   "price": 125.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/tKFaK/2849598_1/re/150x150/qt/55/2849598_1.jpg",
+   "temp": 127,
+   "discount": null,
+   "desc": "Bei Hobby + Freizeit gibt es das<a href=\" target=\"_blank...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:12:53+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss",
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "abo",
+    "ausgaben",
+    "auto",
+    "bestchoice",
+    "c:kultur freizeit",
+    "gutschein",
+    "m:hobby freizeit",
+    "p:<300",
+    "w:heiss",
+    "w:rabatte",
+    "zalando",
+    "zeitung"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-3l-dustpro-bodenduse-metall-teleskoprohr-75m-aktionsradius-epa-e12-b-ware-gepruft-2852768",
+   "title": "AEG VX4-1-EB Bodenstaubsauger mit Beutel - 750W, 3L, DustPro-Bodendüse, Metall-Teleskoprohr, 7,5m Aktionsradius, EPA E12, B-Ware geprüft",
+   "link": "https://www.mydealz.de/deals/aeg-vx4-1-eb-bodenstaubsauger-mit-beutel-750w-3l-dustpro-bodenduse-metall-teleskoprohr-75m-aktionsradius-epa-e12-b-ware-gepruft-2852768",
+   "merchant": "Outlet46.de",
+   "price": 64.99,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/I4HNR/2852768_1/re/150x150/qt/55/2852768_1.jpg",
+   "temp": 139,
+   "discount": null,
+   "desc": "Der AEG VX4-1-1EB i st eins der inzwischen selten gewordenen Beuteltiere. Doch bei Outlet46 bekommt ihr ihn gerade zu ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:12:41+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "750w",
+    "aeg",
+    "aktionsradius",
+    "beutel",
+    "bodenduese",
+    "bodenstaubsauger",
+    "c:home living",
+    "dustpro",
+    "e12",
+    "epa",
+    "geprueft",
+    "m:outlet46 de",
+    "metall",
+    "p:<100",
+    "teleskoprohr",
+    "vx4",
+    "w:heiss",
+    "ware"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-zoo-osnabruck-niedersachsen-for-free-aktion-2853012",
+   "title": "Zoo Osnabrück \"Niedersachsen for Free\" Aktion",
+   "link": "https://www.mydealz.de/deals/zoo-osnabruck-niedersachsen-for-free-aktion-2853012",
+   "merchant": "",
+   "price": null,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/OCLxv/2853012_1/re/150x150/qt/55/2853012_1.jpg",
+   "temp": 144,
+   "discount": null,
+   "desc": "Ab 13. Oktober heißt es wieder \"Niedersachsen FOR FREE\"! Gemeinsam mit zahlreichen Ausflugszielen in ganz Niedersachsen ermöglichen wir euch in den Herbstferien unvergessliche Erlebnisse bei freiem Eintritt. Der Zoo Osnabrück lädt euch zu einer Reise durch faszinierende Tierwelten ein – mitten im Grünen. Als Waldzoo …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:10:09+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "aktion",
+    "c:kultur freizeit",
+    "free",
+    "niedersachsen",
+    "osnabrueck",
+    "w:heiss",
+    "zoo"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "z-de-deals-netto-md-5001000-payback-punkte-auf-apple-geschenkkarte-guthaben-karten-2847431",
+   "title": "[ Netto MD ] 500/1000 Extra Payback Punkte auf Apple Geschenkkarte / Guthaben Karten",
+   "link": "https://www.mydealz.de/deals/netto-md-5001000-payback-punkte-auf-apple-geschenkkarte-guthaben-karten-2847431",
+   "merchant": "Netto Marken-Discount",
+   "price": null,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/aZonz/2847431_1/re/150x150/qt/55/2847431_1.jpg",
+   "temp": 1165,
+   "discount": null,
+   "desc": "Vom 12.10. bis 17.10.2026 gibt es bei Netto Marken Discount 500 bzw. 1000 Extra Punkte auf euer Payback Konto durch den Kauf einer Apple Geschenkkarte 50/100 Euro. Aktion gilt offline und online! @iTobi hat in seinen Kommentaren folgendes erwähnt: Es funktionieren nur die 50 und 100 Euro Karten. Die Karten mit freier …",
+   "code": null,
+   "until": "2026-10-17T23:59:00+02:00",
+   "pub": "2026-10-12T15:09:33+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "apple",
+    "c:dienstleistungen vertraege",
+    "extra",
+    "geschenkkarte",
+    "guthaben",
+    "karten",
+    "m:netto marken discount",
+    "netto",
+    "payback",
+    "punkte",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "seife-150ml-inklusive-seifenschale-nahrend-feuchtigkeitsspendend-made-in-italy-rot-2853011",
+   "title": "[Amazon Prime Sparabo] Proraso Rasierseife 150ml inklusive Seifenschale, nährend, feuchtigkeitsspendend, Made in Italy, Rot",
+   "link": "https://www.mydealz.de/deals/amazon-prime-sparabo-proraso-rasierseife-150ml-inklusive-seifenschale-nahrend-feuchtigkeitsspendend-made-in-italy-rot-2853011",
+   "merchant": "Amazon",
+   "price": 3.55,
+   "category": "Beauty & Gesundheit",
+   "image": "https://static.mydealz.de/threads/raw/eaW8V/2853011_1/re/150x150/qt/55/2853011_1.jpg",
+   "temp": 104,
+   "discount": null,
+   "desc": "Moin. Bei Amazon bekommt ihr aktuell die rote Proraso Rasierseife 150ml für 3,55€ (inkl VSK mit Prime und aktiviertem Sparabo). Nähere Infos findet ihr unten. Euch allen einen schönen Abend. :) Bestandteile: Preisvergleich & Sonstiges: Idealo KI generierter Text auf Basis der Nutzerbewertungen: Amazon …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:09:21+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "150ml",
+    "c:beauty gesundheit",
+    "feuchtigkeitsspendend",
+    "inklusive",
+    "italy",
+    "m:amazon",
+    "made",
+    "naehrend",
+    "p:<20",
+    "proraso",
+    "rasierseife",
+    "rot",
+    "seifenschale",
+    "sparabo",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "nterdeal-bis-zu-20-extra-rabatt-zb-2-nachte-im-4-hotel-ab-123eur-pp-inkl-fruhstuck-2853010",
+   "title": "Phantasialand Winterdeal: Bis zu 20% Extra Rabatt z.B. 2 Nächte im 4* Hotel ab 123€ p.P. inkl. Frühstück",
+   "link": "https://www.mydealz.de/deals/phantasialand-winterdeal-bis-zu-20-extra-rabatt-zb-2-nachte-im-4-hotel-ab-123eur-pp-inkl-fruhstuck-2853010",
+   "merchant": "Phantasialand",
+   "price": 246.4,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/Jxjsw/2853010_1/re/150x150/qt/55/2853010_1.jpg",
+   "temp": 172,
+   "discount": null,
+   "desc": "Moin, über Phantasialand.de bekommt ihr aktuell mit dem Gutschein Code WINTERTRAUM20 zusätzlich 20% Rabatt ab 2 Übernachtungen. Der Code ist bis zum 25.10. einlösbar für den Zeitraum November bis einschließlich Januar. HIER könnt ihr direkt eins der drei Hotels (Hotel Ling Bao, Hotel Matamba und Hotel Charles …",
+   "code": "WINTERTRAUM20",
+   "until": "2027-01-24T23:59:00+01:00",
+   "pub": "2026-10-12T15:07:55+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss",
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:kultur freizeit",
+    "extra",
+    "fruehstueck",
+    "hotel",
+    "m:phantasialand",
+    "naechte",
+    "p:<300",
+    "phantasialand",
+    "rabatt",
+    "w:heiss",
+    "w:rabatte",
+    "winterdeal"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "netz-nintendo-switch-2-konsole-mit-congstar-allnetsms-flat-125gb-5g-fur-25eurmonat-2852277",
+   "title": "Telekom Netz: Nintendo Switch 2 Konsole mit Congstar Allnet/SMS Flat 125GB 5G für 25€/Monat | + 20€ Wunschgutschein",
+   "link": "https://www.mydealz.de/deals/telekom-netz-nintendo-switch-2-konsole-mit-congstar-allnetsms-flat-125gb-5g-fur-25eurmonat-2852277",
+   "merchant": "LogiTel",
+   "price": 616.0,
+   "category": "Telefon- & Internet-Verträge",
+   "image": "https://static.mydealz.de/threads/raw/ZG70G/2852277_1/re/150x150/qt/55/2852277_1.jpg",
+   "temp": 509,
+   "discount": null,
+   "desc": "Bei Gomibo Logitel gibt es zum Congstar Tarif mit 125GB im Telekom Netz eine Nintendo Switch als Prämie dazu. Tarif: Congstar Allnet...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:03:03+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "125gb",
+    "allnet",
+    "c:telefon internet vertraege",
+    "congstar",
+    "flat",
+    "konsole",
+    "m:logitel",
+    "monat",
+    "netz",
+    "nintendo",
+    "p:<800",
+    "sms",
+    "switch",
+    "telekom",
+    "w:heiss",
+    "wunschgutschein"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1276796",
+   "title": "Eff. 0,64€! 🔥 Apple iPhone 18 Pro Max für 299€ + 50GB & 5GB 5G Telekom Allnet für 54,98€ mtl. + 50€ Bonus",
+   "link": "https://www.mytopdeals.net/sonstiges/handyvertraege/apple-iphone-18-pro-max-fuer-299e-50gb-5gb-5g-telekom/",
+   "merchant": "",
+   "price": 0.64,
+   "category": "Handyverträge, apple, handytarif, iphone, telekom",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/10/Bildschirmfoto_2026-10-09_um_16.18.01-1024x744.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei MediaMarkt könnt ihr euch gerade das zusammen mit einer 50GB und einer 5GB 5G freenet Telekom Allnet-Flat mit 50 Mbit/s sichern. Für das iPhone zahlt ihr einmalig 299€ und die monatlichen Kosten belaufen sich auf 54,98€ – für BEIDE Tarife! Info Es gibt 1 iPhone und 2 Tarife mit 50GB und 5GB für zusammen 54,98€ …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T15:00:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 54.98,
+    "upfront": 299.0,
+    "fee": 39.99,
+    "bonus": 50.0,
+    "months": 24,
+    "device": "iphone 18 pro max",
+    "resale": null,
+    "cost": 1608.51,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "50gb",
+    "5gb",
+    "allnet",
+    "apple",
+    "bonus",
+    "c:handyvertraege apple handytarif iphone telekom",
+    "eff",
+    "iphone",
+    "max",
+    "mtl",
+    "p:<20",
+    "pro",
+    "telekom",
+    "w:tarif-mit-handy"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "ls-shoop-x-yello-50eur-cashback-bis-zu-350eur-rabatt-auf-strom-gas-oder-warmestrom-2852790",
+   "title": "[Shoop x Yello] 50€ Cashback + Bis zu 350€ Rabatt auf Strom, Gas oder Wärmestrom",
+   "link": "https://www.mydealz.de/deals/shoop-x-yello-50eur-cashback-bis-zu-350eur-rabatt-auf-strom-gas-oder-warmestrom-2852790",
+   "merchant": "Yello",
+   "price": 50.0,
+   "category": "Dienstleistungen & Verträge",
+   "image": "https://static.mydealz.de/threads/raw/nzXm0/2852790_1/re/150x150/qt/55/2852790_1.jpg",
+   "temp": 132,
+   "discount": null,
+   "desc": "Über Shoop bekommt ihr aktuell 50€ Cashback auf Strom, Gas oder Wärmestrom- Vertrag. Zusätzlich erhaltet ihr bis zu 350€ Rabatt auf den Vertrag von Yello.</p...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:56:28+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss",
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:dienstleistungen vertraege",
+    "cashback",
+    "gas",
+    "m:yello",
+    "p:<100",
+    "rabatt",
+    "shoop",
+    "strom",
+    "w:heiss",
+    "w:rabatte",
+    "waermestrom",
+    "yello"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "0-rollen-vanessa-40x45cm-schwarzweiss-oder-salutecheer-60x40cm-braunweiss-stahlmdf-2852825",
+   "title": "Tatkraft Laptop-Tische höhenverstellbar mit 360° Rollen - Vanessa 40x45cm (Schwarz/Weiß) oder Salute/Cheer 60x40cm (Braun/Weiß), Stahl/MDF",
+   "link": "https://www.mydealz.de/deals/tatkraft-laptop-tische-hohenverstellbar-mit-360-rollen-vanessa-40x45cm-schwarzweiss-oder-salutecheer-60x40cm-braunweiss-stahlmdf-2852825",
+   "merchant": "Outlet46.de",
+   "price": 16.98,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/vjPWx/2852825_1/re/150x150/qt/55/2852825_1.jpg",
+   "temp": 122,
+   "discount": null,
+   "desc": "Einen dieser Modelle hatte ich kürzlich schon gepostet. Jetzt sind alle vier bei Outlet46 zum gleichen Preis in Sale. Der Vergleichspreis unterscheidet...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:56:09+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "40x45cm",
+    "60x40cm",
+    "braun",
+    "c:home living",
+    "cheer",
+    "hoehenverstellbar",
+    "laptop",
+    "m:outlet46 de",
+    "mdf",
+    "p:<20",
+    "rollen",
+    "salute",
+    "schwarz",
+    "stahl",
+    "tatkraft",
+    "tische",
+    "vanessa",
+    "w:heiss",
+    "weiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-citizen-damenuhr-edelstahl-grun-31-mm-el3100-55x-2852778",
+   "title": "Citizen Damenuhr Edelstahl, Grün, 31 mm, EL3100-55X",
+   "link": "https://www.mydealz.de/deals/citizen-damenuhr-edelstahl-grun-31-mm-el3100-55x-2852778",
+   "merchant": "Amazon",
+   "price": 71.99,
+   "category": "Fashion & Accessoires",
+   "image": "https://static.mydealz.de/threads/raw/GFwde/2852778_1/re/150x150/qt/55/2852778_1.jpg",
+   "temp": 118,
+   "discount": null,
+   "desc": "Silberfarbenes Edelstahlgehäuse, verpresster Edelstahlboden - Gehäusedurchmesser (ohne Krone): ca. 31 mm - Gehäusehöhe : ca. 7 mm Lünette mit fu...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:55:29+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "55x",
+    "c:fashion accessoires",
+    "citizen",
+    "damenuhr",
+    "edelstahl",
+    "el3100",
+    "gruen",
+    "m:amazon",
+    "p:<100",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "y-fur-switch-42-klassiker-von-8-plattformen-metacritic-85-69-bra-397eur-pol-656eur-2852891",
+   "title": "[Nintendo eShop] Llamasoft: The Jeff Minter Story für Switch - 42 Klassiker von 8 Plattformen | metacritic 85 | BRA 3,97€ - POL 6,56€(Steam)",
+   "link": "https://www.mydealz.de/deals/nintendo-eshop-llamasoft-the-jeff-minter-story-fur-switch-42-klassiker-von-8-plattformen-metacritic-85-69-bra-397eur-pol-656eur-2852891",
+   "merchant": "Nintendo eShop",
+   "price": 7.24,
+   "category": "Gaming",
+   "image": "https://static.mydealz.de/threads/raw/pIjyQ/2852891_1/re/150x150/qt/55/2852891_1.jpg",
+   "temp": 132,
+   "discount": null,
+   "desc": "Hallo zusammen, zum Bestpreis erhältlich das Spiel Llamasoft: The Jeff Minter Story Beschr...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:53:59+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bra",
+    "c:gaming",
+    "eshop",
+    "jeff",
+    "klassiker",
+    "llamasoft",
+    "m:nintendo eshop",
+    "metacritic",
+    "minter",
+    "nintendo",
+    "p:<20",
+    "plattformen",
+    "pol",
+    "steam",
+    "story",
+    "switch",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-creatine-monohydrat-500-g-fur-499-eur-100-rein-vegan-made-in-germany-kolner-liste-2843546",
+   "title": "My Supps Creatine Monohydrat – 500 g für 4,99 €| 100 % rein | vegan | Made in Germany | Kölner Liste",
+   "link": "https://www.mydealz.de/deals/my-supps-creatine-monohydrat-500-g-fur-499-eur-100-rein-vegan-made-in-germany-kolner-liste-2843546",
+   "merchant": "Body Attack",
+   "price": 10.98,
+   "category": "Sport & Outdoor",
+   "image": "https://static.mydealz.de/threads/raw/gKJlK/2843546_1/re/150x150/qt/55/2843546_1.jpg",
+   "temp": 121,
+   "discount": null,
+   "desc": "Bei Body Attack bekommt ihr aktuell das My Supps Creatine Monohydrat ziemlich günstig. Die 500 g-Packung kostet 4,99 €</strong...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:53:55+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "c:sport outdoor",
+    "creatine",
+    "germany",
+    "koelner",
+    "liste",
+    "m:body attack",
+    "made",
+    "monohydrat",
+    "p:<20",
+    "rein",
+    "supps",
+    "vegan",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "ww-mydealz-de-deals-mouse-pi-for-hire-2249eur-shooter-neu-auf-gog-metacritic-80-82-2852998",
+   "title": "MOUSE: P.I. For Hire ►22,49€ | Shooter | Neu auf GOG | Metacritic 80 / 8.2",
+   "link": "https://www.mydealz.de/deals/mouse-pi-for-hire-2249eur-shooter-neu-auf-gog-metacritic-80-82-2852998",
+   "merchant": "GOG",
+   "price": 22.49,
+   "category": "Gaming",
+   "image": "https://static.mydealz.de/threads/raw/NMK5m/2852998_1/re/150x150/qt/55/2852998_1.jpg",
+   "temp": 248,
+   "discount": null,
+   "desc": "MOUSE: P.I. For Hire ist seit heute neu auf GOG erhältlich und das Beste ist : Es ist sofort ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:53:44+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "c:gaming",
+    "gog",
+    "hire",
+    "m:gog",
+    "metacritic",
+    "mouse",
+    "p:<100",
+    "shooter",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-midea-olradiator-mit-9-rippen-2000-w-2850696",
+   "title": "Midea Ölradiator mit 9 Rippen 2000 W / Elektroheizkörber, mit 3 versch. Leistungsstufen",
+   "link": "https://www.mydealz.de/deals/midea-olradiator-mit-9-rippen-2000-w-2850696",
+   "merchant": "HORNBACH",
+   "price": 44.7,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/wBeu3/2850696_1/re/150x150/qt/55/2850696_1.jpg",
+   "temp": 116,
+   "discount": null,
+   "desc": "....scheint Bestpreis zu sein... sonst dauerhaft bei ca 80 EUR. Wer Hornbach um die Ecke hat kann sich ggf. Versandkosten sparen... dann bei schla...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:53:23+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": {
+    "ref": 80.0,
+    "pct": 44
+   },
+   "features": [
+    "c:home living",
+    "elektroheizkoerber",
+    "leistungsstufen",
+    "m:hornbach",
+    "midea",
+    "oelradiator",
+    "p:<100",
+    "rippen",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "eals-geboren-am-4-juli-1989-hd-digital-imdb-72-tom-cruise-at-amazon-video-apple-tv-2852346",
+   "title": "Geboren am 4. Juli (1989) - HD digital - IMDb 7,2 - Tom Cruise @ Amazon Video / Apple TV",
+   "link": "https://www.mydealz.de/deals/geboren-am-4-juli-1989-hd-digital-imdb-72-tom-cruise-at-amazon-video-apple-tv-2852346",
+   "merchant": "Amazon Prime Video",
+   "price": 3.99,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/9cp39/2852346_1/re/150x150/qt/55/2852346_1.jpg",
+   "temp": 102,
+   "discount": null,
+   "desc": "Ron (Tom Cruise) ist ein Kämpfer und Patriot. Freiwillig meldet er sich zur Elite-Einheit der \"Marines\" und kämpft an vorderster Front in Vietnam. Bei einem ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:53:01+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "apple",
+    "c:kultur freizeit",
+    "cruise",
+    "digital",
+    "geboren",
+    "imdb",
+    "juli",
+    "m:amazon prime video",
+    "p:<20",
+    "tom",
+    "video",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "-staubsauger-65000-pa-600-w-bis-zu-70-min-fur-8699-eur-mit-code-debbc06-aliexpress-2852094",
+   "title": "Laresar V7 PRO Akku-Staubsauger – 65.000 Pa, 600 W, bis zu 70 Min. für 86,99 € mit Code DEBBC06 [AliExpress]",
+   "link": "https://www.mydealz.de/deals/laresar-v7-pro-akku-staubsauger-65000-pa-600-w-bis-zu-70-min-fur-8699-eur-mit-code-debbc06-aliexpress-2852094",
+   "merchant": "AliExpress",
+   "price": 86.99,
+   "category": "Home & Living",
+   "image": "https://static.mydealz.de/threads/raw/0GJqC/2852094_1/re/150x150/qt/55/2852094_1.jpg",
+   "temp": 122,
+   "discount": null,
+   "desc": "Bei AliExpress bekommt ihr aktuell den Laresar...",
+   "code": "DEBBC06",
+   "until": null,
+   "pub": "2026-10-12T14:52:35+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "akku",
+    "aliexpress",
+    "c:home living",
+    "code",
+    "debbc06",
+    "laresar",
+    "m:aliexpress",
+    "min",
+    "p:<100",
+    "pro",
+    "staubsauger",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
+  {
+   "id": "e-deals-tonieplay-tonies-zb-disney-das-grosse-kingdom-quiz-ab-797-eur-bei-abholung-2846030",
+   "title": "verscheidene Tonieplay S und M - Tonies Play - z.B. Disney: Das große Kingdom-Quiz, ab 7,97 € bei Abholung",
+   "link": "https://www.mydealz.de/deals/tonieplay-tonies-zb-disney-das-grosse-kingdom-quiz-ab-797-eur-bei-abholung-2846030",
+   "merchant": "Berlet",
+   "price": 7.97,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/JxFrt/2846030_1/re/150x150/qt/55/2846030_1.jpg",
+   "temp": 110,
+   "discount": null,
+   "desc": "Verschiedene Tonieplay S und M bei Berlet für 7,97 € , bzw. 8,97 € Abholung in ...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T14:52:11+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "abholung",
+    "c:family kids",
+    "disney",
+    "grosse",
+    "kingdom",
+    "m:berlet",
+    "p:<20",
+    "play",
+    "quiz",
+    "tonieplay",
+    "tonies",
+    "verscheidene",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T16:22:46+00:00"
+  },
   {
    "id": "ittelmeer-kreuzfahrt-von-savona-ab-399eur-pp-balkonkabine-ab-469eur-pp-abfahrt-512-2852928",
    "title": "Costa Toscana: 7 Nächte Mittelmeer-Kreuzfahrt von Savona ab 399€ p.P. (Balkonkabine ab 469€ p.P.) Abfahrt 5.12.",
@@ -2962,43 +6019,6 @@
    "score": null,
    "code": null,
    "until": null
-  },
-  {
-   "id": "https-www-monsterdealz-de-p-1608028",
-   "title": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
-   "link": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028",
-   "merchant": "",
-   "price": 23.64,
-   "category": "Konsolen & Spiele, Amazon",
-   "image": "https://www.monsterdealz.de/app/uploads/2026/10/battlefield-6-phantom-edition-xbox-series-x-disc-600x600.jpg",
-   "temp": null,
-   "discount": null,
-   "desc": "Bei Amazon bekommt ihr die Battlefield 6 Phantom Edition für die Xbox Series X als Disc-Version für 23,64€ inklusive Versand (Vergleichspreis: 45,90€) Verkauft und versandt wird der Shooter direkt von Amazon, Prime braucht ihr für den Preis nicht. Die Phantom Edition legt zum kompletten Hauptspiel ein ganzes Paket …",
-   "code": null,
-   "until": null,
-   "pub": "2026-10-12T08:29:30+00:00",
-   "source": "Monsterdealz",
-   "watch": [
-    "xbox-series-x"
-   ],
-   "compare": {
-    "ref": 45.9,
-    "pct": 48
-   },
-   "features": [
-    "battlefield",
-    "c:konsolen spiele amazon",
-    "disc",
-    "edition",
-    "p:<100",
-    "phantom",
-    "series",
-    "shooter",
-    "w:xbox-series-x",
-    "xbox"
-   ],
-   "score": null,
-   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "ur-shoopgutschein-fur-instabank-visa-kreditkarte-5-transaktionen-gesamtwert-300eur-2852804",
