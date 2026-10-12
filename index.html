@@ -491,7 +491,8 @@ function priceHTML(d) {
   else if (d.discount) main = `<span class="now">−${d.discount} %</span>`;
   else main = `<span class="now plain">${isGw(d) ? "Gewinnspiel" : (d.watch || []).includes("rabatte") ? "Aktion" : "Preis im Deal"}</span>`;
   let extra = "";
-  if (d.compare && !(t && t.monthly != null)) extra += `<span class="old">${euro(d.compare.ref)}</span><span class="off">−${d.compare.pct} %</span>`;
+  if (d.compare && !(t && t.monthly != null)) extra += `<span class="old" ${d.compare.src ? `title="${esc(d.compare.src)}-Preis"` : ""}>${d.compare.src ? esc(d.compare.src) + " " : ""}${euro(d.compare.ref)}</span><span class="off">−${d.compare.pct} %</span>`;
+  else if (d.target?.p && d.price != null) extra += `<span class="gain unk">${esc(d.target.src)} ${euro(d.target.p)}</span>`;
   if (t) {
     const p = t.profit;
     extra += p == null ? `<span class="gain unk">${t.resale == null ? "Verkaufswert fehlt" : "Gewinn unklar"}</span>`
@@ -678,6 +679,7 @@ function sheetHTML(d) {
       ${row("Gesamtkosten", t.cost == null ? "–" : euro(t.cost))}${row(`Verkauf ${esc(t.device ? pretty(t.device) : "Gerät")}`, t.resale == null ? "in Einstellungen eintragen" : euro(t.resale))}
       <div class="sum"><span>${t.profit == null ? "Ergebnis" : t.profit >= 0 ? "Gewinn" : "Verlust"}</span><span class="${t.profit == null ? "" : t.profit >= 0 ? "ok" : "bad"}">${t.profit == null ? "–" : euro(Math.abs(t.profit))}</span></div></div>`;
   }
+  const tgt = d.target?.p ? `<div class="box"><h4>Vergleich mit ${esc(d.target.src)}</h4>Beim Import lag „${esc(d.target.kw)}“ bei ${esc(d.target.src)} bei <b>${euro(d.target.p)}</b>. ${d.price != null ? (d.price < d.target.p ? `Dieser Deal ist <b class="ok">${euro(d.target.p - d.price)} günstiger</b>.` : `Dieser Deal ist nicht günstiger – Größe prüfen.`) : ""}</div>` : "";
   const pw = (d.watch || []).find(w => typeOf(w) === "product"), hist = pw ? (state.meta.history || {})[pw] : null;
   const histBox = hist && hist.length >= 2 ? `<div class="box"><h4>Preisverlauf ${esc(W(pw).name)}</h4>${spark(hist)}</div>` : "";
   const code = d.code ? `<div class="codebox"><span>${esc(d.code)}</span><button class="btn small" data-copy="${esc(d.code)}">Code kopieren</button></div>` : "";
@@ -691,7 +693,7 @@ function sheetHTML(d) {
       <h2>${esc(d.title)}</h2>
       ${gw ? "" : priceHTML(d)}
       ${gw ? gwBox : tagsHTML(d)}
-      ${code}${calc}${histBox}
+      ${code}${calc}${tgt}${histBox}
       ${d.desc && d.desc.length > 12 ? `<p class="desc">${esc(d.desc)}</p>` : ""}
       <a class="go" href="${esc(d.link)}" target="_blank" rel="noopener">${gw ? "Jetzt teilnehmen" : "Zum Deal"}</a>
       ${gw ? `<button class="share check" style="justify-content:center" data-done="${esc(d.id)}" aria-pressed="${!!state.fb.done[d.id]}">${state.fb.done[d.id] ? "✓ Teilgenommen" : "Als teilgenommen markieren"}</button>` : ""}
@@ -773,7 +775,7 @@ function renderWatch() {
   $("#watchlist").innerHTML = w.map(x => `<div class="witem">
       <h3>${esc(x.name)}</h3>
       ${best[x.id] ? `<a class="bp" href="${esc(best[x.id].link)}" target="_blank" rel="noopener"><b>${euro(best[x.id].price)}</b><span>Bestpreis</span></a>` : ""}
-      <p class="muted">${kind(x)}, ${hits(x.id)} Treffer, ${x.push === false ? "ohne Push" : "mit Push"}</p>
+      <p class="muted">${kind(x)}, ${(x.keywords || []).length > 10 ? `${x.keywords.length} Suchbegriffe, ` : ""}${hits(x.id)} Treffer, ${x.push === false ? "ohne Push" : x.targets ? "Push nur wenn günstiger als " + esc(x.target_src || "Referenz") : "mit Push"}</p>
       ${hist[x.id] && hist[x.id].length >= 2 ? `<div class="sp">${spark(hist[x.id])}</div>` : ""}
       <div class="row"><button class="btn quiet small" data-edit="${esc(x.id)}">Bearbeiten</button><button class="btn quiet small" data-del="${esc(x.id)}">Entfernen</button></div>
     </div>`).join("") || `<div class="empty"><strong>Noch nichts auf der Watchlist</strong>Trag oben ein Produkt ein.</div>`;

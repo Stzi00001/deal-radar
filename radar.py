@@ -11,6 +11,7 @@ import math
 import os
 import re
 import sys
+import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -58,6 +59,7 @@ def norm(text):
     t = (text or "").lower()
     for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
         t = t.replace(a, b)
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()  # é -> e, ò -> o
     t = re.sub(r"[^a-z0-9€]+", " ", t)
     return " " + re.sub(r"\s+", " ", t).strip() + " "
 
@@ -247,6 +249,17 @@ def phrase_in(phrase, normtext):
     return p.strip() != "" and p in normtext
 
 
+def req_words(kw):
+    return [t for t in norm(kw).split() if len(t) > 2 or t.isdigit()]
+
+
+def best_keyword(w, title_n):
+    """Alle Wörter eines Suchbegriffs müssen im Titel stehen (Reihenfolge egal); der genaueste gewinnt."""
+    toks = set(title_n.split())
+    hits = [k for k in w.get("keywords", []) if req_words(k) and all(t in toks for t in req_words(k))]
+    return max(hits, key=lambda k: len(req_words(k))) if hits else None
+
+
 def match_watch(deal, w):
     title_n = norm(deal["title"])
     full_n = norm(deal["_text"])
@@ -263,7 +276,12 @@ def match_watch(deal, w):
         if not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
             return False
         return any(h in title_n for h in TARIF_HINTS)
-    if not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
+    if w.get("match") == "all_words":
+        kw = best_keyword(w, title_n)
+        if not kw:
+            return False
+        deal.setdefault("_kw", {})[w["id"]] = kw
+    elif not any(phrase_in(k, title_n) for k in w.get("keywords", [])):
         return False
     mp = w.get("max_price")
     if mp and deal.get("price") and deal["price"] > float(mp):
@@ -496,13 +514,21 @@ def run(feed_override=None, send_push=True):
         if any(w.get("type") == "tarif" for w in hits):
             d["tarif"] = analyse_tarif(d, cfg.get("resale", {}), settings)
         d["compare"] = compare_price(d)
+        for w in hits:
+            kw = d.get("_kw", {}).get(w["id"])
+            ref = (w.get("targets") or {}).get(kw) if kw else None
+            if kw:
+                d["target"] = {"kw": kw, "p": ref, "src": w.get("target_src", "Referenz")}
+                if ref and d.get("price") and d["price"] < ref and not d["compare"]:
+                    d["compare"] = {"ref": ref, "pct": round(100 * (ref - d["price"]) / ref), "src": w.get("target_src")}
+        d.pop("_kw", None)
         d["features"] = features(d)
         d["score"] = score(model, d["features"])
         d.pop("_text", None)
         d.pop("_rubriken", None)
         if d["id"] in known:
             k = known[d["id"]]
-            k.update({x: d[x] for x in ("score", "tarif", "watch", "features", "compare", "desc", "image", "discount", "code", "until", "gw") if x in d})
+            k.update({x: d[x] for x in ("score", "tarif", "watch", "features", "compare", "desc", "image", "discount", "code", "until", "gw", "target") if x in d})
             if d.get("temp") is not None:
                 k["temp"] = d["temp"]  # Hitze steigt mit der Zeit – immer den neuesten Wert
             continue
@@ -528,6 +554,9 @@ def run(feed_override=None, send_push=True):
             continue
         if d["score"] is not None and d["score"] < min_score:
             continue
+        t = d.get("target")
+        if t and t.get("p") and d.get("price") and d["price"] >= t["p"] and all(w.get("targets") for w in hits):
+            continue  # nicht günstiger als idealo – nur in der App zeigen, kein Push
         tw = [w for w in hits if w.get("type") == "tarif"]
         if tw and len(tw) == len(hits):
             p = d["tarif"]["profit"]
