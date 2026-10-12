@@ -3,7 +3,12 @@ name: Deal-Radar
 on:
   schedule:
     - cron: "*/10 * * * *"   # alle 10 Minuten (GitHub kann sich ein paar Minuten verspäten)
-  workflow_dispatch: {}      # manueller Start über den "Run workflow"-Knopf
+  workflow_dispatch:         # manueller Start (App-Knopf, cron-job.org, "Run workflow")
+    inputs:
+      test_push:
+        description: "Nur einen Test-Push senden"
+        type: boolean
+        default: false
   push:
     paths:
       - config.json
@@ -28,6 +33,7 @@ jobs:
       - name: Deals holen und filtern
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TEST_PUSH: ${{ inputs.test_push }}
         run: python radar.py
       - name: Ergebnis speichern
         run: |

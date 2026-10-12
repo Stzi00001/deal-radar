@@ -25,7 +25,13 @@ MAX_DEALS = 400
 MAX_AGE_DAYS = 30
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0 Safari/537.36")
-NS = {"pepper": "http://www.pepper.com/rss", "media": "http://search.yahoo.com/mrss/"}
+NS = {"pepper": "http://www.pepper.com/rss", "media": "http://search.yahoo.com/mrss/",
+      "content": "http://purl.org/rss/1.0/modules/content/"}
+try:
+    from zoneinfo import ZoneInfo
+    TZ = ZoneInfo("Europe/Berlin")
+except Exception:  # pragma: no cover
+    TZ = timezone(timedelta(hours=2))
 
 STOPWORDS = set("""und oder der die das mit fuer von bei auf aus ein eine einer
 inkl statt nur jetzt neu neue alle versch verschiedene sorten prime amazon ab bis
@@ -89,6 +95,81 @@ def summary(desc_html, title):
     if len(t) > 320:
         t = t[:320].rsplit(" ", 1)[0] + " …"
     return t
+CODE_STOP = {"GRATIS", "PRIME", "MBW", "EUR", "FREE", "PAYBACK", "SHOOP", "NEWSLETTER", "APP", "DEAL", "LINK", "HIER", "UND", "OHNE"}
+
+
+def find_code(text):
+    """Gutscheincode aus Titel/Text, z. B. 'Code: ARDA', 'Gutscheincode APP15'."""
+    for m in re.finditer(r"(?i:gutschein-?code|rabatt-?code|aktionscode|promo-?code|gutschein|code)\s*(?:[:=]|lautet|ist)?\s*[„\"'“‚»]?([A-Z0-9][A-Z0-9_-]{2,23})\b", text or ""):
+        c = m.group(1).strip("-_")
+        if c in CODE_STOP or len(c) < 4 or not re.search(r"[A-Z]", c) and not re.search(r"\d{4,}", c):
+            continue
+        if re.fullmatch(r"\d+([.,]\d+)?", c):  # reine Zahl/Betrag
+            continue
+        return c
+    return None
+
+
+DATE = r"(\d{1,2})\.(\d{1,2})\.(\d{2,4})?"
+
+
+def _mkdate(d, m, y, ref):
+    try:
+        yy = int(y) if y else ref.year
+        if yy < 100:
+            yy += 2000
+        dt = datetime(yy, int(m), int(d), 23, 59, tzinfo=TZ)
+    except ValueError:
+        return None
+    if not y and dt < ref - timedelta(days=2):
+        dt = dt.replace(year=dt.year + 1)
+    if not y and dt > ref + timedelta(days=120):  # ohne Jahr nur nahe Daten glauben
+        return None
+    return dt
+
+
+def find_until(text, pub):
+    """Ablaufdatum / Einsendeschluss aus dem Text (Datum am Ende eines Zeitraums oder nach 'bis')."""
+    t = text or ""
+    cands = []
+    for m in re.finditer(DATE + r"\s*(?:-|–|bis)\s*" + DATE, t):
+        cands.append(m.groups()[3:6])
+    for m in re.finditer(r"(?i)(?:gültig bis|gueltig bis|bis zum|bis einschließlich|bis einschl\.|endet am|läuft bis|einsendeschluss:?|teilnahmeschluss:?|nur bis|aktion bis|bis)\s*(?:[A-Za-zäöüÄÖÜ]+,?\s+)?(?:den\s*)?" + DATE, t):
+        cands.append(m.groups()[-3:])
+    for d, mo, y in cands:
+        dt = _mkdate(d, mo, y, pub)
+        if dt and pub - timedelta(days=90) <= dt <= pub + timedelta(days=400):
+            return dt.isoformat()
+    return None
+
+
+GW_TYPES = [("Instagram", r"instagram"), ("Facebook", r"facebook"), ("TikTok", r"tiktok"), ("App", r"\bapp\b"),
+            ("Postkarte", r"postkarte|per post|einsenden"), ("Kassenbon", r"kassenbon|kaufbeleg|beim kauf|aktionsprodukt"),
+            ("Quiz", r"quiz|frage beantworten|lösungswort|loesungswort"), ("Newsletter", r"newsletter"), ("Online", r"online|formular|website|webseite")]
+
+
+def gewinnspiel_info(text):
+    """Teilnahmeart und Gewinn-Wert aus einem Gewinnspiel-Text."""
+    low = (text or "").lower()
+    kind = next((name for name, rx in GW_TYPES if re.search(rx, low)), "Online")
+    value = None
+    m = re.search(r"(?:im (?:gesamt)?wert von|gesamtwert(?: von)?|wert:?|im wert)\s*(?:über|ueber|bis zu|ca\.?)?\s*(\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?)\s?(?:€|eur|euro)", low)
+    if m:
+        value = to_float(m.group(1))
+    else:
+        m = re.search(r"(\d{1,3}(?:\.\d{3})+|\d{3,6})\s?(?:€|eur|euro)\s*(?:bargeld|cash|gutschein|reisegutschein|einkaufsgutschein)", low)
+        value = to_float(m.group(1)) if m else None
+    return {"kind": kind, "value": value}
+
+
+def first_img(html_text):
+    for m in re.finditer(r"<img[^>]+src=[\"']([^\"']+)[\"']", html_text or ""):
+        u = m.group(1)
+        if u.startswith("http") and not re.search(r"emoji|\.svg|gravatar|pixel|logo|avatar|1x1", u, re.I):
+            return u
+    return ""
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml,application/xml,text/xml,*/*"})
     with urllib.request.urlopen(req, timeout=25) as r:
@@ -106,7 +187,7 @@ def parse_feed(raw, source, rubrik=None):
         link = (it.findtext("link") or "").strip()
         if not title or not link:
             continue
-        desc_html = it.findtext("description") or ""
+        desc_html = it.findtext("content:encoded", namespaces=NS) or it.findtext("description") or ""
         merchant, price, discount = "", None, None
         m = it.find("pepper:merchant", NS)
         if m is not None:
@@ -123,27 +204,35 @@ def parse_feed(raw, source, rubrik=None):
             th = it.find("media:content", NS)
         if th is not None:
             img = th.get("url", "")
+        if not img:
+            enc = it.find("enclosure")
+            img = enc.get("url", "") if enc is not None and "image" in (enc.get("type") or "image") else ""
+        if not img:
+            img = first_img(desc_html)
         pub = it.findtext("pubDate")
         try:
             pub_dt = parsedate_to_datetime(pub).astimezone(timezone.utc) if pub else datetime.now(timezone.utc)
         except (TypeError, ValueError):
             pub_dt = datetime.now(timezone.utc)
         guid = (it.findtext("guid") or link).strip()
+        plain = strip_html(desc_html)
         out.append({
             "id": re.sub(r"[^a-zA-Z0-9]+", "-", guid)[-90:],
             "title": title,
             "link": link,
             "merchant": merchant,
             "price": price,
-            "category": strip_html(it.findtext("category")),
+            "category": ", ".join(strip_html(c.text) for c in it.findall("category") if c.text)[:120],
             "image": img,
             "temp": temp,
             "discount": discount,
             "desc": summary(desc_html, title),
+            "code": find_code(title + " " + plain[:3000]),
+            "until": find_until(title + " " + plain[:3000], pub_dt.astimezone(TZ)),
             "pub": pub_dt.isoformat(),
             "source": source,
             "_rubriken": [rubrik] if rubrik else [],
-            "_text": title + " " + strip_html(desc_html)[:1500],
+            "_text": title + " " + plain[:1500],
         })
     return out
 
@@ -294,26 +383,69 @@ def score(model, feats):
 
 
 # ---------------------------------------------------------------- Push
+def app_url():
+    """https://<owner>.github.io/<repo>/ – für Links aus Push-Nachrichten."""
+    r = os.environ.get("GITHUB_REPOSITORY", "")
+    if "/" not in r:
+        return ""
+    o, n = r.split("/", 1)
+    return f"https://{o.lower()}.github.io/{n}/"
+
+
+def ntfy(payload):
+    req = urllib.request.Request("https://ntfy.sh/", data=json.dumps(payload).encode("utf-8"),
+                                 headers={"Content-Type": "application/json"})
+    urllib.request.urlopen(req, timeout=15).read()
+
+
 def push(topic, deal, names):
-    price = f"{deal['price']:.2f} €".replace(".", ",") if deal.get("price") is not None else ""
-    lines = [", ".join(names)]
-    if price or deal.get("merchant"):
-        lines.append(" – ".join(x for x in (price, deal.get("merchant")) if x))
     t = deal.get("tarif")
+    if t and t.get("monthly") is not None:
+        price = f"{t['monthly']:.2f} €/Monat".replace(".", ",")
+    elif deal.get("price") is not None:
+        price = f"{deal['price']:.2f} €".replace(".", ",")
+    else:
+        price = f"−{deal['discount']} %" if deal.get("discount") else ""
+    first = " · ".join(x for x in (price, deal.get("merchant")) if x)
+    if deal.get("compare"):
+        first += f" (−{deal['compare']['pct']} %)"
+    lines = [first] if first else []
     if t and t.get("profit") is not None:
-        lines.append(f"Rechnerischer Gewinn: {t['profit']:.0f} €")
-    if deal.get("score") is not None:
-        lines.append(f"Passt zu dir: {deal['score']} %")
-    body = json.dumps({
+        lines.append(f"{'Gewinn' if t['profit'] >= 0 else 'Verlust'} nach Verkauf: {abs(t['profit']):.0f} €")
+    if deal.get("code"):
+        lines.append(f"Code: {deal['code']}")
+    lines.append(", ".join(names))
+    app = app_url()
+    payload = {
         "topic": topic,
         "title": deal["title"][:180],
         "message": "\n".join(lines),
-        "click": deal["link"],
-        "tags": ["moneybag"],
+        "click": f"{app}?open={deal['id']}" if app else deal["link"],
+        "tags": ["fire"] if (deal.get("temp") or 0) >= 200 else ["moneybag"],
         "priority": 4 if (deal.get("score") or 0) >= 70 else 3,
-    }).encode("utf-8")
-    req = urllib.request.Request("https://ntfy.sh/", data=body, headers={"Content-Type": "application/json"})
-    urllib.request.urlopen(req, timeout=15).read()
+        "actions": [{"action": "view", "label": "Zum Deal", "url": deal["link"], "clear": True}],
+    }
+    if app:
+        payload["actions"].append({"action": "view", "label": "Kein Interesse", "url": f"{app}?hide={deal['id']}", "clear": True})
+    if deal.get("image"):
+        payload["attach"] = sharpen(deal["image"]) if "mydealz" in deal["image"] else deal["image"]
+    ntfy(payload)
+
+
+def is_quiet(settings, now=None):
+    q = settings.get("quiet_hours", [23, 7])
+    if not q or q[0] == q[1]:
+        return False
+    h = (now or datetime.now(TZ)).hour
+    return h >= q[0] or h < q[1] if q[0] > q[1] else q[0] <= h < q[1]
+
+
+def night_summary(topic, queue):
+    app = app_url()
+    n = len(queue)
+    body = "\n".join("• " + q["title"][:80] for q in queue[:5]) + (f"\n… und {n - 5} weitere" if n > 5 else "")
+    ntfy({"topic": topic, "title": f"Über Nacht: {n} neue Treffer", "message": body,
+          "click": app or "https://ntfy.sh", "tags": ["sunrise"], "priority": 3})
 
 
 # ---------------------------------------------------------------- Hauptlauf
@@ -359,6 +491,8 @@ def run(feed_override=None, send_push=True):
         if not hits:
             continue
         d["watch"] = [w["id"] for w in hits]
+        if "gewinnspiele" in d["watch"]:
+            d["gw"] = gewinnspiel_info(d["_text"])
         if any(w.get("type") == "tarif" for w in hits):
             d["tarif"] = analyse_tarif(d, cfg.get("resale", {}), settings)
         d["compare"] = compare_price(d)
@@ -368,15 +502,24 @@ def run(feed_override=None, send_push=True):
         d.pop("_rubriken", None)
         if d["id"] in known:
             k = known[d["id"]]
-            k.update({x: d[x] for x in ("score", "tarif", "watch", "features", "compare", "desc", "image", "discount") if x in d})
+            k.update({x: d[x] for x in ("score", "tarif", "watch", "features", "compare", "desc", "image", "discount", "code", "until", "gw") if x in d})
             if d.get("temp") is not None:
                 k["temp"] = d["temp"]  # Hitze steigt mit der Zeit – immer den neuesten Wert
             continue
+        d["found"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         known[d["id"]] = d
         new.append((d, hits))
 
     pushed = 0
     min_score = settings.get("push_min_score", 0) or 0
+    quiet = is_quiet(settings)
+    night = store.get("night", [])
+    if not quiet and night and send_push and topic:
+        try:
+            night_summary(topic, night)
+            night = []
+        except Exception as e:
+            print(f"[Push fehlgeschlagen] {e}", file=sys.stderr)
     for d, hits in new:
         if d["id"] in votes:
             continue
@@ -390,6 +533,9 @@ def run(feed_override=None, send_push=True):
             p = d["tarif"]["profit"]
             if p is not None and p < float(tw[0].get("min_profit", 0)):
                 continue
+        if quiet:
+            night.append({"id": d["id"], "title": d["title"]})
+            continue
         if send_push and topic:
             try:
                 push(topic, d, [w["name"] for w in hits])
@@ -411,6 +557,17 @@ def run(feed_override=None, send_push=True):
             keep.append(wid)
         if keep:
             d["watch"] = keep
+            # ältere Einträge nachträglich anreichern
+            txt = d["title"] + " " + (d.get("desc") or "")
+            if "gewinnspiele" in keep and not d.get("gw"):
+                d["gw"] = gewinnspiel_info(txt)
+            if "code" not in d:
+                d["code"] = find_code(txt)
+            if "until" not in d:
+                try:
+                    d["until"] = find_until(txt, datetime.fromisoformat(d["pub"]).astimezone(TZ))
+                except (KeyError, ValueError):
+                    d["until"] = None
             if d.get("tarif") and not any(wmap[w].get("type") == "tarif" for w in keep):
                 d.pop("tarif")
         else:
@@ -442,21 +599,38 @@ def run(feed_override=None, send_push=True):
         if "features" in d:
             d["score"] = score(model, d["features"])
         deals.append(d)
+    now_utc = datetime.now(timezone.utc)
+    deals = [d for d in deals if not d.get("until") or datetime.fromisoformat(d["until"]) >= now_utc]
     deals.sort(key=lambda d: d.get("pub", ""), reverse=True)
-    best = load_json(DEALS, {}).get("best", {})
+
+    # Preisverlauf: günstigster Preis pro Tag und Watchlist-Produkt
+    history = load_json(DEALS, {}).get("history", {})
     for w in watch:
         if w.get("type", "product") != "product":
             continue
+        live = {d["link"] for d in deals if w["id"] in d.get("watch", [])}
+        pts = {p["d"]: p for p in history.get(w["id"], []) if p.get("l") in live or p["d"] < (now_utc - timedelta(days=MAX_AGE_DAYS)).date().isoformat()}
         for d in deals:
             if w["id"] in d.get("watch", []) and d.get("price"):
-                b = best.get(w["id"])
-                if b is None or d["price"] < b["price"]:
-                    best[w["id"]] = {"price": d["price"], "title": d["title"], "link": d["link"], "date": d.get("pub", "")[:10]}
+                day = d.get("pub", "")[:10]
+                if day not in pts or d["price"] < pts[day]["p"]:
+                    pts[day] = {"d": day, "p": d["price"], "t": d["title"][:90], "l": d["link"]}
+        history[w["id"]] = sorted(pts.values(), key=lambda p: p["d"])[-120:]
+    history = {k: v for k, v in history.items() if any(w["id"] == k for w in watch)}
+    # Bestpreis aus dem (bereinigten) Verlauf – alte Fehltreffer fallen so wieder raus
+    best = {}
+    for k, pts in history.items():
+        valid = [p for p in pts if any(d["link"] == p.get("l") for d in deals)] or pts
+        if valid:
+            p = min(valid, key=lambda p: p["p"])
+            best[k] = {"price": p["p"], "title": p.get("t", ""), "link": p.get("l", ""), "date": p["d"]}
     store = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "feeds": feed_status,
         "votes": len(votes),
         "best": best,
+        "history": history,
+        "night": night[-50:],
         "deals": deals[:MAX_DEALS],
     }
     save_json(DEALS, store)
@@ -464,5 +638,22 @@ def run(feed_override=None, send_push=True):
     return store, new
 
 
+def test_push():
+    """Schickt den neuesten Watchlist-Treffer als Probe-Push (Workflow-Option „Test-Push“)."""
+    cfg, store = load_json(CONFIG, {}), load_json(DEALS, {"deals": []})
+    topic = os.environ.get("NTFY_TOPIC", "").strip()
+    personal = {w["id"]: w["name"] for w in cfg.get("watchlist", []) if w.get("type") != "rubrik"}
+    ds = [d for d in store.get("deals", []) if any(w in personal for w in d.get("watch", []))] or store.get("deals", [])
+    if not topic or not ds:
+        print("Kein Push-Thema oder keine Deals.")
+        return
+    d = ds[0]
+    push(topic, d, [personal.get(w, w) for w in d.get("watch", [])] or ["Test"])
+    print("Test-Push gesendet:", d["title"])
+
+
 if __name__ == "__main__":
-    run()
+    if os.environ.get("TEST_PUSH") == "true":
+        test_push()
+    else:
+        run()

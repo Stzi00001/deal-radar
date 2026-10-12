@@ -17,12 +17,12 @@
 <style>
 :root{
   --bg:#eef1f5; --card:#ffffff; --ink:#0f172a; --ink2:#5b6577; --line:#e2e7ee; --soft:#f3f5f8; --img:#ffffff;
-  --hot:#ff3b2f; --warm:#ff8a00; --cold:#2f7bf5; --green:#0f9d58; --red:#e5383b;
+  --hot:#ff3b2f; --warm:#ff8a00; --cold:#2f7bf5; --green:#0f9d58; --red:#e5383b; --gold:#b7791f; --goldbg:#fff4d6;
   --r:18px; --pad:16px;
 }
 @media (prefers-color-scheme:dark){
   :root{--bg:#0a0f1a; --card:#131b2b; --ink:#eef2f8; --ink2:#8d99ae; --line:#212c41; --soft:#1a2437; --img:#f4f6f9;
-        --green:#34c77b; --red:#ff5a5f}
+        --green:#34c77b; --red:#ff5a5f; --gold:#f6c453; --goldbg:#3a2f12}
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{background:var(--bg)}
@@ -35,28 +35,30 @@ a{color:inherit}
 [hidden]{display:none!important}
 
 /* ---------- Kopf */
-header{background:var(--bg)}
-.stick{position:sticky;top:0;z-index:4;background:color-mix(in srgb,var(--bg) 86%,transparent);
-  backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);padding-top:env(safe-area-inset-top)}
-.stick .in{max-width:760px;margin:0 auto;padding:0 var(--pad)}
 .head{max-width:760px;margin:0 auto;padding:calc(10px + env(safe-area-inset-top)) var(--pad) 0}
 .titlebar{display:flex;align-items:center;gap:12px}
 .titlebar h1{flex:1;margin:0;font-weight:900;font-stretch:70%;font-size:32px;letter-spacing:-.4px;line-height:1}
 .titlebar small{display:block;font-size:13px;font-weight:500;font-stretch:100%;letter-spacing:0;color:var(--ink2);margin-top:3px}
+.titlebar small b{color:var(--hot);font-weight:700}
 .scan{position:relative;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);display:grid;place-items:center;flex:none;overflow:hidden}
 .scan svg{position:relative;width:24px;height:24px}
 .scan .sweep{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 280deg,var(--warm) 360deg);opacity:0}
 .scan.busy .sweep{opacity:1;animation:spin 1.3s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.scan.busy .sweep{animation:none}}
-.search{position:relative;margin-top:12px;margin-bottom:4px}
+.search{position:relative;margin:12px 0 4px}
 .search svg{position:absolute;left:13px;top:50%;width:18px;height:18px;margin-top:-9px;color:var(--ink2)}
 .search input{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:11px 12px 11px 40px}
 .search input:focus{outline:none;border-color:var(--ink)}
-.tabs{display:flex;gap:22px;margin-top:2px}
-.tabs button{border:0;background:none;padding:12px 0 10px;font-weight:700;font-size:15.5px;color:var(--ink2);position:relative}
+.stick{position:sticky;top:0;z-index:4;background:color-mix(in srgb,var(--bg) 86%,transparent);
+  backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);padding-top:env(safe-area-inset-top)}
+.stick .in{max-width:760px;margin:0 auto;padding:0 var(--pad)}
+.tabs{display:flex;gap:22px;margin-top:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:0;background:none;padding:12px 0 10px;font-weight:700;font-size:15.5px;color:var(--ink2);position:relative}
 .tabs button[aria-selected=true]{color:var(--ink)}
 .tabs button[aria-selected=true]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--hot),var(--warm))}
+.tabs .n{font-weight:600;color:var(--ink2);margin-left:4px;font-size:13px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:10px var(--pad) 12px;margin:0 calc(-1 * var(--pad));scrollbar-width:none;border-top:1px solid var(--line)}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;white-space:nowrap}
@@ -64,39 +66,54 @@ header{background:var(--bg)}
 .chip .n{opacity:.55;margin-left:5px;font-weight:500}
 
 main{max-width:760px;margin:0 auto;padding:4px var(--pad) 0}
+.tip{display:flex;align-items:center;gap:10px;background:var(--card);border-radius:14px;padding:10px 12px;margin:4px 0 10px;font-size:13.5px;color:var(--ink2)}
+.tip b{color:var(--ink)}
+.tip button{margin-left:auto;border:0;background:none;color:var(--ink2);font-size:18px}
 
-/* ---------- Hitze-Abzeichen */
+/* ---------- Abzeichen */
 .temp{display:inline-flex;align-items:center;gap:3px;font-weight:800;font-stretch:110%;font-size:13px;line-height:1;padding:5px 8px 5px 6px;border-radius:999px;color:#fff;
   background:linear-gradient(135deg,var(--warm),var(--hot));white-space:nowrap}
 .temp svg{width:13px;height:13px}
 .temp.t1{background:linear-gradient(135deg,#ffb020,var(--warm))}
 .temp.t3{background:linear-gradient(135deg,var(--hot),#c2002f)}
 .temp.cold{background:linear-gradient(135deg,#6aa7ff,var(--cold))}
-.new{display:inline-flex;font-size:12.5px;font-weight:700;padding:4px 8px;border-radius:999px;background:var(--soft);color:var(--ink2)}
+.newdot{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:var(--hot)}
+.newdot::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--hot)}
 
-/* ---------- Für dich */
+/* ---------- Watchlist-Leiste */
 .sec{display:flex;align-items:baseline;justify-content:space-between;margin:14px 0 10px}
 .sec h2{margin:0;font-weight:850;font-stretch:78%;font-size:22px;letter-spacing:-.2px}
 .sec span{color:var(--ink2);font-size:13.5px}
 .rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1 * var(--pad));padding:0 var(--pad) 4px;scrollbar-width:none}
 .rail::-webkit-scrollbar{display:none}
-.pick{flex:none;width:228px;scroll-snap-align:start;background:var(--card);border-radius:var(--r);overflow:hidden;border:0;padding:0;text-align:left;display:flex;flex-direction:column}
+.pick{flex:none;width:228px;scroll-snap-align:start;background:var(--card);border-radius:var(--r);overflow:hidden;border:0;padding:0;text-align:left;display:flex;flex-direction:column;cursor:pointer}
 .pick .ph{position:relative;height:138px;background:var(--img);display:grid;place-items:center}
 .pick .ph img{max-width:84%;max-height:118px;object-fit:contain}
-.pick .ph .temp,.pick .ph .new{position:absolute;left:10px;top:10px}
+.pick .ph .temp{position:absolute;left:10px;top:10px}
 .pick .why{position:absolute;right:10px;top:10px;font-size:12px;font-weight:700;padding:4px 8px;border-radius:999px;background:var(--ink);color:var(--bg)}
 .pick .pb{padding:11px 12px 13px;display:flex;flex-direction:column;gap:6px;flex:1}
 .pick h3{margin:0;font-size:14.5px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
-/* ---------- Feed */
+/* ---------- Feed & Wischen */
 .feed{display:flex;flex-direction:column;gap:10px}
-.deal{display:grid;grid-template-columns:96px 1fr;gap:13px;background:var(--card);border-radius:var(--r);padding:12px;border:0;text-align:left;width:100%}
+.swipe{position:relative;border-radius:var(--r);overflow:hidden;transition:height .25s,opacity .25s,margin .25s}
+.swipe .bgl,.swipe .bgr{position:absolute;inset:0;display:flex;align-items:center;padding:0 22px;font-weight:800;font-size:15px;color:#fff;opacity:0}
+.swipe .bgl{background:var(--green);justify-content:flex-start}
+.swipe .bgr{background:var(--red);justify-content:flex-end}
+.swipe.r .bgl,.swipe.l .bgr{opacity:1}
+.deal{position:relative;display:grid;grid-template-columns:96px 1fr;gap:13px;background:var(--card);border-radius:var(--r);padding:12px;cursor:pointer;touch-action:pan-y;will-change:transform}
+.deal.anim{transition:transform .25s}
 .deal .ph{position:relative;width:96px;height:96px;border-radius:13px;background:var(--img);display:grid;place-items:center;overflow:hidden}
 .deal .ph img{width:100%;height:100%;object-fit:contain}
 .deal .ph .temp{position:absolute;left:5px;bottom:5px;font-size:12px;padding:4px 7px 4px 5px}
-.deal .body{min-width:0;display:flex;flex-direction:column;gap:5px}
-.meta{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2);min-width:0}
+.deal .body{min-width:0;display:flex;flex-direction:column;gap:5px;padding-right:22px}
+.star{position:absolute;right:6px;top:6px;width:36px;height:36px;border:0;background:none;display:grid;place-items:center;color:var(--ink2);border-radius:50%}
+.star svg{width:21px;height:21px}
+.star[aria-pressed=true]{color:#f5a400}
+.star[aria-pressed=true] svg{fill:currentColor}
+.meta{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2);min-width:0;flex-wrap:nowrap}
 .meta .m{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;color:var(--ink)}
+.meta span{white-space:nowrap}
 .deal h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .price{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;margin-top:1px}
 .now{font-weight:850;font-stretch:108%;font-size:21px;letter-spacing:-.3px;line-height:1.05;color:var(--hot)}
@@ -109,16 +126,32 @@ main{max-width:760px;margin:0 auto;padding:4px var(--pad) 0}
 .gain.minus{color:var(--red);background:color-mix(in srgb,var(--red) 12%,transparent)}
 .gain.unk{color:var(--ink2);background:var(--soft)}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
-.tg{font-size:12px;font-weight:600;color:var(--ink2);background:var(--soft);padding:3px 8px;border-radius:7px}
-.tg.fit{color:var(--green)}
+.tg{font-size:12px;font-weight:600;color:var(--ink2);background:var(--soft);padding:3px 8px;border-radius:7px;border:0}
+.tg.fit,.tg.liked{color:var(--green)}
 .tg.meh{color:var(--red)}
-.tg.liked{color:var(--green)}
+.tg.soon{color:var(--hot)}
+.tg.code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:var(--ink);border:1.5px dashed var(--ink2);background:transparent;padding:2px 7px;cursor:copy}
 .empty{background:var(--card);border-radius:var(--r);padding:36px 22px;text-align:center;color:var(--ink2)}
 .empty strong{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
 .more{display:block;margin:14px auto 0;border:1.5px solid var(--line);background:var(--card);border-radius:12px;padding:11px 18px;font-weight:700}
-
-/* Platzhalter-Logo */
 .ini{width:100%;height:100%;display:grid;place-items:center;font-weight:900;font-stretch:80%;font-size:30px;color:#fff}
+
+/* ---------- Gewinnspiele */
+.gwstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0 12px}
+.gwstats div{background:var(--card);border-radius:14px;padding:10px 12px}
+.gwstats b{display:block;font-weight:850;font-stretch:90%;font-size:22px;line-height:1.1}
+.gwstats span{font-size:12.5px;color:var(--ink2)}
+.gw{background:var(--card);border-radius:var(--r);padding:12px;display:grid;grid-template-columns:76px 1fr;gap:12px}
+.gw.done{opacity:.62}
+.gw .ph{width:76px;height:76px;border-radius:13px;background:var(--img);display:grid;place-items:center;overflow:hidden;cursor:pointer}
+.gw .ph img{width:100%;height:100%;object-fit:contain}
+.gw h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.3;cursor:pointer;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.gwinfo{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
+.prize{font-size:12.5px;font-weight:800;color:var(--gold);background:var(--goldbg);padding:3px 8px;border-radius:7px}
+.gwact{grid-column:1 / -1;display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:2px}
+.join{display:flex;align-items:center;justify-content:center;border-radius:12px;padding:11px;font-weight:800;color:#fff;text-decoration:none;background:linear-gradient(135deg,var(--warm),var(--hot))}
+.check{border:1.5px solid var(--line);background:transparent;border-radius:12px;padding:0 14px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:6px}
+.check[aria-pressed=true]{border-color:var(--green);color:var(--green);background:color-mix(in srgb,var(--green) 10%,transparent)}
 
 /* ---------- Detail-Blatt */
 .scrim{position:fixed;inset:0;z-index:20;background:rgba(5,10,20,.45);opacity:0;transition:opacity .22s}
@@ -126,7 +159,7 @@ main{max-width:760px;margin:0 auto;padding:4px var(--pad) 0}
 .sheet{position:fixed;left:0;right:0;bottom:0;z-index:21;max-width:760px;margin:0 auto;max-height:92vh;overflow-y:auto;overscroll-behavior:contain;
   background:var(--card);border-radius:24px 24px 0 0;padding:0 0 calc(20px + env(safe-area-inset-bottom));transform:translateY(100%);transition:transform .28s cubic-bezier(.2,.8,.2,1)}
 .sheet.on{transform:none}
-@media (prefers-reduced-motion:reduce){.sheet,.scrim{transition:none}}
+@media (prefers-reduced-motion:reduce){.sheet,.scrim,.swipe,.deal.anim{transition:none}}
 .grab{position:sticky;top:0;z-index:2;display:flex;justify-content:center;padding:9px 0 4px;background:var(--card)}
 .grab i{width:40px;height:5px;border-radius:3px;background:var(--line)}
 .close{position:absolute;right:12px;top:6px;width:34px;height:34px;border-radius:50%;border:0;background:var(--soft);font-size:18px;line-height:1}
@@ -136,15 +169,25 @@ main{max-width:760px;margin:0 auto;padding:4px var(--pad) 0}
 .sh-body h2{margin:8px 0 10px;font-size:21px;line-height:1.25;font-weight:700}
 .sh-body .now{font-size:30px}
 .desc{color:var(--ink2);font-size:14.5px;line-height:1.5;margin:12px 0 0}
-.calc{margin-top:14px;border-radius:14px;background:var(--soft);padding:12px 14px;font-size:14px}
+.box{margin-top:14px;border-radius:14px;background:var(--soft);padding:12px 14px;font-size:14px}
+.box h4{margin:0 0 6px;font-size:14px}
 .calc div{display:flex;justify-content:space-between;padding:3px 0}
 .calc div.sum{border-top:1px solid var(--line);margin-top:6px;padding-top:9px;font-weight:800}
+.codebox{display:flex;align-items:center;gap:10px;margin-top:14px;border:2px dashed var(--ink2);border-radius:14px;padding:10px 12px}
+.codebox span{flex:1;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:19px;font-weight:800;letter-spacing:.5px}
+.spark{display:block;width:100%;height:64px;margin-top:4px}
+.spark-l{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2);margin-top:4px}
 .go{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;width:100%;border:0;border-radius:14px;padding:15px;font-weight:800;font-size:16.5px;color:#fff;text-decoration:none;
   background:linear-gradient(135deg,var(--warm),var(--hot))}
-.votes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-.vote{border:1.5px solid var(--line);background:transparent;border-radius:12px;padding:11px;font-weight:700;font-size:14.5px}
-.vote[aria-pressed=true].up{border-color:var(--green);color:var(--green);background:color-mix(in srgb,var(--green) 10%,transparent)}
-.vote[aria-pressed=true].down{border-color:var(--red);color:var(--red);background:color-mix(in srgb,var(--red) 9%,transparent)}
+.acts3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.act{border:1.5px solid var(--line);background:transparent;border-radius:12px;padding:10px 4px;font-weight:700;font-size:13.5px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.act svg{width:20px;height:20px}
+.act[aria-pressed=true].up{border-color:var(--green);color:var(--green);background:color-mix(in srgb,var(--green) 10%,transparent)}
+.act[aria-pressed=true].down{border-color:var(--red);color:var(--red);background:color-mix(in srgb,var(--red) 9%,transparent)}
+.act[aria-pressed=true].sv{border-color:#f5a400;color:#d18b00;background:color-mix(in srgb,#f5a400 12%,transparent)}
+.act[aria-pressed=true].sv svg{fill:currentColor}
+.share{width:100%;margin-top:8px;border:1.5px solid var(--line);background:transparent;border-radius:12px;padding:11px;font-weight:700;display:flex;justify-content:center;align-items:center;gap:8px}
+.share svg{width:18px;height:18px}
 .shops-h{margin:18px 0 8px;font-size:14px;font-weight:700}
 .shops{display:flex;flex-wrap:wrap;gap:7px}
 .shops a{text-decoration:none;font-size:13.5px;font-weight:600;border:1.5px solid var(--line);border-radius:10px;padding:7px 11px}
@@ -172,11 +215,14 @@ input::placeholder{color:var(--ink2);opacity:.7}
 .witem .bp{grid-row:1 / span 2;grid-column:2;text-align:right;text-decoration:none}
 .witem .bp b{display:block;color:var(--hot);font-weight:850;font-stretch:108%;font-size:18px}
 .witem .bp span{font-size:12px;color:var(--ink2)}
+.witem h3,.witem .muted{grid-column:1}
+.witem .sp{grid-column:1 / -1}
 .witem .row{grid-column:1 / -1;margin-top:8px}
 .resale{display:grid;grid-template-columns:1fr 112px 34px;gap:8px;align-items:center;margin-top:8px}
 .resale span{font-weight:600}
 .resale input{padding:9px 10px!important;text-align:right}
 .resale button{border:0;background:transparent;color:var(--ink2);font-size:19px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
 .src{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
 .src:last-child{border-bottom:0}
 .ok{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}
@@ -185,10 +231,11 @@ input::placeholder{color:var(--ink2);opacity:.7}
 nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:color-mix(in srgb,var(--card) 86%,transparent);
   backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);border-top:1px solid var(--line);
   display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
-nav button{flex:1;max-width:200px;border:0;background:none;padding:9px 0 8px;font-size:11.5px;font-weight:600;color:var(--ink2);display:flex;flex-direction:column;align-items:center;gap:3px}
-nav svg{width:25px;height:25px}
+nav button{position:relative;flex:1;max-width:160px;border:0;background:none;padding:9px 0 8px;font-size:11px;font-weight:600;color:var(--ink2);display:flex;flex-direction:column;align-items:center;gap:3px}
+nav svg{width:24px;height:24px}
 nav button[aria-current=page]{color:var(--ink)}
 nav button[aria-current=page] svg{stroke-width:2.3}
+nav .badge{position:absolute;top:5px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 5px;border-radius:9px;background:var(--hot);color:#fff;font-size:10.5px;font-weight:800;line-height:17px}
 .toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom));transform:translate(-50%,12px);background:var(--ink);color:var(--bg);
   padding:10px 16px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:30;max-width:calc(100% - 32px)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
@@ -199,35 +246,39 @@ nav button[aria-current=page] svg{stroke-width:2.3}
 <header>
   <div class="head">
     <div class="titlebar">
-      <h1>Deal-Radar<small id="status">Lädt …</small></h1>
+      <h1 id="h1">Deal-Radar<small id="status">Lädt …</small></h1>
       <button class="scan" id="scan" aria-label="Jetzt nach neuen Deals suchen">
         <span class="sweep"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12 18 6"/></svg>
       </button>
     </div>
-    <div id="dealhead">
-      <div class="search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Deals durchsuchen" autocomplete="off" aria-label="Deals durchsuchen">
-      </div>
+    <div class="search" id="searchbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Deals durchsuchen" autocomplete="off" aria-label="Deals durchsuchen">
     </div>
   </div>
 </header>
 <div class="stick" id="stick">
   <div class="in">
-      <div class="tabs" role="tablist">
-        <button role="tab" data-tab="you" aria-selected="true">Für dich</button>
-        <button role="tab" data-tab="hot" aria-selected="false">Heiß</button>
-        <button role="tab" data-tab="new" aria-selected="false">Neu</button>
-      </div>
-      <div class="chips" id="chips" role="toolbar" aria-label="Kategorie"></div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="chips" id="chips" role="toolbar" aria-label="Kategorie"></div>
   </div>
 </div>
 
 <main>
   <section id="v-deals">
+    <div id="tipbox"></div>
     <div id="picks"></div>
     <div class="feed" id="feed"></div>
+  </section>
+
+  <section id="v-gw" hidden>
+    <div class="gwstats" id="gwstats"></div>
+    <div class="feed" id="gwfeed"></div>
+  </section>
+
+  <section id="v-saved" hidden>
+    <div class="feed" id="savedfeed" style="margin-top:8px"></div>
   </section>
 
   <section id="v-watch" hidden>
@@ -265,6 +316,19 @@ nav button[aria-current=page] svg{stroke-width:2.3}
       <p class="muted" style="margin-top:8px">Bleibt nur auf diesem Gerät. Benötigt für dieses Repository: Contents und Actions, jeweils Lesen und Schreiben.</p>
       <div class="row"><button class="btn" id="s-save">Verbinden</button></div>
     </div>
+    <h2 class="big">Push</h2>
+    <div class="panel">
+      <div class="switch" style="margin-top:0"><span>Nachtruhe</span><input type="checkbox" id="s-quiet" aria-label="Nachtruhe"></div>
+      <div class="two" id="s-quietbox">
+        <div><label for="s-qfrom">Ab</label><select id="s-qfrom"></select></div>
+        <div><label for="s-qto">Bis</label><select id="s-qto"></select></div>
+      </div>
+      <p class="muted" style="margin-top:8px">Treffer in der Nacht kommen morgens gesammelt in einer Nachricht.</p>
+      <label for="s-min">Push nur, wenn ein Deal zu mindestens … % zu dir passt</label>
+      <input id="s-min" inputmode="numeric" placeholder="0 = jeder Treffer">
+      <div class="row"><button class="btn" id="s-save2">Speichern</button><button class="btn quiet" id="s-test">Test-Push senden</button></div>
+      <p class="muted" id="s-learn" style="margin-top:12px"></p>
+    </div>
     <h2 class="big">Verkaufswerte</h2>
     <div class="panel">
       <p class="muted">Was ein neues Gerät beim Ankauf bringt. Damit rechnet der Radar bei jedem Tarif-Deal den Gewinn aus.</p>
@@ -276,24 +340,21 @@ nav button[aria-current=page] svg{stroke-width:2.3}
       </div>
       <div class="row"><button class="btn" id="r-save">Verkaufswerte speichern</button></div>
     </div>
-    <h2 class="big">Push &amp; Lernen</h2>
-    <div class="panel">
-      <label for="s-min" style="margin-top:0">Push nur, wenn ein Deal zu mindestens … % zu dir passt</label>
-      <input id="s-min" inputmode="numeric" placeholder="0 = jeder Treffer">
-      <p class="muted" id="s-learn" style="margin-top:8px"></p>
-      <div class="row"><button class="btn" id="s-save2">Speichern</button></div>
-    </div>
     <h2 class="big">Quellen</h2>
     <div class="panel" id="sources" style="padding-top:6px;padding-bottom:6px"></div>
   </section>
 </main>
 
 <div class="scrim" id="scrim" hidden></div>
-<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Deal-Details" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Details" hidden></div>
 
 <nav aria-label="Bereiche">
   <button data-view="deals" aria-current="page">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.5 1 2.5 2 3 0-3 .5-6 1-8.5Z"/></svg>Deals</button>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.5 1 2.5 2 3 0-3 .5-6 1-8.5Z"/></svg>Deals<span class="badge" id="b-deals" hidden></span></button>
+  <button data-view="gw">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9 8 12 8Zm0 0c1.5-3 5-3.5 5-1.2C17 8 15 8 12 8Z"/></svg>Gewinnspiele<span class="badge" id="b-gw" hidden></span></button>
+  <button data-view="saved">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg>Gemerkt</button>
   <button data-view="watch">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Watchlist</button>
   <button data-view="set">
@@ -307,7 +368,12 @@ const LS = {
   get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 };
-const state = { cfg: null, cfgSha: null, fb: { votes: {} }, fbSha: null, deals: [], meta: {}, tab: LS.get("tab", "you"), filter: "all", q: "", limit: 40, scanning: false };
+const state = {
+  cfg: null, cfgSha: null, fb: { votes: {}, saved: {}, done: {} }, fbSha: null, deals: [], meta: {},
+  view: "deals", tab: LS.get("tab", "you"), gwTab: "open", filter: "all", q: "", limit: 40, scanning: false
+};
+let prevSeen = LS.get("lastSeen", 0);
+const markSeen = () => LS.set("lastSeen", Date.now());
 
 function guessRepo() {
   const h = location.hostname, p = location.pathname.split("/").filter(Boolean);
@@ -327,22 +393,31 @@ function ago(iso) {
   const h = Math.round(m / 60); if (h < 24) return `vor ${h} Std.`;
   const d = Math.round(h / 24); return d === 1 ? "gestern" : `vor ${d} Tagen`;
 }
+const dshort = iso => new Date(iso).toLocaleDateString("de-DE", { day: "numeric", month: "short" });
+function left(iso) {
+  if (!iso) return null;
+  const end = new Date(iso), days = Math.floor((end - Date.now()) / 864e5);
+  if (end < Date.now()) return { t: "abgelaufen", soon: true, gone: true };
+  if (days < 1) return { t: "endet heute", soon: true };
+  if (days < 2) return { t: "endet morgen", soon: true };
+  return { t: days <= 7 ? `noch ${days} Tage` : `bis ${dshort(iso)}`, soon: days <= 3 };
+}
+const expired = d => d.until && new Date(d.until) < Date.now();
+const isNew = d => prevSeen && new Date(d.found || d.pub) > prevSeen;
+const isGw = d => (d.watch || []).includes("gewinnspiele");
 
-// ---------- Bilder: scharfe Variante zuerst, sonst Original, sonst Händler-Initiale
+// ---------- Bilder
 const big = u => (u || "").replace(/\/re\/1\d\dx1\d\d\/qt\/\d+\//, "/re/450x450/qt/70/");
 const HUES = [8, 24, 200, 220, 262, 330, 160, 190];
 function initial(d) {
   const n = (d.merchant || d.source || "?").trim(), h = HUES[[...n].reduce((a, c) => a + c.charCodeAt(0), 0) % HUES.length];
   return `<div class="ini" style="background:hsl(${h} 70% 48%)">${esc(n[0].toUpperCase())}</div>`;
 }
-function imgTag(d) {
-  if (!d.image) return initial(d);
-  return `<img src="${esc(big(d.image))}" data-orig="${esc(d.image)}" alt="" loading="lazy" decoding="async">`;
-}
+const imgTag = d => d.image ? `<img src="${esc(big(d.image))}" data-orig="${esc(d.image)}" alt="" loading="lazy" decoding="async">` : initial(d);
 document.addEventListener("error", e => {
   const im = e.target; if (im.tagName !== "IMG" || !im.dataset.orig) return;
   if (im.src !== im.dataset.orig) im.src = im.dataset.orig;
-  else { const d = state.deals.find(x => x.image === im.dataset.orig); im.outerHTML = d ? initial(d) : ""; }
+  else { const d = allDeals().find(x => x.image === im.dataset.orig); im.outerHTML = d ? initial(d) : ""; }
 }, true);
 
 // ---------- GitHub
@@ -362,6 +437,7 @@ async function writeJson(p, data, sha, msg) {
   const j = await gh(p, { method: "PUT", body: JSON.stringify({ message: msg, content: b64enc(JSON.stringify(data, null, 1) + "\n"), sha }) });
   return j.content.sha;
 }
+const dispatch = inputs => api("actions/workflows/radar.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main", ...(inputs ? { inputs } : {}) }) });
 
 // ---------- Lernmodell (gleiche Rechnung wie radar.py)
 function trainModel(votes) {
@@ -385,13 +461,21 @@ const rescore = () => { const m = trainModel(state.fb.votes); state.deals.forEac
 const W = id => (state.cfg?.watchlist || []).find(x => x.id === id);
 const typeOf = id => W(id)?.type || "product";
 const isPersonal = d => (d.watch || []).some(w => typeOf(w) !== "rubrik");
+const allDeals = () => { const ids = new Set(state.deals.map(d => d.id)); return state.deals.concat(Object.values(state.fb.saved).filter(d => !ids.has(d.id))); };
+const findDeal = id => allDeals().find(d => d.id === id);
+const pretty = k => k.split(" ").map(w => w === "iphone" ? "iPhone" : /^\d/.test(w) || w.length < 3 && w !== "s" ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)).join(" ");
+const ICON = {
+  star: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg>`,
+  up: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M7 11v9H4v-9h3Zm0 0 4-7c1.5 0 2.5 1 2 3l-.8 3H19a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17.8 20H7"/></svg>`,
+  down: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M17 13V4h3v9h-3Zm0 0-4 7c-1.5 0-2.5-1-2-3l.8-3H5a2 2 0 0 1-2-2.3l1.2-6A2 2 0 0 1 6.2 4H17"/></svg>`,
+  share: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m0 0L8 7m4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>`,
+  flame: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.6 5.5 5.6 5.5 10.6a5.5 5.5 0 0 1-11 0c0-2.2 1-3.8 2.2-4.9.3 1.6 1.1 2.7 2.2 3.2 0-3.2.5-6.4 1.1-8.9Z"/></svg>`,
+  ice: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v20M4.9 6l14.2 12M19.1 6 4.9 18"/></svg>`
+};
 function tempHTML(d) {
   if (d.temp == null) return "";
   const c = d.temp < 0 ? "cold" : d.temp < 100 ? "t1" : d.temp >= 500 ? "t3" : "";
-  const icon = d.temp < 0
-    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v20M4.9 6l14.2 12M19.1 6 4.9 18"/></svg>`
-    : `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.6 5.5 5.6 5.5 10.6a5.5 5.5 0 0 1-11 0c0-2.2 1-3.8 2.2-4.9.3 1.6 1.1 2.7 2.2 3.2 0-3.2.5-6.4 1.1-8.9Z"/></svg>`;
-  return `<span class="temp ${c}">${icon}${d.temp}°</span>`;
+  return `<span class="temp ${c}">${d.temp < 0 ? ICON.ice : ICON.flame}${d.temp}°</span>`;
 }
 function liveTarif(d) {
   const t = d.tarif; if (!t) return null;
@@ -399,13 +483,13 @@ function liveTarif(d) {
   if (x.device && x.device in r) { x.resale = num(r[x.device]) || null; x.profit = x.cost == null || x.resale == null ? null : Math.round((x.resale - x.cost) * 100) / 100; }
   return x;
 }
-function priceHTML(d, size) {
+function priceHTML(d) {
   const t = liveTarif(d);
   let main;
   if (t && t.monthly != null) main = `<span class="now">${euro(t.monthly)}<small> /Monat</small></span>`;
   else if (d.price != null) main = `<span class="now">${euro(d.price)}</span>`;
   else if (d.discount) main = `<span class="now">−${d.discount} %</span>`;
-  else main = `<span class="now plain">${(d.watch || []).includes("gewinnspiele") ? "Gewinnspiel" : (d.watch || []).includes("rabatte") ? "Aktion" : "Preis im Deal"}</span>`;
+  else main = `<span class="now plain">${isGw(d) ? "Gewinnspiel" : (d.watch || []).includes("rabatte") ? "Aktion" : "Preis im Deal"}</span>`;
   let extra = "";
   if (d.compare && !(t && t.monthly != null)) extra += `<span class="old">${euro(d.compare.ref)}</span><span class="off">−${d.compare.pct} %</span>`;
   if (t) {
@@ -416,77 +500,165 @@ function priceHTML(d, size) {
   return `<div class="price">${main}${extra}</div>`;
 }
 function tagsHTML(d) {
-  const t = (d.watch || []).filter(w => W(w)).map(w => `<span class="tg">${esc(W(w).name)}</span>`);
+  const t = [];
+  if (d.code) t.push(`<button class="tg code" data-copy="${esc(d.code)}" aria-label="Code ${esc(d.code)} kopieren">${esc(d.code)}</button>`);
+  const l = left(d.until); if (l) t.push(`<span class="tg ${l.soon ? "soon" : ""}">${l.t}</span>`);
+  (d.watch || []).filter(w => W(w) && w !== "heiss").forEach(w => t.push(`<span class="tg">${esc(W(w).name)}</span>`));
   const v = state.fb.votes[d.id]?.label;
   if (v === 1) t.push(`<span class="tg liked">Gefällt dir</span>`);
   else if (d.score != null) t.push(`<span class="tg ${d.score >= 60 ? "fit" : d.score < 35 ? "meh" : ""}">passt ${d.score} %</span>`);
-  return `<div class="tags">${t.join("")}</div>`;
+  return t.length ? `<div class="tags">${t.join("")}</div>` : "";
+}
+function metaHTML(d) {
+  return `<div class="meta">${isNew(d) ? `<span class="newdot">Neu</span>` : ""}<span class="m">${esc(d.merchant || d.source)}</span><span>${ago(d.pub)}</span></div>`;
+}
+function spark(pts, w = 320, h = 64) {
+  if (!pts || pts.length < 2) return "";
+  const ps = pts.map(p => p.p), lo = Math.min(...ps), hi = Math.max(...ps), span = hi - lo || 1;
+  const xy = pts.map((p, i) => [i / (pts.length - 1) * (w - 8) + 4, h - 6 - (p.p - lo) / span * (h - 14)]);
+  const line = xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+  const iMin = ps.indexOf(lo), [mx, my] = xy[iMin];
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+    <polyline points="${line} ${w - 4},${h} 4,${h}" fill="color-mix(in srgb,var(--hot) 10%,transparent)" stroke="none"/>
+    <polyline points="${line}" fill="none" stroke="var(--hot)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <circle cx="${mx}" cy="${my}" r="4" fill="var(--green)"/></svg>
+    <div class="spark-l"><span>${dshort(pts[0].d)}</span><span>Tiefstpreis <b class="ok">${euro(lo)}</b> am ${dshort(pts[iMin].d)}</span></div>`;
 }
 
-// ---------- Sortieren & Filtern
+// ---------- Deals: Sortieren & Filtern
 function visible() {
   const q = normKw(state.q);
-  let ds = state.deals.filter(d => state.fb.votes[d.id]?.label !== 0 || state.tab === "new");
+  let ds = state.deals.filter(d => !isGw(d) && !expired(d) && (state.fb.votes[d.id]?.label !== 0 || state.tab === "new"));
   if (state.filter !== "all") ds = ds.filter(d => (d.watch || []).includes(state.filter));
-  if (q) ds = ds.filter(d => normKw(d.title + " " + (d.merchant || "") + " " + (d.desc || "")).includes(q));
+  if (q) ds = ds.filter(d => normKw(d.title + " " + (d.merchant || "") + " " + (d.desc || "") + " " + (d.code || "")).includes(q));
   const ts = d => +new Date(d.pub || 0);
-  const prof = d => liveTarif(d)?.profit ?? -1e9;
   if (state.tab === "hot") ds = ds.slice().sort((a, b) => ((b.temp ?? -1e4) - (a.temp ?? -1e4)) || ts(b) - ts(a));
   else if (state.tab === "new") ds = ds.slice().sort((a, b) => ts(b) - ts(a));
+  else if (state.tab === "codes") ds = ds.filter(d => d.code).sort((a, b) => ts(b) - ts(a));
   else {
-    // Für dich: eigene Watchlist-Treffer und gut passende Deals zuerst, dann nach Hitze und Frische
     const rank = d => (isPersonal(d) ? 1000 : 0) + (d.score ?? 50) * 4 + Math.min(d.temp || 0, 600) / 6
-      + (d.compare ? d.compare.pct : 0) - (Date.now() - ts(d)) / 3.6e6;
+      + (d.compare ? d.compare.pct : 0) + (isNew(d) ? 40 : 0) - (Date.now() - ts(d)) / 3.6e6;
     ds = ds.slice().sort((a, b) => rank(b) - rank(a));
   }
   return ds;
 }
 
-// ---------- Darstellung
+// ---------- Darstellung: Kopf
+const TABS = { deals: [["you", "Für dich"], ["hot", "Heiß"], ["new", "Neu"], ["codes", "Gutscheincodes"]],
+  gw: [["open", "Offen"], ["soon", "Endet bald"], ["new", "Neu"], ["done", "Teilgenommen"]] };
+function renderHead() {
+  const v = state.view, onDeals = v === "deals", onGw = v === "gw";
+  $("#stick").hidden = !(onDeals || onGw);
+  $("#searchbox").hidden = !onDeals;
+  $("#h1").firstChild.textContent = { deals: "Deal-Radar", gw: "Gewinnspiele", saved: "Gemerkt", watch: "Watchlist", set: "Einstellungen" }[v];
+  if (onDeals || onGw) {
+    const cur = onDeals ? state.tab : state.gwTab;
+    const cnt = onGw && state.cfg ? gwCounts() : {};
+    $("#tabs").innerHTML = TABS[v].map(([id, name]) => `<button role="tab" data-tab="${id}" aria-selected="${cur === id}">${name}${cnt[id] != null ? `<span class="n">${cnt[id]}</span>` : ""}</button>`).join("");
+  }
+  $("#chips").hidden = !onDeals || !state.cfg;
+  if (onDeals && state.cfg) renderChips();
+}
 function renderChips() {
-  const w = state.cfg.watchlist || [];
+  const w = (state.cfg.watchlist || []).filter(x => x.id !== "gewinnspiele");
   const order = [...w.filter(x => x.type !== "rubrik"), ...w.filter(x => x.type === "rubrik")];
-  const n = id => state.deals.filter(d => id === "all" || (d.watch || []).includes(id)).length;
+  const n = id => state.deals.filter(d => !isGw(d) && !expired(d) && (id === "all" || (d.watch || []).includes(id))).length;
   $("#chips").innerHTML = [{ id: "all", name: "Alle" }].concat(order).map(x =>
     `<button class="chip" data-f="${esc(x.id)}" aria-pressed="${state.filter === x.id}">${esc(x.name)}<span class="n">${n(x.id)}</span></button>`).join("");
 }
+function setStatus() {
+  if (!state.cfg) return;
+  if (state.scanning) { $("#status").textContent = "Sucht nach neuen Deals …"; return; }
+  if (state.view === "gw") { const c = gwCounts(); $("#status").innerHTML = `${c.new ? `<b>${c.new} neu</b>, ` : ""}${c.open} offen, geprüft ${ago(state.meta.updated)}`; return; }
+  const n = state.deals.filter(d => isNew(d) && !isGw(d) && !expired(d)).length;
+  $("#status").innerHTML = `${n ? `<b>${n} neu</b>, ` : ""}geprüft ${ago(state.meta.updated)}`;
+}
+function renderBadges() {
+  const nd = state.deals.filter(d => isNew(d) && !isGw(d) && !expired(d)).length;
+  const ng = state.deals.filter(d => isNew(d) && isGw(d) && !expired(d) && !state.fb.done[d.id]).length;
+  const set = (el, n) => { el.hidden = !n; el.textContent = n > 99 ? "99+" : n; };
+  set($("#b-deals"), nd); set($("#b-gw"), ng);
+}
+
+// ---------- Deals-Ansicht
+function cardHTML(d) {
+  const saved = !!state.fb.saved[d.id];
+  return `<div class="swipe" data-sw="${esc(d.id)}"><div class="bgl">${ICON.up}&nbsp;Gefällt mir</div><div class="bgr">Ausblenden&nbsp;${ICON.down}</div>
+    <div class="deal" data-open="${esc(d.id)}" role="button" tabindex="0">
+      <div class="ph">${imgTag(d)}${tempHTML(d)}</div>
+      <div class="body">${metaHTML(d)}<h3>${esc(d.title)}</h3>${priceHTML(d)}${tagsHTML(d)}</div>
+      <button class="star" data-save="${esc(d.id)}" aria-pressed="${saved}" aria-label="${saved ? "Nicht mehr merken" : "Merken"}">${ICON.star}</button>
+    </div></div>`;
+}
 function renderPicks() {
   if (state.tab !== "you" || state.filter !== "all" || state.q) { $("#picks").innerHTML = ""; return; }
-  const ds = state.deals.filter(d => isPersonal(d) && state.fb.votes[d.id]?.label !== 0)
+  const ds = state.deals.filter(d => isPersonal(d) && !expired(d) && state.fb.votes[d.id]?.label !== 0)
     .sort((a, b) => +new Date(b.pub) - +new Date(a.pub)).slice(0, 10);
   if (!ds.length) { $("#picks").innerHTML = ""; return; }
   $("#picks").innerHTML = `<div class="sec"><h2>Deine Watchlist</h2><span>${ds.length} Treffer</span></div>
-    <div class="rail">${ds.map(d => `<button class="pick" data-open="${esc(d.id)}">
+    <div class="rail">${ds.map(d => `<div class="pick" data-open="${esc(d.id)}" role="button" tabindex="0">
       <div class="ph">${imgTag(d)}${tempHTML(d)}<span class="why">${esc(W(d.watch.find(w => typeOf(w) !== "rubrik"))?.name || "")}</span></div>
-      <div class="pb"><h3>${esc(d.title)}</h3>${priceHTML(d)}<div class="meta"><span class="m">${esc(d.merchant || d.source)}</span><span>${ago(d.pub)}</span></div></div>
-    </button>`).join("")}</div>
-    <div class="sec"><h2>${state.q ? "Suchergebnis" : "Alle Deals"}</h2><span id="cnt"></span></div>`;
+      <div class="pb"><h3>${esc(d.title)}</h3>${priceHTML(d)}${metaHTML(d)}</div>
+    </div>`).join("")}</div>
+    <div class="sec"><h2>Alle Deals</h2><span id="cnt"></span></div>`;
 }
-function cardHTML(d) {
-  return `<button class="deal" data-open="${esc(d.id)}">
-    <div class="ph">${imgTag(d)}${tempHTML(d)}</div>
-    <div class="body">
-      <div class="meta"><span class="m">${esc(d.merchant || d.source)}</span><span>${ago(d.pub)}</span></div>
-      <h3>${esc(d.title)}</h3>
-      ${priceHTML(d)}
-      ${tagsHTML(d)}
-    </div>
-  </button>`;
+function renderTip() {
+  $("#tipbox").innerHTML = LS.get("swiped", false) ? "" :
+    `<div class="tip"><span><b>Tipp:</b> Nach rechts wischen = gefällt mir, nach links = ausblenden. So lernt „Für dich“ am schnellsten.</span><button data-tipclose aria-label="Tipp schließen">×</button></div>`;
 }
 function renderFeed() {
-  renderPicks();
+  renderPicks(); renderTip();
   const ds = visible();
   const cnt = $("#cnt"); if (cnt) cnt.textContent = `${ds.length} Deals`;
   if (!ds.length) {
-    $("#feed").innerHTML = `<div class="empty"><strong>${state.q ? "Nichts gefunden" : "Noch keine Deals hier"}</strong>${state.q ? "Probier einen anderen Suchbegriff." : "Der Radar sucht weiter und meldet sich per Push, sobald etwas passt."}</div>`;
-    return;
+    const msg = state.q ? ["Nichts gefunden", "Probier einen anderen Suchbegriff."] : state.tab === "codes" ? ["Gerade keine Gutscheincodes", "Sobald ein Deal einen Code enthält, steht er hier zum Kopieren bereit."] : ["Noch keine Deals hier", "Der Radar sucht weiter und meldet sich per Push, sobald etwas passt."];
+    $("#feed").innerHTML = `<div class="empty"><strong>${msg[0]}</strong>${msg[1]}</div>`; return;
   }
   $("#feed").innerHTML = ds.slice(0, state.limit).map(cardHTML).join("") +
     (ds.length > state.limit ? `<button class="more" id="more">${ds.length - state.limit} weitere anzeigen</button>` : "");
 }
-function setStatus() {
-  if (!state.cfg) return;
-  $("#status").textContent = state.scanning ? "Sucht nach neuen Deals …" : `Zuletzt geprüft ${ago(state.meta.updated)}`;
+
+// ---------- Gewinnspiele-Ansicht
+function gwList() { return state.deals.filter(d => isGw(d) && !expired(d)); }
+function gwCounts() {
+  const all = gwList(), done = all.filter(d => state.fb.done[d.id]), open = all.filter(d => !state.fb.done[d.id]);
+  return { open: open.length, soon: open.filter(d => left(d.until)?.soon).length, new: open.filter(isNew).length, done: done.length };
+}
+function gwHTML(d) {
+  const done = !!state.fb.done[d.id], l = left(d.until), g = d.gw || {};
+  const info = [];
+  if (g.value) info.push(`<span class="prize">Wert ${euro(g.value)}</span>`);
+  info.push(`<span class="tg">${esc(g.kind || "Online")}</span>`);
+  info.push(l ? `<span class="tg ${l.soon ? "soon" : ""}">${l.t}</span>` : `<span class="tg">Ende unbekannt</span>`);
+  return `<div class="gw ${done ? "done" : ""}">
+    <div class="ph" data-open="${esc(d.id)}">${imgTag(d)}</div>
+    <div>${metaHTML(d)}<h3 data-open="${esc(d.id)}">${esc(d.title)}</h3><div class="gwinfo">${info.join("")}</div></div>
+    <div class="gwact">
+      <a class="join" href="${esc(d.link)}" target="_blank" rel="noopener">${done ? "Nochmal ansehen" : "Jetzt teilnehmen"}</a>
+      <button class="check" data-done="${esc(d.id)}" aria-pressed="${done}">${done ? "✓ Teilgenommen" : "Teilgenommen"}</button>
+    </div></div>`;
+}
+function renderGw() {
+  const all = gwList(), c = gwCounts();
+  const value = all.filter(d => !state.fb.done[d.id]).reduce((s, d) => s + (d.gw?.value || 0), 0);
+  $("#gwstats").innerHTML = `<div><b>${c.open}</b><span>offen</span></div><div><b>${c.soon}</b><span>enden bald</span></div><div><b>${value ? euro(value) : c.done}</b><span>${value ? "Gewinnwert offen" : "teilgenommen"}</span></div>`;
+  const end = d => d.until ? +new Date(d.until) : 9e15, ts = d => +new Date(d.found || d.pub);
+  let ds = all;
+  if (state.gwTab === "done") ds = all.filter(d => state.fb.done[d.id]).sort((a, b) => (state.fb.done[b.id] > state.fb.done[a.id] ? 1 : -1));
+  else {
+    ds = all.filter(d => !state.fb.done[d.id]);
+    if (state.gwTab === "soon") ds = ds.filter(d => left(d.until)?.soon).sort((a, b) => end(a) - end(b));
+    else if (state.gwTab === "new") ds = ds.filter(isNew).sort((a, b) => ts(b) - ts(a));
+    else ds = ds.sort((a, b) => (end(a) - end(b)) || ts(b) - ts(a));
+  }
+  $("#gwfeed").innerHTML = ds.map(gwHTML).join("") || `<div class="empty"><strong>${state.gwTab === "done" ? "Noch nichts abgehakt" : "Gerade keine Gewinnspiele hier"}</strong>${state.gwTab === "done" ? "Tippe bei einem Gewinnspiel auf „Teilgenommen“, dann landet es hier." : "Neue Gewinnspiele kommen automatisch dazu."}</div>`;
+}
+
+// ---------- Gemerkt
+function renderSaved() {
+  const ids = Object.keys(state.fb.saved);
+  const ds = ids.map(id => state.deals.find(d => d.id === id) || state.fb.saved[id]).sort((a, b) => (state.fb.saved[b.id]?._at || "") > (state.fb.saved[a.id]?._at || "") ? 1 : -1);
+  $("#savedfeed").innerHTML = ds.map(cardHTML).join("") || `<div class="empty"><strong>Noch nichts gemerkt</strong>Tippe bei einem Deal auf den Stern, um ihn hier zu speichern – auch wenn er aus dem Feed verschwindet.</div>`;
 }
 
 // ---------- Detail-Blatt
@@ -498,40 +670,49 @@ function cmpQuery(d) {
 }
 let openId = null;
 function sheetHTML(d) {
-  const v = state.fb.votes[d.id]?.label, t = liveTarif(d);
+  const v = state.fb.votes[d.id]?.label, t = liveTarif(d), saved = !!state.fb.saved[d.id], gw = isGw(d);
   let calc = "";
   if (t) {
     const row = (a, b) => `<div><span>${a}</span><span>${b}</span></div>`;
-    calc = `<div class="calc">${row("Zuzahlung Handy", euro(t.upfront))}${row(`Grundgebühr × ${t.months} Monate`, t.monthly == null ? "nicht erkannt" : euro(t.monthly * t.months))}${row("Anschlusspreis", euro(t.fee))}${t.bonus ? row("Bonus", "−" + euro(t.bonus)) : ""}
+    calc = `<div class="box calc">${row("Zuzahlung Handy", euro(t.upfront))}${row(`Grundgebühr × ${t.months} Monate`, t.monthly == null ? "nicht erkannt" : euro(t.monthly * t.months))}${row("Anschlusspreis", euro(t.fee))}${t.bonus ? row("Bonus", "−" + euro(t.bonus)) : ""}
       ${row("Gesamtkosten", t.cost == null ? "–" : euro(t.cost))}${row(`Verkauf ${esc(t.device ? pretty(t.device) : "Gerät")}`, t.resale == null ? "in Einstellungen eintragen" : euro(t.resale))}
       <div class="sum"><span>${t.profit == null ? "Ergebnis" : t.profit >= 0 ? "Gewinn" : "Verlust"}</span><span class="${t.profit == null ? "" : t.profit >= 0 ? "ok" : "bad"}">${t.profit == null ? "–" : euro(Math.abs(t.profit))}</span></div></div>`;
   }
-  const showCmp = isPersonal(d) || d.price != null, q = encodeURIComponent(cmpQuery(d));
+  const pw = (d.watch || []).find(w => typeOf(w) === "product"), hist = pw ? (state.meta.history || {})[pw] : null;
+  const histBox = hist && hist.length >= 2 ? `<div class="box"><h4>Preisverlauf ${esc(W(pw).name)}</h4>${spark(hist)}</div>` : "";
+  const code = d.code ? `<div class="codebox"><span>${esc(d.code)}</span><button class="btn small" data-copy="${esc(d.code)}">Code kopieren</button></div>` : "";
+  const l = left(d.until);
+  const gwBox = gw ? `<div class="box"><div class="gwinfo" style="margin:0">${d.gw?.value ? `<span class="prize">Wert ${euro(d.gw.value)}</span>` : ""}<span class="tg">${esc(d.gw?.kind || "Online")}</span><span class="tg ${l?.soon ? "soon" : ""}">${l ? l.t : "Ende unbekannt"}</span></div></div>` : "";
+  const showCmp = !gw && (isPersonal(d) || d.price != null), q = encodeURIComponent(cmpQuery(d));
   return `<div class="grab"><i></i><button class="close" data-close aria-label="Schließen">×</button></div>
     <div class="sh-img">${d.image ? `<img src="${esc(big(d.image))}" data-orig="${esc(d.image)}" alt="">` : initial(d)}</div>
     <div class="sh-body">
-      <div class="meta">${tempHTML(d)}<span class="m">${esc(d.merchant || d.source)}</span><span>${ago(d.pub)}</span></div>
+      <div class="meta">${tempHTML(d)}${isNew(d) ? `<span class="newdot">Neu</span>` : ""}<span class="m">${esc(d.merchant || d.source)}</span><span>${ago(d.pub)}</span></div>
       <h2>${esc(d.title)}</h2>
-      ${priceHTML(d)}
-      ${tagsHTML(d)}
-      ${calc}
+      ${gw ? "" : priceHTML(d)}
+      ${gw ? gwBox : tagsHTML(d)}
+      ${code}${calc}${histBox}
       ${d.desc && d.desc.length > 12 ? `<p class="desc">${esc(d.desc)}</p>` : ""}
-      <a class="go" href="${esc(d.link)}" target="_blank" rel="noopener">Zum Deal</a>
-      <div class="votes">
-        <button class="vote up" data-v="1" data-id="${esc(d.id)}" aria-pressed="${v === 1}">👍 Gefällt mir</button>
-        <button class="vote down" data-v="0" data-id="${esc(d.id)}" aria-pressed="${v === 0}">👎 Nicht mein Ding</button>
+      <a class="go" href="${esc(d.link)}" target="_blank" rel="noopener">${gw ? "Jetzt teilnehmen" : "Zum Deal"}</a>
+      ${gw ? `<button class="share check" style="justify-content:center" data-done="${esc(d.id)}" aria-pressed="${!!state.fb.done[d.id]}">${state.fb.done[d.id] ? "✓ Teilgenommen" : "Als teilgenommen markieren"}</button>` : ""}
+      <div class="acts3">
+        <button class="act sv" data-save="${esc(d.id)}" aria-pressed="${saved}">${ICON.star}${saved ? "Gemerkt" : "Merken"}</button>
+        <button class="act up" data-v="1" data-id="${esc(d.id)}" aria-pressed="${v === 1}">${ICON.up}Gefällt mir</button>
+        <button class="act down" data-v="0" data-id="${esc(d.id)}" aria-pressed="${v === 0}">${ICON.down}Nicht für mich</button>
       </div>
+      <button class="share" data-share="${esc(d.id)}">${ICON.share}Teilen</button>
       ${showCmp ? `<div class="shops-h">Preise woanders vergleichen</div><div class="shops">${SHOPS.map(([n, u]) => `<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>` : ""}
     </div>`;
 }
 function openSheet(id) {
-  const d = state.deals.find(x => x.id === id); if (!d) return;
+  const d = findDeal(id); if (!d) return;
   openId = id; const sh = $("#sheet"), sc = $("#scrim");
   sh.innerHTML = sheetHTML(d); sh.hidden = sc.hidden = false; sh.scrollTop = 0;
   document.body.classList.add("lock");
   requestAnimationFrame(() => { sh.classList.add("on"); sc.classList.add("on"); });
   history.pushState({ sheet: 1 }, "");
 }
+function refreshSheet() { if (!openId) return; const d = findDeal(openId); if (!d) return; const sh = $("#sheet"), st = sh.scrollTop; sh.innerHTML = sheetHTML(d); sh.scrollTop = st; }
 function closeSheet(fromPop) {
   if (!openId) return; openId = null;
   const sh = $("#sheet"), sc = $("#scrim");
@@ -541,54 +722,101 @@ function closeSheet(fromPop) {
 }
 window.addEventListener("popstate", () => closeSheet(true));
 $("#scrim").onclick = () => closeSheet();
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
-// nach unten wischen schließt
-(() => {
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeSheet();
+  if ((e.key === "Enter" || e.key === " ") && e.target.dataset?.open) { e.preventDefault(); openSheet(e.target.dataset.open); }
+});
+(() => { // nach unten wischen schließt das Blatt
   let y0 = null; const sh = $("#sheet");
   sh.addEventListener("touchstart", e => { y0 = sh.scrollTop <= 0 ? e.touches[0].clientY : null; }, { passive: true });
   sh.addEventListener("touchmove", e => { if (y0 != null && e.touches[0].clientY - y0 > 0) sh.style.transform = `translateY(${e.touches[0].clientY - y0}px)`; }, { passive: true });
   sh.addEventListener("touchend", e => { if (y0 == null) return; const dy = e.changedTouches[0].clientY - y0; sh.style.transform = ""; y0 = null; if (dy > 110) closeSheet(); });
 })();
 
+// ---------- Wischen auf Deal-Karten
+let swiped = false;
+(() => {
+  let s = null;
+  const start = e => { const c = e.target.closest(".deal"); if (!c || e.target.closest("button")) return; s = { c, w: c.parentElement, x: e.touches[0].clientX, y: e.touches[0].clientY, dx: 0, lock: null }; c.classList.remove("anim"); };
+  const move = e => {
+    if (!s) return;
+    const dx = e.touches[0].clientX - s.x, dy = e.touches[0].clientY - s.y;
+    if (!s.lock) { if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy) * 1.4) s.lock = "x"; else if (Math.abs(dy) > 10) { s = null; return; } else return; }
+    e.preventDefault(); s.dx = dx;
+    s.c.style.transform = `translateX(${dx}px)`;
+    s.w.classList.toggle("r", dx > 0); s.w.classList.toggle("l", dx < 0);
+  };
+  const end = () => {
+    if (!s) return; const { c, w, dx, lock } = s; s = null;
+    if (lock !== "x") return;
+    swiped = true; setTimeout(() => swiped = false, 350);
+    c.classList.add("anim");
+    const id = w.dataset.sw;
+    if (dx > 90) { c.style.transform = ""; setTimeout(() => w.classList.remove("r"), 250); if (state.fb.votes[id]?.label !== 1) vote(id, 1, true); }
+    else if (dx < -90) {
+      c.style.transform = `translateX(-110%)`;
+      setTimeout(() => { w.style.height = w.offsetHeight + "px"; requestAnimationFrame(() => { w.style.height = "0px"; w.style.opacity = "0"; w.style.marginBottom = "-10px"; }); }, 180);
+      setTimeout(() => vote(id, 0, true), 460);
+    } else { c.style.transform = ""; setTimeout(() => w.classList.remove("r", "l"), 250); }
+    if (!LS.get("swiped", false)) { LS.set("swiped", true); $("#tipbox").innerHTML = ""; }
+  };
+  document.addEventListener("touchstart", start, { passive: true });
+  document.addEventListener("touchmove", move, { passive: false });
+  document.addEventListener("touchend", end, { passive: true });
+})();
+
 // ---------- Watchlist & Einstellungen
 function renderWatch() {
-  const best = state.meta.best || {}, w = state.cfg.watchlist || [];
+  const best = state.meta.best || {}, hist = state.meta.history || {}, w = state.cfg.watchlist || [];
   const kind = x => x.type === "tarif" ? "Handytarif mit Gewinnrechnung" : x.type === "rubrik" ? "Rubrik" : "Produkt";
-  const hits = id => state.deals.filter(d => (d.watch || []).includes(id)).length;
+  const hits = id => state.deals.filter(d => (d.watch || []).includes(id) && !expired(d)).length;
   $("#watchlist").innerHTML = w.map(x => `<div class="witem">
       <h3>${esc(x.name)}</h3>
       ${best[x.id] ? `<a class="bp" href="${esc(best[x.id].link)}" target="_blank" rel="noopener"><b>${euro(best[x.id].price)}</b><span>Bestpreis</span></a>` : ""}
       <p class="muted">${kind(x)}, ${hits(x.id)} Treffer, ${x.push === false ? "ohne Push" : "mit Push"}</p>
+      ${hist[x.id] && hist[x.id].length >= 2 ? `<div class="sp">${spark(hist[x.id])}</div>` : ""}
       <div class="row"><button class="btn quiet small" data-edit="${esc(x.id)}">Bearbeiten</button><button class="btn quiet small" data-del="${esc(x.id)}">Entfernen</button></div>
     </div>`).join("") || `<div class="empty"><strong>Noch nichts auf der Watchlist</strong>Trag oben ein Produkt ein.</div>`;
 }
-const pretty = k => k.split(" ").map(w => w === "iphone" ? "iPhone" : /^\d/.test(w) || w.length < 3 && w !== "s" ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)).join(" ");
 function renderResale() {
   const r = state.cfg?.resale || {};
   $("#resale").innerHTML = Object.keys(r).sort().map(k => `<div class="resale"><span>${esc(pretty(k))}</span>
     <input inputmode="decimal" data-rk="${esc(k)}" value="${r[k] || ""}" placeholder="€" aria-label="Verkaufswert ${esc(k)}">
     <button data-rdel="${esc(k)}" aria-label="${esc(k)} entfernen">×</button></div>`).join("");
 }
+const HOURS = Array.from({ length: 24 }, (_, h) => `<option value="${h}">${String(h).padStart(2, "0")}:00</option>`).join("");
+$("#s-qfrom").innerHTML = $("#s-qto").innerHTML = HOURS;
 function fillSettings() {
   $("#s-repo").value = repo; $("#s-token").value = token ? "••••••••" : "";
   if (!state.cfg) return;
   renderResale();
-  $("#s-min").value = state.cfg.settings?.push_min_score || "";
+  const st = state.cfg.settings || {}, q = st.quiet_hours ?? [23, 7];
+  $("#s-quiet").checked = !!(q && q[0] !== q[1]); $("#s-qfrom").value = q?.[0] ?? 23; $("#s-qto").value = q?.[1] ?? 7; $("#s-quietbox").hidden = !$("#s-quiet").checked;
+  $("#s-min").value = st.push_min_score || "";
   const v = Object.values(state.fb.votes), up = v.filter(x => x.label === 1).length;
   $("#s-learn").textContent = v.length < 4
-    ? `${v.length} Bewertungen bisher. Öffne Deals und tippe auf „Gefällt mir“ oder „Nicht mein Ding“ – ab je 2 lernt der Radar, was dir gefällt.`
+    ? `${v.length} Bewertungen bisher. Wisch Deals nach rechts oder links – ab je 2 lernt der Radar, was dir gefällt.`
     : `${v.length} Bewertungen (${up} gefallen, ${v.length - up} nicht). Jede weitere macht „Für dich“ genauer.`;
   $("#sources").innerHTML = (state.meta.feeds || []).map(f => `<div class="src"><span>${esc(f.name)}</span>${f.ok ? `<span class="ok">${f.count} Einträge</span>` : `<span class="bad">nicht erreichbar</span>`}</div>`).join("") || `<p class="muted" style="padding:10px 0">Noch kein Durchlauf.</p>`;
 }
-function renderAll() { renderChips(); renderFeed(); renderWatch(); fillSettings(); setTabs(); }
-function setTabs() { document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === state.tab)); }
+$("#s-quiet").onchange = e => $("#s-quietbox").hidden = !e.target.checked;
+
+function render() {
+  renderHead(); setStatus(); renderBadges();
+  const v = state.view;
+  if (v === "deals") renderFeed();
+  if (v === "gw") renderGw();
+  if (v === "saved") renderSaved();
+  if (v === "watch") renderWatch();
+  if (v === "set") fillSettings();
+}
 function show(v) {
-  ["deals", "watch", "set"].forEach(x => $("#v-" + x).hidden = x !== v);
-  $("#dealhead").hidden = $("#stick").hidden = v !== "deals";
+  state.view = v;
+  ["deals", "gw", "saved", "watch", "set"].forEach(x => $("#v-" + x).hidden = x !== v);
   document.querySelectorAll("nav button").forEach(b => b.dataset.view === v ? b.setAttribute("aria-current", "page") : b.removeAttribute("aria-current"));
+  if (state.cfg || v === "set") render();
   scrollTo(0, 0);
 }
-
 function keepTop() { const t = $("#stick").offsetTop; if (scrollY > t) scrollTo(0, t); }
 
 // ---------- Laden
@@ -597,21 +825,29 @@ async function loadDeals() {
   state.deals = d.deals || []; state.meta = d; rescore();
 }
 async function load() {
-  if (!repo || !token) { $("#status").textContent = "Noch nicht verbunden"; show("set"); fillSettings(); return; }
+  if (!repo || !token) { $("#status").textContent = "Noch nicht verbunden"; show("set"); return; }
   try {
     const [c, f] = await Promise.all([readJson("config.json"), readJson("data/feedback.json").catch(() => ({ data: { votes: {} }, sha: null }))]);
-    state.cfg = c.data; state.cfgSha = c.sha; state.fb = f.data.votes ? f.data : { votes: {} }; state.fbSha = f.sha;
-    await loadDeals(); renderAll(); setStatus();
+    state.cfg = c.data; state.cfgSha = c.sha; state.fbSha = f.sha;
+    state.fb = { votes: {}, saved: {}, done: {}, ...(f.data || {}) };
+    await loadDeals(); render(); handleParams();
     if ((Date.now() - new Date(state.meta.updated || 0)) / 60000 > 15) scan(true);
   } catch (e) {
     $("#status").textContent = e.status === 401 || e.status === 403 ? "Token ungültig – unter Einstellungen neu eintragen" : e.status === 404 ? "Repository nicht gefunden – Namen prüfen" : "Keine Verbindung – später erneut öffnen";
-    if (e.status) { show("set"); fillSettings(); }
+    if (e.status) show("set");
   }
+}
+function handleParams() { // Links aus Push-Nachrichten: ?open=ID oder ?hide=ID
+  const p = new URLSearchParams(location.search), o = p.get("open"), h = p.get("hide");
+  if (!o && !h) return;
+  history.replaceState(null, "", location.pathname);
+  if (h && findDeal(h)) { vote(h, 0, true); toast("Ausgeblendet – der Radar merkt sich das"); }
+  if (o && findDeal(o)) { if (isGw(findDeal(o))) show("gw"); openSheet(o); }
 }
 async function scan(silent) {
   if (state.scanning || !state.cfg) return;
   const before = state.meta.updated;
-  try { await api("actions/workflows/radar.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main" }) }); }
+  try { await dispatch(); }
   catch (e) { if (!silent) toast(e.status === 403 ? "Dem Token fehlt „Actions: Read and write“ – unter github.com/settings/personal-access-tokens ergänzen." : "Suche konnte nicht gestartet werden.", 4500); return; }
   state.scanning = true; $("#scan").classList.add("busy"); setStatus();
   for (let i = 0; i < 12; i++) {
@@ -620,35 +856,59 @@ async function scan(silent) {
     if (state.meta.updated !== before) break;
   }
   state.scanning = false; $("#scan").classList.remove("busy");
-  renderChips(); renderFeed(); setStatus();
+  if (!openId) render(); else { setStatus(); renderBadges(); }
   if (!silent) toast(state.meta.updated !== before ? "Deals aktualisiert" : "Suche läuft noch – gleich nochmal öffnen");
 }
 
 // ---------- Speichern
 let fbTimer;
-function vote(id, label) {
-  const d = state.deals.find(x => x.id === id); if (!d) return;
+const queueFb = () => { clearTimeout(fbTimer); fbTimer = setTimeout(saveFeedback, 1200); };
+function vote(id, label, quiet) {
+  const d = findDeal(id); if (!d) return;
   if (state.fb.votes[id]?.label === label) delete state.fb.votes[id];
   else state.fb.votes[id] = { label, features: d.features || [], title: d.title, ts: new Date().toISOString() };
-  rescore();
-  if (openId === id) { const sh = $("#sheet"), st = sh.scrollTop; sh.innerHTML = sheetHTML(d); sh.scrollTop = st; }
-  renderFeed();
-  if (label === 0 && state.fb.votes[id]) { toast("Ausgeblendet – unter „Neu“ weiter sichtbar"); setTimeout(() => closeSheet(), 450); }
-  clearTimeout(fbTimer); fbTimer = setTimeout(saveFeedback, 1500);
+  rescore(); refreshSheet();
+  if (state.view === "deals") renderFeed(); else if (state.view === "saved") renderSaved();
+  if (label === 0 && state.fb.votes[id]) { if (!quiet || openId) toast("Ausgeblendet – unter „Neu“ weiter sichtbar"); if (openId) setTimeout(() => closeSheet(), 450); }
+  else if (label === 1 && state.fb.votes[id] && quiet) toast("Gemerkt: so etwas gefällt dir");
+  queueFb();
+}
+function toggleSave(id) {
+  const d = findDeal(id); if (!d) return;
+  if (state.fb.saved[id]) { delete state.fb.saved[id]; toast("Nicht mehr gemerkt"); }
+  else { const { features, score, ...snap } = d; state.fb.saved[id] = { ...snap, _at: new Date().toISOString() }; toast("Gemerkt – zu finden unter „Gemerkt“"); }
+  refreshSheet();
+  document.querySelectorAll(`.star[data-save="${CSS.escape(id)}"]`).forEach(b => b.setAttribute("aria-pressed", !!state.fb.saved[id]));
+  if (state.view === "saved") renderSaved();
+  queueFb();
+}
+function toggleDone(id) {
+  if (state.fb.done[id]) delete state.fb.done[id]; else { state.fb.done[id] = new Date().toISOString(); toast("Abgehakt – viel Glück!"); }
+  refreshSheet(); if (state.view === "gw") { renderHead(); renderGw(); } renderBadges(); queueFb();
 }
 async function saveFeedback() {
   for (let i = 0; i < 2; i++) {
     try { state.fbSha = await writeJson("data/feedback.json", state.fb, state.fbSha, "Bewertungen aktualisiert"); return; }
     catch (e) { try { state.fbSha = (await readJson("data/feedback.json")).sha; } catch (e2) {} }
   }
-  toast("Bewertung konnte nicht gespeichert werden");
+  toast("Konnte nicht gespeichert werden – Verbindung prüfen");
 }
 async function saveConfig(msg, done) {
   for (let i = 0; i < 2; i++) {
-    try { state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast(done); renderAll(); return true; }
+    try { state.cfgSha = await writeJson("config.json", state.cfg, state.cfgSha, msg); toast(done); render(); return true; }
     catch (e) { try { state.cfgSha = (await readJson("config.json")).sha; } catch (e2) {} }
   }
   toast("Speichern fehlgeschlagen – Verbindung prüfen"); return false;
+}
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); toast(`„${text}“ kopiert`); }
+  catch (e) { const t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); toast(`„${text}“ kopiert`); }
+}
+async function share(id) {
+  const d = findDeal(id); if (!d) return;
+  const text = d.title + (d.code ? ` – Code: ${d.code}` : "");
+  if (navigator.share) { try { await navigator.share({ title: d.title, text, url: d.link }); } catch (e) {} }
+  else copy(d.link);
 }
 
 // ---------- Watchlist-Formular
@@ -673,7 +933,7 @@ $("#wf-save").onclick = async () => {
   if (await saveConfig(`Watchlist: ${name}`, old ? `${name} geändert` : `${name} wird jetzt beobachtet`)) resetForm();
 };
 
-// ---------- Verkaufswerte
+// ---------- Verkaufswerte & Einstellungen
 function collectResale() { document.querySelectorAll("[data-rk]").forEach(i => state.cfg.resale[i.dataset.rk] = num(i.value)); }
 $("#r-add").onclick = () => {
   const k = normKw($("#r-name").value); if (!k) return toast("Bitte ein Modell eintragen");
@@ -681,8 +941,6 @@ $("#r-add").onclick = () => {
   $("#r-name").value = $("#r-val").value = ""; renderResale();
 };
 $("#r-save").onclick = () => { collectResale(); saveConfig("Verkaufswerte aktualisiert", "Verkaufswerte gespeichert – Tarife neu berechnet"); };
-
-// ---------- Einstellungen
 $("#s-save").onclick = () => {
   repo = $("#s-repo").value.trim().replace(/^https?:\/\/github.com\//, "").replace(/\/$/, "") || guessRepo();
   const t = $("#s-token").value.trim(); if (t && !t.startsWith("••")) token = t;
@@ -691,20 +949,37 @@ $("#s-save").onclick = () => {
 };
 $("#s-save2").onclick = () => {
   if (!state.cfg) return toast("Bitte zuerst verbinden");
-  state.cfg.settings = state.cfg.settings || {}; state.cfg.settings.push_min_score = Math.max(0, Math.min(100, num($("#s-min").value)));
-  saveConfig("Push-Schwelle geändert", "Gespeichert");
+  const st = state.cfg.settings = state.cfg.settings || {};
+  st.push_min_score = Math.max(0, Math.min(100, num($("#s-min").value)));
+  st.quiet_hours = $("#s-quiet").checked ? [+$("#s-qfrom").value, +$("#s-qto").value] : [];
+  saveConfig("Push-Einstellungen geändert", "Gespeichert");
+};
+$("#s-test").onclick = async () => {
+  try { await dispatch({ test_push: "true" }); toast("Test-Push kommt in etwa 30 Sekunden"); }
+  catch (e) { toast(e.status === 403 ? "Dem Token fehlt „Actions: Read and write“." : "Konnte nicht gestartet werden."); }
 };
 $("#scan").onclick = () => state.cfg ? scan(false) : show("set");
 let qT; $("#q").oninput = e => { clearTimeout(qT); qT = setTimeout(() => { state.q = e.target.value.trim(); state.limit = 40; renderFeed(); }, 150); };
 
 // ---------- Klicks
 document.addEventListener("click", e => {
-  const o = e.target.closest("[data-open]"); if (o) return openSheet(o.dataset.open);
+  if (swiped) { e.preventDefault(); return; }
+  const b = e.target.closest("button");
+  if (b?.dataset.copy) return copy(b.dataset.copy);
+  if (b?.dataset.save) return toggleSave(b.dataset.save);
+  if (b?.dataset.done) return toggleDone(b.dataset.done);
+  if (b?.dataset.share) return share(b.dataset.share);
+  if (b?.dataset.tipclose != null && b.hasAttribute("data-tipclose")) { LS.set("swiped", true); $("#tipbox").innerHTML = ""; return; }
+  const o = e.target.closest("[data-open]"); if (o && !b) return openSheet(o.dataset.open);
   if (e.target.closest("[data-close]")) return closeSheet();
-  const b = e.target.closest("button"); if (!b) return;
+  if (!b) return;
   if (b.id === "more") { state.limit += 40; renderFeed(); return; }
-  if (b.dataset.view) { show(b.dataset.view); if (state.cfg) renderAll(); }
-  if (b.dataset.tab) { state.tab = b.dataset.tab; LS.set("tab", state.tab); state.limit = 40; setTabs(); renderFeed(); keepTop(); }
+  if (b.dataset.view) show(b.dataset.view);
+  if (b.dataset.tab) {
+    if (state.view === "gw") { state.gwTab = b.dataset.tab; renderHead(); renderGw(); }
+    else { state.tab = b.dataset.tab; LS.set("tab", state.tab); state.limit = 40; renderHead(); renderFeed(); }
+    keepTop();
+  }
   if (b.dataset.f) { state.filter = b.dataset.f; state.limit = 40; renderChips(); renderFeed(); keepTop(); }
   if (b.dataset.v) vote(b.dataset.id, +b.dataset.v);
   if (b.dataset.edit) {
@@ -719,10 +994,14 @@ document.addEventListener("click", e => {
   }
   if (b.dataset.rdel) { collectResale(); delete state.cfg.resale[b.dataset.rdel]; renderResale(); }
 });
-document.addEventListener("visibilitychange", () => { if (!document.hidden && token && state.cfg && !openId) load(); });
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) markSeen();
+  else { prevSeen = LS.get("lastSeen", prevSeen); if (token && state.cfg && !openId) load(); }
+});
+window.addEventListener("pagehide", markSeen);
 setInterval(setStatus, 30000);
 
-setTabs();
+renderHead();
 fillSettings();
 load();
 </script>

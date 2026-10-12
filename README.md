@@ -45,17 +45,20 @@ Für den Radar-Knopf in der App braucht auch der App-Token zusätzlich **Actions
 
 ## Bedienung
 
-- **Für dich / Heiß / Neu**: „Für dich“ zeigt oben deine Watchlist-Treffer und sortiert den Rest nach deinem Geschmack, „Heiß“ nach mydealz-Temperatur, „Neu“ nach Zeit. Deal antippen öffnet die Details mit Beschreibung, Tarif-Rechnung, „Zum Deal“ und Preisvergleich.
-- **Radar-Knopf oben rechts**: startet sofort eine Suche. Beim Öffnen sucht die App automatisch,
-  wenn die letzte Prüfung über 15 Minuten her ist.
-- **Watchlist**: Produkte, Abos, Handytarife oder ganze Rubriken beobachten. Mehrere Suchbegriffe
-  mit Komma. „Treffer ignorieren“ filtert Zubehör raus (z. B. `controller, hülle`).
-- **Rubriken**: „Rabatte & Gutscheine“ und „Gewinnspiele“ sammeln alles dieser Art, Push ist dort aus.
-- **Preise vergleichen**: unter jedem Deal Direktlinks zu idealo, Geizhals, Google Shopping,
-  billiger.de, Amazon und eBay. Steht ein Vergleichspreis im Deal, wird er rot durchgestrichen gezeigt.
-- **Gefällt mir / Nicht mein Ding** (in den Details): trainiert „Für dich“ (ab je 2 Bewertungen). „Nicht mein Ding“ blendet den Deal aus.
-- **Einstellungen → Verkaufswerte**: was ein neues Handy beim Ankauf bringt – damit zeigt jeder
-  Tarif-Deal Gewinn oder Verlust.
+- **Deals**: Tabs „Für dich“ (Watchlist-Treffer oben, Rest nach deinem Geschmack), „Heiß“ (mydealz-Temperatur),
+  „Neu“ und „Gutscheincodes“. Rote Zahl = neu seit deinem letzten Besuch.
+- **Wischen**: Karte nach rechts = gefällt mir, nach links = ausblenden. Trainiert „Für dich“.
+- **Stern**: Deal merken – landet unter „Gemerkt“, auch wenn er aus dem Feed verschwindet.
+- **Deal antippen**: Details mit Gutscheincode zum Kopieren, Ablaufdatum, Tarif-Rechnung, Preisverlauf,
+  „Zum Deal“, Teilen und Preisvergleich (idealo, Geizhals, Google Shopping, billiger.de, Amazon, eBay).
+- **Gewinnspiele**: eigener Reiter mit Gewinn-Wert, Teilnahmeart und Teilnahmeschluss. „Teilgenommen“
+  abhaken; Tabs Offen / Endet bald / Neu / Teilgenommen. Abgelaufene verschwinden automatisch.
+- **Watchlist**: Produkte, Abos, Handytarife oder Rubriken beobachten – mit Bestpreis und Preiskurve.
+- **Einstellungen**: Nachtruhe (Pushes nachts gesammelt am Morgen), Push-Schwelle, Test-Push,
+  Verkaufswerte für die Tarif-Gewinnrechnung, Status der Quellen.
+- **Push**: mit Produktbild und Knöpfen „Zum Deal“ und „Kein Interesse“; Antippen öffnet den Deal in der App.
+
+Quellen: mydealz (neu, heiß, Gutscheine, Gewinnspiele), DealDoktor, MyTopDeals, Monsterdealz.
 
 ## Gut zu wissen
 

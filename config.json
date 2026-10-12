@@ -139,7 +139,11 @@
   "settings": {
     "push_min_score": 0,
     "contract_months": 24,
-    "default_connection_fee": 39.99
+    "default_connection_fee": 39.99,
+    "quiet_hours": [
+      23,
+      7
+    ]
   },
   "feeds": [
     {
@@ -164,6 +168,14 @@
       "name": "mydealz Gewinnspiele",
       "url": "https://www.mydealz.de/rss/gruppe/gewinnspiele",
       "rubrik": "gewinnspiele"
+    },
+    {
+      "name": "MyTopDeals",
+      "url": "https://www.mytopdeals.net/feed/"
+    },
+    {
+      "name": "Monsterdealz",
+      "url": "https://www.monsterdealz.de/feed/"
     }
   ]
 }
