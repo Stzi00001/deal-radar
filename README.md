@@ -45,6 +45,7 @@ Für den Radar-Knopf in der App braucht auch der App-Token zusätzlich **Actions
 
 ## Bedienung
 
+- **Für dich / Heiß / Neu**: „Für dich“ zeigt oben deine Watchlist-Treffer und sortiert den Rest nach deinem Geschmack, „Heiß“ nach mydealz-Temperatur, „Neu“ nach Zeit. Deal antippen öffnet die Details mit Beschreibung, Tarif-Rechnung, „Zum Deal“ und Preisvergleich.
 - **Radar-Knopf oben rechts**: startet sofort eine Suche. Beim Öffnen sucht die App automatisch,
   wenn die letzte Prüfung über 15 Minuten her ist.
 - **Watchlist**: Produkte, Abos, Handytarife oder ganze Rubriken beobachten. Mehrere Suchbegriffe
@@ -52,7 +53,7 @@ Für den Radar-Knopf in der App braucht auch der App-Token zusätzlich **Actions
 - **Rubriken**: „Rabatte & Gutscheine“ und „Gewinnspiele“ sammeln alles dieser Art, Push ist dort aus.
 - **Preise vergleichen**: unter jedem Deal Direktlinks zu idealo, Geizhals, Google Shopping,
   billiger.de, Amazon und eBay. Steht ein Vergleichspreis im Deal, wird er rot durchgestrichen gezeigt.
-- **👍/👎**: trainiert die „passt zu dir“-Einschätzung (ab je 2 Bewertungen).
+- **Gefällt mir / Nicht mein Ding** (in den Details): trainiert „Für dich“ (ab je 2 Bewertungen). „Nicht mein Ding“ blendet den Deal aus.
 - **Einstellungen → Verkaufswerte**: was ein neues Handy beim Ankauf bringt – damit zeigt jeder
   Tarif-Deal Gewinn oder Verlust.
 

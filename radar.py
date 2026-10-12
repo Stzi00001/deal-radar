@@ -73,6 +73,22 @@ def to_float(s):
 
 
 # ---------------------------------------------------------------- Feeds
+def sharpen(url):
+    """mydealz liefert 150px-Vorschaubilder – größere Variante anfordern."""
+    return re.sub(r"/re/\d+x\d+/qt/\d+/", "/re/450x450/qt/70/", url or "")
+
+
+def summary(desc_html, title):
+    """Kurze Beschreibung ohne Preiszeile/Bilder, max. ~320 Zeichen."""
+    t = strip_html(re.sub(r"<strong>[^<]*</strong>\s*(<br\s*/?>)?", " ", desc_html or "", count=1))
+    t = re.sub(r"\[shortcode[^\]]*\]", " ", t)
+    t = re.sub(r"https?://\S+", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    if t.lower().startswith(title.lower()[:40]):
+        t = t[len(title):].strip(" -–:")
+    if len(t) > 320:
+        t = t[:320].rsplit(" ", 1)[0] + " …"
+    return t
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/rss+xml,application/xml,text/xml,*/*"})
     with urllib.request.urlopen(req, timeout=25) as r:
@@ -83,16 +99,21 @@ def parse_feed(raw, source, rubrik=None):
     root = ET.fromstring(raw)
     out = []
     for it in root.iter("item"):
-        title = re.sub(r"^\s*-?\d+°\s*-\s*", "", strip_html(it.findtext("title")))
+        raw_title = strip_html(it.findtext("title"))
+        tm = re.match(r"^\s*(-?\d+)°\s*-\s*", raw_title)
+        temp = int(tm.group(1)) if tm else None
+        title = raw_title[tm.end():] if tm else raw_title
         link = (it.findtext("link") or "").strip()
         if not title or not link:
             continue
         desc_html = it.findtext("description") or ""
-        merchant, price = "", None
+        merchant, price, discount = "", None, None
         m = it.find("pepper:merchant", NS)
         if m is not None:
             merchant = m.get("name", "")
             price = to_float(m.get("price"))
+            dm = re.search(r"\d+", m.get("discount") or "")
+            discount = int(dm.group()) if dm and "%" in (m.get("discount") or "") else None
         if price is None:  # Fallback: erster Eurobetrag im Titel
             pm = re.search(r"(\d{1,5}(?:[.,]\d{1,2})?)\s?(?:€|eur)", title, re.I)
             price = to_float(pm.group(1)) if pm else None
@@ -116,6 +137,9 @@ def parse_feed(raw, source, rubrik=None):
             "price": price,
             "category": strip_html(it.findtext("category")),
             "image": img,
+            "temp": temp,
+            "discount": discount,
+            "desc": summary(desc_html, title),
             "pub": pub_dt.isoformat(),
             "source": source,
             "_rubriken": [rubrik] if rubrik else [],
@@ -125,7 +149,8 @@ def parse_feed(raw, source, rubrik=None):
 
 
 # ---------------------------------------------------------------- Matching
-TARIF_HINTS = (" monat", " mtl ", "monatlich", "grundgebuehr", " vertrag", " tarif", "allnet", "laufzeit", " gb ")
+TARIF_HINTS = ("€ monat", " pro monat", " im monat", " mtl ", "monatlich", "grundgebuehr", " vertrag", " tarif", "allnet", "laufzeit", " flat",
+               " netz ", " o2 ", " vodafone ", " telekom ", " freenet ", " 1und1 ", " congstar ", " otelo ")
 
 
 def phrase_in(phrase, normtext):
@@ -209,10 +234,12 @@ def analyse_tarif(deal, resale, settings):
     upfront = upfront or 0.0
 
     device, value = None, None
-    text_n = norm(text)
-    for key in sorted(resale, key=len, reverse=True):
-        if phrase_in(key, text_n):
-            device, value = key, float(resale[key] or 0) or None
+    for src in (norm(deal["title"]), norm(text)):  # Titel zuerst – die Beschreibung nennt oft Alternativmodelle
+        for key in sorted(resale, key=len, reverse=True):
+            if phrase_in(key, src):
+                device, value = key, float(resale[key] or 0) or None
+                break
+        if device:
             break
     cost = None if monthly is None else round(upfront + monthly * months + fee - bonus, 2)
     profit = None if (cost is None or value is None) else round(value - cost, 2)
@@ -336,7 +363,10 @@ def run(feed_override=None, send_push=True):
         d.pop("_text", None)
         d.pop("_rubriken", None)
         if d["id"] in known:
-            known[d["id"]].update({k: d[k] for k in ("score", "tarif", "watch", "features", "compare") if k in d})
+            k = known[d["id"]]
+            k.update({x: d[x] for x in ("score", "tarif", "watch", "features", "compare", "desc", "image", "discount") if x in d})
+            if d.get("temp") is not None:
+                k["temp"] = d["temp"]  # Hitze steigt mit der Zeit – immer den neuesten Wert
             continue
         known[d["id"]] = d
         new.append((d, hits))
@@ -381,6 +411,20 @@ def run(feed_override=None, send_push=True):
                 d.pop("tarif")
         else:
             known.pop(d["id"], None)
+
+    # Tarif-Gewinne mit den aktuellen Verkaufswerten neu rechnen
+    resale = cfg.get("resale", {})
+    for d in known.values():
+        t = d.get("tarif")
+        if t:
+            tn = norm(d["title"])
+            for key in sorted(resale, key=len, reverse=True):
+                if phrase_in(key, tn):
+                    t["device"] = key
+                    break
+        if t and t.get("device") in resale:
+            t["resale"] = float(resale[t["device"]] or 0) or None
+            t["profit"] = None if (t.get("cost") is None or t["resale"] is None) else round(t["resale"] - t["cost"], 2)
 
     # Rescore alles mit dem aktuellen Modell, alte Deals aufräumen
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)

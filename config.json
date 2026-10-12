@@ -68,7 +68,11 @@
         "top deals",
         "saugroboter",
         "besten",
-        "uebersicht"
+        "uebersicht",
+        "refurbished",
+        "generalueberholt",
+        "zustand",
+        "garantie"
       ],
       "min_profit": 0,
       "push": true
