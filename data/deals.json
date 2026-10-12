@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T13:26:59+00:00",
+ "updated": "2026-10-12T13:47:57+00:00",
  "feeds": [
   {
    "name": "mydealz neu",
@@ -25,18 +25,420 @@
    "name": "mydealz Gewinnspiele",
    "ok": true,
    "count": 30
+  },
+  {
+   "name": "MyTopDeals",
+   "ok": true,
+   "count": 10
+  },
+  {
+   "name": "Monsterdealz",
+   "ok": true,
+   "count": 25
   }
  ],
  "votes": 0,
  "best": {
   "xbox-series-x": {
-   "price": 27.36,
-   "title": "Clive Barker's Hellraiser: Revival ►27,36€ IS | Horror | PC & Xbox Series X|S | Xbox Play Anywhere | XBox Store",
-   "link": "https://www.mydealz.de/deals/clive-barkers-hellraiser-revival-2736eur-is-horror-pc-xbox-series-xs-xbox-play-anywhere-xbox-store-2851879",
-   "date": "2026-10-09"
+   "price": 23.64,
+   "title": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
+   "link": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028",
+   "date": "2026-10-12"
   }
  },
+ "history": {
+  "xbox-series-x": [
+   {
+    "d": "2026-10-12",
+    "p": 23.64,
+    "t": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
+    "l": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028"
+   }
+  ],
+  "airpods-pro-3": []
+ },
+ "night": [],
  "deals": [
+  {
+   "id": "-deals-lg-83-w6-oled-tv-w69la-ds95ar-soundbar-2-cashback-454014eur-nach-sb-verkauf-2836034",
+   "title": "LG 83\" W6 OLED TV (W69LA) + DS95AR Soundbar + 2,5% Cashback = 4.245,13€ nach SB-Verkauf",
+   "link": "https://www.mydealz.de/deals/lg-83-w6-oled-tv-w69la-ds95ar-soundbar-2-cashback-454014eur-nach-sb-verkauf-2836034",
+   "merchant": "LG",
+   "price": 4949.1,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/0r7ZL/2836034_1/re/150x150/qt/55/2836034_1.jpg",
+   "temp": 208,
+   "discount": null,
+   "desc": "Aktuell gibt es bei LG den LG 83\" W6 OLED TV (W69LA) plus LG DS95AR 9.1.5 Soundbar im Angebot: LG gibt 10% Direktrabatt im Warenkorb bei PayPal Zahlung: HIGHLIGHTS Ultraflaches Wallpaper Design mit integrierter Wandhalterung für eine lückenlose Wandmontage. Hyper Radiant Color Tech mit Brightness Booster Ultra für …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:46:38+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss",
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "13€",
+    "c:elektronik",
+    "cashback",
+    "ds95ar",
+    "m:lg",
+    "nach",
+    "oled",
+    "p:800+",
+    "soundbar",
+    "verkauf",
+    "w69la",
+    "w:heiss",
+    "w:rabatte"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "x-pc-gehause-4-120-mm-argb-lufter-mesh-front-glasseitenwand-weiss-vsk-frei-proshop-2852940",
+   "title": "Montech Air 100 ARGB Micro-ATX PC-Gehäuse (4× 120-mm-ARGB-Lüfter, Mesh-Front, Glasseitenwand, Weiß) | VSK-Frei | Proshop",
+   "link": "https://www.mydealz.de/deals/montech-air-100-argb-micro-atx-pc-gehause-4-120-mm-argb-lufter-mesh-front-glasseitenwand-weiss-vsk-frei-proshop-2852940",
+   "merchant": "Proshop",
+   "price": 38.9,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/B9Xa0/2852940_1/re/150x150/qt/55/2852940_1.jpg",
+   "temp": 101,
+   "discount": null,
+   "desc": "Bei Proshop bekommt ihr aktuell folgendes Angebot! :) Montech Air 100 ARGB Micro-ATX PC-Gehäuse für 38,90€ inklusive Versand!...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:45:58+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "air",
+    "argb",
+    "atx",
+    "c:elektronik",
+    "frei",
+    "front",
+    "gehaeuse",
+    "glasseitenwand",
+    "luefter",
+    "m:proshop",
+    "mesh",
+    "micro",
+    "montech",
+    "p:<100",
+    "proshop",
+    "vsk",
+    "w:heiss",
+    "weiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "ng-v-22-osprey-125-3730x-klemmbausteine-militarflugzeug-m-bew-kipprotoren-at-prime-2852906",
+   "title": "Revell Brick System 00961 / Bell Boeing V-22 Osprey / 1:25 / 3730x Klemmbausteine / Militärflugzeug m. bew. Kipprotoren @ Prime",
+   "link": "https://www.mydealz.de/deals/revell-brick-system-00961-bell-boeing-v-22-osprey-125-3730x-klemmbausteine-militarflugzeug-m-bew-kipprotoren-at-prime-2852906",
+   "merchant": "Amazon",
+   "price": 166.98,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/IKRFG/2852906_1/re/150x150/qt/55/2852906_1.jpg",
+   "temp": 105,
+   "discount": null,
+   "desc": "BELL BOEING V 22 OSPREY 1:25: Das Klemmbaustein Set mit 3730 Teilen baut das ikonische Militärflugzeug als imposantes Modell für Erwachsene mit 85,3 cm Spannwei...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:44:20+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "3730x",
+    "bell",
+    "bew",
+    "boeing",
+    "brick",
+    "c:family kids",
+    "kipprotoren",
+    "klemmbausteine",
+    "m:amazon",
+    "militaerflugzeug",
+    "osprey",
+    "p:<300",
+    "revell",
+    "system",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "als-efteling-newsletter-9-eur-rabatt-auf-maximal-6-efteling-tickets-personalisiert-2852979",
+   "title": "Efteling Newsletter - 9 € Rabatt auf maximal 6 Efteling Tickets (personalisiert)",
+   "link": "https://www.mydealz.de/deals/efteling-newsletter-9-eur-rabatt-auf-maximal-6-efteling-tickets-personalisiert-2852979",
+   "merchant": "Freizeitpark Efteling",
+   "price": 9.0,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/CJ4Pi/2852979_1/re/150x150/qt/55/2852979_1.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Im Efteling Newsletter gibt es aktuell einen personalisierten Rabatt von 9 € auf bis zu 6 Tickets. Perfekt für einen Ausflug mit der Familie. Die Tickets müssen bis 1. November gekauft werden und gelten bis zum 18. Dezember 2026. Spontan etwas dazwischen gekommen? Kein Problem. Das Besuchsdatum kann innerhalb des …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:40:10+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "c:kultur freizeit",
+    "efteling",
+    "m:freizeitpark efteling",
+    "maximal",
+    "newsletter",
+    "p:<20",
+    "personalisiert",
+    "rabatt",
+    "tickets",
+    "w:rabatte"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "deals-lokal-koln-verfugbarkeitsdeal-pokemon-blister-ewige-rivalen-wachsendes-chaos-2852913",
+   "title": "(Lokal? REWE Köln) Verfügbarkeitsdeal: Pokémon Blister Ewige Rivalen & Wachsendes Chaos",
+   "link": "https://www.mydealz.de/deals/lokal-koln-verfugbarkeitsdeal-pokemon-blister-ewige-rivalen-wachsendes-chaos-2852913",
+   "merchant": "REWE",
+   "price": 9.99,
+   "category": "Family & Kids",
+   "image": "https://static.mydealz.de/threads/raw/ihKQ5/2852913_1/re/150x150/qt/55/2852913_1.jpg",
+   "temp": 109,
+   "discount": null,
+   "desc": "Bei Rewe auf der Deutzer Freiheit in Köln gibt es aktuell 2er Blister mit Pokémon-Boostern aus Mega-Entwicklung \"Wachsendes Chaos\" sowie \"Ewige Rivalen\" aus Kar...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:37:03+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "blister",
+    "c:family kids",
+    "chaos",
+    "ewige",
+    "koeln",
+    "lokal",
+    "m:rewe",
+    "mon",
+    "p:<20",
+    "pok",
+    "rewe",
+    "rivalen",
+    "verfuegbarkeitsdeal",
+    "w:heiss",
+    "wachsendes"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "tetes-glas-dual-chamber-bis-zu-10-lufter-360-mm-wasserkuhlung-schwarz-amazon-prime-2852944",
+   "title": "Mars Gaming MC-3TCORE ATX-Gehäuse (3× gehärtetes Glas, Dual-Chamber, bis zu 10 Lüfter, 360-mm-Wasserkühlung, Schwarz) | Amazon Prime",
+   "link": "https://www.mydealz.de/deals/mars-gaming-mc-3tcore-atx-gehause-3-gehartetes-glas-dual-chamber-bis-zu-10-lufter-360-mm-wasserkuhlung-schwarz-amazon-prime-2852944",
+   "merchant": "Amazon",
+   "price": 73.53,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/vzMbR/2852944_1/re/150x150/qt/55/2852944_1.jpg",
+   "temp": 115,
+   "discount": null,
+   "desc": "Bei Amazon bekommt ihr aktuell folgendes Angebot! :) Mars Gaming MC-3TCORE ATX-Gehäuse für 73,53€ inkl. Versand mit Prime! </...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:33:23+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "3tcore",
+    "atx",
+    "c:elektronik",
+    "chamber",
+    "dual",
+    "gaming",
+    "gehaertetes",
+    "gehaeuse",
+    "glas",
+    "luefter",
+    "m:amazon",
+    "mars",
+    "p:<100",
+    "schwarz",
+    "w:heiss",
+    "wasserkuehlung"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "https-www-mydealz-de-deals-prime-michael-jackson-bad-vinyl-schallplatte-2852943",
+   "title": "( Prime ) Michael Jackson - Bad Vinyl Schallplatte",
+   "link": "https://www.mydealz.de/deals/prime-michael-jackson-bad-vinyl-schallplatte-2852943",
+   "merchant": "Amazon",
+   "price": 18.73,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/Q9FUJ/2852943_1/re/150x150/qt/55/2852943_1.jpg",
+   "temp": 114,
+   "discount": null,
+   "desc": "Klassiker, sollte jeder kennen und haben wollen. Die Vinyl-Schallplatte \"Bad\" von Michael Jackson ist ein zeitlose...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:32:43+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "bad",
+    "c:kultur freizeit",
+    "jackson",
+    "m:amazon",
+    "michael",
+    "p:<20",
+    "schallplatte",
+    "vinyl",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "https-www-dealdoktor-de-p-1501160",
+   "title": "congstar Tarife: Bis zu 200GB im Telekom-Netz + 15% Rabatt per Gutschein – schon ab 12,75€",
+   "link": "https://www.dealdoktor.de/congstar-allnet-flat-tarif/",
+   "merchant": "",
+   "price": 12.75,
+   "category": "Sonstiges, Telekom ohne Handy",
+   "image": "",
+   "temp": null,
+   "discount": null,
+   "desc": "Wer gerade auf der Suche nach ordentlich Datenvolumen im besten Telekom-Netz ist, sollte jetzt gut aufpassen. Dank einer neuen Kampagne bekommt ihr bei 15% Rabatt auf alle Allnet-Flats- und Homespot-Tarife – so gibt es beispielsweise 50GB für nur 17€ monatlich. congstar ANF-Tarife mit 15% Rabatt mit 15% Gutscheincode: …",
+   "code": "DD15PP",
+   "until": null,
+   "pub": "2026-10-12T13:31:51+00:00",
+   "source": "DealDoktor",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "200gb",
+    "75€",
+    "c:sonstiges telekom ohne handy",
+    "congstar",
+    "gutschein",
+    "netz",
+    "p:<20",
+    "per",
+    "rabatt",
+    "schon",
+    "tarife",
+    "telekom",
+    "w:rabatte"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "ts-la-prima-direct-drive-wheelbase-12-nm-drehmoment-direct-drive-fur-pc-sim-racing-2852912",
+   "title": "Asetek SimSports La Prima Direct-Drive-Wheelbase (12 Nm Drehmoment, Direct Drive, für PC-Sim-Racing)",
+   "link": "https://www.mydealz.de/deals/asetek-simsports-la-prima-direct-drive-wheelbase-12-nm-drehmoment-direct-drive-fur-pc-sim-racing-2852912",
+   "merchant": "",
+   "price": 509.95,
+   "category": "Gaming",
+   "image": "https://static.mydealz.de/threads/raw/GWHKB/2852912_1/re/150x150/qt/55/2852912_1.jpg",
+   "temp": 113,
+   "discount": null,
+   "desc": "Bei Simrace Webshop bekommt ihr aktuell folgendes Angebot! :) Asetek SimSports La Prima Direct-Drive-Wheelba...",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:30:20+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "asetek",
+    "c:gaming",
+    "direct",
+    "drehmoment",
+    "drive",
+    "p:<800",
+    "prima",
+    "racing",
+    "sim",
+    "simsports",
+    "w:heiss",
+    "wheelbase"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "hne-begrenzungsdraht-kamera-sensoren-bis-150m2-schnitthohe-20-60mm-inkl-akku-lader-2852871",
+   "title": "LawnMaster OcuMow DM16-150 MX 24V Mähroboter - ohne Begrenzungsdraht, Kamera & Sensoren, bis 150m², Schnitthöhe 20-60mm, inkl. Akku & Lader",
+   "link": "https://www.mydealz.de/deals/lawnmaster-ocumow-dm16-150-mx-24v-mahroboter-ohne-begrenzungsdraht-kamera-sensoren-bis-150m2-schnitthohe-20-60mm-inkl-akku-lader-2852871",
+   "merchant": "cleva",
+   "price": 278.99,
+   "category": "Garten & Baumarkt",
+   "image": "https://static.mydealz.de/threads/raw/45a2U/2852871_1/re/150x150/qt/55/2852871_1.jpg",
+   "temp": 108,
+   "discount": null,
+   "desc": "Bei Cleva bekommt ihr den LawnMaster OcuMow DM16-150 gerade für 278,99 € inkl. VSK mit Code OCUMOW30OFF .</...",
+   "code": "OCUMOW30OFF",
+   "until": null,
+   "pub": "2026-10-12T13:29:15+00:00",
+   "source": "mydealz heiß",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "150m",
+    "24v",
+    "60mm",
+    "akku",
+    "begrenzungsdraht",
+    "c:garten baumarkt",
+    "dm16",
+    "kamera",
+    "lader",
+    "lawnmaster",
+    "m:cleva",
+    "maehroboter",
+    "ocumow",
+    "ohne",
+    "p:<300",
+    "schnitthoehe",
+    "sensoren",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
   {
    "id": "-de-deals-msi-mag-272fde-gaming-monitor-27-fhd-200-hz-05-ms-freesync-premium-prime-2852916",
    "title": "MSI MAG 272FDE Gaming-Monitor 27\" FHD | 200 Hz, 0,5 ms, FreeSync Premium [prime]",
@@ -45,7 +447,7 @@
    "price": 99.0,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/l180c/2852916_1/re/150x150/qt/55/2852916_1.jpg",
-   "temp": 114,
+   "temp": 123,
    "discount": null,
    "desc": "Mit dem MSI MAG 272FDE gibt es einen 27-Zoll-Gaming-Monitor für 99€ bei Amazon. Gerade für preisbewusste Gamer ist das Modell interessant, denn mit einer Bildwi...",
    "pub": "2026-10-12T13:18:45+00:00",
@@ -68,7 +470,81 @@
     "premium",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-monsterdealz-de-p-1608270",
+   "title": "congstar Allnet Flat mit 15 % Rabatt: 125 GB im Telekom-Netz für 21,25€/Monat (effektiv 21,88€/Monat)",
+   "link": "https://www.monsterdealz.de/elektronik-computer/handy-smartphone-iphone-vertrag/congstar-allnet-flat-15-prozent-rabatt-dd15pp-125gb-telekom/1608270",
+   "merchant": "",
+   "price": 21.25,
+   "category": "Smartphones & Tarife, congstar",
+   "image": "https://www.monsterdealz.de/app/uploads/2026/10/congstar-allnet-flat-15-prozent-rabatt-dd15pp-600x400.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei bekommt ihr gerade die congstar Allnet Flat mit 15 % Rabatt im Telekom-Netz – die Allnet Flat M mit 125 GB kostet mit dem Gutscheincode DD15PP nur noch 21,25€/Monat statt 25€/Monat. Der Rabatt gilt für alle Allnet-Flat- und Homespot-Tarife , sowohl mit 24 Monaten Laufzeit als auch in der monatlich kündbaren …",
+   "code": "DD15PP",
+   "until": "2026-11-02T23:59:00+01:00",
+   "pub": "2026-10-12T13:17:34+00:00",
+   "source": "Monsterdealz",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": {
+    "ref": 25.0,
+    "pct": 15
+   },
+   "features": [
+    "25€",
+    "88€",
+    "allnet",
+    "c:smartphones tarife congstar",
+    "congstar",
+    "effektiv",
+    "flat",
+    "monat",
+    "netz",
+    "p:<100",
+    "rabatt",
+    "telekom",
+    "w:rabatte"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1277064",
+   "title": "Adidas Herren Winterjacken im Sale ab 49,99€",
+   "link": "https://www.mytopdeals.net/allgemein/adidas-herren-winterjacken-im-sale-ab-4999e/",
+   "merchant": "",
+   "price": 49.99,
+   "category": "Allgemein, Adidas, Fashion, jacke, Puffer, sportspar, winterjacke",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/10/MTD_2026-10-12_at_15-09-44-600x151.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei bekommt ihr Winterjacken von Adidas schon ab 49,99€ zzgl. 4,95€ Versand (Ab 60€ versandkostenfrei!) . Eine solide Wahl für alle, die Wert auf Markenqualität und vor allem Wärme legen! adidas Originals Winterjacken ab 49,99€ 4 Modelle zur Auswahl Für Herren Konzentrieren wir uns mal auf das Modell für 59,99€ : Sie …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T13:15:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "99€",
+    "adidas",
+    "c:allgemein adidas fashion jacke puffer sportspar winterjacke",
+    "herren",
+    "p:<100",
+    "sale",
+    "w:rabatte",
+    "winterjacken"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "89eurstk-1560eur-oder-5m-fur-420eurstk-1680eur-4k-60hz-ethernet-vergoldet-3d-weiss-2852849",
@@ -78,7 +554,7 @@
    "price": 16.8,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/w7mIH/2852849_1/re/150x150/qt/55/2852849_1.jpg",
-   "temp": 103,
+   "temp": 106,
    "discount": null,
    "desc": "Moin Moin, wer seine Multimedia-Ecke zu Hause neu verkabeln will oder sich für TV, Beamer, PC und Konsole ein solides Vorratspaket an die Seite legen m...",
    "pub": "2026-10-12T13:14:09+00:00",
@@ -107,7 +583,9 @@
     "w:heiss",
     "weiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "dealz-de-deals-akg-n9-hybrid-kabellose-noise-cancelling-over-ear-kopfhorer-schwarz-2852925",
@@ -117,7 +595,7 @@
    "price": 149.0,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/Ep5eh/2852925_1/re/150x150/qt/55/2852925_1.jpg",
-   "temp": 107,
+   "temp": 121,
    "discount": null,
    "desc": "Hi zusammen, aktuell gibt es über Cyberport einen guten Preis für die Kopfhörer. Kurzbeschreibung Typ: ohrumschlie...",
    "pub": "2026-10-12T13:13:12+00:00",
@@ -141,7 +619,9 @@
     "schwarz",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ds-of-the-mad-overlord-fur-nintendo-switch-metacritic-82-74-bra-578eur-pol-1068eur-2852883",
@@ -151,7 +631,7 @@
    "price": 11.69,
    "category": "Gaming",
    "image": "https://static.mydealz.de/threads/raw/jV57M/2852883_1/re/150x150/qt/55/2852883_1.jpg",
-   "temp": 138,
+   "temp": 140,
    "discount": null,
    "desc": "Hallo zusammen, zum neuen Bestpreis erhältlich das Spiel Wizardry Proving Grounds of the Mad Overlord Be...",
    "pub": "2026-10-12T13:04:10+00:00",
@@ -179,7 +659,9 @@
     "w:heiss",
     "wizardry"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "mydealz-de-deals-xiaomi-monitor-a27i-2026-27-ips-full-hd-144-hz-mi-store-fur-89eur-2852961",
@@ -189,7 +671,7 @@
    "price": 89.0,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/2ONLj/2852961_1/re/150x150/qt/55/2852961_1.jpg",
-   "temp": 109,
+   "temp": 159,
    "discount": null,
    "desc": "Im Mi Store bekommt ihr aktuell folgendes Angebot! :) Xiaomi Monitor A27i 2026 für 89€ inkl. Versand (y) Der aktuelle Preisvergleich liegt bei 114€ inkl. Versand. Spezifikationen laut Geizhals Funktion Monitor, stationär Diagonale 27\" (68.6cm), Klasse: 26\"-27\" Auflösung 1920x1080 (Full HD), 16:9, 82ppi …",
    "pub": "2026-10-12T12:57:45+00:00",
@@ -214,7 +696,47 @@
     "w:heiss",
     "xiaomi"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "n-stahlzungentrommel-432-hz-d-moll-mit-gewebtem-randschutz-2-schlageln-tragetasche-2852960",
+   "title": "[PRIME/Amazon.FR] VEVOR Handpan Drum, 55 cm, 9-Ton-Stahlzungentrommel, 432 Hz, D-Moll, mit gewebtem Randschutz, 2 Schlägeln & Tragetasche",
+   "link": "https://www.mydealz.de/deals/primeamazonfr-vevor-handpan-drum-55-cm-9-ton-stahlzungentrommel-432-hz-d-moll-mit-gewebtem-randschutz-2-schlageln-tragetasche-2852960",
+   "merchant": "Amazon.fr",
+   "price": 66.2,
+   "category": "Kultur & Freizeit",
+   "image": "https://static.mydealz.de/threads/raw/b66mU/2852960_1/re/150x150/qt/55/2852960_1.jpg",
+   "temp": 128,
+   "discount": null,
+   "desc": "Würd mal behaupten - günstiger als bei Temu. 55€ + 11,20€ Versandkosten im Gegensatz zu den in Deutschland aufgerufenen 164,90€. Laut Youtube Reviews durchaus zum Antesten geeignet. Bei Temu gehen(gleiche?ähnliche?) bei knapp 140€ los. Info zu diesem Artikel Hochwertiges Material & Verarbeitung: Diese Handpan-Trommel …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T12:55:41+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "c:kultur freizeit",
+    "drum",
+    "gewebtem",
+    "handpan",
+    "m:amazon fr",
+    "moll",
+    "p:<100",
+    "randschutz",
+    "schlaegeln",
+    "stahlzungentrommel",
+    "ton",
+    "tragetasche",
+    "vevor",
+    "w:heiss"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
   },
   {
    "id": "-monitor-238-zoll-full-hd-fast-ips-200-hz-1-ms-gtg-hdr10-cyberportcomputeruniverse-2852956",
@@ -224,7 +746,7 @@
    "price": 74.9,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/3CJMZ/2852956_1/re/150x150/qt/55/2852956_1.jpg",
-   "temp": 109,
+   "temp": 134,
    "discount": null,
    "desc": "Bei Cyberport & Computeruniverse bekommt ihr aktuell folgendes Angebot! :) AOC 24G4HRE Gaming Monitor für 74,90€ inkl. Versand! Der aktuelle Preisvergleich liegt bei 95,96€ inkl. Versand. Energieeffizienzklasse: E 60.5 cm (23.8 Zoll), 1920 x 1080 (Full HD, 16:9) Fast IPS Panel, entspiegelt, 200 Hz, HDR 10, …",
    "pub": "2026-10-12T12:48:59+00:00",
@@ -254,7 +776,9 @@
     "w:heiss",
     "zoll"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "rpunk-2077-ultimate-15eur-dlc-phantom-liberty-7eur-vpn-gog-pc-mac-vr-mod-verfugbar-2852955",
@@ -264,7 +788,7 @@
    "price": 8.0,
    "category": "Gaming",
    "image": "https://static.mydealz.de/threads/raw/FWe0r/2852955_1/re/150x150/qt/55/2852955_1.jpg",
-   "temp": 158,
+   "temp": 238,
    "discount": null,
    "desc": "Gaming Highlights wieder zum Sparpreis Für alle Liebhaber von epischen Abenteuern und futuristischen Welten gibt es unglaubliche Angebote, die es wert sind, genauer betrachtet zu werden: Cyberpunk 2077 - für nur ca. ~8€ Cyberpunk 2077 Ultimate Edition - für nur ca. ~15€ Cyberpunk 2077 DLC Phantom Liberty - DLC für nur …",
    "pub": "2026-10-12T12:48:30+00:00",
@@ -290,7 +814,9 @@
     "vpn",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "www-mydealz-de-deals-return-to-castle-wolfenstein-uncut-199eur-gog-klassik-shooter-2852953",
@@ -300,7 +826,7 @@
    "price": 1.99,
    "category": "Gaming",
    "image": "https://static.mydealz.de/threads/raw/aAGen/2852953_1/re/150x150/qt/55/2852953_1.jpg",
-   "temp": 104,
+   "temp": 186,
    "discount": null,
    "desc": "Return to Castle Wolfenstein (Uncut) - Klassiker Tauche ein in die düstere Welt von Return to Castle Wolfenstein , einem legendären Ego Shooter, der dich mitten in geheime Nazi Experimente und okkulte Verschwörungen katapultiert. GOG Für nur 1,99 € bekommst du bei GOG die ungeschnittene Version (Englisch Version) …",
    "pub": "2026-10-12T12:46:32+00:00",
@@ -323,7 +849,9 @@
     "w:heiss",
     "wolfenstein"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2155357",
@@ -332,10 +860,10 @@
    "merchant": "",
    "price": 59.95,
    "category": "Google",
-   "image": "",
+   "image": "https://www.dealdoktor.de/app/uploads/2026/10/Bildschirmfoto_2026-10-12_um_14.31.06-1.png",
    "temp": null,
    "discount": null,
-   "desc": "Wer auf der Suche nach unbegrenztem Datenvolumen ist, bekommt hier einen richtig starken Deal: Das Google Pixel 11 (256GB) gibt es aktuell zusammen mit einer 5G-Flatrate im o2-Netz für nur 29,99€ mtl.! Google Pixel 11 (256GB) für 59,95€ + Unlimited 5G/LTE für 29,99€/Monat 256GB Speicherplatz Echtes unbegrenztes …",
+   "desc": "Wer auf der Suche nach unbegrenztem Datenvolumen ist, bekommt hier einen richtig starken Deal: Das gibt es aktuell zusammen mit einer 5G-Flatrate im o2-Netz für nur 29,99€ mtl. ! Google Pixel 11 (256GB) für 59,95€ + Unlimited 5G/LTE für 29,99€/Monat 256GB Speicherplatz Echtes unbegrenztes Datenvolumen (bis zu 100 …",
    "pub": "2026-10-12T12:45:47+00:00",
    "source": "DealDoktor",
    "watch": [
@@ -357,7 +885,7 @@
     "256gb",
     "95€",
     "99€",
-    "c:google",
+    "c:google handy mit tarif handytarife smartphones o2 google pixel",
     "google",
     "lte",
     "monat",
@@ -366,7 +894,9 @@
     "unlimited",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-mydealz-de-deals-gibbon-slackrack-classic-mit-slackline-und-gestell-2-meter-lange-2852922",
@@ -398,7 +928,9 @@
     "slackrack",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-mydealz-de-deals-metabo-tauchsage-kt-66-bl-mit-fuhrungsschiene-fs-160-metabox-340-2852882",
@@ -408,7 +940,7 @@
    "price": 438.38,
    "category": "Garten & Baumarkt",
    "image": "https://static.mydealz.de/threads/raw/ZaY8O/2852882_1/re/150x150/qt/55/2852882_1.jpg",
-   "temp": 120,
+   "temp": 130,
    "discount": null,
    "desc": "Hinweis: Um den angegeben Preis zu erhalten, ist im Warenkorb der Gutscheincode MET2026 einzugeben. Tauchkreissäge mit Brushle...",
    "pub": "2026-10-12T12:44:55+00:00",
@@ -427,7 +959,49 @@
     "tauchsaege",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": "MET2026",
+   "until": null
+  },
+  {
+   "id": "ls-msi-mpg-341cqrde-qd-oled-x36-gaming-monitor-34-zoll-uwqhd-qd-oled-360-hz-003-ms-2852951",
+   "title": "MSI MPG 341CQRDE QD-OLED X36 Gaming Monitor (34 Zoll, UWQHD, QD-OLED, 360 Hz, 0,03 ms)",
+   "link": "https://www.mydealz.de/deals/msi-mpg-341cqrde-qd-oled-x36-gaming-monitor-34-zoll-uwqhd-qd-oled-360-hz-003-ms-2852951",
+   "merchant": "PC Componentes",
+   "price": 884.14,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/ahw1F/2852951_1/re/150x150/qt/55/2852951_1.jpg",
+   "temp": 101,
+   "discount": null,
+   "desc": "Bei PC Componentes bekommt ihr aktuell folgendes Angebot! :) MSI MPG 341CQRDE QD-OLED X36 Gaming Monitor für 884,14€ inkl. Versand. Der aktuelle Preisvergleich liegt bei 999€ inkl. Versand. Energieeffizienzklasse: F 86.4 cm (34 Zoll), 3440 x 1440 (UWQHD, 21:9), Curved QD-OLED Panel, entspiegelt, 360 Hz, HDR True Black …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T12:44:17+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": {
+    "ref": 999.0,
+    "pct": 11
+   },
+   "features": [
+    "341cqrde",
+    "c:elektronik",
+    "gaming",
+    "m:pc componentes",
+    "monitor",
+    "mpg",
+    "msi",
+    "oled",
+    "p:800+",
+    "uwqhd",
+    "w:heiss",
+    "x36",
+    "zoll"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
   },
   {
    "id": "https-www-mydealz-de-deals-acer-notebooks-cashback-aktion-bis-zu-200-euro-2852950",
@@ -456,7 +1030,9 @@
     "p:<300",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "pd-30-mfi-zertifizierter-power-adapter-ultra-kompakt-flach-fur-iphone-16-8-ipad-co-2852899",
@@ -466,7 +1042,7 @@
    "price": 5.99,
    "category": "Elektronik",
    "image": "https://static.mydealz.de/threads/raw/28F3j/2852899_1/re/150x150/qt/55/2852899_1.jpg",
-   "temp": 140,
+   "temp": 155,
    "discount": null,
    "desc": "Aioneus USB-C Schnellladegerät (40W/20W PD 3.0) – MFi-zertifizierter Power Adapter, ultra-kompakt & flach für iPhone 16–8, iPad & Co.</strong...",
    "pub": "2026-10-12T12:40:37+00:00",
@@ -495,7 +1071,9 @@
     "w:heiss",
     "zertifizierter"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-jura-j10-ea-cold-brew-kaffeevollautomat-piano-black-2852920",
@@ -505,7 +1083,7 @@
    "price": 1379.0,
    "category": "Home & Living",
    "image": "https://static.mydealz.de/threads/raw/qVXFw/2852920_1/re/150x150/qt/55/2852920_1.jpg",
-   "temp": 157,
+   "temp": 159,
    "discount": null,
    "desc": "Hi zusammen, letztmalig gab es so einen Preis im März dank der Mwst-Aktion. Jetzt auch so für den Kurs verfügbar. PVG über <a href=\"",
    "pub": "2026-10-12T12:40:30+00:00",
@@ -527,7 +1105,93 @@
     "piano",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "5g69ls-oled-tv-65-zoll-165-cm-4k-uhd-hdr-smart-tv-inkl-soundbar-lg-ds70tr-511-500w-2852949",
+   "title": "[Lokal Expert Deizisau] Bundle - LG OLED65G69LS / LW OLED TV (65 Zoll (165 cm), 4K UHD, HDR, Smart TV inkl. Soundbar LG DS70TR 5.1.1. 500W",
+   "link": "https://www.mydealz.de/deals/lokal-expert-deizisau-lg-oled65g69ls-oled-tv-65-zoll-165-cm-4k-uhd-hdr-smart-tv-inkl-soundbar-lg-ds70tr-511-500w-2852949",
+   "merchant": "expert",
+   "price": 1899.0,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/kwSMB/2852949_1/re/150x150/qt/55/2852949_1.jpg",
+   "temp": 125,
+   "discount": null,
+   "desc": "Expert Techno-Land in Deizisau (Nähe Esslingen) verkauft den sehr guten LG OLED 65G69LS und auch die LW-Variante ohne Standfuß im Bundle mit dem Soundbar-Set LG DS70TR für 1.899 EUR. Das Bundle liegt damit unter dem Idealo-Preis des TV. Die Soundbar hat einen Wert von gut 300 EUR laut Idealo. Produktdetails: Der LG …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T12:39:45+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": null,
+   "features": [
+    "500w",
+    "bundle",
+    "c:elektronik",
+    "deizisau",
+    "ds70tr",
+    "expert",
+    "hdr",
+    "lokal",
+    "m:expert",
+    "oled",
+    "oled65g69ls",
+    "p:800+",
+    "smart",
+    "soundbar",
+    "uhd",
+    "w:heiss",
+    "zoll"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
+  },
+  {
+   "id": "-tower-gehause-in-weiss-oder-lila-glasseitenwand-airflow-optimiertes-design-amazon-2852948",
+   "title": "HYTE X50 ATX-Mid-Tower-Gehäuse in Weiß oder Lila (Glasseitenwand, Airflow-optimiertes Design) | Amazon",
+   "link": "https://www.mydealz.de/deals/hyte-x50-atx-mid-tower-gehause-in-weiss-oder-lila-glasseitenwand-airflow-optimiertes-design-amazon-2852948",
+   "merchant": "Amazon",
+   "price": 89.99,
+   "category": "Elektronik",
+   "image": "https://static.mydealz.de/threads/raw/2j9xb/2852948_1/re/150x150/qt/55/2852948_1.jpg",
+   "temp": 108,
+   "discount": null,
+   "desc": "Bei Amazon bekommt ihr aktuell folgendes Angebot! :) HYTE X50 ATX-Mid-Tower-Gehäuse in Weiß oder Lila für jeweils 89,99€ inkl. Versand! PVG weiß: 114€ inkl. Versand PVG lila: 124,99€ inkl. Versand Die Mikro-Mesh-Frontblende dient als Lufteinlass mit geringem Druck und geringem Widerstand für optimale Temperaturen und …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T12:39:36+00:00",
+   "source": "mydealz neu",
+   "watch": [
+    "heiss"
+   ],
+   "compare": {
+    "ref": 114.0,
+    "pct": 21
+   },
+   "features": [
+    "airflow",
+    "atx",
+    "c:elektronik",
+    "design",
+    "gehaeuse",
+    "glasseitenwand",
+    "hyte",
+    "lila",
+    "m:amazon",
+    "mid",
+    "optimiertes",
+    "p:<100",
+    "tower",
+    "w:heiss",
+    "weiss",
+    "x50"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:56+00:00"
   },
   {
    "id": "7-programmierbare-tasten-6-wege-joystick-tempomat-usb-pcmac-9999eur-mit-cb-7799eur-2852904",
@@ -537,7 +1201,7 @@
    "price": 77.99,
    "category": "Gaming",
    "image": "https://static.mydealz.de/threads/raw/U3ePo/2852904_1/re/150x150/qt/55/2852904_1.jpg",
-   "temp": 149,
+   "temp": 153,
    "discount": null,
    "desc": "Bei Amazon , <a href=\"",
    "pub": "2026-10-12T12:37:05+00:00",
@@ -567,7 +1231,9 @@
     "w:heiss",
     "wege"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-diskussion-penny-app-gewinnspiel-5-millionen-gewinne-2852945",
@@ -595,7 +1261,13 @@
     "penny",
     "w:gewinnspiele"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null,
+   "gw": {
+    "kind": "App",
+    "value": null
+   }
   },
   {
    "id": "ft-gluey-kabellos-wiederaufladbare-aa-akkus-klebt-papier-stoff-kunststoff-holz-uvm-2852923",
@@ -605,7 +1277,7 @@
    "price": 23.64,
    "category": "Garten & Baumarkt",
    "image": "https://static.mydealz.de/threads/raw/6vcbS/2852923_1/re/150x150/qt/55/2852923_1.jpg",
-   "temp": 163,
+   "temp": 188,
    "discount": null,
    "desc": "Mahlzeit an meine DIY-Fans. :) Schöner Angebotspreis bei Alza für den Gluey Akku-Heißklebestift aus dem Hause Bosch in der Farbe \"Evergreen\". <br...",
    "pub": "2026-10-12T12:34:35+00:00",
@@ -636,7 +1308,44 @@
     "w:heiss",
     "wiederaufladbare"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-monsterdealz-de-p-1608204",
+   "title": "Nordcap Unisex-Fleecejacke mit Stehkragen (5 Farben, S–XXXL) für 29,99€ – 30% Rabatt",
+   "link": "https://www.monsterdealz.de/mode-beauty/nordcap-fleecejacke-unisex/1608204",
+   "merchant": "",
+   "price": 29.99,
+   "category": "Mode & Beauty, Vorteilshop",
+   "image": "https://www.monsterdealz.de/app/uploads/2026/10/nordcap-fleecejacke-unisex-600x600.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei Vorteilshop bekommt ihr als Top-Deal der Woche die Nordcap Fleecejacke unisex mit Stehkragen und drei Reißverschlusstaschen für 29,99€ – 30% Rabatt Die Nordcap Fleecejacke gibt es in fünf Farben und den Größen S bis XXXL. Parallel laufen bei Vorteilshop zwei Rabattaktionen mit 30 % ab 35€ Bestellwert: für …",
+   "code": "V51378",
+   "until": "2026-10-19T23:59:00+02:00",
+   "pub": "2026-10-12T12:33:15+00:00",
+   "source": "Monsterdealz",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "99€",
+    "c:mode beauty vorteilshop",
+    "farben",
+    "fleecejacke",
+    "nordcap",
+    "p:<100",
+    "rabatt",
+    "stehkragen",
+    "unisex",
+    "w:rabatte",
+    "xxxl"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "https-www-mydealz-de-deals-berliner-sparkasse-200-euro-bonus-fur-girokonto-2852866",
@@ -646,7 +1355,7 @@
    "price": 200.0,
    "category": "Versicherung & Finanzen",
    "image": "https://static.mydealz.de/threads/raw/4CXkh/2852866_1/re/150x150/qt/55/2852866_1.jpg",
-   "temp": 140,
+   "temp": 133,
    "discount": null,
    "desc": "Bei der Berliner Sparkasse (womöglich deutschlandweit) gibt es für das Girokonto einen Bonus in Höhe von 200 Euro Key facts: - 6 Monate Laufzeit <...",
    "pub": "2026-10-12T12:33:05+00:00",
@@ -665,7 +1374,9 @@
     "sparkasse",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "e-lagoon-villa-all-inclusive-wasserflugzeug-zb-3994-eur-fur-2-mit-flug-ab-5286-eur-2852927",
@@ -675,7 +1386,7 @@
    "price": 3994.0,
    "category": "Urlaub & Reisen",
    "image": "https://static.mydealz.de/threads/raw/VWU2Y/2852927_1/re/150x150/qt/55/2852927_1.jpg",
-   "temp": 173,
+   "temp": 176,
    "discount": null,
    "desc": "Voyage Privé verkauft das Cocoon Maldives im Lhaviyani-Atoll, 30 Minuten mit dem Wasserflugzeug nördlich von Malé. Die 150 Villen hat der italienische Möbelh...",
    "pub": "2026-10-12T12:30:05+00:00",
@@ -700,7 +1411,9 @@
     "w:heiss",
     "wasserflugzeug"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2102181",
@@ -709,10 +1422,10 @@
    "merchant": "",
    "price": 15.0,
    "category": "Handytarife & Smartphones",
-   "image": "",
+   "image": "https://www.dealdoktor.de/app/uploads/2026/09/Logitel_Allmobil_Flex-scaled.jpg",
    "temp": null,
    "discount": null,
-   "desc": "Ihr sucht maximale Freiheit im sehr guten Vodafone-Netz, wollt euch aber nicht für 24 Monate binden? Dann hat LogiTel gerade einen echten Knaller für euch! Warum woanders viel Geld für starre Verträge bezahlen, wenn ihr hier fette 35GB 5G für dauerhaft 6,99€/Monat bekommt? Und dazu noch einen 15€ Amazon.de-Gutschein! …",
+   "desc": "🔥Der TOP-Deal ist weiterhin zu haben: Ihr erhaltet zu dem einen 15€ Amazon.de-Gutschein dazu ! 🤩 Das ist wirklich ein Top-Deal. Erfahrungsgemäß ist er aber schnell vorbei! 🙂 Euer Benji Ihr sucht maximale Freiheit im sehr guten Vodafone-Netz, wollt euch aber nicht für 24 Monate binden? Dann hat LogiTel gerade einen …",
    "pub": "2026-10-12T12:30:00+00:00",
    "source": "DealDoktor",
    "watch": [
@@ -726,7 +1439,7 @@
     "allmobil",
     "allnet",
     "basic",
-    "c:handytarife smartphones",
+    "c:handytarife smartphones tarif ohne handy vodafone vodafone ohne handy",
     "dauerhafte",
     "flat",
     "flex",
@@ -738,7 +1451,9 @@
     "vodafone",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "3x-einkaufe-a-15-eur-bei-netto-mit-amex-supermarkt-american-express-personalisiert-2852905",
@@ -774,7 +1489,9 @@
     "via",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "eals-victorinox-schweizer-taschenmesser-huntsman-15-funktionen-multitool-rot-prime-2848920",
@@ -806,7 +1523,9 @@
     "victorinox",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "s-herren-2-pack-crewneck-graphic-t-shirt-gr-xs-bis-2xl-fur-18eur-redtab-mitglieder-2844815",
@@ -846,7 +1565,9 @@
     "w:heiss",
     "weiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "schrauberbit-extra-hart-t40-lange-89-mm-14-sechskantschaft-art-nr-2607001660-prime-2852661",
@@ -880,7 +1601,60 @@
     "t40",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1270164",
+   "title": "🔥 Apple iPhone 17 Pro Max für 79€ + 50GB & 5GB 5G Telekom Allnet für 54,98€ mtl. + 130€ Bonus",
+   "link": "https://www.mytopdeals.net/sonstiges/handyvertraege/apple-iphone-17-pro-max-fuer-159e-50gb-5gb-5g-telekom/",
+   "merchant": "",
+   "price": 79.0,
+   "category": "Handyverträge, apple, handytarif, iphone, telekom",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/09/Bildschirmfoto_2026-10-12_um_09.47.11-1024x683.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei MediaMarkt könnt ihr euch gerade das zusammen mit einer 50GB und einer 5GB 5G freenet Telekom Allnet-Flat mit 50 Mbit/s sichern. Für das iPhone zahlt ihr einmalig 79€ und die monatlichen Kosten belaufen sich auf 54,98€ – für BEIDE Tarife! Info Es gibt 1 iPhone und 2 Tarife mit 50GB und 5GB für zusammen 54,98€ mtl. …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T12:00:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 54.98,
+    "upfront": 79.0,
+    "fee": 39.99,
+    "bonus": 180.0,
+    "months": 24,
+    "device": "iphone 17 pro max",
+    "resale": null,
+    "cost": 1258.51,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "130€",
+    "50gb",
+    "5gb",
+    "79€",
+    "98€",
+    "allnet",
+    "apple",
+    "bonus",
+    "c:handyvertraege apple handytarif iphone telekom",
+    "iphone",
+    "max",
+    "mtl",
+    "p:<100",
+    "pro",
+    "telekom",
+    "w:tarif-mit-handy"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "ydealz-de-deals-lokal-rewe-koln-rodenkirchen-funko-pop-pokemon-hello-kitty-figuren-2852691",
@@ -915,7 +1689,9 @@
     "rodenkirchen",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-hsn-soja-proteinisolat-924eurkg-ab-2kg-2852902",
@@ -945,7 +1721,9 @@
     "soja",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-de-deals-baseus-picogo-pro-ah22-100w-usb-c-ladegerat-smart-schutz-3-port-netzteil-2852273",
@@ -981,7 +1759,9 @@
     "usb",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "amera-mit-blink-mini-2k-innenkamera-neueste-generation-weiss-inkl-sync-module-core-2852414",
@@ -1018,7 +1798,9 @@
     "w:heiss",
     "weiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-deals-coreldraw-essentials-2024-dauerlizenz-deutsch-inklphotopaint-essentials-box-2852426",
@@ -1049,7 +1831,9 @@
     "photopaint",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-modellbausatz-582-teile-funktionsfahiger-anker-bewegliche-kabinentur-ca-37cm-lang-2852878",
@@ -1086,7 +1870,9 @@
     "w:heiss",
     "woma"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "g-230mm-16w-tunablewhite-1998-eur-oder-velora-rund-o400mm-2130lm-whiteswitch-weiss-2852841",
@@ -1128,7 +1914,9 @@
     "whiteswitch",
     "zigbee"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "n-deere-traktor-mit-frontlader-art-1982-massstab-150-metallkunststoff-amazon-prime-2852869",
@@ -1162,7 +1950,9 @@
     "traktor",
     "w:heiss"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "fer-120-teilig-im-makpac-fur-5807-eur-durch-bauhaus-tiefpreisgarantie-vgp-7132-eur-2852885",
@@ -1195,7 +1985,146 @@
     "w:heiss",
     "werkzeugkoffer"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1268037",
+   "title": "FILA Sale 👕 z.B. Fleece Sweatshirt für 17€ | Sweatshirt für 15€ | Jogginghose für 16€ | & weitere Deals (+ Versand)",
+   "link": "https://www.mytopdeals.net/allgemein/sportspar-fila/",
+   "merchant": "",
+   "price": 17.0,
+   "category": "Allgemein, Fashion, Fila, Jogginghose, Sweater, Sweatshirt, Trainingshose",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/09/HB_FILA-Retro-Deals-FINAL-SALE_DESK_DEU-600x163.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Sportspar hat jetzt einen eingeläutet! Ihr findet hier Sweater, Hoodies und auch Jogginghosen – alles ideal für den Sport, für die Gemütlichkeit, oder auch für den Alltag. 🙂 FILA im Sale bei Sportspar: Sweater, Hoodies, Jogginghosen Jeweils mehrere Farben zur Auswahl! zzgl. 4,95€ Versandkosten Gratis Versand ab 60€ …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T11:30:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "15€",
+    "16€",
+    "17€",
+    "c:allgemein fashion fila jogginghose sweater sweatshirt trainingshose",
+    "deals",
+    "fila",
+    "fleece",
+    "jogginghose",
+    "p:<20",
+    "sale",
+    "sweatshirt",
+    "versand",
+    "w:rabatte",
+    "weitere"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1276971",
+   "title": "Eff. 2,23€! 🔥 Apple iPhone 18 Pro für 149€ + 50GB & 5GB 5G Telekom Allnet für 54,98€ mtl. + 50€ Bonus",
+   "link": "https://www.mytopdeals.net/sonstiges/handyvertraege/apple-iphone-18-pro-fuer-149e-50gb-5gb-5g-telekom/",
+   "merchant": "",
+   "price": 2.23,
+   "category": "Handyverträge, apple, handytarif, iphone, telekom",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/10/Bildschirmfoto_2026-10-12_um_09.43.35-1024x721.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei MediaMarkt könnt ihr euch gerade das zusammen mit einer 50GB und einer 5GB 5G freenet Telekom Allnet-Flat mit 50 Mbit/s sichern. Für das iPhone zahlt ihr einmalig 149€ und die monatlichen Kosten belaufen sich auf 54,98€ – für BEIDE Tarife! Info Es gibt 1 iPhone und 2 Tarife mit 50GB und 5GB für zusammen 54,98€ …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T11:00:08+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 54.98,
+    "upfront": 149.0,
+    "fee": 39.99,
+    "bonus": 50.0,
+    "months": 24,
+    "device": "iphone 18 pro",
+    "resale": null,
+    "cost": 1458.51,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "149€",
+    "23€",
+    "50gb",
+    "50€",
+    "5gb",
+    "98€",
+    "allnet",
+    "apple",
+    "bonus",
+    "c:handyvertraege apple handytarif iphone telekom",
+    "eff",
+    "iphone",
+    "mtl",
+    "p:<20",
+    "pro",
+    "telekom",
+    "w:tarif-mit-handy"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
+  },
+  {
+   "id": "https-www-mytopdeals-net-p-1276799",
+   "title": "[Eff. GRATIS] Samsung Galaxy A18 LTE nur 19€ + 15GB o2 5G für NUR 6,99€ mtl.",
+   "link": "https://www.mytopdeals.net/sonstiges/handyvertraege/eff-gratis-samsung-galaxy-a18-lte-nur-19e-15gb-o2-5g-fuer-nur-699e-mtl/",
+   "merchant": "",
+   "price": 19.0,
+   "category": "Handyverträge, handytarif, o2, samsung",
+   "image": "https://www.mytopdeals.net/app/uploads/2026/10/Bildschirmfoto_2026-10-09_um_16.26.32-1024x721.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Das im Freenet o2 Tarif mit 15GB 5G für 6,99€ mtl. Das Smartphone selbst ist 247€ Wert bei nur 232,70€ Gesamtkosten auf 2 Jahre – TOP! Das Smartphone kann im Gegensatz zum Tarif zwar kein 5G aber wer darauf verzichten kann: super Deal! Allnet-Flat in alle Netze SMS-Flat in alle Netze 15GB 5G – Datenvolumen Mit bis zu …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T10:26:00+00:00",
+   "source": "MyTopDeals",
+   "watch": [
+    "tarif-mit-handy"
+   ],
+   "tarif": {
+    "monthly": 6.99,
+    "upfront": 19.0,
+    "fee": 39.99,
+    "bonus": 0.0,
+    "months": 24,
+    "device": null,
+    "resale": null,
+    "cost": 226.75,
+    "profit": null
+   },
+   "compare": null,
+   "features": [
+    "15gb",
+    "19€",
+    "99€",
+    "a18",
+    "c:handyvertraege handytarif o2 samsung",
+    "eff",
+    "galaxy",
+    "lte",
+    "mtl",
+    "p:<20",
+    "samsung",
+    "w:tarif-mit-handy"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "z-de-gutscheine-13-rabatt-auf-spielzeug-filme-musik-vinyl-cds-schreibwaren-technik-2852832",
@@ -1227,7 +2156,9 @@
    ],
    "score": null,
    "desc": "Bei bücher.de bekommt ihr momentan 13% Rabatt auf die o.g. Medien. Vinyl ist grundsätzlich versandkostenfrei. Die Bestellungen können auch an eine Thalia-Filiale kostenfrei zur Abholung geliefert werden.",
-   "discount": 13
+   "discount": 13,
+   "code": null,
+   "until": null
   },
   {
    "id": "lz-de-deals-shoop-green-planet-energy-bis-zu-120eur-cashback-45eur-shoop-gutschein-2852826",
@@ -1257,7 +2188,9 @@
     "shoop",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-prime-izeeker-25k-dashcam-2399eur-mit-coupon-2852821",
@@ -1283,7 +2216,9 @@
     "p:<100",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "lte-styles-aktuell-exklusiv-in-der-app-herbstmode-zb-wollsakko-oberstoff-100-wolle-2852815",
@@ -1321,7 +2256,47 @@
     "wolle",
     "wollsakko"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-monsterdealz-de-p-1608028",
+   "title": "Battlefield 6 Phantom Edition Xbox Series X Shooter (Disc) für 23,64€",
+   "link": "https://www.monsterdealz.de/elektronik-computer/konsolen/battlefield-6-phantom-edition-xbox-series-x-disc/1608028",
+   "merchant": "",
+   "price": 23.64,
+   "category": "Konsolen & Spiele, Amazon",
+   "image": "https://www.monsterdealz.de/app/uploads/2026/10/battlefield-6-phantom-edition-xbox-series-x-disc-600x600.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Bei Amazon bekommt ihr die Battlefield 6 Phantom Edition für die Xbox Series X als Disc-Version für 23,64€ inklusive Versand (Vergleichspreis: 45,90€) Verkauft und versandt wird der Shooter direkt von Amazon, Prime braucht ihr für den Preis nicht. Die Phantom Edition legt zum kompletten Hauptspiel ein ganzes Paket …",
+   "code": null,
+   "until": null,
+   "pub": "2026-10-12T08:29:30+00:00",
+   "source": "Monsterdealz",
+   "watch": [
+    "xbox-series-x"
+   ],
+   "compare": {
+    "ref": 45.9,
+    "pct": 48
+   },
+   "features": [
+    "64€",
+    "battlefield",
+    "c:konsolen spiele amazon",
+    "disc",
+    "edition",
+    "p:<100",
+    "phantom",
+    "series",
+    "shooter",
+    "w:xbox-series-x",
+    "xbox"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "ur-shoopgutschein-fur-instabank-visa-kreditkarte-5-transaktionen-gesamtwert-300eur-2852804",
@@ -1353,7 +2328,9 @@
     "visa",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "rass-design-von-george-carwardine-aus-1935-fur-15678-eur-und-mehr-bis-zu-54-rabatt-2852775",
@@ -1385,7 +2362,9 @@
     "veepee",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-1754651",
@@ -1419,7 +2398,43 @@
     "superguenstige",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
+  },
+  {
+   "id": "https-www-monsterdealz-de-p-1601021",
+   "title": "⏰ finanzen.net zero Depot mit bis zu 240€ Cashback für Neukunden",
+   "link": "https://www.monsterdealz.de/finanzen-sparen/girokonto-tagesgeld/finanzen-net-zero-depot-240-euro-cashback/1601021",
+   "merchant": "",
+   "price": 240.0,
+   "category": "Girokonto & Kreditkarte & Tagesgeld, finanzen.net zero",
+   "image": "https://www.monsterdealz.de/app/uploads/2026/10/finanzen-net-zero-depot-cashback-600x400.jpg",
+   "temp": null,
+   "discount": null,
+   "desc": "Update Selten dass es so ein Angebot gibt. Daher nochmal hoch! Bei finanzen.net zero bekommt ihr als Neukunde das kostenlose finanzen.net zero Depot mit bis zu 240€ Cashback – Das Geld gibt es nicht auf einen Schlag: Wer 12 Monate lang jeden Monat mindestens 5 Trades macht, holt die vollen 240€ raus. Dazu gibt es drei …",
+   "code": "CASHBACK2026",
+   "until": "2026-10-15T23:59:00+02:00",
+   "pub": "2026-10-12T07:00:00+00:00",
+   "source": "Monsterdealz",
+   "watch": [
+    "rabatte"
+   ],
+   "compare": null,
+   "features": [
+    "240€",
+    "c:girokonto kreditkarte tagesgeld finanzen net zero",
+    "cashback",
+    "depot",
+    "finanzen",
+    "net",
+    "neukunden",
+    "p:<300",
+    "w:rabatte",
+    "zero"
+   ],
+   "score": null,
+   "found": "2026-10-12T13:47:57+00:00"
   },
   {
    "id": "buhr-bei-mobilfunk-internet-auch-flex-vertrage-monatlich-kundbar-aktuell-20-bei-cb-2852690",
@@ -1461,7 +2476,9 @@
     "vertrag",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ls-payback-pramien-20-fach-punkte-auf-eventim-rituals-baur-ca-entspricht-10-rabatt-2852686",
@@ -1492,7 +2509,9 @@
     "rituals",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ealz-de-gutscheine-medimops-gutschein-lesen15-15-rabatt-ab-25eur-mbw-gebrauchtware-2852685",
@@ -1523,7 +2542,9 @@
    ],
    "score": null,
    "desc": "Mit dem Gutscheincode LESEN15 kann man sowohl über die Medimops App als auch über den Browser ab einem MBW in Höhe von 25€ 15% Rabatt erhalten. Die Laufzeit ist derzeit nicht bekannt, da die Aktionsseite noch nicht online ist. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Artikel im Zustand \"Wie Neu\" …",
-   "discount": 15
+   "discount": 15,
+   "code": "LESEN15",
+   "until": null
   },
   {
    "id": "at-durch-cashback-dsl-100-eff-2370eurmonat-dsl-250-2853eurmonat-ggf-personalisiert-2852680",
@@ -1556,7 +2577,9 @@
     "telekom",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "0eur-cashback-auf-valide-vertragsabschlusse-fur-strom-und-gas-ab-3-monate-laufzeit-2852674",
@@ -1588,7 +2611,9 @@
     "vertragsabschluesse",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "tt-auf-zalando-geschenkgutscheine-bei-galaxus-i-100eur-150eur-oder-200eur-guthaben-2852672",
@@ -1615,7 +2640,9 @@
     "w:rabatte",
     "zalando"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-c24-shoop-50eur-cashback-auf-valide-kontoeroffnungen-2852671",
@@ -1643,7 +2670,9 @@
     "valide",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ortboni-auf-strom-und-gas-500eur-sofortbonus-bei-kombi-abschluss-private-neukunden-2836657",
@@ -1679,7 +2708,9 @@
     "strom",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "e-iphone-17-pro-max-im-freenet-allnetsms-flat-50gb-5g-2-sim-fur-5498eurmonat-79eur-2852664",
@@ -1727,7 +2758,9 @@
     "telekom",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-tegut-50-rabatt-auf-alle-artikel-von-nur-die-z-b-socken-2852581",
@@ -1751,7 +2784,9 @@
     "tegut",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "de-deals-lego-editions-fussball-lego-set-43019-bei-bezahlung-mit-wero-10eur-rabatt-2852643",
@@ -1783,7 +2818,9 @@
     "w:rabatte",
     "wero"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-inkl-fruhstuck-kostenloser-parkplatz-10eur-payback-weitere-hilton-hotels-ab-69eur-2852597",
@@ -1818,7 +2855,9 @@
     "w:rabatte",
     "weitere"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ng-galaxy-buds4-pro-true-wireless-in-ear-active-noise-cancelling-kopfhorer-schwarz-2834880",
@@ -1854,7 +2893,9 @@
     "w:rabatte",
     "wireless"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-655691",
@@ -1882,7 +2923,9 @@
     "w:rabatte",
     "wechseln"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2152855",
@@ -1911,7 +2954,9 @@
     "week",
     "yves"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-www-mydealz-de-deals-mcdonalds-klassiker-zb-bigmac-fur-399-euro-coupon-in-der-app-2852498",
@@ -1940,7 +2985,9 @@
     "personalisiert",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "s-under-armour-sale-rival-fleece-jogginghose-schwarzdunkelblau-fleecejacke-schwarz-2852482",
@@ -1971,7 +3018,9 @@
     "under",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-362983",
@@ -2000,7 +3049,9 @@
     "sport",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "niche-beauty-25-cashback-auf-alles-kombinierbar-mit-rabattcodes-online-beauty-shop-2852360",
@@ -2030,7 +3081,9 @@
     "topcashback",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ed-tv-400eur-samsung-cashback-25-shoop-222272eur-effektiv-nach-soundbar-an-verkauf-2851028",
@@ -2063,7 +3116,9 @@
     "verkauf",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-17-auf-alles-bei-amilian-couchkissen-2851928",
@@ -2090,7 +3145,9 @@
    ],
    "score": null,
    "desc": "Auf der Suche nach neuen Couchkissen bin ich auf Amilian gestoßen. Gefunden hatte ich die Produkte zu denselben Preisen auch auf Amazon und Otto. Allerdings muss man da extra Versandkosten bezahlen. Direkt auf amilian.de Versandkostenfrei ab 35€. Und nun gibt es auch noch einen Gutschein mit 17% auf alles. Er lautet …",
-   "discount": 17
+   "discount": 17,
+   "code": null,
+   "until": "2026-10-15T23:59:00+02:00"
   },
   {
    "id": "ttps-www-mydealz-de-deals-1eur-sensodyne-clinical-white-coupon-gultig-bis-31122026-2850234",
@@ -2116,7 +3173,9 @@
     "w:rabatte",
     "white"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": "2026-12-31T23:59:00+01:00"
   },
   {
    "id": "https-www-mydealz-de-deals-crocs-gutscheinfehler-nur-mit-cb-50-auf-alles-2852345",
@@ -2142,7 +3201,9 @@
     "sale",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "a-monchengladbach-fc-bayern-munchen-union-berlin-adidas-retro-deutschland-19901994-2852304",
@@ -2177,7 +3238,9 @@
     "union",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ack-auf-ikea-geschenkkarten-zum-ende-der-kooperation-angebot-gultig-bis-16-oktober-2852302",
@@ -2208,7 +3271,9 @@
     "sofort",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "dealz-de-deals-flaconi-gutschein-code-13-zb-guerlain-vetiver-eau-de-toilette-100ml-2852293",
@@ -2238,7 +3303,9 @@
     "vetiver",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "eals-cb-deal-15-extra-rabatt-zb-nike-air-force-1-07-triple-white-all-black-385-525-2852291",
@@ -2270,7 +3337,9 @@
     "w:rabatte",
     "white"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "eals-bis-zu-50-rabatt-15-extra-auf-ausgewahlte-artikel-mit-code-start15-mbw-35-eur-2852289",
@@ -2299,7 +3368,9 @@
     "start15",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": "START15",
+   "until": null
   },
   {
    "id": "-shoop-mydaysde-7-cashback-15eur-shoop-gutschein-ab-149eur-mbw-10-mydays-gutschein-2852287",
@@ -2328,7 +3399,9 @@
     "shoop",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "17-pro-im-magentamobil-l-young-allnetsms-flat-unlimited-5g-fur-4495eurmonat-149eur-2852194",
@@ -2376,7 +3449,9 @@
     "w:tarif-mit-handy",
     "young"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "z-apple-iphone-18-pro-im-freenet-allnetsms-flat-140gb-5g-fur-4999eurmonat-22995eur-2852265",
@@ -2422,7 +3497,9 @@
     "telekom",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-25-rabatt-bei-glow25-ab-39eur-mbw-zb-kollagen-plus-450g-fur-2999eur-statt-3495eur-2852231",
@@ -2457,7 +3534,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-bis-zu-15-cashback-15eur-shoop-gutschein-2849006",
@@ -2486,7 +3565,9 @@
     "shoop",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "deals-13-zusatzlicher-rabatt-auf-games-im-sale-eneba-pc-spiele-steam-gametoberfest-2852097",
@@ -2522,7 +3603,9 @@
     "xbox",
     "zusaetzlicher"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-ikea-online-und-clickcollect-20-rabatt-auf-200-artikel-letzte-chance-bis-30112026-2852210",
@@ -2553,7 +3636,9 @@
    ],
    "score": null,
    "desc": "ikea.com/de/de/cat/last-chance/ 20% Rabatt auf viele \"Letzte Chance\" Artikel \"Erhalte 20% Rabatt auf ausgewählte Artikel vom 10.10. bis zum 30.11.2026. Das Angebot gilt nur für Bestellungen im IKEA Online-Shop, in der IKEA App und dem Service Click&Collect. Diese Aktion ist im IKEA Einrichtungshaus sowie bei Shop&Go …",
-   "discount": 20
+   "discount": 20,
+   "code": null,
+   "until": "2026-11-30T23:59:00+01:00"
   },
   {
    "id": "endubel-10-rabatt-auf-tonie-figuren-tonieplay-games-tonie-zubehor-mit-code-tonie10-2852176",
@@ -2583,7 +3668,9 @@
     "w:rabatte",
     "zubehoer"
    ],
-   "score": null
+   "score": null,
+   "code": "TONIE10",
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-25-rabatt-am-10-1110-auf-dss-gesamte-sortiment-2852173",
@@ -2607,7 +3694,9 @@
     "sortiment",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-rx-9070-xt-grafikkarte-16gb-gddr6-hdmi-21b-3x-dp-21a-6-cashback-77015eur-effektiv-2852171",
@@ -2639,7 +3728,9 @@
     "reaper",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "niebox-15-rabatt-auf-book-tonies-ab-749-eur-ab-5-stuck-versandkostenfrei-nur-heute-2852165",
@@ -2669,7 +3760,9 @@
     "versandkostenfrei",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-mydealz-de-deals-philips-hue-50-eur-cashback-ab-300-eur-ab-1910-auch-onlineamazon-2846786",
@@ -2696,7 +3789,9 @@
     "philips",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ike-jordan-nike-air-max-95-big-bubble-lawson-nike-air-max-90-se-air-jordan-3-retro-2852085",
@@ -2729,7 +3824,9 @@
     "uvm",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-1851283",
@@ -2756,7 +3853,9 @@
     "w:rabatte",
     "wolfskin"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "eine-payback-44fach-punkte-auf-deo-und-parfum-bei-netto-md-gultig-bis-zum-15112026-2851881",
@@ -2786,7 +3885,9 @@
    ],
    "score": null,
    "desc": "Nabeeend.✌️ Ich hätte hier einen 44fach Netto-Coupon auf Deo und Parfüm. Haltbar bis 15.11.2026 Viel Erfolg und Vergnügen. 44-fach Punkte auf Deo+Parfüm Gültig bis: 15.11.2026 Von den Joker Losen EAN: 9971321674656 Einlösbar bei: Netto MD",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": "2026-11-15T23:59:00+01:00"
   },
   {
    "id": "gratis-parken-fur-e-autos-in-318-orten-100-rabatt-auf-parkgebuhren-0eur-parkgebuhr-2852044",
@@ -2813,7 +3914,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2076968",
@@ -2822,7 +3925,7 @@
    "merchant": "",
    "price": 60.0,
    "category": "Streaming",
-   "image": "",
+   "image": "https://www.dealdoktor.de/app/uploads/2026/07/Telekom_MagentaTV_MegaStream-750x297.png",
    "pub": "2026-10-10T08:00:00+00:00",
    "source": "DealDoktor",
    "watch": [
@@ -2832,7 +3935,7 @@
    "features": [
     "60€",
     "apple",
-    "c:streaming",
+    "c:streaming vertraege abos",
     "cashback",
     "disney",
     "magentatv",
@@ -2843,7 +3946,11 @@
     "rtl",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "desc": "Das ist wirklich ! Jetzt für effektiv 20€/Monat . Wenn ihr euch aktuell mehrere Streaming-Abos gönnt und gleichzeitig noch klassisches TV schauen wollt, kennt ihr das Problem: Die Kosten summieren sich brutal . Genau hier wird dieses Paket richtig spannend – denn ihr bekommt quasi alles in einem und startet sogar …",
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-mit-code-ten10-ab-40eur-mbw-entspricht-25-rabatt-nur-heute-bis-22-uhr-am-10102026-2852042",
@@ -2875,7 +3982,9 @@
     "uhr",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": "TEN10",
+   "until": null
   },
   {
    "id": "chriften-youngtimer-motor-klassik-motorsport-aktuell-pramie-30eur-amazon-gutschein-2852041",
@@ -2906,7 +4015,9 @@
     "w:rabatte",
     "youngtimer"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "batt-beispiel-shirt-grun-s-fur-750eur-zzgl-versand-shoop-6-cashback-zalando-lounge-2851002",
@@ -2943,7 +4054,9 @@
     "zalando",
     "zzgl"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "4-macbook-pro-m5-pro-15c16c-24gb-ram-2tb-ssd-schwarz-6-cashback-256292eur-effektiv-2851962",
@@ -2978,7 +4091,9 @@
     "ssd",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "z-de-deals-samsung-galaxy-watch-8-44mm-bt-smartwatch-15-cashback-17674eur-effektiv-2851961",
@@ -3008,7 +4123,9 @@
     "w:rabatte",
     "watch"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ms-flat-unlimited-5g-bis-300mbits-fur-eff-17eurmonat-durch-300eur-cashback-freenet-2851946",
@@ -3046,7 +4163,9 @@
     "vodafone",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-deals-shoop-und-check24-30eur-cashback-auf-valide-strom-und-gasvertragsabschlusse-2851466",
@@ -3074,7 +4193,9 @@
     "strom",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "17t-pro-512gb-im-allnetsms-flat-unlimited-5g-fur-2999eurmonat-79eur-80eur-cashback-2851944",
@@ -3123,7 +4244,9 @@
     "w:tarif-mit-handy",
     "xiaomi"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "deal-28-rabatt-auf-uber-3000-artikel-mit-code-sp-28-sneaker-streetwear-und-fashion-2851801",
@@ -3156,7 +4279,9 @@
    ],
    "score": null,
    "desc": "Bei AFEW läuft bis zum 12.10.2026 ein ziemlich spannende Aktion: Mit dem Code SP-28 bekommt ihr 28 % extra Rabatt auf über 3.000 Artikel . Wer ohnehin mal wieder bei AFEW stöbern wollte, findet hier also nicht nur ein paar Einzelstücke, sondern eine richtig breite Auswahl aus Sneakern, Streetwear und Fashion . Mit …",
-   "discount": 28
+   "discount": 28,
+   "code": "SP-28",
+   "until": "2026-10-12T23:59:00+02:00"
   },
   {
    "id": "pple-iphone-18-pro-im-freenet-allnetsms-flat-50gb-5g-2-sim-fur-5498eurmonat-149eur-2851941",
@@ -3203,7 +4328,9 @@
     "telekom",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-bezahle-6-mit-20-rabatt-code-sunlu-1kg-petg-pla-pla-abs-3d-drucker-filament-175mm-2851938",
@@ -3237,7 +4364,9 @@
     "sunlu",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": "SUNLU",
+   "until": null
   },
   {
    "id": "parfum-50mlrosendo-mateu-1970-100ml-8202tester-68penhaligons-artemisia-100ml-13175-2851935",
@@ -3276,7 +4405,9 @@
     "tester",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "e-deals-gratis-parken-fur-e-autos-in-delmenhorst-100-rabatt-auf-parkgebuhren-lokal-2851920",
@@ -3302,7 +4433,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ttps-www-mydealz-de-deals-magenta-moments-15-rabatt-auf-das-ganze-3bears-sortiment-2851802",
@@ -3329,7 +4462,9 @@
     "sortiment",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "erat-dual-port-gan-schnellladegerat-mit-15m-60w-kabel-mit-49-rabatt-an-kasse-prime-2851914",
@@ -3366,7 +4501,9 @@
     "usb",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ne-2-nachte-fur-50eur-zu-zweit-20eur-netto-gutschein-filiale-termine-bis-juni-2027-2851550",
@@ -3401,7 +4538,9 @@
     "w:rabatte",
     "zweit"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "te-spiele-im-sale-zb-winter-burrow-art-of-rally-this-is-the-police-star-wars-kotor-2851662",
@@ -3439,7 +4578,9 @@
     "wars",
     "winter"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ier-mr4-aktive-studiomonitorelautsprecher-schwarz-paar-6-cashback-8313eur-effektiv-2851734",
@@ -3471,7 +4612,9 @@
     "studiomonitore",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "orca-menorca-ibiza-formentera-zb-7-nachte-4-all-inclusive-ab-759eur-pp-25-shoop-cb-2851892",
@@ -3507,7 +4650,9 @@
     "urlaube",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-869239",
@@ -3534,7 +4679,9 @@
     "w:rabatte",
     "winterjacken"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-deals-advanzia-mastercard-cashback-2851870",
@@ -3558,7 +4705,9 @@
     "mastercard",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2150887",
@@ -3592,7 +4741,9 @@
     "w:rabatte",
     "wie"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-outdoor-highlights-patagonia-the-north-face-vaude-mammut-columbia-lowa-viele-mehr-2847542",
@@ -3627,7 +4778,9 @@
    ],
    "score": null,
    "desc": "Beschreibung Bei Hardloop gibt es aktuell 20 % Extra-Rabatt auf nicht reduzierte Produkte – mit dem entsprechenden Gutscheincode. Wer auf Outdoor- und Sportausrüstung steht, findet hier eine große Auswahl an bekannten Marken, darunter: Patagonia The North Face Columbia LOWA VAUDE Mammut und viele weitere …",
-   "discount": 20
+   "discount": 20,
+   "code": null,
+   "until": null
   },
   {
    "id": "fresh-extreme-72h-anti-transpirant-deospray-mit-ultra-cooling-effekt-prime-sparabo-2851852",
@@ -3667,7 +4820,9 @@
     "transpirant",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "r-6999eur-statt-170eur-oder-aio9560-23-in-1-fur-8999eur-statt-190eur-100eur-rabatt-2851850",
@@ -3703,7 +4858,9 @@
     "series",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "toys-bis-zu-50-rabatt-auf-lego-play-doh-star-wars-super-mario-70-cm-weitere-marken-2851757",
@@ -3737,7 +4894,9 @@
     "wars",
     "weitere"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "-iphone-18-pro-max-256gb-allnetsms-flat-50gb-5498eurmonat-299eur-zuzahlung-freenet-2851790",
@@ -3787,7 +4946,9 @@
     "w:tarif-mit-handy",
     "zuzahlung"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-dealdoktor-de-p-2135121",
@@ -3833,7 +4994,9 @@
     "vodafone",
     "w:tarif-mit-handy"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "u-12-cashback-bis-zu-50-rabatt-beim-ebook-thriller-deal-nervenkitzel-zum-sparpreis-2851527",
@@ -3864,7 +5027,9 @@
     "thriller",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "e-gutscheine-bis-zu-150eur-rabatt-auf-refurbished-fahrrader-und-e-bikes-ab-1200eur-2851375",
@@ -3894,7 +5059,9 @@
    ],
    "score": null,
    "desc": "Herbst-Sale bei JobRad Loop (ehem. Bravobike/Revelo). Der Anbieter verkauft aufbereitete Leasingrückläufer des Schwesterunternehmens, darunter Fahrräder, Lastenräder und Pedelecs bis 25 km/h Unterstützung. Für die Lieferung per Spedition fallen 69€ an. Die Räder können 14 Tage lang probegefahren und kostenfrei …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "s-reduziert-20-auf-ausgewahlte-trikots-bayern-juventus-real-barcelona-koln-psg-uvm-2851187",
@@ -3928,7 +5095,9 @@
    ],
    "score": null,
    "desc": "Bei 11teamsports gibt es aktuell 20 Prozent Rabatt auf ausgewählte Jerseys mit dem Code Jersey20. Hier sind einige Beispiele für Trikots, auf die der Rabatt angewendet werden kann. FC Bayern München Trikot Away 26/27 Kids Weiß Juventus Turin Trikot Away 26/27 Bayern München Trikot Home 26/27 Rot FC Bayern München …",
-   "discount": 20
+   "discount": 20,
+   "code": null,
+   "until": null
   },
   {
    "id": "rebuy-20-ab-55eur-mbw-bzw-15-ab-35eur-mbw-und-gratis-versand-auf-gebrauchte-bucher-2851160",
@@ -3961,7 +5130,9 @@
    ],
    "score": null,
    "desc": "Rebuy bietet mal wieder Rabatt und Gratis-Versand auf gebrauchte Bücher. Ab 55€ Einkaufswert gibt es 20% Rabatt, ab 35€ immerhin noch 15% . Die Aktion geht bis zum 12.10.2026 . Der Gutschein kam per Mail, auf der Webseite wird er nirgendwo angezeigt (funktioniert aber). Gutscheinkonditionen: *Gilt bis zum 12.10.2026, …",
-   "discount": 20
+   "discount": 20,
+   "code": "AUTBUCH26NWL",
+   "until": "2026-10-12T23:59:00+02:00"
   },
   {
    "id": "https-www-mydealz-de-gutscheine-rebuy-15-gutschein-lsjdtoxufexs-ab-35eur-mbw-2850944",
@@ -3990,7 +5161,9 @@
    ],
    "score": null,
    "desc": "Mit dem Gutscheincode LSJDTOXUFEXS kann man bei Rebuy ab einem MBW in Höhe von 35€ 15% Rabatt erhalten. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Es gibt auch den Gutschein MRSDTOXRUNTS für eine versandkostenfreie Lieferung ab 35€. Die Gutscheine lassen sich jedoch nicht kombinieren. Die …",
-   "discount": 15
+   "discount": 15,
+   "code": "LSJDTOXUFEXS",
+   "until": null
   },
   {
    "id": "tps-www-mydealz-de-gutscheine-medimops-gutschein-okayciao15-15-rabatt-ab-30eur-mbw-2850461",
@@ -4021,7 +5194,9 @@
    ],
    "score": null,
    "desc": "Mit dem Gutscheincode OKAYCIAO15 kann man sowohl über die Medimops App als auch über den Browser ab einem MBW in Höhe von 30€ 15% Rabatt erhalten. Die Laufzeit ist derzeit nicht bekannt, da die Aktionsseite noch nicht online ist. Artikel im Zustand \"Neu\" sind von dieser Aktion ausgeschlossen. Artikel im Zustand \"Wie …",
-   "discount": 15
+   "discount": 15,
+   "code": "OKAYCIAO15",
+   "until": null
   },
   {
    "id": "besten-saug-und-wischroboter-deals-im-prime-day-dreame-roborock-ecovacs-xiaomi-uvm-2850227",
@@ -4053,7 +5228,9 @@
    ],
    "score": null,
    "desc": "Der erste Tag der Prime Days ist fast zu Ende und in den vergangenen 22 Stunden sind ein riesiger Haufen Deals reingekommen. Und auch zu Saug- und Wischrobotern kam heutehat sich inzwischen einiges an Prime Day Deals angesammelt. Damit ihr auch hier einen Ort habt, an dem sich zentral alles sammelt, hab ich die …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "chtung-smarte-steckdosen-schalter-smart-locks-heizung-sensoren-uberwachungskameras-2850104",
@@ -4089,7 +5266,9 @@
    ],
    "score": null,
    "desc": "Der erste Tag der Prime Days nähert sich dem Endspurt, da komm ich dann doch nochmal mit so einem Deal um die Ecke. Auch zum Thema Smart Home hat sich inzwischen einiges an Prime Day Deals angesammelt. Damit ihr auch hier einen Ort habt, an dem sich zentral alles sammelt, hab ich die interessantesten Deals hier …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ie-besten-pc-hardware-prime-day-deals-cpus-netzteile-gehause-lufter-mainboards-uvm-2850035",
@@ -4121,7 +5300,9 @@
    ],
    "score": null,
    "desc": "Zugegeben : Amazon ist nicht unbedingt die erste Anlaufstelle, an die man beim PC-Selbstbau denkt. Doch : Im laufenden Prime Day sind aktuell allein für CPUs schon 7 Deals aktiv. Da ich doch einiges an Prime Day Deals zu PC-Hardware gefunden hab, dachte ich mir: Komm, steuerste selbst noch was bei und sammelst das …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "vredestein-reifen-ab-16-zoll-kaufen-bis-zu-60-eur-pramie-amazon-oder-aral-erhalten-2848842",
@@ -4153,7 +5334,9 @@
    ],
    "score": null,
    "desc": "Zwei oder vier qualifizierte Vredestein-Reifen ab 16 Zoll im Aktionszeitraum 01.10.-30.11.2026 kaufen und Prämie (Amazon oder ARAL) bis zu 60 € Prämie erhalten (abhängig von Reifengröße und -menge). So geht's: Zwei oder vier Reifen kaufen Rechnung online registrieren Prämie sichern Das Aktionsangebot gilt für Kunden, …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": "2026-11-30T23:59:00+01:00"
   },
   {
    "id": "z-de-gutscheine-kik-15-prozent-auf-dem-offline-und-online-einkauf-via-kaufland-app-2848805",
@@ -4184,7 +5367,9 @@
    ],
    "score": null,
    "desc": "Hallo liebe MyDealzer, über die Kaufland App bekommt ihr gerade einen Gutschein für offline und online Einkäufe bei KiK. Vllt ist ja für den einen oder anderen was dabei... Aktionsbedingungen Mechanik 1. Suche dir in deiner KiK-Filiale deine Lieblingsartikel aus 2. Zeige den KiK- Rabatt-Code aus der Kaufland- App an …",
-   "discount": 15
+   "discount": 15,
+   "code": null,
+   "until": null
   },
   {
    "id": "gutscheine-decathlon-20-ab-50eur-auf-das-komplette-kinder-sortiment-nur-in-der-app-2848479",
@@ -4213,34 +5398,9 @@
    ],
    "score": null,
    "desc": "Momentan bekommt man 20% auf das Kindersortiment bei Decathlon ab 50€, es sind über 300 Artikel verfügbar und nur in der App anwendbar.",
-   "discount": 20
-  },
-  {
-   "id": "https-www-mydealz-de-gutscheine-bike-components-deal-days-nur-am-04-und-0510-2848347",
-   "title": "Bike components - Deal Days - nur am 04. und 05.10.",
-   "link": "https://www.mydealz.de/gutscheine/bike-components-deal-days-nur-am-04-und-0510-2848347",
-   "merchant": "bike-components",
-   "price": null,
-   "category": "Sport & Outdoor",
-   "image": "https://static.mydealz.de/merchants/raw/avatar/3208_1/re/352x352/qt/60/3208_1.jpg",
-   "pub": "2026-10-04T17:11:07+00:00",
-   "source": "mydealz Gutscheine",
-   "watch": [
-    "rabatte"
-   ],
-   "compare": null,
-   "features": [
-    "bike",
-    "c:sport outdoor",
-    "components",
-    "days",
-    "deal",
-    "m:bike components",
-    "w:rabatte"
-   ],
-   "score": null,
-   "desc": "Mit dem Aktionscode DEALS10 erhältst Du 10 % Rabatt auf Deinen Einkauf. Ausgenommen sind Antrieb, Bremsen, Komplettgruppen & Upgradekits, Powermeter, Reifen, Schaltung, Schläuche, Beleuchtung, Training, Tachos & Navigation sowie der Kauf von Gutscheinen. *Mit dem Aktionscode DEALS10 erhältst Du 10 % Rabatt auf Deinen …",
-   "discount": 10
+   "discount": 20,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-rossmann-tagl-20-auf-dekorative-kosmetik-2848236",
@@ -4267,7 +5427,9 @@
    ],
    "score": null,
    "desc": "Nur mit der Rossmann App einlösbar. Täglich vom 05.-09.10.26 20% Rabatt auf dekorative Kosmetik. Ausgenommen sind Adventskalender.",
-   "discount": 20
+   "discount": 20,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-payback-dm-10fach-p-auf-fast-alles-ab-2-eur-2848192",
@@ -4292,7 +5454,9 @@
     "payback",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-amazon-4-cashback-bis-3110-2848167",
@@ -4318,7 +5482,9 @@
    ],
    "score": null,
    "desc": "4% Cashback Für alle Kategorien Von Technik bis hin zu Wohnaccessoires und Mode – zwischen dem 1. und 31. October erhältst du 4 % Cashback auf deine amazon.de ‑Einkäufe durch DealWise. Auf fast alles ( außer Bücher und Geschenkgutscheine ). Ein perfekter Grund, deinen Warenkorb zu füllen! — Sonstiges : Besondere …",
-   "discount": 4
+   "discount": 4,
+   "code": null,
+   "until": null
   },
   {
    "id": "rabatt-auch-auf-reduzierte-sets-zb-schule-der-magischen-tiere-rabat-klemmbausteine-2847996",
@@ -4349,7 +5515,9 @@
     "tiere",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "www-mydealz-de-gutscheine-aral-payback-8fach-p-auf-kraftstoffe-erdgas-bis-25102026-2847920",
@@ -4375,7 +5543,9 @@
     "payback",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": "2026-10-25T23:59:00+01:00"
   },
   {
    "id": "-de-gutscheine-payback-galeria-15-bzw-10fach-p-ab-2-eur-oder-200-extra-p-ab-40-eur-2847869",
@@ -4401,7 +5571,9 @@
     "payback",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-bdhw-jubilaums-sale-vinyl-cds-merch-2847789",
@@ -4429,7 +5601,9 @@
    ],
    "score": null,
    "desc": "BDHW 20 Jahre Jubiläum, darum gibt's 50% auf alle Artikel solange der Vorrat reicht! Interessant für Beatdown/Hardcore/Punk Liebhaber!",
-   "discount": 50
+   "discount": 50,
+   "code": null,
+   "until": null
   },
   {
    "id": "le-bestellungen-am-03-und-0410-ausgenommen-druckerzeugnisse-und-geschenkgutscheine-2847700",
@@ -4457,7 +5631,9 @@
     "rabatt",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ydealz-de-gutscheine-space-marine-2-the-anniversary-ii-update-200-accolades-gratis-2847596",
@@ -4484,7 +5660,9 @@
     "w:rabatte",
     "xbox"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-afbshopde-25-rabatt-auf-produkte-mit-zustand-fair-2847214",
@@ -4510,7 +5688,9 @@
     "w:rabatte",
     "zustand"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "ttps-www-mydealz-de-gutscheine-30-rabatt-auf-alle-fotobucher-bei-rossmann-fotowelt-2847011",
@@ -4535,7 +5715,9 @@
     "rossmann",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-gutscheine-10-euro-rabatt-bei-wenko-ohne-mbw-2846961",
@@ -4561,7 +5743,9 @@
     "w:rabatte",
     "wenko"
    ],
-   "score": null
+   "score": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "tra-mit-code-mid26-auf-michael-kors-hugo-diesel-lacoste-mammut-the-north-face-mehr-2846953",
@@ -4598,7 +5782,9 @@
     "season",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": "MID26",
+   "until": null
   },
   {
    "id": "https-www-mydealz-de-diskussion-lvm-gaming-season-08-gewinnspiel-2846816",
@@ -4607,7 +5793,7 @@
    "merchant": "",
    "price": null,
    "category": "Gaming",
-   "image": "",
+   "image": "https://static.mydealz.de/threads/raw/5Tgev/2846816_1/fs/895x577/qt/65/2846816_1.jpg",
    "pub": "2026-10-01T14:17:21+00:00",
    "source": "mydealz Gewinnspiele",
    "watch": [
@@ -4624,7 +5810,13 @@
    ],
    "score": null,
    "desc": "Es gibt von LVM Gaming eine neue Season, mit einem Gewinnspiel. Die Season ist heute (01.10.2026) gestartet und geht bis Ende des Jahres. Codes findet man in Streams, bei Insta, YT und Code. Gewinnen kann man einen Gaming PC, Gaming Stuhl, Xbox Controller und Steam Gutscheine. Immer zum Monatsende werden die Gewinner …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null,
+   "gw": {
+    "kind": "Online",
+    "value": null
+   }
   },
   {
    "id": "dealz-de-gutscheine-medimops-app-gutschein-sale15-15-rabatt-ab-einem-mbw-von-25eur-2846745",
@@ -4656,7 +5848,9 @@
     "sale15",
     "w:rabatte"
    ],
-   "score": null
+   "score": null,
+   "code": "SALE15",
+   "until": null
   },
   {
    "id": "-diskussion-mydealz-inktober-2026-31-tage-31-begriffe-eure-kreativitat-ist-gefragt-2843262",
@@ -4665,7 +5859,7 @@
    "merchant": "",
    "price": null,
    "category": "Elektronik",
-   "image": "",
+   "image": "https://static.mydealz.de/threads/raw/YVDfL/2843262_1/fs/895x577/qt/65/2843262_1.jpg",
    "pub": "2026-10-01T07:16:00+00:00",
    "source": "mydealz Gewinnspiele",
    "watch": [
@@ -4686,7 +5880,13 @@
    ],
    "score": null,
    "desc": "Der mydealz Inktober ist zurück! (party) <3 :p Der Oktober steht wieder vor der Tür. Die Tage werden kürzer, die Paketzusteller haben vor Black Friday noch einmal kurz Gelegenheit durchzuatmen und irgendwo beginnt bereits jemand, den Keller für den nächsten Jahresvorrat Nutella freizuräumen. (nutella) Höchste Zeit …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null,
+   "gw": {
+    "kind": "Online",
+    "value": null
+   }
   },
   {
    "id": "ttps-www-mydealz-de-gutscheine-10eur-rabatt-bei-der-anmeldung-beim-milano-marathon-2844414",
@@ -4715,7 +5915,9 @@
    ],
    "score": null,
    "desc": "10€ Rabatt auf die Anmeldung beim Milano Marathon. Datum der Veranstaltung: Sonntag, 4. April 2027",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null
   },
   {
    "id": "e-10-rabatt-auf-fast-alles-bis-ende-2026-ab-100-eur-mbw-bei-autodocde-bis-31012027-2844202",
@@ -4745,36 +5947,9 @@
    ],
    "score": null,
    "desc": "Der Deal im Überblick Wer gerade den anstehenden Service plant oder eine Reparatur vor der Brust hat, kann bei AutoDOC gerade ordentlich sparen. Es gibt 10 % Rabatt auf fast das gesamte Sortiment, sofern ihr den Mindestbestellwert von 100 € erreicht. Was bietet AutoDOC? AutoDOC ist einer der europaweit größten …",
-   "discount": 10
-  },
-  {
-   "id": "polnischer-freundschaftspass-60000-gratis-bahnpasse-18-27-jahre-bewerbung-bis-2209-2841937",
-   "title": "Deutsch-Polnischer Freundschaftspass - 30.000 Gratis-Bahnpässe für Deutschland - 18-27 Jahre - Bewerbung bis 22.09.",
-   "link": "https://www.mydealz.de/diskussion/deutsch-polnischer-freundschaftspass-60000-gratis-bahnpasse-18-27-jahre-bewerbung-bis-2209-2841937",
-   "merchant": "",
-   "price": null,
-   "category": "Urlaub & Reisen",
-   "image": "",
-   "pub": "2026-09-20T20:58:42+00:00",
-   "source": "mydealz Gewinnspiele",
-   "watch": [
-    "gewinnspiele"
-   ],
-   "compare": null,
-   "features": [
-    "bahnpaesse",
-    "bewerbung",
-    "c:urlaub reisen",
-    "deutsch",
-    "deutschland",
-    "freundschaftspass",
-    "jahre",
-    "polnischer",
-    "w:gewinnspiele"
-   ],
-   "score": null,
-   "desc": "Zum 35. Jubiläum der deutsch-polnischen Freundschaft werden insgesamt 60.000 kostenlose Freundschaftspässe vergeben – davon 30.000 für Teilnehmer aus Deutschland. Mit dem Pass könnt ihr an 7 frei wählbaren Tagen innerhalb eines Monats unbegrenzt mit der Bahn durch Polen reisen. Die Bahnreise von Deutschland bis zur …",
-   "discount": null
+   "discount": 10,
+   "code": "ACV10",
+   "until": "2027-01-31T23:59:00+01:00"
   },
   {
    "id": "-monat-bild-plus-endet-automatisch-bild-umsonst-selbstendend-verlosung-gewinnspiel-2841025",
@@ -4783,7 +5958,7 @@
    "merchant": "",
    "price": null,
    "category": "Kultur & Freizeit",
-   "image": "",
+   "image": "https://static.mydealz.de/threads/raw/K2KAi/2841025_1/fs/895x577/qt/65/2841025_1.jpg",
    "pub": "2026-09-18T11:55:23+00:00",
    "source": "mydealz Gewinnspiele",
    "watch": [
@@ -4805,7 +5980,13 @@
    ],
    "score": null,
    "desc": "WIE GEHT‘S? -> 1. Deal-Link anklicken -> 2. Ganz runter scrollen -> 3. Unten rechts auf das Becher Spiel klicken. -> 4. Man gewinnt nahezu jedes Mal. Wenn es beim ersten Mal nicht klappt, einfach im Incognito Modus erneut anklicken. Ich habe beim ersten Mal gewonnen und dann nochmals 4x Versuche später. => CODE DANN …",
-   "discount": null
+   "discount": null,
+   "code": "DANN",
+   "until": null,
+   "gw": {
+    "kind": "Online",
+    "value": null
+   }
   },
   {
    "id": "ww-mydealz-de-diskussion-media-markt-app-puzzle-teile-sammeln-und-surface-gewinnen-2840214",
@@ -4835,7 +6016,13 @@
    ],
    "score": null,
    "desc": "Hi, grade in der App gesehen aber keine Ahnung wie man es lösen soll. Mir fehlen 3 Teile.",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null,
+   "gw": {
+    "kind": "App",
+    "value": null
+   }
   },
   {
    "id": "s-www-mydealz-de-diskussion-laroche-posay-routine-produktprobe-gewinnspiel-freebie-2838711",
@@ -4863,7 +6050,13 @@
    ],
    "score": null,
    "desc": "Hi, Da ich hier schon viele Parfüms dank der Community testen konnte, wollte ich euch Mal zeigen, was mir bei Instagram empfohlen wurde. Für eine Newsletteranmeldung könnt ihr eine Produktprobe gewinnen, wie es bei solchen Aktionen oft der Fall ist. Ich habe bereits bei solchen Aktionen gewonnen. Die genaue Zahl der …",
-   "discount": null
+   "discount": null,
+   "code": null,
+   "until": null,
+   "gw": {
+    "kind": "Instagram",
+    "value": null
+   }
   }
  ]
 }
