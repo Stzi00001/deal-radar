@@ -345,7 +345,11 @@ def run(feed_override=None, send_push=True):
             d["id"] = by_link[d["link"]]
         by_link.setdefault(d["link"], d["id"])
         if d["id"] in merged:
-            merged[d["id"]]["_rubriken"] += d["_rubriken"]
+            m = merged[d["id"]]
+            m["_rubriken"] += d["_rubriken"]
+            for k in ("temp", "discount", "price", "image"):
+                if m.get(k) in (None, "") and d.get(k) not in (None, ""):
+                    m[k] = d[k]
         else:
             merged[d["id"]] = d
 
